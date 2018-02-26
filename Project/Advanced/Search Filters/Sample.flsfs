@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSearchFilterSet>
+    <SearchFilter Name="Appendix" Order="0" Concepts="Appendix">
+    </SearchFilter>
+    <SearchFilter Name="Headings" Comment="" Order="1" Concepts="Headings" />
+    <SearchFilter Name="Lists" Comment="" Order="2" Concepts="Lists" />
+    <SearchFilter Name="Notes" Comment="" Order="3" Concepts="Notes" />
+</CatapultSearchFilterSet>

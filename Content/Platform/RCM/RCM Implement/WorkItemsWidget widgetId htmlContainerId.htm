@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="1490" MadCap:lastWidth="711">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234111"></a>WorkItemsWidget(widgetId, htmlContainerId, optionalParams)</h1>
+        <p class="Body">Creates a Work Items Widget according to the specified arguments, and returns a JavaScript Widget object for managing the Widget:</p>
+        <p class="Body"><span class="Strong">widgetId: </span>a string representing the ID of the widget on the client side. The ID is used for referencing the client-side Widget object when trying to access its selection or other properties.</p>
+        <p class="Body"><span class="Strong">htmlContainerId:</span> the ID of the container element that should store the Widget HTML settings (e.g., id of a DIV, SPAN etc.).</p>
+        <p class="Body"><span class="Strong">optionalParams:</span> a JavaScript object containing zero or more of the following optional parameters (see explanation on the structure of this argument):</p>
+        <ul>
+            <li><span class="Strong">viewIdentifier:</span> the identifier of the Work Item view that should be used as the basis of the grid display (the view only affects the column layout and not which records are displayed) </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ddqIdentifier:</span> the identifier of a Drill Down query that should be used for filtering the records (the ddq should return a single list of alert_internal_id values)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ddqParams:</span> a standard ddq params string in the following format:<br />@@ value 1 @@ value 2 @@ … value n @@<div class="Example"><p class="Body">@@1@@true@@abc@@</p><p class="Body">The ddqParams value is ignored if no ddqIdentifier is supplied.</p></div></li>
+        </ul>
+        <ul>
+            <li><span class="Strong">actionsGroupIdentifier:</span> the identifier of the GUI items action title that stores the GUI items for this Widget (if none is supplied, no actions combo will appear).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">pagingSize:</span> a value that controls the number of records per page (default: the value of the config parameter actimize.common.rowsInSegment).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">selectionMode:</span> a value that controls the behavior of grid selection. The possible case sensitive values are:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">RCMAPI.GridSelectionModesEnum.MULTI(default): </span>Multiple selection allowed</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">RCMAPI.GridSelectionModesEnum.SINGLE: </span>Single selection allowed</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">RCMAPI.GridSelectionModesEnum.NONE: </span>Record selection is disabled and the selection box is not shown </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showResetButton:</span> Boolean parameter that controls whether the reset button should be visible to the end-user (default value: true).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showRefreshButton</span><span class="Strong">:</span> Boolean parameter that controls whether the refresh button should be visible to the end-user (default value: true).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showFilter:</span> Boolean parameter that controls whether or not the quick filter section should be visible to the end-user (default value: true). </li>
+        </ul>
+        <div class="Note">
+            <p class="Body">The entire buttons row is hidden when none of the buttons bar components are displayed (i.e., reset button, refresh button and filter box).</p>
+            <ul>
+                <li><span class="Strong">stretchGridWidth: </span>Boolean parameter that controls whether or not the widget grid stretches itself. If set to true, the grid occupies the entire container width and the grid columns adjust accordingly (i.e. either shrink or increase in size). Default value is false.</li>
+            </ul>
+            <ul>
+                <li><span class="Strong">autoShrinkHeight: </span>Boolean parameter that controls whether or not the widget grid container automatically adjusts its height according to the widget contents. If set to true, the widget container automatically changes its height after the widget contents has been loaded. Therefore, at the end of this process the container adjusts its height to fit the contents. Default value is false.</li>
+            </ul>
+        </div>
+    </body>
+</html>

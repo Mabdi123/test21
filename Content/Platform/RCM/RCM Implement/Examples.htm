@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234409"></a>Examples</h1>
+        <p class="Body">The following examples describe various scenarios where the help default is used, as well as values with and without template placeholders.</p>
+        <p class="Body">Note that in the examples, RCM’s context path is http://myrcm:8080/rcm5.13:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Help Page</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Config Parameter Value</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Resulting Help Link</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Admin</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">:help/[page].htm</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body"><a href="http://myrcm:8080/rcm5.13/help/Admin.htm">http://myrcm:8080/rcm5.13/help/Admin.htm</a>
+                        </p>
+                        <p class="Body">In this example, the default template is used and the help link opens to the default hard coded page (Admin).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Work Items</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">http://othersite:8082/help?q=[page]</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body"><a href="http://othersite:8082/help?q=Work_Items_List">http://othersite:8082/help?q=Work_Items_List</a>
+                        </p>
+                        <p class="Body">In this example, [page] is used as a URL parameter. The placeholder gives page information to go to a version of a work items help page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">DART</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">http://othersite:8082/static-help.htm</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body"><a href="http://server2:8082/static-help.htm">http://server2:8082/static-help.htm</a>
+                        </p>
+                        <p class="Body">In this example, no placeholders are used, and therefore the help link opens to a page that was set without context.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">&#160;</p>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

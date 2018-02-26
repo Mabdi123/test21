@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterPage="/Content/Resources/MasterPages/MasterPage.flmsp"
+  DisableAutoSync="true"
+  MasterToc="/Project/TOCs/Sample.fltoc"
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.Hide or Default.PrintOnly] "
+  SearchFilterSet="/Project/Advanced/Search Filters/Sample.flsfs"
+  ResultsPerPage="100"
+  InsertMOTW="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="Actimize/HelpName">SAMPLE HELP</Variable>
+    <Variable
+      Name="Actimize/ProductCode">Sample</Variable>
+  </Variables>
+</CatapultTarget>

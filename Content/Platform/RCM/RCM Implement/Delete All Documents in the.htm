@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234419"></a>Delete All Documents in the Index</h1>
+        <p class="Body">Using the curl command on Linux, or on Windows with Cygwin. For example:</p>
+        <p class="Code">curl http://localhost:8983/solr/a0b1c2d3/update?commit=true -H "Content-Type: text/xml" --data-binary '&lt;delete&gt;&lt;query&gt;*:*&lt;/query&gt;&lt;/delete&gt;' </p>
+        <p class="Body">Curl sends a POST request. An alternative is a GET request pasted directly in the Web browser address. The parameters need to be URL encoded. For example: </p>
+        <p class="Code">http://localhost:8983/solr/update?commit=true&amp;stream.body=%3Cdelete%3E%3Cquery%3E*%3A*%3C%2Fquery%3E%3C%2Fdelete%3E</p>
+    </body>
+</html>

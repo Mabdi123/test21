@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234109"></a>Define Maximum Widgets per Session</h1>
+        <p class="Body">In order to prevent memory leaks from happening as the users open more and more widgets during their session, you should set a maximum number of widgets per session in the configuration parameter <span class="Strong">actimize.widget.maximumWidgetsInSession</span>.<br />When a user reaches the limit (for example, by opening multiple browsers with multiple widgets) RCM will start to remove old widget objects from the session, and a server error will be displayed to the user when the older widgets are accessed.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The limit set by this configuration parameter applies to all widgets regardless of type (i.e., both DART and Work Items widgets). </p>
+    </body>
+</html>

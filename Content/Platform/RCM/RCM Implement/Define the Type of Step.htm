@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2297" MadCap:lastWidth="698">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Define the Type of Step</h1>
+        <p class="Body">You can define the step type for the workflow.</p>
+        <p class="Procedure">To define the step type:</p>
+        <ol start="1">
+            <li>
+                <p>Click the Toolbox icon of the RCM Designer toolbar or press <span class="Strong">Ctrl </span>+<span class="Strong">B</span> to view the list of available steps in the Toolbox window.</p>
+                <p class="Body">
+                    <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Steps to the Workflow.png" style="visibility: visible;mso-wrap-style: square;width: 160px;height: 179px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                </p>
+            </li>
+        </ol>
+        <ol start="2">
+            <li>Select the step that is the <span class="Strong">Default Start Node</span> for this workflow and drag it into the workflow window. A <span class="Strong">Default Start Node</span> step indicates the initial step of all cases whose Case Type(s) are linked with this workflow. This node can be identified by its green background color and thick borderline.<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Steps to the Workflow_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p><div class="Note"><p class="Body">Each workflow must have one step that is the Default Start Node. There cannot be more than one Default Start Node for a workflow.</p></div></li>
+        </ol>
+        <ol start="3">
+            <li>Select an additional step and drag it into the Workflow window. <p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Steps to the Workflow_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ol start="4">
+            <li>Click on the <span class="Strong">Properties</span> icon of the main toolbar or press <span class="Strong">Ctrl + P</span> to view the properties of the step.<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Steps to the Workflow_3.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ol start="5">
+            <li>You can change the selected step by selecting another available step from the <span class="Strong">Step</span> drop-down menu:<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Steps to the Workflow_4.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ol start="6">
+            <li>Select one of the following definitions for this node:<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Steps to the Workflow_5.png" style="visibility: visible;mso-wrap-style: square;width: 266px;height: 34px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ul>
+            <li><span class="Strong">Regular</span> – The step node can be inserted anywhere in the workflow excluding the initial step for the Case Type(s) that are linked to this workflow. It can be identified by its blue background color.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Start Node</span> – This step is only available as an initial step for the Case Type(s) that are linked to this workflow. The RCM user has the option to select this step as the starting step. It can be identified by its green background color. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Default Start Node</span> – Note that the Default Start Node has additional significance for alerts/work items: An alert can be distributed with a step that is linked to any of the valid start nodes. However, manual alerts or alerts without a specified step use the default start node.</li>
+        </ul>
+    </body>
+</html>

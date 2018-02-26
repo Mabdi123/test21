@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234367"></a>Plugin API</h1>
+        <p class="Body">Exposes the following APIs to PlgCommonServices in order to expose to Plugin:</p>
+        <p class="Body">getUserDateTimeFormat() – Returns the user datetime format (both date and time) as defined in the local language.</p>
+        <p class="Body">getUserDateFormat() – Same as above, but only for the date format</p>
+        <p class="Body">getUserTimeFormat() – Same as above, but only for the time format</p>
+        <p class="Body">convertToUserDateTimeFormat(dateValue) – Converts a given date value from the input date format to the user expected date format.</p>
+        <p class="Body">convertToUserDateTimeFormat(dateValue, sourceDateFormat) – The second parameter is optional. If it is not present, then format is default RCM format (yyyy-MM-dd HH:mm:ss)</p><span class="Strong">Example:</span>
+        <p class="Body">String dateTimeFormat = PlgCommonServices.getUserDateTimeFormat();</p>
+        <p class="Body">&#160;</p>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

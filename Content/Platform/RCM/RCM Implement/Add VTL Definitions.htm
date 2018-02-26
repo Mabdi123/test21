@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1316" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397251230"></a><a name="_Toc500234230"></a>Add VTL Definitions</h1>
+        <p class="Body">This tab is enabled only if you selected an embedded VTL file and enables to customize the display via VTL code.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add VTL Definitions.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">During the test run the value of $tuningTest.lastRunStatus is null and in order to view the null value a function should be added to the VTL tab. For example, the following function could be written:</p>
+        <div>
+            <p class="Code">&lt;div&gt;lastRunstatus : </p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; #if( ! $tuningTest.lastRunStatus ) </p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; null</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; #else</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $tuningTest.lastRunStatus</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; #end</p>
+            <p class="Code">&lt;/div&gt;--&gt;</p>
+        </div>
+        <p class="Body">Otherwise the RCM user view the text “$tuningTest.lastRunStatus” after running a test.</p>
+        <p class="Body">$tuningTest is an object to be used in the VTL:</p>
+        <ul>
+            <li><span class="Strong">$tuningTest.testIdentifier</span> – String</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">$tuningTest.tenantIdentifier</span> – String</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">$tuningTest.contextIdentifier</span> – String</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">$tuningTest.executionStatu</span>s – String. “Not_Running”, “Aborting”, “Running”.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">$tuningTest.lastRun</span><span class="Strong">Status</span> – String. “Succeeded”, “Failed”, “Aborted”.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">$tuningTest.parameters</span> – Array of Strings. The parameters that RCM passed to the execution.</li>
+        </ul>
+    </body>
+</html>

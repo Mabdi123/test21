@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2698" MadCap:lastWidth="1081">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397435593"></a><a name="_Toc500234351"></a>VTL APIs for Translations</h1>
+        <p>The following APIs are available for translation.</p>
+        <p class="SubHeading"><a name="_Toc500234352"></a>Translate by base value</p>
+        <p class="Code">public String t(String baseValue, String escaping, List parameters)</p>
+        <p class="Body">Input:</p>
+        <ul>
+            <li>baseValue: the base value to translate.</li>
+        </ul>
+        <ul>
+            <li>escaping (optional): “html” / “js”. Default is “html”. “js” is for JavaScript escaping</li>
+        </ul>
+        <ul>
+            <li>parameters (optional): an array of parameters to pass.</li>
+        </ul>
+        <p class="Body">Output: the translated value</p>
+        <p class="Body">This API searches for the base value with ‘ACTIMIZE’ module by default, unless you previously set the module name (see also <MadCap:xref href="Define the Global Module Name.htm#_Ref340402162" class="ParaTextOnly">Define the Global Module Name</MadCap:xref>, page <MadCap:xref href="Define the Global Module Name.htm#_Ref340402167" class="PageNumberOnly">1</MadCap:xref>). When there are several identical base values then the initial base value is returned. When there are no resource strings with that base value then the input base value is returned.</p>
+        <p class="Procedure"><a name="_Toc500234353"></a>Translate by base value and module</p>
+        <p class="Code">public String tModule (String baseValue, String moduleName, String escaping, List parameters)</p>
+        <p class="Body">Input:</p>
+        <ul>
+            <li>baseValue: the base value to translate.</li>
+        </ul>
+        <ul>
+            <li>moduleName: the module where you want to search the base value</li>
+        </ul>
+        <ul>
+            <li>escaping (optional): “html” / “js”. Default is “html”. “js” is for JavaScript escaping</li>
+        </ul>
+        <ul>
+            <li>Parameters (optional): an array of parameters to pass.</li>
+        </ul>
+        <p class="Body">Output: the translated value</p>
+        <p class="Body">This API works the same as t API, but does not use the default or global module.</p>
+        <p class="SubHeading"><a name="_Toc500234354"></a>Translate by Identifier</p>
+        <p class="Code">public String tId(String rsIdentifier, String escaping, List parameters)</p>
+        <p class="Body">Input:</p>
+        <ul>
+            <li>rsIdentifier: the resource string identifier. </li>
+        </ul>
+        <ul>
+            <li>escaping (optional): “html” / “js”. Default is “html”</li>
+        </ul>
+        <ul>
+            <li>Parameters (optional): an array of parameters to pass.</li>
+        </ul>
+        <p class="Body">Output: the translated value</p>
+        <p class="Body">The API attempts to find a resource string with the given identifier. If it is found then the relevant translation (or base value) is returned. When there is no base value, the given resource string identifier is returned. </p>
+        <p class="Procedure"><a name="_Ref340402162"></a><a name="_Ref340402167"></a><a name="_Toc500234355"></a>Define the Global Module Name</p>
+        <p class="Body">By default translate APIs use ‘ACTIMIZE’ module. If you want to use another module, but you do not want to pass its name on every translate call then you can set it once: via the following API:</p>
+        <p class="Code">$vtlUtils.setModule(‘&lt;Module name&gt;’)</p>
+        <p class="Body">This module is applicable until another setModule call is created.</p>
+        <p class="Procedure"><a name="_Toc500234356"></a>Examples of using the APIs</p>
+        <p class="Body">Initially, in RCM Designer, define a custom resource string in the base language for the module ‘Actimize’:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Examples of using the APIs.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 40px;" />
+        </p>
+        <p class="Body">Then, translate the resource strings to a local language. In this example the translations are indicated with a ‘!’ character at the beginning and end of the value:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Examples of using the APIs_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 29px;" />
+        </p>
+        <p class="Body">After finishing the definitions in the RCM Designer there are three options in the related VTL files:</p>
+        <p class="Body"><span class="Strong">Option 1</span>: use tModule function, which looks the resource string up by base value:</p>
+        <p class="Code">$vtlUtils.tModule("Phone Number", “ACTIMIZE”)</p>
+        <p class="Body">An optional third parameter defines escaping:</p>
+        <p class="Code">$vtlUtils.tModule("Phone Number", “ACTIMIZE”, "JS")</p>
+        <p class="Body">In this example there are also additional parameters which are optional: escaping, and additional parameters in the resource string that are between the ‘{‘ and ’}’ character:</p>
+        <p class="Code">$vtlUtils.tModule("Item of Type {0} is {1}", "ACTIMIZE", "html", [ "AML", "Closed" ])</p>
+        <p class="Body"><span class="Strong">Option 2:</span> Similar to the previous example, but also specifies the module at the beginning of the VTL in order to avoid typing it every time.</p>
+        <p class="Code">$vtlUtils.setModule(“ACTIMIZE”)</p>
+        <p class="Code">$vtlUtils.t("Phone Number")</p>
+        <p class="Body">When the module is ‘ACTIMIZE’, then the first line is not needed since the 't' function uses ‘ACTIMIZE’ as the default module.</p>
+        <p class="Body">This function also has the optional parameters of escaping and additional parameters.</p>
+        <p class="Code">$vtlUtils.t("Item of Type {0} is {1}", "html", [ "AML", "Closed" ])</p>
+        <p class="Body"><span class="Strong">Option 3: </span>translate by the identifier:</p>
+        <p class="Code">$vtlUtils.tId("actimize.phone number")</p>
+        <p class="Code">$vtlUtils.tId("actimize.item of type {0} is {1}", "html", [ "AML", "Closed" ])</p>
+        <p class="Body"><span class="Strong">Display in the </span><span class="Strong">RCM</span><span class="Strong">: </span>The translated data then appears in the RCM manual alert or outgoing form.</p>
+        <p class="Body">Original Language: </p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Examples of using the APIs_2.png" style="visibility: visible;mso-wrap-style: square;width: 421px;height: 164px;" />
+        </p>
+        <p class="Body">Translated Language:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Examples of using the APIs_3.png" style="visibility: visible;mso-wrap-style: square;width: 433px;height: 183px;" />
+        </p>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

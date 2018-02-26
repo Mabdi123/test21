@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="1309" MadCap:lastWidth="1193">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref410290775"></a><a name="_Toc489949644"></a>Create Scheduled Queries</h1>
+        <p class="Body">Scheduled queries enable you to define queries that can be processed in the future once or at a recurring interval.</p>
+        <div class="Note">
+            <p class="Body">You cannot create scheduled queries to data sources that do not belong to a specific scheduled query group. In this scenario, the <span class="Strong">Create Scheduled Query </span>icon is not displayed. Only the implementer has the option to associate data sources to specific batch query groups via the RCM Designer.</p>
+        </div>
+        <p class="Procedure">To define a scheduled query:</p>
+        <ul>
+            <li>Click the <span class="Strong">Create Scheduled</span> <span class="Strong">Query</span> icon. The <span class="Strong">Scheduled</span> <span class="Strong">Queries </span>window opens. All fields of the window must be filled in. The window includes the following fields:</li>
+        </ul>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Option</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Name:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to enter a name for the scheduled query.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Data source:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to select a data source table for the query. The default data source table that is displayed is the data source that was displayed when the <span class="Strong">Create Scheduled</span> <span class="Strong">Query</span> icon was clicked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Period:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to define the period for the query. Clicking on the area next to this field opens a drop-down menu that enables you to select a period. Click the <span class="Strong">Apply</span> icon after the selection is made.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Start Date:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to enter the initial date when the query runs. Click the Calendar icon to select a date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">End Date:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the last date when the query runs from the following options:</p>
+                        <ul>
+                            <li><span class="Strong">No end date</span> – Query has no end date</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">End by </span>– Select a date for the end date. Click the Calendar icon to select a date.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Query Scheduling</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to define the number of times in which the query runs from the defined start date to the end date. Select from the following options.</p>
+                        <ul>
+                            <li><span class="Strong">Once</span> – Query has no end date</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Specified interval </span>– Select daily, weekly, or monthly. For example, if you select weekly then the query run once a week between the defined start and end date.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Alert Type:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the type of alert for the query results. Note that only Work item types that have been selected by the RCM implementer appear in this list.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Step:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Displays the initial default step of the work item type. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Score:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to enter a score for the generated work item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1"><span class="Strong">Business Unit:</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Select a business unit to associate with the generated work item.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">After you complete the Scheduled Queries window, click <span class="Strong">Go</span>. A confirmation message is displayed.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Create Scheduled Queries.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p>&#160;</p>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

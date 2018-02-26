@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2482" MadCap:lastWidth="1012">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref396809489"></a><a name="_Toc500234060"></a>Define the Related Item Types for the Alert Type</h1>
+        <p class="Body">Go to the <span class="Strong">Related Item Types</span> tab of the relevant Alert Type. Note that the associations are only defined in parent work item (alert) types. This tab is always enabled since all child items can also be parent items.</p>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Related Item Types.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Procedure">To add related item types for an item:</p>
+        <ol start="1">
+            <li>Click on the <span class="Strong">Add New Relation Type Association</span> <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Related Item Types_1.png" style="visibility: visible;mso-wrap-style: square;width: 14px;height: 17px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /> icon. </li>
+        </ol>
+        <ol start="2">
+            <li>Select the <span class="Strong">Relation Type</span> and the <span class="Strong">Child Object</span> for this association. There can be more than one relation attribute for an Alert Type.<p class="Body"><img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Related Item Types_2.png" style="visibility: visible;mso-wrap-style: square;" /></p></li>
+        </ol>
+        <ol start="3">
+            <li>In the Audit on Relation column, select which relation you want displayed in the RCM work item audit history. This feature allows you to hide the addition or removal of a relation that contains sensitive data in the audit history from those who do not have permission to view.<p class="Body"><img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Related Item Types_3.png" style="visibility: visible;mso-wrap-style: square;width: 431px;height: 101px;" /></p><p class="Body">The options are:</p><ul><li><span class="Strong">Both:</span> Both the parent and child information are audited.</li></ul><ul><li><span class="Strong">Parent only:</span> Only the parent is audited.</li></ul><ul><li><span class="Strong">Child only:</span> Only the child is audited.</li></ul><ul><li><span class="Strong">None:</span> Neither the parent or child is audited.</li></ul></li>
+        </ol>
+        <ol start="4">
+            <li>Select whether to enable child audit propagation for the Relation Type. This feature provides propagated audits (History of Actions) for the parent work item about the child item. Specifically it pertains to the top most parent who does have audit propagation enabled for it. For example, if item A has parent B which has parent C, then audits for A are only viewed in C (the original parent) in addition to A.<p class="Body"><img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Related Item Types_4.png" style="visibility: visible;mso-wrap-style: square;" /></p></li>
+        </ol>
+        <p class="Body">The options are: </p>
+        <ul>
+            <li><span class="Strong">True:</span> Child work item audits also appear in parent history.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">False:</span> Child work item audits do not appear in parent history (only appear in child history).</li>
+        </ul>
+        <p class="Body">The parameter <span class="Strong">actimize.alerts.audits.consolidated.actions</span> in the <span class="Strong">Config parameters</span> tab of admin.jsp defines the actions that require audit propagation. The value includes a text description of the actions that are to be logged in the history of actions. The text descriptions should be separated by a comma. The following actions are supported:</p>
+        <ul>
+            <li>Alert manually updated</li>
+        </ul>
+        <ul>
+            <li>Alert updated</li>
+        </ul>
+        <ul>
+            <li>Note added</li>
+        </ul>
+        <ul>
+            <li>Owner assigned</li>
+        </ul>
+        <ul>
+            <li>Score changed</li>
+        </ul>
+        <ul>
+            <li>Status changed</li>
+        </ul>
+        <ul>
+            <li>Change Status Back</li>
+        </ul>
+        <ul>
+            <li>Status changed automatically</li>
+        </ul>
+        <ul>
+            <li>Relation was created</li>
+        </ul>
+        <ul>
+            <li>RFI created</li>
+        </ul>
+        <ul>
+            <li>Received response to RFI</li>
+        </ul>
+        <ul>
+            <li>Attachment added</li>
+        </ul>
+        <ul>
+            <li>Attachments removed</li>
+        </ul>
+        <ul>
+            <li>Owner assigned</li>
+        </ul>
+        <ul>
+            <li>BU and User assigned</li>
+        </ul>
+        <ul>
+            <li>Business Unit assigned</li>
+        </ul>
+        <p class="Body">The history line of an action that occurred in a child work item indicates its name as displayed in the following example:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Related Item Types_5.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+    </body>
+</html>

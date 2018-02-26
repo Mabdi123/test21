@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1049" MadCap:lastWidth="1194">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref85789902"></a><a name="_Toc489949791"></a>Assign Roles per Business Units</h1>
+        <p class="Body">Click the <span class="Strong">Assign Roles</span> link for a selected user opens the Assign Roles per Business Unit to User/Group window. This window enables the administrator to assign roles to a user. These roles determine the permissions for the views that are available for the selected user and the actions that this user can perform. </p>
+        <p class="Body">Roles are defined using the options available within the Manage Roles Activity bar (see <MadCap:xref href="Manage Roles.htm#_Ref85888192" class="ParaTextOnly">Manage Roles</MadCap:xref>).</p>
+        <p class="Body">A user may be assigned roles directly (using this <span class="Strong">Assign Roles</span> link) or may be assigned to one or more groups, in which case the user inherits the permissions that are assigned to those groups. (These roles do not appear within the User Roles column within the list of users.)</p>
+        <p class="Body">When a role includes permission for work items or reports, this role must always be assigned to a user in association with a business unit. When a role stipulates permissions that do not refer to work items or reports, this role may not be associated with a business unit. </p>
+        <p class="Body">Whenever a role is assigned to a user, you must select one of the following options from the In Business Unit drop-down list:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Assign Roles per Business.png" style="visibility: visible;mso-wrap-style: square;width: 249px;height: 89px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Option</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">&lt;Users Business Unit&gt;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Assigns the role to the user only for those work items and reports that are distributed to the business unit to which this user belongs. For example, if the user belongs to the business unit New York, selecting &lt;User’s BU&gt; means that this user will be allowed to view and perform the specified actions only on work items and reports that are associated with the New York business unit. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">All</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Assigns the role to the user for all possible business units.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">None</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Indicates that this role includes permissions that do not refer to any business unit. For example, administration roles do not refer to work items or reports and therefore do not require indication of a business unit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Select Business Unit...</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Opens the Business Unit Explorer that enables you to select a specific business unit for assignment. It is possible to assign a role to a user for a business unit that is not the business unit that this user belongs to. For example, a user may belong to the business unit New York, but be assigned the role of Supervisor for all work items and reports that are associated with Canada. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Procedure">To assign a role to a user:</p>
+        <ol start="1">
+            <li>Select the role that you want to assign to this user from the <span class="Strong">Roles</span> drop-down list. Roles must first be defined using the Manage Roles activity bar before they appear within this drop-down list. </li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Assign Roles per Business_1.png" style="visibility: visible;mso-wrap-style: square;width: 392px;height: 41px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+        </ol>
+        <ol start="2">
+            <li>Select the business unit, to which you want this role to apply, using the <span class="Strong">In Business Unit</span> drop-down list. You can select the user’s own business unit, All Business Units, None (meaning no business unit is relevant) or a specific business unit from the Business Unit Explorer.</li>
+        </ol>
+        <ol start="3">
+            <li>Click <span class="Strong">Add</span> beside the selection lists:<ul><li>A new row is added to the list of roles showing the selected role and the associated business unit.</li><li>You can assign one or more role to each user. </li></ul></li>
+        </ol>
+    </body>
+</html>

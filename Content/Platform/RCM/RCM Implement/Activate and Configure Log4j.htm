@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2273" MadCap:lastWidth="1081">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234668"></a>Activate and Configure Log4j</h1>
+        <p class="Body">Log4j is automatically installed together with your RCM application. Implementers can change the Log4j configuration using the <span class="Strong">actimize_log4j.properties</span> file. </p>
+        <p class="Body">By default the <span class="Strong">actimize_log4j.properties</span> file is stored internally within the RCM. However, it is possible to save an <span class="Strong">actimize_log4j.properties</span> file to an external location and then configure the RCM to use the newly saved file.</p>
+        <p class="Body">The location for the <span class="Strong">actimize_log4j.properties</span> file is defined, by implementers, within the Config Parameters tab that is accessed from the RCM System Configuration.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Activate and Configure Log4j.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The following parameter within the <span class="Strong">Config Parameters</span> enables the implementer to set the path for the <span class="Strong">actimize_log4j.properties</span> file: <span class="Strong">actimize.log4j.location</span></p><span class="Strong">To configure log4j:</span>
+        <ol start="1">
+            <li>Save a copy of the <span class="Strong">actimize_log4j.properties</span> file in the location specified within the <span class="Strong">Config Parameters</span> of the Admin Site.</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">You can copy the example of the file, provided below, and save this as the new actimize_log4j.properties file.</p>
+        </div>
+        <ol start="2">
+            <li>Open the <span class="Strong">actimize_log4j.properties</span> file and change the values according to your needs.</li>
+        </ol>
+        <div class="Example">
+            <p class="Body">The following is an example of this file:</p>
+            <div>
+                <p class="Code"># Our initial setting is WARN only (for any class unless we state otherwise)</p>
+                <p class="Code"># memory appender - logs in memory only, outputting to file in case of WARNING/ERROR</p>
+                <p class="Code"># servlet appender - logs in memory only, allowing remote read of logs</p>
+                <p class="Code">log4j.rootLogger=WARN, memory, servlet</p>
+                <p class="Code"># developers sometimes like log4j.rootLogger=DEBUG,stdout</p>
+                <p class="Code"># Log4J 1.2.x synchronizes on logging, so never set level to DEBUG in production</p>
+                <p class="Code"># unless you know few users will be using the system</p>
+                <p class="Code"># Specifically we want actimize classes to have DEBUG logs, in case of problem research</p>
+                <p class="Code"># log4j.category.com.actimize = DEBUG</p>
+                <p class="Code"># configure log level for client (JavaScript) calls to logger </p>
+                <p class="Code"># log4j.category.com.actimize.web.controllers.ClientLoggingController = DEBUG</p>
+                <p class="Code"># Specifically we want to disable Cglib2AopProxy class logging</p>
+                <p class="Code">log4j.logger.org.springframework.aop.framework.Cglib2AopProxy = ERROR</p>
+                <p class="Code"># memory appender configuration. Note threshold - it should collect all logs, allowing research of problems.</p>
+                <p class="Code">log4j.appender.memory=com.actimize.infrastructure.logging.MemAppender</p>
+                <p class="Code">#log4j.appender.memory.threshold=DEBUG </p>
+                <p class="Code">log4j.appender.memory.layout=org.apache.log4j.PatternLayout</p>
+                <p class="Code">log4j.appender.memory.layout.ConversionPattern=%d{ABSOLUTE} [%t] %-5p %c - %m%n</p>
+                <p class="Code">log4j.appender.memory.logFilePath=actimizeLogs</p>
+                <p class="Code">log4j.appender.memory.errFilePrefix=actimizeErr_</p>
+                <p class="Code">log4j.appender.memory.warnFilePrefix=actimizeWarn_</p>
+                <p class="Code">log4j.appender.memory.bufferSize=1024</p>
+                <p class="Code"># servlet appender configuration. Note threshold - it should collect all logs, allowing research of problems.</p>
+                <p class="Code">log4j.appender.servlet=com.actimize.infrastructure.logging.ServletAppender</p>
+                <p class="Code">#log4j.appender.servlet.threshold=DEBUG </p>
+                <p class="Code">log4j.appender.servlet.layout=com.actimize.infrastructure.logging.HTMLLayout</p>
+                <p class="Code">log4j.appender.servlet.bufferSize=1024</p>
+                <p class="Code"># console appender - usually used only in development environment as a "low-tech progress bar"</p>
+                <p class="Code">log4j.appender.stdout=org.apache.log4j.ConsoleAppender</p>
+                <p class="Code">log4j.appender.stdout.threshold=INFO</p>
+                <p class="Code">log4j.appender.stdout.layout=org.apache.log4j.PatternLayout</p>
+                <p class="Code">log4j.appender.stdout.layout.ConversionPattern=%d %-5p [%t] %C{2} (%F:%L) - %m%n</p>
+                <p class="Code"># rolling file appender - use if you want ALL logging to be made to files</p>
+                <p class="Code"># Note threshold - it will affect performance and file usability.</p>
+                <p class="Code">log4j.appender.R=com.actimize.infrastructure.logging.ConfigurableRollingFileAppender</p>
+                <p class="Code">log4j.appender.R.File=actimizeLogs.log</p>
+                <p class="Code">log4j.appender.R.MaxFileSize=4096KB</p>
+                <p class="Code">log4j.appender.R.MaxBackupIndex=10</p>
+                <p class="Code">log4j.appender.R.layout=org.apache.log4j.PatternLayout</p>
+                <p class="Code">log4j.appender.R.layout.ConversionPattern=%d %p %c - %m%n </p>
+            </div>
+        </div>
+    </body>
+</html>

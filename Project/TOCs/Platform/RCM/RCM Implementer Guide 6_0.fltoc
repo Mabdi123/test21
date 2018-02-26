@@ -1,0 +1,2957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Front.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    AutoEndOnLeftPage="disabled"
+    conditions="Default.PrintOnly"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Legal.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="Default.PrintOnly"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/TOC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    PageNumberReset="reset"
+    PageNumberFormat="lower-roman"
+    PageNumber="1"
+    ChapterNumber="0"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/RevisionHistory.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="About RCM Implementation"
+    Link="/Content/Platform/RCM/RCM Implement/About this Guide.htm#_Toc500233987"
+    BreakType="chapter"
+    PageType="first"
+    PageNumberReset="reset"
+    PageNumberFormat="decimal"
+    StartSection="false"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="About the Risk Case Manager Designer"
+      Link="/Content/Platform/RCM/RCM Implement/About the Risk Case Manager.htm#_Toc500233988"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Overview of Customization Procedures"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Customization.htm#_Toc500233989" />
+    <TocEntry
+      Title="About this Guide"
+      Link="/Content/Platform/RCM/RCM Implement/About this Guide_1.htm#_Toc500233990" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Business Unit Hierarchies"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Business Unit Hierarchies.htm#_Toc500233991"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Hierarchies"
+      Link="/Content/Platform/RCM/RCM Implement/Hierarchies.htm#_Toc500233993" />
+    <TocEntry
+      Title="Business Units"
+      Link="/Content/Platform/RCM/RCM Implement/Business Units.htm#_Toc500233994" />
+    <TocEntry
+      Title="Attributes"
+      Link="/Content/Platform/RCM/RCM Implement/Attributes.htm#_Toc500233995" />
+    <TocEntry
+      Title="Define Business Unit Attributes"
+      Link="/Content/Platform/RCM/RCM Implement/Define Business Unit Attributes.htm#_Toc500233996" />
+    <TocEntry
+      Title="Define a New Hierarchy"
+      Link="/Content/Platform/RCM/RCM Implement/Define a New Hierarchy.htm#_Toc500233997">
+      <TocEntry
+        Title="Assign Business Units to a Hierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/Assign Business Units to a.htm#_Toc500233998" />
+      <TocEntry
+        Title="Move Business Units within a Hierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/Move Business Units within.htm#_Toc500233999" />
+    </TocEntry>
+    <TocEntry
+      Title="Save Hierarchies and Business Units"
+      Link="/Content/Platform/RCM/RCM Implement/Save Hierarchies and Business.htm#_Toc500234000" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting Up Work Items/Alerts"
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up Work Items Alerts.htm#_Toc500234001"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Setting up Work Items"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Setting up Work.htm#_Toc500234002"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Alerts (Work Item) Configuration"
+      Link="/Content/Platform/RCM/RCM Implement/Alerts Work Item Configuration.htm#_Toc500234003">
+      <TocEntry
+        Title="Alert Steps List"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Steps List.htm#_Toc500234004" />
+      <TocEntry
+        Title="Alert Predefined Notes"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Predefined Notes.htm#_Toc500234005" />
+      <TocEntry
+        Title="Alert Fields - Built In Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Fields Built In Fields.htm#_Toc500234006" />
+      <TocEntry
+        Title="Alert Fields - Custom Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Fields Custom Fields.htm#_Toc500234007">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Custom Field Configuration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="General Configuration - Value Lists"
+        Link="/Content/Platform/RCM/RCM Implement/General Configuration Value.htm#_Toc500234008" />
+      <TocEntry
+        Title="Alert Score Ranges"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Score Ranges.htm#_Toc500234009" />
+      <TocEntry
+        Title="Alerts View Sorting"
+        Link="/Content/Platform/RCM/RCM Implement/Alerts View Sorting.htm#_Toc500234010" />
+      <TocEntry
+        Title="Relation Types"
+        Link="/Content/Platform/RCM/RCM Implement/Relation Types.htm#_Toc500234011" />
+      <TocEntry
+        Title="Association Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Association Fields.htm#_Toc500234012" />
+    </TocEntry>
+    <TocEntry
+      Title="Setting up Alert Types"
+      Link="/Content/Platform/RCM/RCM Implement/Setting up Alert Types.htm#_Toc500234013">
+      <TocEntry
+        Title="Access the Alert Types Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Alert Types Options.htm#_Toc500234014" />
+      <TocEntry
+        Title="Assign General Information for Alert Type"
+        Link="/Content/Platform/RCM/RCM Implement/Assign General Information.htm#_Toc500234015" />
+      <TocEntry
+        Title="Create a New Alert Type"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Alert Type.htm#_Toc500234016" />
+      <TocEntry
+        Title="Identify the XML File and XSL Location"
+        Link="/Content/Platform/RCM/RCM Implement/Identify the XML File and.htm#_Toc500234017">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Location of XSL Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Export Tab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Add Custom Fields to the Alert Type"
+        Link="/Content/Platform/RCM/RCM Implement/Add Custom Fields to the Alert.htm#_Toc500234018" />
+      <TocEntry
+        Title="Assign Predefined Notes"
+        Link="/Content/Platform/RCM/RCM Implement/Assign Predefined Notes.htm#_Toc500234019"></TocEntry>
+      <TocEntry
+        Title="Assign Steps"
+        Link="/Content/Platform/RCM/RCM Implement/Assign Steps.htm#_Toc500234020"></TocEntry>
+      <TocEntry
+        Title="The Associations and Views Tabs"
+        Link="/Content/Platform/RCM/RCM Implement/The Associations and Views.htm#_Toc500234021" />
+    </TocEntry>
+    <TocEntry
+      Title="Set Up Workflows"
+      Link="/Content/Platform/RCM/RCM Implement/Set Up Workflows.htm#_Toc500234022">
+      <TocEntry
+        Title="Access the Workflow Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Workflow Options.htm#_Toc500234023" />
+      <TocEntry
+        Title="Workflow General Tab"
+        Link="/Content/Platform/RCM/RCM Implement/Workflow General Tab.htm#_Toc500234024" />
+      <TocEntry
+        Title="Create a Workflow"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Workflow.htm#_Toc500234025" />
+      <TocEntry
+        Title="The Workflow Toolbar"
+        Link="/Content/Platform/RCM/RCM Implement/The Workflow Toolbar.htm#_Toc500234026" />
+      <TocEntry
+        Title="Add Steps to the Workflow"
+        Link="/Content/Platform/RCM/RCM Implement/Add Steps to the Workflow.htm#_Toc500234027" />
+      <TocEntry
+        Title="Add Deadline Parameters to a Step"
+        Link="/Content/Platform/RCM/RCM Implement/Add Deadline Parameters to.htm#_Toc500234028" />
+      <TocEntry
+        Title="Create a Checklist for the Step"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Checklist for the.htm#_Toc500234029" />
+      <TocEntry
+        Title="Create a List of Restricted Actions"
+        Link="/Content/Platform/RCM/RCM Implement/Create a List of Restricted.htm#_Toc500234030" />
+      <TocEntry
+        Title="Link the Step Nodes"
+        Link="/Content/Platform/RCM/RCM Implement/Link the Step Nodes.htm#_Toc500234031" />
+      <TocEntry
+        Title="Create the Entire Workflow"
+        Link="/Content/Platform/RCM/RCM Implement/Create the Entire Workflow.htm#_Toc500234032" />
+      <TocEntry
+        Title="Modify Workflows of an Alert Type"
+        Link="/Content/Platform/RCM/RCM Implement/Modify Workflows of an Alert.htm#_Toc500234033" />
+      <TocEntry
+        Title="Workflow Barriers"
+        Link="/Content/Platform/RCM/RCM Implement/Workflow Barriers.htm#_Toc500234034" />
+      <TocEntry
+        Title="Transition Tab"
+        Link="/Content/Platform/RCM/RCM Implement/Transition Tab.htm#_Toc500234035">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Allow Automatic Transitions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Allow Manual Transitions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Restrict a Step.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Require a Note.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Assign on the Transition.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Definine Barriers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Set up Reasons for Transition"
+        Link="/Content/Platform/RCM/RCM Implement/Set up Reasons for Transition.htm#_Toc500234036">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Use the Filtering Table.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Use the Workflow Asynch Execution Tool"
+        Link="/Content/Platform/RCM/RCM Implement/Use the Workflow Asynch Execution.htm#_Toc500234037">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Parameters of the Tool.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/SMTP Parameters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Use the RCM Scheduler for Workflow Deadlines Jobs"
+        Link="/Content/Platform/RCM/RCM Implement/Use the RCM Scheduler for.htm#_Toc500234038" />
+    </TocEntry>
+    <TocEntry
+      Title="Set up Alert Views"
+      Link="/Content/Platform/RCM/RCM Implement/Set up Alert Views.htm#_Toc500234039">
+      <TocEntry
+        Title="Access the Alert (Work Item) Views Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Alert Work Item.htm#_Toc500234040" />
+      <TocEntry
+        Title="Create a New Alert View and Assigning General Information"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Alert View and.htm#_Toc500234041" />
+      <TocEntry
+        Title="Configure the Fields of the View"
+        Link="/Content/Platform/RCM/RCM Implement/Configure the Fields of the.htm#_Toc500234042">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/View Field Properties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/View Properties for Field.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Column Display Formatter.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Advanced Format String options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Add Conditional Formatting.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Default Sort"
+        Link="/Content/Platform/RCM/RCM Implement/Default Sort.htm#_Toc500234043" />
+      <TocEntry
+        Title="Filter"
+        Link="/Content/Platform/RCM/RCM Implement/Filter.htm#_Toc500234044">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Fields Filtering.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Work Items"
+      Link="/Content/Platform/RCM/RCM Implement/Work Items.htm#_Toc500234045">
+      <TocEntry
+        Title="Select a Work Item"
+        Link="/Content/Platform/RCM/RCM Implement/Select a Work Item.htm#_Toc500234046" />
+      <TocEntry
+        Title="Create a Customized Work Item"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Customized Work Item.htm#_Toc500234047" />
+      <TocEntry
+        Title="Unread Work Item Indication"
+        Link="/Content/Platform/RCM/RCM Implement/Unread Work Item Indication.htm#_Toc500234048" />
+      <TocEntry
+        Title="Methods for Updating a Status"
+        Link="/Content/Platform/RCM/RCM Implement/Methods for Updating a Status.htm#_Toc500234049" />
+      <TocEntry
+        Title="Actions that Return the Status to Unread"
+        Link="/Content/Platform/RCM/RCM Implement/Actions that Return the Status.htm#_Toc500234050" />
+      <TocEntry
+        Title="Actions that Do Not Return the Status to Unread"
+        Link="/Content/Platform/RCM/RCM Implement/Actions that Do Not Return.htm#_Toc500234051" />
+    </TocEntry>
+    <TocEntry
+      Title="Set the Auto Refresh Feature of Alerts (Work Items)"
+      Link="/Content/Platform/RCM/RCM Implement/Set the Auto Refresh Feature.htm#_Toc500234052" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Platform/RCM/RCM Implement/Visual Story View.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Platform/RCM/RCM Implement/Visual Story View Framework.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Platform/RCM/RCM Implement/Additions XML Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Platform/RCM/RCM Implement/RCM Implementer 6/Configure Visual Story View.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting Up Work Items/Alerts Type Relations  "
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up Work Items Alerts_1.htm#_Toc500234053"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Work Item (Alert) Relations"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Work Item Alert.htm#_Toc500234054"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Set Up Alert Type Relations"
+      Link="/Content/Platform/RCM/RCM Implement/Set Up Alert Type Relations.htm#_Toc500234055" />
+    <TocEntry
+      Title="Set Up the Relevant Alert Type"
+      Link="/Content/Platform/RCM/RCM Implement/Set Up the Relevant Alert.htm#_Toc500234056" />
+    <TocEntry
+      Title="Define the Fields of the Cache XML for the Child Alert Types"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Fields of the Cache.htm#_Toc500234057" />
+    <TocEntry
+      Title="Define the Views of all Child Alert Types"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Views of all Child.htm#_Toc500234058" />
+    <TocEntry
+      Title="Define the Relation Types"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Relation Types.htm#_Toc500234059" />
+    <TocEntry
+      Title="Define the Related Item Types for the Alert Type"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Related Item Types.htm#_Toc500234060" />
+    <TocEntry
+      Title="Add VTL Code in the Relevant Parent Form"
+      Link="/Content/Platform/RCM/RCM Implement/Add VTL Code in the Relevant.htm#_Toc500234061" />
+  </TocEntry>
+  <TocEntry
+    Title="Sensitive Data Fields"
+    Link="/Content/Platform/RCM/RCM Implement/Sensitive Data Fields.htm#_Toc500234062"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Sensitive Data Fields"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Sensitive Data.htm#_Toc500234063"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Accessing the Sensitive Data Options"
+      Link="/Content/Platform/RCM/RCM Implement/Accessing the Sensitive Data.htm#_Toc500234064" />
+    <TocEntry
+      Title="Define the Sensitive Data Mask"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Sensitive Data.htm#_Toc500234065">
+      <TocEntry
+        Title="Data Mask Expression"
+        Link="/Content/Platform/RCM/RCM Implement/Data Mask Expression.htm#_Toc500234066" />
+    </TocEntry>
+    <TocEntry
+      Title="Map a Custom Field to a Mask"
+      Link="/Content/Platform/RCM/RCM Implement/Map a Custom Field to a Mask.htm#_Toc500234067" />
+    <TocEntry
+      Title="Create Groups of Sensitive Data Fields"
+      Link="/Content/Platform/RCM/RCM Implement/Create Groups of Sensitive.htm#_Toc500234068">
+      <TocEntry
+        Title="Assign Group Permissions"
+        Link="/Content/Platform/RCM/RCM Implement/Assign Group Permissions.htm#_Toc500234069" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Confidential Data Feature"
+    Link="/Content/Platform/RCM/RCM Implement/Confidential Data Feature.htm#_Toc500234070">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Platform/RCM/RCM Implement/Using the Confidential Data Feature.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Visual Link Analysis"
+    Link="/Content/Platform/RCM/RCM Implement/Visual Link Analysis.htm#_Toc500234071"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="Setting up the RFI Feature (Email Collaboration)"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up the RFI Feature.htm#_Toc500234072"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the RFI Feature"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the RFI Feature.htm#_Toc500234073"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Configure the Mail Server Parameters"
+      Link="/Content/Platform/RCM/RCM Implement/Configure the Mail Server.htm#_Toc500234074">
+      <TocEntry
+        Title="Configure Encryption for Email Collaboration"
+        Link="/Content/Platform/RCM/RCM Implement/Configure Encryption for Email.htm#_Toc500234075" />
+      <TocEntry
+        Title="Configure Kerberos Authentication"
+        Link="/Content/Platform/RCM/RCM Implement/Configure Kerberos Authentication.htm#_Toc500234076" />
+    </TocEntry>
+    <TocEntry
+      Title="Create RFI Templates"
+      Link="/Content/Platform/RCM/RCM Implement/Create RFI Templates.htm#_Toc500234077" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuring User Defined Data Types"
+    Link="/Content/Platform/RCM/RCM Implement/Configuring User Defined Data.htm#_Toc500234078"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="User Defined Data Types (UDDT) Overview"
+      Link="/Content/Platform/RCM/RCM Implement/User Defined Data Types UDDT.htm#_Toc500234079"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="The UDDT General Tab"
+      Link="/Content/Platform/RCM/RCM Implement/The UDDT General Tab.htm#_Toc500234080" />
+    <TocEntry
+      Title="The VTL Tab"
+      Link="/Content/Platform/RCM/RCM Implement/The VTL Tab.htm#_Toc500234081" />
+    <TocEntry
+      Title="The JavaScripts Tab"
+      Link="/Content/Platform/RCM/RCM Implement/The JavaScripts Tab.htm#_Toc500234082" />
+    <TocEntry
+      Title="Create a New UDDT"
+      Link="/Content/Platform/RCM/RCM Implement/Create a New UDDT.htm#_Toc500234083" />
+  </TocEntry>
+  <TocEntry
+    Title="Work Items/Alerts Consolidation"
+    Link="/Content/Platform/RCM/RCM Implement/Work Items Alerts Consolidation.htm#_Toc500234084"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Work Items Consolidation"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Work Items Consolidation.htm#_Toc500234085"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Summarized Description of the Consolidation Process"
+      Link="/Content/Platform/RCM/RCM Implement/Summarized Description of.htm#_Toc500234086" />
+    <TocEntry
+      Title="CWI Configuration"
+      Link="/Content/Platform/RCM/RCM Implement/CWI Configuration.htm#_Toc500234087">
+      <TocEntry
+        Title="Initial Configuration"
+        Link="/Content/Platform/RCM/RCM Implement/Initial Configuration.htm#_Toc500234088" />
+      <TocEntry
+        Title="Configure the Built In Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Configure the Built In Fields.htm#_Toc500234089" />
+      <TocEntry
+        Title="Configure the Custom Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Configure the Custom Fields.htm#_Toc500234090" />
+      <TocEntry
+        Title="Define Relation Types"
+        Link="/Content/Platform/RCM/RCM Implement/Define Relation Types.htm#_Toc500234091" />
+    </TocEntry>
+    <TocEntry
+      Title="Define the Relation Attributes for the Alert Type"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Relation Attributes.htm#_Toc500234092">
+      <TocEntry
+        Title="Configure the Target Fields Table"
+        Link="/Content/Platform/RCM/RCM Implement/Configure the Target Fields.htm#_Toc500234093" />
+      <TocEntry
+        Title="Configure a Target Field"
+        Link="/Content/Platform/RCM/RCM Implement/Configure a Target Field.htm#_Toc500234094">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Fill in Expressions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Methods for TWI Fields with.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Configuring Consolidation Criteria"
+      Link="/Content/Platform/RCM/RCM Implement/Configuring Consolidation.htm#_Toc500234095">
+      <TocEntry
+        Title="Default Sort"
+        Link="/Content/Platform/RCM/RCM Implement/Default Sort_1.htm#_Toc500234096" />
+      <TocEntry
+        Title="Filter"
+        Link="/Content/Platform/RCM/RCM Implement/Filter_1.htm#_Toc500234097">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Fields Filtering_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="CWI Web Services"
+      Link="/Content/Platform/RCM/RCM Implement/CWI Web Services.htm#_Toc500234098"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="The Work Items/Alerts Widget"
+    Link="/Content/Platform/RCM/RCM Implement/The Work Items Alerts Widget.htm#_Toc500234101"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Work Items Widget"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the Work Items.htm#_Toc500234102"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Widget view vs. Regular view"
+      Link="/Content/Platform/RCM/RCM Implement/Widget view vs Regular view.htm#_Toc500234103" />
+    <TocEntry
+      Title="Search Options"
+      Link="/Content/Platform/RCM/RCM Implement/Search Options.htm#_Toc500234104" />
+    <TocEntry
+      Title="Actions of Widget"
+      Link="/Content/Platform/RCM/RCM Implement/Actions of Widget.htm#_Toc500234105" />
+    <TocEntry
+      Title="The Widget Display"
+      Link="/Content/Platform/RCM/RCM Implement/The Widget Display.htm#_Toc500234106" />
+    <TocEntry
+      Title="Overview of Widget Creation"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Widget Creation.htm#_Toc500234107"></TocEntry>
+    <TocEntry
+      Title="The JavaScript API"
+      Link="/Content/Platform/RCM/RCM Implement/The JavaScript API.htm#_Toc500234110">
+      <TocEntry
+        Title="WorkItemsWidget(widgetId, htmlContainerId, optionalParams)"
+        Link="/Content/Platform/RCM/RCM Implement/WorkItemsWidget widgetId htmlContainerId.htm#_Toc500234111" />
+      <TocEntry
+        Title="getSelectedIdentifiers"
+        Link="/Content/Platform/RCM/RCM Implement/getSelectedIdentifiers.htm#_Toc500234112" />
+      <TocEntry
+        Title="draw"
+        Link="/Content/Platform/RCM/RCM Implement/draw.htm#_Toc500234113" />
+      <TocEntry
+        Title="isReady"
+        Link="/Content/Platform/RCM/RCM Implement/isReady.htm#_Toc500234114" />
+      <TocEntry
+        Title="refresh"
+        Link="/Content/Platform/RCM/RCM Implement/refresh.htm#_Toc500234115" />
+      <TocEntry
+        Title="reset"
+        Link="/Content/Platform/RCM/RCM Implement/reset.htm#_Toc500234116" />
+      <TocEntry
+        Title="getId"
+        Link="/Content/Platform/RCM/RCM Implement/getId.htm#_Toc500234117" />
+      <TocEntry
+        Title="getContainerId"
+        Link="/Content/Platform/RCM/RCM Implement/getContainerId.htm#_Toc500234118" />
+      <TocEntry
+        Title="getType"
+        Link="/Content/Platform/RCM/RCM Implement/getType.htm#_Toc500234119" />
+      <TocEntry
+        Title="getSelectionCount"
+        Link="/Content/Platform/RCM/RCM Implement/getSelectionCount.htm#_Toc500234120" />
+      <TocEntry
+        Title="RCMAPI.RelatedWorkItemsWidget(widgetId, htmlContainerId, optionalParams)"
+        Link="/Content/Platform/RCM/RCM Implement/RCMAPI RelatedWorkItemsWidget.htm#_Toc500234121" />
+      <TocEntry
+        Title="Full API Call Example"
+        Link="/Content/Platform/RCM/RCM Implement/Full API Call Example.htm#_Toc500234122" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Setting Up the Get Next Feature"
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up the Get Next Feature.htm#_Toc500234123"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the GetNext Setup"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the GetNext Setup.htm#_Toc500234124"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Create the JavaScript API"
+      Link="/Content/Platform/RCM/RCM Implement/Create the JavaScript API.htm#_Toc500234125">
+      <TocEntry
+        Title="activeItemsViewIdentifier Parameter"
+        Link="/Content/Platform/RCM/RCM Implement/activeItemsViewIdentifier.htm#_Toc500234126" />
+      <TocEntry
+        Title="maxNumberOfActiveItems Parameter"
+        Link="/Content/Platform/RCM/RCM Implement/maxNumberOfActiveItems Parameter.htm#_Toc500234127" />
+      <TocEntry
+        Title="assignableItemsDDQIdentifier Parameter"
+        Link="/Content/Platform/RCM/RCM Implement/assignableItemsDDQIdentifier.htm#_Toc500234128" />
+      <TocEntry
+        Title="assignTarget Parameter"
+        Link="/Content/Platform/RCM/RCM Implement/assignTarget Parameter.htm#_Toc500234129" />
+      <TocEntry
+        Title="Parameters of the Optional Grouping Method"
+        Link="/Content/Platform/RCM/RCM Implement/Parameters of the Optional.htm#_Toc500234130" />
+    </TocEntry>
+    <TocEntry
+      Title="Changing the Values of the DDQs in the RCM"
+      Link="/Content/Platform/RCM/RCM Implement/Changing the Values of the.htm#_Toc500234131" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting Up Cases"
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up Cases.htm#_Toc500234132"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Cases Setup"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Cases Setup.htm#_Toc500234133"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="Cases Configuration"
+        Link="/Content/Platform/RCM/RCM Implement/Cases Configuration.htm#_Toc500234134" />
+      <TocEntry
+        Title="Cases Steps"
+        Link="/Content/Platform/RCM/RCM Implement/Cases Steps.htm#_Toc500234135" />
+      <TocEntry
+        Title="Predefined Notes"
+        Link="/Content/Platform/RCM/RCM Implement/Predefined Notes.htm#_Toc500234136" />
+      <TocEntry
+        Title="Cases Fields - Built In Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Cases Fields Built In Fields.htm#_Toc500234137" />
+      <TocEntry
+        Title="Cases Fields - Custom Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Cases Fields Custom Fields.htm#_Toc500234138" />
+      <TocEntry
+        Title="Cases Views Sorting"
+        Link="/Content/Platform/RCM/RCM Implement/Cases Views Sorting.htm#_Toc500234139" />
+    </TocEntry>
+    <TocEntry
+      Title="Set up Case Types – RCM Designer"
+      Link="/Content/Platform/RCM/RCM Implement/Set up Case Types RCM Designer.htm#_Toc500234140">
+      <TocEntry
+        Title="Access the Case Types Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Case Types Options.htm#_Toc500234141" />
+      <TocEntry
+        Title="Create a New Case Type and Assigning General Information"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Case Type and.htm#_Toc500234142" />
+      <TocEntry
+        Title="Add Custom Fields to the Case Type"
+        Link="/Content/Platform/RCM/RCM Implement/Add Custom Fields to the Case.htm#_Toc500234143" />
+      <TocEntry
+        Title="Design the Layout of the Case Type"
+        Link="/Content/Platform/RCM/RCM Implement/Design the Layout of the Case.htm#_Toc500234144" />
+      <TocEntry
+        Title="Assign Predefined Notes"
+        Link="/Content/Platform/RCM/RCM Implement/Assign Predefined Notes_1.htm#_Toc500234145"></TocEntry>
+      <TocEntry
+        Title="Assign Steps"
+        Link="/Content/Platform/RCM/RCM Implement/Assign Steps_1.htm#_Toc500234146"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Set Up Step Workflows for Cases"
+      Link="/Content/Platform/RCM/RCM Implement/Set Up Step Workflows for.htm#_Toc500234147">
+      <TocEntry
+        Title="Access the Step Workflows Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Step Workflows.htm#_Toc500234148" />
+      <TocEntry
+        Title="Create a New Case Workflow and Assigning General Information"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Case Workflow.htm#_Toc500234149" />
+      <TocEntry
+        Title="Add Steps to the Workflow"
+        Link="/Content/Platform/RCM/RCM Implement/Add Steps to the Workflow_1.htm#_Toc500234150">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Workflow Toolbar_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Define the Type of Step.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Add Deadline Parameters to_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Create a Checklist for the_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Create a List of Restricted_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Link the Step Nodes_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Create the Entire Workflow"
+        Link="/Content/Platform/RCM/RCM Implement/Create the Entire Workflow_1.htm#_Toc500234151" />
+      <TocEntry
+        Title="Use the Workflow Asynch Execution Tool"
+        Link="/Content/Platform/RCM/RCM Implement/Use the Workflow Asynch Execution_1.htm#_Toc500234152">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Parameters of the Tool_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/SMTP Parameters_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Use the RCM Scheduler for Workflow Deadlines Jobs"
+        Link="/Content/Platform/RCM/RCM Implement/Use the RCM Scheduler for_1.htm#_Toc500234153" />
+    </TocEntry>
+    <TocEntry
+      Title="Set up Case Views"
+      Link="/Content/Platform/RCM/RCM Implement/Set up Case Views.htm#_Toc500234154">
+      <TocEntry
+        Title="Access the Case Views Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Case Views Options.htm#_Toc500234155" />
+      <TocEntry
+        Title="Create a New Case View and Assigning General Information"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Case View and.htm#_Toc500234156" />
+      <TocEntry
+        Title="Configure the Fields of the View"
+        Link="/Content/Platform/RCM/RCM Implement/Configure the Fields of the_1.htm#_Toc500234157">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/View Field Properties_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/View Properties for Field_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Default Sort"
+        Link="/Content/Platform/RCM/RCM Implement/Default Sort_2.htm#_Toc500234158" />
+      <TocEntry
+        Title="Filter"
+        Link="/Content/Platform/RCM/RCM Implement/Filter_2.htm#_Toc500234159" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Defining Work Items/Alerts and Case Business Types"
+    Link="/Content/Platform/RCM/RCM Implement/Defining Work Items Alerts.htm#_Toc500234160"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of General Configuration"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of General Configuration.htm#_Toc500234161"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Access General Configuration"
+      Link="/Content/Platform/RCM/RCM Implement/Access General Configuration.htm#_Toc500234162" />
+    <TocEntry
+      Title="Business Types"
+      Link="/Content/Platform/RCM/RCM Implement/Business Types.htm#_Toc500234163" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Report Definitions"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Report Definitions.htm#_Toc500234164"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Report Definition Setup"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Report Definition.htm#_Toc500234165"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Using the RCM Designer to Setup Report Definitions for RCM"
+      Link="/Content/Platform/RCM/RCM Implement/Using the RCM Designer to.htm#_Toc500234166">
+      <TocEntry
+        Title="Access the Report Definition Options"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Report Definition.htm#_Toc500234167" />
+      <TocEntry
+        Title="Create RCM Report Display Categories"
+        Link="/Content/Platform/RCM/RCM Implement/Create RCM Report Display.htm#_Toc500234168" />
+      <TocEntry
+        Title="Define a new Report Definition – Adding General Information"
+        Link="/Content/Platform/RCM/RCM Implement/Define a new Report Definition.htm#_Toc500234169" />
+      <TocEntry
+        Title="Select Report Provider File Data and Uploading the Report Files"
+        Link="/Content/Platform/RCM/RCM Implement/Select Report Provider File.htm#_Toc500234170">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/JReport as Report Provider.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/External URL.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Report Parameters"
+        Link="/Content/Platform/RCM/RCM Implement/Report Parameters.htm#_Toc500234171">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Default Values.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/System Values.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Mapping Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Set up New Report Policies"
+      Link="/Content/Platform/RCM/RCM Implement/Set up New Report Policies.htm#_Toc500234172">
+      <TocEntry
+        Title="Access the Policies Window and Creating / Editing a Policy"
+        Link="/Content/Platform/RCM/RCM Implement/Access the Policies Window.htm#_Toc500234174" />
+      <TocEntry
+        Title="Assign a Name and Description"
+        Link="/Content/Platform/RCM/RCM Implement/Assign a Name and Description.htm#_Toc500234175" />
+      <TocEntry
+        Title="Set up Sign-off Policy"
+        Link="/Content/Platform/RCM/RCM Implement/Set up Sign off Policy.htm#_Toc500234176" />
+      <TocEntry
+        Title="Set up Notes Policy"
+        Link="/Content/Platform/RCM/RCM Implement/Set up Notes Policy.htm#_Toc500234177" />
+      <TocEntry
+        Title="Set up Materialization Policy"
+        Link="/Content/Platform/RCM/RCM Implement/Set up Materialization Policy.htm#_Toc500234178" />
+      <TocEntry
+        Title="Set up Archive Policy"
+        Link="/Content/Platform/RCM/RCM Implement/Set up Archive Policy.htm#_Toc500234179" />
+      <TocEntry
+        Title="Set up Purge Policy"
+        Link="/Content/Platform/RCM/RCM Implement/Set up Purge Policy.htm#_Toc500234180" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Customizing Report Module Display – Manual Customization"
+    Link="/Content/Platform/RCM/RCM Implement/Customizing Report Module.htm#_Toc500234181"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Report Module Display -Table Description"
+      Link="/Content/Platform/RCM/RCM Implement/Table description.htm#_Toc500234183" />
+    <TocEntry
+      Title="Table Field Descriptions"
+      Link="/Content/Platform/RCM/RCM Implement/Field Descriptions.htm#_Toc500234184">
+      <TocEntry
+        Title="Display Name"
+        Link="/Content/Platform/RCM/RCM Implement/Display Name.htm#_Toc500234185" />
+      <TocEntry
+        Title="Visibility"
+        Link="/Content/Platform/RCM/RCM Implement/Visibility.htm#_Toc500234186" />
+      <TocEntry
+        Title="Display Order"
+        Link="/Content/Platform/RCM/RCM Implement/Display Order.htm#_Toc500234187" />
+      <TocEntry
+        Title="Sorting Order"
+        Link="/Content/Platform/RCM/RCM Implement/Sorting Order.htm#_Toc500234188" />
+      <TocEntry
+        Title="Sort Direction"
+        Link="/Content/Platform/RCM/RCM Implement/Sort Direction.htm#_Toc500234189" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Platform Lists"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Platform Lists.htm#_Toc500234190"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Platform Lists"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Platform Lists.htm#_Toc500234191"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Access the Platform Lists Options"
+      Link="/Content/Platform/RCM/RCM Implement/Access the Platform Lists.htm#_Toc500234192" />
+    <TocEntry
+      Title="Create a New Platform List"
+      Link="/Content/Platform/RCM/RCM Implement/Create a New Platform List.htm#_Toc500234193">
+      <TocEntry
+        Title="Platform Lists Defined in the RCM"
+        Link="/Content/Platform/RCM/RCM Implement/Platform Lists Defined in.htm#_Toc500234194" />
+      <TocEntry
+        Title="Platform Lists Defined in the AIS"
+        Link="/Content/Platform/RCM/RCM Implement/Platform Lists Defined in_1.htm#_Toc500234195" />
+      <TocEntry
+        Title="Platform List General Tab"
+        Link="/Content/Platform/RCM/RCM Implement/Platform List General Tab.htm#_Toc500234196" />
+      <TocEntry
+        Title="Define Fields of the Platform List"
+        Link="/Content/Platform/RCM/RCM Implement/Define Fields of the Platform.htm#_Toc500234197" />
+      <TocEntry
+        Title="Define Views of the Platform List"
+        Link="/Content/Platform/RCM/RCM Implement/Define Views of the Platform.htm#_Toc500234198">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The General Tab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/View Tab Fields Subtab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Nested Lists Tab.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/View Properties for Field_2.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Related Configuration Parameters"
+        Link="/Content/Platform/RCM/RCM Implement/Related Configuration Parameters.htm#_Toc500234199" />
+    </TocEntry>
+    <TocEntry
+      Title="Link a UDDT to a Platform List Field"
+      Link="/Content/Platform/RCM/RCM Implement/Link a UDDT to a Platform.htm#_Toc500234200" />
+    <TocEntry
+      Title="Link a BU Picker to a Platform List Field"
+      Link="/Content/Platform/RCM/RCM Implement/Link a BU Picker to a Platform.htm#_Toc500234201" />
+    <TocEntry
+      Title="Business Calendar Lists"
+      Link="/Content/Platform/RCM/RCM Implement/Business Calendar Lists.htm#_Toc500234202">
+      <TocEntry
+        Title="Business Calendar Scenarios"
+        Link="/Content/Platform/RCM/RCM Implement/Business Calendar Scenarios.htm#_Toc500234203" />
+      <TocEntry
+        Title="BU and Calendar Associations"
+        Link="/Content/Platform/RCM/RCM Implement/BU Connections.htm#_Toc500234204"></TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Thresholds, Lists and References– Admin Site Settings"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Thresholds Lists.htm#_Toc500234205"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Settings Tab"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the Settings Tab.htm#_Toc500234206"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Define Settings"
+      Link="/Content/Platform/RCM/RCM Implement/Define Settings.htm#_Toc500234207">
+      <TocEntry
+        Title="Settings Table"
+        Link="/Content/Platform/RCM/RCM Implement/Settings Table.htm#_Toc500234208" />
+      <TocEntry
+        Title="Setting Actions"
+        Link="/Content/Platform/RCM/RCM Implement/Setting Actions.htm#_Toc500234209" />
+    </TocEntry>
+    <TocEntry
+      Title="Advanced Settings"
+      Link="/Content/Platform/RCM/RCM Implement/Advanced Settings.htm#_Toc500234210" />
+    <TocEntry
+      Title="Define Conditional Settings"
+      Link="/Content/Platform/RCM/RCM Implement/Define Conditional Settings.htm#_Toc500234211">
+      <TocEntry
+        Title="Conditional Setting Actions"
+        Link="/Content/Platform/RCM/RCM Implement/Conditional Setting Actions.htm#_Toc500234212" />
+    </TocEntry>
+    <TocEntry
+      Title="Link a UDDT to Settings"
+      Link="/Content/Platform/RCM/RCM Implement/Link a UDDT to Settings.htm#_Toc500234213" />
+    <TocEntry
+      Title="Set Up User Defined Data Types (UDDT) in the Database"
+      Link="/Content/Platform/RCM/RCM Implement/Set Up User Defined Data Types.htm#_Toc500234214">
+      <TocEntry
+        Title="Filter via a Parameter"
+        Link="/Content/Platform/RCM/RCM Implement/Filter via a Parameter.htm#_Toc500234215" />
+      <TocEntry
+        Title="DDQ Picker Best Practices"
+        Link="/Content/Platform/RCM/RCM Implement/DDQ Picker Best Practices.htm#_Toc500234216" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Setting and Platform Lists Navigation Trees"
+    Link="/Content/Platform/RCM/RCM Implement/Setting and Platform Lists.htm#_Toc500234217"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Settings Navigation"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Settings Navigation.htm#_Toc500234218" />
+    <TocEntry
+      Title="Access the Setting Navigation Trees Options"
+      Link="/Content/Platform/RCM/RCM Implement/Access the Setting Navigation.htm#_Toc500234219" />
+    <TocEntry
+      Title="Create a New Navigation Tree and Assigning General Information"
+      Link="/Content/Platform/RCM/RCM Implement/Create a New Navigation Tree.htm#_Toc500234220">
+      <TocEntry
+        Title="Create the Tree Structure"
+        Link="/Content/Platform/RCM/RCM Implement/Create the Tree Structure.htm#_Toc500234221">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Setting Navigation Tree.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Platform Lists and Setting Properties"
+      Link="/Content/Platform/RCM/RCM Implement/Platform Lists and Setting.htm#_Toc500234222" />
+    <TocEntry
+      Title="Fields Filter Tab"
+      Link="/Content/Platform/RCM/RCM Implement/Fields Filter Tab.htm#_Toc500234223" />
+    <TocEntry
+      Title="Fields Settings Tab"
+      Link="/Content/Platform/RCM/RCM Implement/Fields Settings Tab.htm#_Toc500234224" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Tuning Contexts"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Tuning Contexts.htm#_Toc500234225"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Tuning Contexts"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Tuning Contexts.htm#_Toc500234226"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Access the Tuning Contexts Options"
+      Link="/Content/Platform/RCM/RCM Implement/Access the Tuning Contexts.htm#_Toc500234227" />
+    <TocEntry
+      Title="Create a New Tuning Context and Assigning General Information"
+      Link="/Content/Platform/RCM/RCM Implement/Create a New Tuning Context.htm#_Toc500234228" />
+    <TocEntry
+      Title="Define the Execution Settings in the Execution Tab"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Execution Settings.htm#_Toc500234229" />
+    <TocEntry
+      Title="Add VTL Definitions"
+      Link="/Content/Platform/RCM/RCM Implement/Add VTL Definitions.htm#_Toc500234230" />
+    <TocEntry
+      Title="Related Configuration Parameters"
+      Link="/Content/Platform/RCM/RCM Implement/Related Configuration Parameters_1.htm#_Toc500234231" />
+    <TocEntry
+      Title="Related Tuning API"
+      Link="/Content/Platform/RCM/RCM Implement/Related API.htm#_Toc500234232"></TocEntry>
+    <TocEntry
+      Title="Permissions"
+      Link="/Content/Platform/RCM/RCM Implement/Permissions.htm#_Toc500234234" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Drill-Down Queries"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Drill Down Queries.htm#_Toc500234235"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Drill-Down Query Setup"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Drill Down Query.htm#_Toc500234236"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Access the Queries Options"
+      Link="/Content/Platform/RCM/RCM Implement/Access the Queries Options.htm#_Toc500234237" />
+    <TocEntry
+      Title="Create a New Query and Assigning General Information"
+      Link="/Content/Platform/RCM/RCM Implement/Create a New Query and Assigning.htm#_Toc500234238" />
+    <TocEntry
+      Title="Define the Query"
+      Link="/Content/Platform/RCM/RCM Implement/Define the Query.htm#_Toc500234239" />
+    <TocEntry
+      Title="Set up Query Results Display"
+      Link="/Content/Platform/RCM/RCM Implement/Set up Query Results Display.htm#_Toc500234240">
+      <TocEntry
+        Title="Append a Tag to a DDQ Column (Optional)"
+        Link="/Content/Platform/RCM/RCM Implement/Append a Tag to a DDQ Column.htm#_Toc500234241" />
+    </TocEntry>
+    <TocEntry
+      Title="Complete Setup for a Drill-Down Query"
+      Link="/Content/Platform/RCM/RCM Implement/Complete Setup for a Drill.htm#_Toc500234242" />
+    <TocEntry
+      Title="Add the Logged-in User Parameters to the DDQ"
+      Link="/Content/Platform/RCM/RCM Implement/Add the Logged in User Parameters.htm#_Toc500234243" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting Up DART Views"
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up DART Views.htm#_Toc500234244"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="DART Views Overview"
+      Link="/Content/Platform/RCM/RCM Implement/DART Views Overview.htm#_Toc500234245" />
+  </TocEntry>
+  <TocEntry
+    Title="The Records Widget"
+    Link="/Content/Platform/RCM/RCM Implement/The Records Widget.htm#_Toc500234246"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Records Widget vs. DART Feature"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Records Widget.htm#_Toc500234247"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="Actions of Widget"
+        Link="/Content/Platform/RCM/RCM Implement/Actions of Widget_1.htm#_Toc500234248" />
+      <TocEntry
+        Title="The Filter Section"
+        Link="/Content/Platform/RCM/RCM Implement/The Filter Section.htm#_Toc500234249" />
+      <TocEntry
+        Title="The Widget Display"
+        Link="/Content/Platform/RCM/RCM Implement/The Widget Display_1.htm#_Toc500234250" />
+    </TocEntry>
+    <TocEntry
+      Title="Overview of Records Widget Creation"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Records Widget_1.htm#_Toc500234251">
+      <TocEntry
+        Title="Create the XSL File"
+        Link="/Content/Platform/RCM/RCM Implement/Create the XSL File_1.htm#_Toc500234252" />
+      <TocEntry
+        Title="Create Condition Display Modes"
+        Link="/Content/Platform/RCM/RCM Implement/Create Condition Display Modes.htm#_Toc500234253" />
+      <TocEntry
+        Title="Define Maximum Widgets per Session"
+        Link="/Content/Platform/RCM/RCM Implement/Define Maximum Widgets per_1.htm#_Toc500234254" />
+      <TocEntry
+        Title="Update Roles"
+        Link="/Content/Platform/RCM/RCM Implement/Update Roles.htm#_Toc500234255" />
+      <TocEntry
+        Title="Create Layout Conditions (Optional)"
+        Link="/Content/Platform/RCM/RCM Implement/Create Layout Conditions Optional.htm#_Toc500234256">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Condition Syntax.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Designing the Layout.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Records Widget APIs"
+    Link="/Content/Platform/RCM/RCM Implement/Records Widget APIs.htm#_Toc500234257"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Records Widget API"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the Records Widget.htm#_Toc500234258"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="The XSL API"
+      Link="/Content/Platform/RCM/RCM Implement/The XSL API.htm#_Toc500234259">
+      <TocEntry
+        Title="The function call syntax"
+        Link="/Content/Platform/RCM/RCM Implement/The function call syntax.htm#_Toc500234261" />
+      <TocEntry
+        Title="The Optional Parameters Variable"
+        Link="/Content/Platform/RCM/RCM Implement/The Optional Parameters Variable.htm#_Toc500234262">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Validation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Optional Parameters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Optional parameter Variable.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="The PDF Parameters Variable"
+        Link="/Content/Platform/RCM/RCM Implement/The PDF Parameters Variable.htm#_Toc500234263" />
+      <TocEntry
+        Title="Namespace Definition Syntax"
+        Link="/Content/Platform/RCM/RCM Implement/Namespace definition syntax.htm#_Toc500234264" />
+      <TocEntry
+        Title="A Sample XSL Page Structure"
+        Link="/Content/Platform/RCM/RCM Implement/A sample XSL page structure.htm#_Toc500234265" />
+    </TocEntry>
+    <TocEntry
+      Title="The JavaScript API"
+      Link="/Content/Platform/RCM/RCM Implement/The JavaScript API_1.htm#_Toc500234266">
+      <TocEntry
+        Title="WidgetsManager"
+        Link="/Content/Platform/RCM/RCM Implement/WidgetsManager.htm#_Toc500234268">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getWidgetById widgetId.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/containsWidgetId widgetId.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getWidgetsCount.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getLastActionWidget.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getWidgetsArray.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="DartWidget"
+        Link="/Content/Platform/RCM/RCM Implement/DartWidget.htm#_Toc500234269">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getSelectedIdentifiers_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/draw_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/isReady_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/refresh_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/reset_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getId_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getContainerId_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/runQuery.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getType_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/getSelectionCount_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Insert the Records Widget into the Dashboard"
+      Link="/Content/Platform/RCM/RCM Implement/Insert the Records Widget.htm#_Toc500234270"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Recursive Records Widget"
+    Link="/Content/Platform/RCM/RCM Implement/Recursive Records Widget.htm#_Toc500234272"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Recursive Records Widget"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the Recursive.htm#_Toc500234273"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Metadata Definition"
+      Link="/Content/Platform/RCM/RCM Implement/Metadata Definition.htm#_Toc500234274">
+      <TocEntry
+        Title="Group Definition"
+        Link="/Content/Platform/RCM/RCM Implement/Group Definition.htm#_Toc500234275" />
+    </TocEntry>
+    <TocEntry
+      Title="Widget Display"
+      Link="/Content/Platform/RCM/RCM Implement/Widget Display.htm#_Toc500234276" />
+    <TocEntry
+      Title="API Details"
+      Link="/Content/Platform/RCM/RCM Implement/API Details.htm#_Toc500234277">
+      <TocEntry
+        Title="The XSL API"
+        Link="/Content/Platform/RCM/RCM Implement/The XSL API_1.htm#_Toc500234278">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Optional Parameters_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/PDF Parameters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Maximum Nesting Level.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Managing Connections - Admin Site Connections Tab"
+    Link="/Content/Platform/RCM/RCM Implement/Managing Connections Admin.htm#_Toc500234279"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Managing Connections"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Managing Connections.htm#_Toc500234280"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Manage DBCP Connections"
+      Link="/Content/Platform/RCM/RCM Implement/Manage DBCP Connections.htm#_Toc500234281" />
+    <TocEntry
+      Title="Managing JNDI Connections"
+      Link="/Content/Platform/RCM/RCM Implement/Managing JNDI Connections.htm#_Toc500234282" />
+    <TocEntry
+      Title="Connection Activity Bar"
+      Link="/Content/Platform/RCM/RCM Implement/Connection Activity Bar.htm#_Toc500234283" />
+    <TocEntry
+      Title="Create/Edit a DBCP Connection"
+      Link="/Content/Platform/RCM/RCM Implement/Create Edit a DBCP Connection.htm#_Toc500234284">
+      <TocEntry
+        Title="Create a New Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Connection.htm#_Toc500234285" />
+      <TocEntry
+        Title="Edit a Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Edit a Connection.htm#_Toc500234286" />
+    </TocEntry>
+    <TocEntry
+      Title="Create/Edit a JNDI Connection"
+      Link="/Content/Platform/RCM/RCM Implement/Create Edit a JNDI Connection.htm#_Toc500234287">
+      <TocEntry
+        Title="Create a New Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Connection_1.htm#_Toc500234288" />
+      <TocEntry
+        Title="Edit a Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Edit a Connection_1.htm#_Toc500234289" />
+    </TocEntry>
+    <TocEntry
+      Title="Test the Connection"
+      Link="/Content/Platform/RCM/RCM Implement/Test the Connection.htm#_Toc500234290" />
+    <TocEntry
+      Title="Create RCM Connections in a Multi-Tenant Environment"
+      Link="/Content/Platform/RCM/RCM Implement/Create RCM Connections in.htm#_Toc500234291">
+      <TocEntry
+        Title="Create a Virtual Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Virtual Connection.htm#_Toc500234292" />
+      <TocEntry
+        Title="Create a Tenant Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Tenant Connection.htm#_Toc500234293" />
+      <TocEntry
+        Title="Set up DDQs for a Multi-Tenant Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Set up DDQs for a Multi Tenant.htm#_Toc500234294" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Managing AIS Connections - Admin Site AIS Connection Tab"
+    Link="/Content/Platform/RCM/RCM Implement/Managing AIS Connections Admin.htm#_Toc500234295"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Managing AIS Connections"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Managing AIS Connections.htm#_Toc500234296"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Connection Activity Bar"
+      Link="/Content/Platform/RCM/RCM Implement/Connection Activity Bar_1.htm#_Toc500234297" />
+    <TocEntry
+      Title="Create/Edit an AIS Connection"
+      Link="/Content/Platform/RCM/RCM Implement/Create Edit an AIS Connection.htm#_Toc500234298">
+      <TocEntry
+        Title="Create a New Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Connection_2.htm#_Toc500234299" />
+      <TocEntry
+        Title="Edit a Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Edit a Connection_2.htm#_Toc500234300" />
+      <TocEntry
+        Title="Test the Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Test the Connection_1.htm#_Toc500234301" />
+    </TocEntry>
+    <TocEntry
+      Title="Create AIS Connections in a Multi-Tenant Environment"
+      Link="/Content/Platform/RCM/RCM Implement/Create AIS Connections in.htm#_Toc500234302">
+      <TocEntry
+        Title="Create a Virtual Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Virtual Connection_1.htm#_Toc500234303" />
+      <TocEntry
+        Title="Create a Tenant Connection"
+        Link="/Content/Platform/RCM/RCM Implement/Create a Tenant Connection_1.htm#_Toc500234304" />
+      <TocEntry
+        Title="Export and Import Virtual Connections"
+        Link="/Content/Platform/RCM/RCM Implement/Export and Import Virtual.htm#_Toc500234305">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Export.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Import Selective.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Import Override.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Import strict permissive.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Remove an AIS Connection"
+      Link="/Content/Platform/RCM/RCM Implement/Remove an AIS Connection.htm#_Toc500234306" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuring RCM Parameters– Admin Site Config Parameters Tab and the acm.ini File"
+    Link="/Content/Platform/RCM/RCM Implement/Configuring RCM Parameters.htm#_Toc500234307"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of RCM Parameter Configuration"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of RCM Parameter.htm#_Toc500234308"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Modify Parameters in Admin Site"
+      Link="/Content/Platform/RCM/RCM Implement/Modify Parameters in Admin.htm#_Toc500234309">
+      <TocEntry
+        Title="Edit Guidelines"
+        Link="/Content/Platform/RCM/RCM Implement/Edit Guidelines.htm#_Toc500234310" />
+      <TocEntry
+        Title="Parameter Descriptions"
+        Link="/Content/Platform/RCM/RCM Implement/Parameter Descriptions.htm#_Toc500234311"
+        BreakType="pageLayout"
+        PageType="continue"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/LandScape.flpgl"
+        ReplaceMergeNode="false" />
+    </TocEntry>
+    <TocEntry
+      Title="acm.ini Parameters"
+      Link="/Content/Platform/RCM/RCM Implement/acm ini Parameters.htm#_Toc500234312">
+      <TocEntry
+        Title="Mandatory Parameters"
+        Link="/Content/Platform/RCM/RCM Implement/Mandatory Parameters.htm#_Toc500234313">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/DB Connection Properties for.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Optional Parameters"
+        Link="/Content/Platform/RCM/RCM Implement/Optional Parameters_2.htm#_Toc500234314">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/License File Location.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/DBCP Performance Related Parameters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Abandoned Connections Related.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/log4j File Location.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/JBoss Related Parameter.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Session timeout.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Parameters Related to Setting up the Distributed Cache"
+      Link="/Content/Platform/RCM/RCM Implement/Parameters Related to Setting.htm#_Toc500234315" />
+  </TocEntry>
+  <TocEntry
+    Title="Migration"
+    Link="/Content/Platform/RCM/RCM Implement/Migration.htm#_Toc500234316"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Migration"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Migration.htm#_Toc500234317"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Export RCM Objects"
+      Link="/Content/Platform/RCM/RCM Implement/Export RCM Objects.htm#_Toc500234318">
+      <TocEntry
+        Title="Move Objects for Export"
+        Link="/Content/Platform/RCM/RCM Implement/Move Objects for Export.htm#_Toc500234319" />
+      <TocEntry
+        Title="Export Dependent Objects"
+        Link="/Content/Platform/RCM/RCM Implement/Export Dependent Objects.htm#_Toc500234320">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Selecting Users Groups.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Saving the Selection for Export.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Export File Path"
+        Link="/Content/Platform/RCM/RCM Implement/Export File Path.htm#_Toc500234321" />
+      <TocEntry
+        Title="Confirm Export Settings &amp; Exporting the Objects"
+        Link="/Content/Platform/RCM/RCM Implement/Confirm Export Settings Exporting.htm#_Toc500234322" />
+    </TocEntry>
+    <TocEntry
+      Title="Import RCM Objects"
+      Link="/Content/Platform/RCM/RCM Implement/Import RCM Objects.htm#_Toc500234323">
+      <TocEntry
+        Title="Full Import"
+        Link="/Content/Platform/RCM/RCM Implement/Full Import.htm#_Toc500234324">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Selecting Import Policies.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Testing Package and Importing_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Partial Import"
+        Link="/Content/Platform/RCM/RCM Implement/Partial Import.htm#_Toc500234325">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Selecting Import Policies_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Select Objects.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Testing Package and Importing_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="APF Comparer Tool"
+      Link="/Content/Platform/RCM/RCM Implement/APF Comparer Tool.htm#_Toc500234326" />
+  </TocEntry>
+  <TocEntry
+    Title="Setting Up Languages and Spellchecker"
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up Languages and Spellchecker.htm#_Toc500234327"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Languages Setup"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Languages Setup.htm#_Toc500234328"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="The Administration Pane"
+        Link="/Content/Platform/RCM/RCM Implement/The Administration Pane.htm#_Toc500234329">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Languages Tab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="The Base Language Page"
+      Link="/Content/Platform/RCM/RCM Implement/The Base Language Page.htm#_Toc500234330" />
+    <TocEntry
+      Title="The Base Language Translation Tab"
+      Link="/Content/Platform/RCM/RCM Implement/The Base Language Translation.htm#_Toc500234331">
+      <TocEntry
+        Title="The Base Language Translation Toolbar"
+        Link="/Content/Platform/RCM/RCM Implement/The Base Language Translation_1.htm#_Toc500234332">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Language Information Bar.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Translation Tab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Sorting Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Grouping by columns.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The Find Utility.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Add Meta Data Resource Strings"
+        Link="/Content/Platform/RCM/RCM Implement/Add Meta Data Resource Strings.htm#_Toc500234333" />
+      <TocEntry
+        Title="Remove Meta Data Resource Strings"
+        Link="/Content/Platform/RCM/RCM Implement/Remove Meta Data Resource.htm#_Toc500234334" />
+      <TocEntry
+        Title="Related Base Language Utilities"
+        Link="/Content/Platform/RCM/RCM Implement/Related Base Language Utilities.htm#_Toc500234335" />
+      <TocEntry
+        Title="Add a New Custom String"
+        Link="/Content/Platform/RCM/RCM Implement/Add a New Custom String.htm#_Toc500234336">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Format Custom Field Values.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Create New Language Settings"
+      Link="/Content/Platform/RCM/RCM Implement/Create New Language Settings.htm#_Toc500234337">
+      <TocEntry
+        Title="Create a New Language and Assigning General Information"
+        Link="/Content/Platform/RCM/RCM Implement/Create a New Language and.htm#_Toc500234338"></TocEntry>
+      <TocEntry
+        Title="The New Language Translation Tab"
+        Link="/Content/Platform/RCM/RCM Implement/The New Language Translation.htm#_Toc500234339">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/The New Language Translation_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Sorting Options_1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Define a Language as the Current RCM Language"
+      Link="/Content/Platform/RCM/RCM Implement/Define a Language as the Current.htm#_Toc500234340" />
+    <TocEntry
+      Title="Translation Example"
+      Link="/Content/Platform/RCM/RCM Implement/Translation Example.htm#_Toc500234341" />
+    <TocEntry
+      Title="Define a Language per Group and User"
+      Link="/Content/Platform/RCM/RCM Implement/Define a Language per Group.htm#_Toc500234342">
+      <TocEntry
+        Title="Language Hierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/Language Hierarchy.htm#_Toc500234343" />
+      <TocEntry
+        Title="Define the Language per Group"
+        Link="/Content/Platform/RCM/RCM Implement/Define the Language per Group.htm#_Toc500234344" />
+      <TocEntry
+        Title="Define the Language per User"
+        Link="/Content/Platform/RCM/RCM Implement/Define the Language per User.htm#_Toc500234345">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Synchronizing Users Language.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Filter By Limitation for Business Units"
+      Link="/Content/Platform/RCM/RCM Implement/Filter By Limitation for Business.htm#_Toc500234346" />
+    <TocEntry
+      Title="Multiple Language Support for User Defined Custom Fields"
+      Link="/Content/Platform/RCM/RCM Implement/Multiple Language Support.htm#_Toc500234347" />
+    <TocEntry
+      Title="Spellchecking Overview"
+      Link="/Content/Platform/RCM/RCM Implement/Spellchecking Overview.htm#_Toc500234348" />
+  </TocEntry>
+  <TocEntry
+    Title="APIs for the Languages Feature"
+    Link="/Content/Platform/RCM/RCM Implement/APIs for the Languages Feature.htm#_Toc500234349"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of APIs for Languages"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of APIs for Languages.htm#_Toc500234350"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="VTL APIs for Translations"
+      Link="/Content/Platform/RCM/RCM Implement/VTL APIs for Translations.htm#_Toc500234351">
+      <TocEntry
+        Title="Translate by base value and module"
+        Link="/Content/Platform/RCM/RCM Implement/Translate by base value and.htm#_Toc500234353" />
+      <TocEntry
+        Title="Translate by Identifier"
+        Link="/Content/Platform/RCM/RCM Implement/Translate by Identifier.htm#_Toc500234354" />
+      <TocEntry
+        Title="Define the Global Module Name"
+        Link="/Content/Platform/RCM/RCM Implement/Define the Global Module Name.htm#_Toc500234355" />
+      <TocEntry
+        Title="Examples of using the APIs"
+        Link="/Content/Platform/RCM/RCM Implement/Examples of using the APIs.htm#_Toc500234356" />
+    </TocEntry>
+    <TocEntry
+      Title="XSL APIs for Translations"
+      Link="/Content/Platform/RCM/RCM Implement/XSL APIs for Translations.htm#_Toc500234357">
+      <TocEntry
+        Title="Including a Header"
+        Link="/Content/Platform/RCM/RCM Implement/Including a Header.htm#_Toc500234358" />
+      <TocEntry
+        Title="The setModule Tag"
+        Link="/Content/Platform/RCM/RCM Implement/The setModule Tag.htm#_Toc500234359" />
+      <TocEntry
+        Title="t Tag for Translating Values"
+        Link="/Content/Platform/RCM/RCM Implement/t Tag for Translating Values.htm#_Toc500234360">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Using the Parameters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="XSL Translation Examples"
+        Link="/Content/Platform/RCM/RCM Implement/XSL Translation Examples.htm#_Toc500234361" />
+    </TocEntry>
+    <TocEntry
+      Title="Date and Time APIs for Localization"
+      Link="/Content/Platform/RCM/RCM Implement/Date and Time APIs for Localization.htm#_Toc500234362">
+      <TocEntry
+        Title="Overview"
+        Link="/Content/Platform/RCM/RCM Implement/Overview.htm#_Toc500234363" />
+      <TocEntry
+        Title="VTL"
+        Link="/Content/Platform/RCM/RCM Implement/VTL.htm#_Toc500234364" />
+      <TocEntry
+        Title="XSL API"
+        Link="/Content/Platform/RCM/RCM Implement/XSL API.htm#_Toc500234365" />
+      <TocEntry
+        Title="RCM JS API"
+        Link="/Content/Platform/RCM/RCM Implement/RCM JS API.htm#_Toc500234366" />
+      <TocEntry
+        Title="Plugin API"
+        Link="/Content/Platform/RCM/RCM Implement/Plugin API.htm#_Toc500234367" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="The Virtual File System"
+    Link="/Content/Platform/RCM/RCM Implement/The Virtual File Server.htm#_Toc500234368"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Virtual File System"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of the Virtual File.htm#_Toc500234369"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="The RCM Explorer Toolbar"
+      Link="/Content/Platform/RCM/RCM Implement/The RCM Explorer Toolbar.htm#_Toc500234370">
+      <TocEntry
+        Title="The Address Bar"
+        Link="/Content/Platform/RCM/RCM Implement/The Address Bar.htm#_Toc500234371" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Advanced Formatting Options"
+    Link="/Content/Platform/RCM/RCM Implement/Advanced Formatting Options.htm#_Toc500234372"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Number Formatting"
+      Link="/Content/Platform/RCM/RCM Implement/Number Formatting.htm#_Toc500234373"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Date and Time Formatting"
+      Link="/Content/Platform/RCM/RCM Implement/Date and Time Formatting.htm#_Toc500234374">
+      <TocEntry
+        Title="Date Formatting"
+        Link="/Content/Platform/RCM/RCM Implement/Date Formatting.htm#_Toc500234375" />
+      <TocEntry
+        Title="Time Formatting"
+        Link="/Content/Platform/RCM/RCM Implement/Time Formatting.htm#_Toc500234376" />
+      <TocEntry
+        Title="Quick Filter Guidelines"
+        Link="/Content/Platform/RCM/RCM Implement/Quick Filter Guidelines.htm#_Toc500234377">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/Oracle Date Time Quick Reference.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Platform/RCM/RCM Implement/MS SQL and Sybase Date Time.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Advanced Field Styles"
+    Link="/Content/Platform/RCM/RCM Implement/Advanced Field Styles.htm#_Toc500234378"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Advanced Field Styles"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Advanced Field.htm#_Toc500234379"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Access General Configuration"
+      Link="/Content/Platform/RCM/RCM Implement/Access General Configuration_1.htm#_Toc500234380" />
+    <TocEntry
+      Title="Tag Types"
+      Link="/Content/Platform/RCM/RCM Implement/Tag Types.htm#_Toc500234381">
+      <TocEntry
+        Title="Mapping Tag Types to Alert Types and/or Transaction Types"
+        Link="/Content/Platform/RCM/RCM Implement/Mapping Tag Types to Alert.htm#_Toc500234382" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Customizing the RCM User Interface – Admin Site GUI Tab"
+    Link="/Content/Platform/RCM/RCM Implement/Customizing the RCM User Interface.htm#_Toc500234383"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of RCM Customization"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of RCM Customization.htm#_Toc500234384"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="GUI Actions"
+      Link="/Content/Platform/RCM/RCM Implement/GUI Actions.htm#_Toc500234385" />
+    <TocEntry
+      Title="Create GUI Item"
+      Link="/Content/Platform/RCM/RCM Implement/Create GUI Item.htm#_Toc500234386">
+      <TocEntry
+        Title="Create the Action Group Item Type"
+        Link="/Content/Platform/RCM/RCM Implement/Create the Action Group Item.htm#_Toc500234387" />
+      <TocEntry
+        Title="Create the Action GUI Item Type"
+        Link="/Content/Platform/RCM/RCM Implement/Create the Action GUI Item.htm#_Toc500234388" />
+      <TocEntry
+        Title="Create the Menu Item Type"
+        Link="/Content/Platform/RCM/RCM Implement/Create the Menu Item Type.htm#_Toc500234389" />
+      <TocEntry
+        Title="Select the Parent Item"
+        Link="/Content/Platform/RCM/RCM Implement/Select the Parent Item.htm#_Toc500234390" />
+      <TocEntry
+        Title="Sort the Items"
+        Link="/Content/Platform/RCM/RCM Implement/Sort the Items.htm#_Toc500234391" />
+      <TocEntry
+        Title="Copy to Action"
+        Link="/Content/Platform/RCM/RCM Implement/Copy to Action.htm#_Toc500234392" />
+      <TocEntry
+        Title="Copy to Tool"
+        Link="/Content/Platform/RCM/RCM Implement/Copy to Tool.htm#_Toc500234393" />
+      <TocEntry
+        Title="Edit GUI Item"
+        Link="/Content/Platform/RCM/RCM Implement/Edit GUI Item.htm#_Toc500234394" />
+      <TocEntry
+        Title="Delete GUI Item"
+        Link="/Content/Platform/RCM/RCM Implement/Delete GUI Item.htm#_Toc500234395" />
+    </TocEntry>
+    <TocEntry
+      Title="Grant Permissions to Actions"
+      Link="/Content/Platform/RCM/RCM Implement/Grant Permissions to Actions.htm#_Toc500234396" />
+    <TocEntry
+      Title="Upgrade from Previous Versions"
+      Link="/Content/Platform/RCM/RCM Implement/Upgrade from Previous Versions.htm#_Toc500234397">
+      <TocEntry
+        Title="Upgrade Customized Actions"
+        Link="/Content/Platform/RCM/RCM Implement/Upgrade Customized Actions.htm#_Toc500234398" />
+      <TocEntry
+        Title="Upgrade Tool GUI Items"
+        Link="/Content/Platform/RCM/RCM Implement/Upgrade Tool GUI Items.htm#_Toc500234399" />
+    </TocEntry>
+    <TocEntry
+      Title="Customize Buttons for the Action Toolbar"
+      Link="/Content/Platform/RCM/RCM Implement/Customize Buttons for the.htm#_Toc500234400">
+      <TocEntry
+        Title="Add a Customized Image"
+        Link="/Content/Platform/RCM/RCM Implement/Add a Customized Image.htm#_Toc500234401" />
+      <TocEntry
+        Title="Supported Images"
+        Link="/Content/Platform/RCM/RCM Implement/Supported Images.htm#_Toc500234402" />
+      <TocEntry
+        Title="Add CSS Files"
+        Link="/Content/Platform/RCM/RCM Implement/Add CSS Files.htm#_Toc500234403" />
+      <TocEntry
+        Title="Active and Hover States"
+        Link="/Content/Platform/RCM/RCM Implement/Active and Hover States.htm#_Toc500234404" />
+      <TocEntry
+        Title="Use Sprite Images"
+        Link="/Content/Platform/RCM/RCM Implement/Use Sprite Images.htm#_Toc500234405" />
+    </TocEntry>
+    <TocEntry
+      Title="Customize the Help Link"
+      Link="/Content/Platform/RCM/RCM Implement/Customize the Help Link.htm#_Toc500234406">
+      <TocEntry
+        Title="The [page] Placeholder"
+        Link="/Content/Platform/RCM/RCM Implement/The page Placeholder.htm#_Toc500234407" />
+      <TocEntry
+        Title="The Colon (:) Prefix Placeholder"
+        Link="/Content/Platform/RCM/RCM Implement/The Colon Prefix Placeholder.htm#_Toc500234408" />
+      <TocEntry
+        Title="Examples"
+        Link="/Content/Platform/RCM/RCM Implement/Examples.htm#_Toc500234409" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Platform/RCM/RCM Implement/RCM Implementer 6/Customize the Header.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Global Search Customization and Maintenance"
+    Link="/Content/Platform/RCM/RCM Implement/Global Search Customization.htm#_Toc500234410"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Global Search Customization"
+      Link="/Content/Platform/RCM/RCM Implement/Overview of Global Search.htm#_Toc500234411"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="RCM Designer Related Tasks"
+      Link="/Content/Platform/RCM/RCM Implement/RCM Designer Related Tasks.htm#_Toc500234412">
+      <TocEntry
+        Title="Alert Types"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Types.htm#_Toc500234413" />
+      <TocEntry
+        Title="Alert Custom Fields"
+        Link="/Content/Platform/RCM/RCM Implement/Alert Custom Fields.htm#_Toc500234414" />
+    </TocEntry>
+    <TocEntry
+      Title="The Scheduler"
+      Link="/Content/Platform/RCM/RCM Implement/The Scheduler.htm#_Toc500234415" />
+    <TocEntry
+      Title="Maintenance"
+      Link="/Content/Platform/RCM/RCM Implement/Maintenance.htm#_Toc500234416">
+      <TocEntry
+        Title="Determine Solr Version"
+        Link="/Content/Platform/RCM/RCM Implement/Determine Solr Version.htm#_Toc500234417" />
+      <TocEntry
+        Title="Hot Reloading of Solr"
+        Link="/Content/Platform/RCM/RCM Implement/Hot Reloading of Solr.htm#_Toc500234418" />
+      <TocEntry
+        Title="Delete All Documents in the Index"
+        Link="/Content/Platform/RCM/RCM Implement/Delete All Documents in the.htm#_Toc500234419" />
+      <TocEntry
+        Title="Optimizing the Index"
+        Link="/Content/Platform/RCM/RCM Implement/Optimizing the Index.htm#_Toc500234420" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Setting up Blotters"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up Blotters.htm#_Toc500234421"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="Setting Up Outgoing Form Types"
+    Link="/Content/Platform/RCM/RCM Implement/Setting Up Outgoing Form Types.htm#_Toc500234422"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="Setting up the Dashboard"
+    Link="/Content/Platform/RCM/RCM Implement/Setting up the Dashboard.htm#_Toc500234423"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="RCM Designer Best Practices"
+    Link="/Content/Platform/RCM/RCM Implement/RCM Designer Best Practices.htm#_Toc500234424"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview"
+      Link="/Content/Platform/RCM/RCM Implement/Overview_1.htm#_Toc500234425"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="Out-of-the-Box Best Practices"
+        Link="/Content/Platform/RCM/RCM Implement/Out of the Box Best Practices.htm#_Toc500234426" />
+      <TocEntry
+        Title="Structure of Best Practice"
+        Link="/Content/Platform/RCM/RCM Implement/Structure of Best Practice.htm#_Toc500234427" />
+    </TocEntry>
+    <TocEntry
+      Title="Create Additional Best Practices"
+      Link="/Content/Platform/RCM/RCM Implement/Create Additional Best Practices.htm#_Toc500234428">
+      <TocEntry
+        Title="Configure the JSON File"
+        Link="/Content/Platform/RCM/RCM Implement/Configure the JSON File.htm#_Toc500234429" />
+      <TocEntry
+        Title="Test the Best Practice"
+        Link="/Content/Platform/RCM/RCM Implement/Test the Best Practice.htm#_Toc500234430" />
+      <TocEntry
+        Title="Add the Best Practice"
+        Link="/Content/Platform/RCM/RCM Implement/Add the Best Practice.htm#_Toc500234431" />
+      <TocEntry
+        Title="Example of Configuration for a Best Practice"
+        Link="/Content/Platform/RCM/RCM Implement/Example of Configuration for.htm#_Toc500234432" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="RCM Utilities"
+    Link="/Content/Platform/RCM/RCM Implement/RCM Utilities.htm#_Toc500234433"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="Changing the Message Level for RCM Designer"
+    Link="/Content/Platform/RCM/RCM Implement/Changing the Message Level.htm#_Toc500234434"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="Database Views"
+    Link="/Content/Platform/RCM/RCM Implement/Database Views.htm#_Toc500234435"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Table of DB Views"
+      Link="/Content/Platform/RCM/RCM Implement/Table of DB Views.htm#_Toc500234436"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="RCM Views Details"
+      Link="/Content/Platform/RCM/RCM Implement/RCM Views Details.htm#_Toc500234437">
+      <TocEntry
+        Title="v_acm_activity_notifications"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_activity_notificat.htm#_Toc500234438" />
+      <TocEntry
+        Title="v_acm_admin_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_admin_permissions.htm#_Toc500234439" />
+      <TocEntry
+        Title="v_acm_alert_attachments"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_attachments.htm#_Toc500234440" />
+      <TocEntry
+        Title="v_acm_alert_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_audit.htm#_Toc500234441" />
+      <TocEntry
+        Title="v_acm_alert_audit2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_audit2.htm#_Toc500234442" />
+      <TocEntry
+        Title="v_acm_alert_custom_fields"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_custom_field.htm#_Toc500234443" />
+      <TocEntry
+        Title="v_acm_alert_notes"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_notes.htm#_Toc500234444" />
+      <TocEntry
+        Title="v_acm_alert_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_permissions.htm#_Toc500234445" />
+      <TocEntry
+        Title="v_acm_alert_statuses2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_statuses2.htm#_Toc500234446" />
+      <TocEntry
+        Title="v_acm_alert_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_types.htm#_Toc500234447" />
+      <TocEntry
+        Title="v_acm_alert_types2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_types2.htm#_Toc500234448" />
+      <TocEntry
+        Title="v_acm_alert_xml"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alert_xml.htm#_Toc500234449" />
+      <TocEntry
+        Title="v_acm_alerts2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_alerts2.htm#_Toc500234450" />
+      <TocEntry
+        Title="v_acm_ava_user_items"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_ava_user_items.htm#_Toc500234451" />
+      <TocEntry
+        Title="v_acm_ava_user_view_permission"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_ava_user_view_perm.htm#_Toc500234452" />
+      <TocEntry
+        Title="v_acm_batch_jobs"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_batch_jobs.htm#_Toc500234453" />
+      <TocEntry
+        Title="v_acm_blotter_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_blotter_permission.htm#_Toc500234454" />
+      <TocEntry
+        Title="v_acm_blotter_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_blotter_types.htm#_Toc500234455" />
+      <TocEntry
+        Title="v_acm_blotters"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_blotters.htm#_Toc500234456" />
+      <TocEntry
+        Title="v_acm_bu_attribute_values"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_bu_attribute_value.htm#_Toc500234457" />
+      <TocEntry
+        Title="v_acm_bu_attribute_values2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_bu_attribute_value_1.htm#_Toc500234458" />
+      <TocEntry
+        Title="v_acm_bu_attributes"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_bu_attributes.htm#_Toc500234459" />
+      <TocEntry
+        Title="v_acm_bu_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_bu_audit.htm#_Toc500234460" />
+      <TocEntry
+        Title="v_acm_bu_descendants2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_bu_descendants2.htm#_Toc500234461" />
+      <TocEntry
+        Title="v_acm_business_units2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_business_units2.htm#_Toc500234462" />
+      <TocEntry
+        Title="v_acm_case_alerts"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_alerts.htm#_Toc500234463" />
+      <TocEntry
+        Title="v_acm_case_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_audit.htm#_Toc500234464" />
+      <TocEntry
+        Title="v_acm_case_custom_fields"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_custom_fields.htm#_Toc500234465" />
+      <TocEntry
+        Title="v_acm_case_notes"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_notes.htm#_Toc500234466" />
+      <TocEntry
+        Title="v_acm_case_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_permissions.htm#_Toc500234467" />
+      <TocEntry
+        Title="v_acm_case_priority"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_priority.htm#_Toc500234468" />
+      <TocEntry
+        Title="v_acm_case_statuses"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_statuses.htm#_Toc500234469" />
+      <TocEntry
+        Title="v_acm_case_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_case_types.htm#_Toc500234470" />
+      <TocEntry
+        Title="v_acm_cases"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_cases.htm#_Toc500234471" />
+      <TocEntry
+        Title="v_acm_cond_setting_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_cond_setting_permi.htm#_Toc500234472" />
+      <TocEntry
+        Title="v_acm_config"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_config.htm#_Toc500234473" />
+      <TocEntry
+        Title="v_acm_connections"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_connections.htm#_Toc500234474" />
+      <TocEntry
+        Title="v_acm_dart_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_dart_permissions.htm#_Toc500234475" />
+      <TocEntry
+        Title="v_acm_dashboard_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_dashboard_permissi.htm#_Toc500234476" />
+      <TocEntry
+        Title="v_acm_deployed_rules"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_deployed_rules.htm#_Toc500234477" />
+      <TocEntry
+        Title="v_acm_deployed_rules_actions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_deployed_rules_act.htm#_Toc500234478" />
+      <TocEntry
+        Title="acm_doubt_existing_entities"
+        Link="/Content/Platform/RCM/RCM Implement/acm_doubt_existing_entit.htm#_Toc500234479" />
+      <TocEntry
+        Title="v_acm_drill_down_queries"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_drill_down_queries.htm#_Toc500234480" />
+      <TocEntry
+        Title="v_acm_form_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_form_permissions.htm#_Toc500234481" />
+      <TocEntry
+        Title="v_acm_form_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_form_types.htm#_Toc500234482" />
+      <TocEntry
+        Title="v_acm_forms"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_forms.htm#_Toc500234483" />
+      <TocEntry
+        Title="v_acm_form_work_items"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_form_work_items.htm#_Toc500234484" />
+      <TocEntry
+        Title="v_acm_item_forms"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_forms.htm#_Toc500234485" />
+      <TocEntry
+        Title="v_acm_form_attachments_content"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_form_attachments_c.htm#_Toc500234486" />
+      <TocEntry
+        Title="v_acm_group_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_group_audit.htm#_Toc500234487" />
+      <TocEntry
+        Title="v_acm_groups2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_groups2.htm#_Toc500234488" />
+      <TocEntry
+        Title="v_acm_gui_item_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_gui_item_permissio.htm#_Toc500234489" />
+      <TocEntry
+        Title="v_acm_hierarchies2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_hierarchies2.htm#_Toc500234490" />
+      <TocEntry
+        Title="v_acm_hierarchy_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_hierarchy_audit.htm#_Toc500234491" />
+      <TocEntry
+        Title="v_acm_hierarchy_flat"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_hierarchy_flat.htm#_Toc500234492" />
+      <TocEntry
+        Title="v_acm_hierarchy_relations2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_hierarchy_relation.htm#_Toc500234493" />
+      <TocEntry
+        Title="v_acm_high_focus_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_high_focus_permiss.htm#_Toc500234494" />
+      <TocEntry
+        Title="v_acm_icons"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_icons.htm#_Toc500234495" />
+      <TocEntry
+        Title="v_acm_internal_list_audits"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_internal_list_audi.htm#_Toc500234496" />
+      <TocEntry
+        Title="v_acm_investigation_audits"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_investigation_audi.htm#_Toc500234497" />
+      <TocEntry
+        Title="v_acm_item_attachments"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_attachments.htm#_Toc500234498" />
+      <TocEntry
+        Title="v_acm_item_attachments_and_content"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_attachments_a.htm#_Toc500234499" />
+      <TocEntry
+        Title="v_acm_item_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_audit.htm#_Toc500234500" />
+      <TocEntry
+        Title="v_acm_items_findings_reasons"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_items_findings_rea.htm#_Toc500234501" />
+      <TocEntry
+        Title="v_acm_item_notes"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_notes.htm#_Toc500234502" />
+      <TocEntry
+        Title="v_acm_item_snapshots"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_snapshots.htm#_Toc500234503" />
+      <TocEntry
+        Title="v_acm_item_status_history"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_status_histor.htm#_Toc500234504" />
+      <TocEntry
+        Title="v_acm_item_statuses"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_statuses.htm#_Toc500234505" />
+      <TocEntry
+        Title="v_acm_item_type_fields"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_type_fields.htm#_Toc500234506" />
+      <TocEntry
+        Title="v_acm_item_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_item_types.htm#_Toc500234507" />
+      <TocEntry
+        Title="v_acm_items"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_items.htm#_Toc500234508" />
+      <TocEntry
+        Title="v_acm_items_alerts"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_items_alerts.htm#_Toc500234509" />
+      <TocEntry
+        Title="v_acm_items_cases"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_items_cases.htm#_Toc500234510" />
+      <TocEntry
+        Title="v_acm_items_findings_reasons"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_items_findings_rea_1.htm#_Toc500234511" />
+      <TocEntry
+        Title="v_acm_md_alert_type_fields"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_md_alert_type_fiel.htm#_Toc500234512" />
+      <TocEntry
+        Title="v_acm_md_customized_fields"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_md_customized_fiel.htm#_Toc500234513" />
+      <TocEntry
+        Title="v_acm_md_item_type_fields"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_md_item_type_field.htm#_Toc500234514" />
+      <TocEntry
+        Title="v_acm_md_virtual_fs"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_md_virtual_fs.htm#_Toc500234515" />
+      <TocEntry
+        Title="v_acm_permission_actions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_permission_actions.htm#_Toc500234516" />
+      <TocEntry
+        Title="v_acm_policy"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_policy.htm#_Toc500234517" />
+      <TocEntry
+        Title="v_acm_policy_active_rules"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_policy_active_rule.htm#_Toc500234518" />
+      <TocEntry
+        Title="v_acm_policy_rules"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_policy_rules.htm#_Toc500234519" />
+      <TocEntry
+        Title="v_acm_policy_type"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_policy_type.htm#_Toc500234520" />
+      <TocEntry
+        Title="v_acm_policy_type_actions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_policy_type_action.htm#_Toc500234521" />
+      <TocEntry
+        Title="v_acm_processes"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_processes.htm#_Toc500234522" />
+      <TocEntry
+        Title="v_acm_pt_action_values"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_pt_action_values.htm#_Toc500234523" />
+      <TocEntry
+        Title="v_acm_queries"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_queries.htm#_Toc500234524" />
+      <TocEntry
+        Title="v_acm_relation_type"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_relation_type.htm#_Toc500234525" />
+      <TocEntry
+        Title="v_acm_relations"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_relations.htm#_Toc500234526" />
+      <TocEntry
+        Title="v_acm_report_audit2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_report_audit2.htm#_Toc500234527" />
+      <TocEntry
+        Title="v_acm_report_instances2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_report_instances2.htm#_Toc500234528" />
+      <TocEntry
+        Title="v_acm_report_notes2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_report_notes2.htm#_Toc500234529" />
+      <TocEntry
+        Title="v_acm_report_parameter_values"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_report_parameter_v.htm#_Toc500234530" />
+      <TocEntry
+        Title="v_acm_report_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_report_permissions.htm#_Toc500234531" />
+      <TocEntry
+        Title="v_acm_report_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_report_types.htm#_Toc500234532" />
+      <TocEntry
+        Title="v_acm_rfi_messages"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rfi_messages.htm#_Toc500234533" />
+      <TocEntry
+        Title="v_acm_rfis"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rfis.htm#_Toc500234534" />
+      <TocEntry
+        Title="v_acm_role_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_role_audit.htm#_Toc500234535" />
+      <TocEntry
+        Title="v_acm_roles"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_roles.htm#_Toc500234536" />
+      <TocEntry
+        Title="v_acm_rt_association"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rt_association.htm#_Toc500234537" />
+      <TocEntry
+        Title="v_acm_rule_audits"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rule_audits.htm#_Toc500234538" />
+      <TocEntry
+        Title="v_acm_rule_versions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rule_versions.htm#_Toc500234539" />
+      <TocEntry
+        Title="v_acm_rules"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rules.htm#_Toc500234540" />
+      <TocEntry
+        Title="v_acm_rules_actions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_rules_actions.htm#_Toc500234541" />
+      <TocEntry
+        Title="v_acm_scheduled_queries"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_scheduled_queries.htm#_Toc500234542" />
+      <TocEntry
+        Title="v_acm_setting_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_setting_audit.htm#_Toc500234543" />
+      <TocEntry
+        Title="v_acm_setting_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_setting_permission.htm#_Toc500234544" />
+      <TocEntry
+        Title="v_acm_setting_tree_permissions"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_setting_tree_permi.htm#_Toc500234545" />
+      <TocEntry
+        Title="v_acm_settings"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_settings.htm#_Toc500234546" />
+      <TocEntry
+        Title="v_acm_tasks"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_tasks.htm#_Toc500234547" />
+      <TocEntry
+        Title="v_acm_tenants"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_tenants.htm#_Toc500234548" />
+      <TocEntry
+        Title="v_acm_trade_alerts"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_trade_alerts.htm#_Toc500234549" />
+      <TocEntry
+        Title="v_acm_trade_types"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_trade_types.htm#_Toc500234550" />
+      <TocEntry
+        Title="v_acm_trades"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_trades.htm#_Toc500234551" />
+      <TocEntry
+        Title="v_acm_user_attributes2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_user_attributes2.htm#_Toc500234552" />
+      <TocEntry
+        Title="v_acm_user_audit"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_user_audit.htm#_Toc500234553" />
+      <TocEntry
+        Title="v_acm_user_group_members2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_user_group_members.htm#_Toc500234554" />
+      <TocEntry
+        Title="v_acm_user_roles2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_user_roles2.htm#_Toc500234555" />
+      <TocEntry
+        Title="v_acm_users_delegations"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_users_delegations.htm#_Toc500234556" />
+      <TocEntry
+        Title="v_acm_users_delegs_audits"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_users_delegs_audit.htm#_Toc500234557" />
+      <TocEntry
+        Title="v_acm_users2"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_users2.htm#_Toc500234558" />
+      <TocEntry
+        Title="v_acm_views"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_views.htm#_Toc500234559" />
+      <TocEntry
+        Title="v_acm_wf_tasks"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_wf_tasks.htm#_Toc500234560" />
+      <TocEntry
+        Title="v_acm_wf_transition_reasons"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_wf_transition_reas.htm#_Toc500234561" />
+      <TocEntry
+        Title="v_acm_workspace_snapshots"
+        Link="/Content/Platform/RCM/RCM Implement/v_acm_workspace_snapshot.htm#_Toc500234562" />
+      <TocEntry
+        Title="v_detailed_hier_relations"
+        Link="/Content/Platform/RCM/RCM Implement/v_detailed_hier_relation.htm#_Toc500234563" />
+      <TocEntry
+        Title="v_hierarchy_business_units2"
+        Link="/Content/Platform/RCM/RCM Implement/v_hierarchy_business_uni.htm#_Toc500234564" />
+      <TocEntry
+        Title="v_items_parent_child_relations"
+        Link="/Content/Platform/RCM/RCM Implement/v_items_parent_child_rel.htm#_Toc500234565" />
+    </TocEntry>
+    <TocEntry
+      Title="Other Views"
+      Link="/Content/Platform/RCM/RCM Implement/Other Views.htm#_Toc500234566" />
+  </TocEntry>
+  <TocEntry
+    Title="RCM Web Services"
+    Link="/Content/Platform/RCM/RCM Implement/RCM Web Services.htm#_Toc500234567"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overall Architecture"
+      Link="/Content/Platform/RCM/RCM Implement/Overall Architecture.htm#_Toc500234568"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="IDs and Identifiers"
+      Link="/Content/Platform/RCM/RCM Implement/IDs and Identifiers.htm#_Toc500234569" />
+    <TocEntry
+      Title="Data Structures - General"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structures General.htm#_Toc500234570">
+      <TocEntry
+        Title="Notation"
+        Link="/Content/Platform/RCM/RCM Implement/Notation.htm#_Toc500234571" />
+      <TocEntry
+        Title="ACMResult"
+        Link="/Content/Platform/RCM/RCM Implement/ACMResult.htm#_Toc500234572" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Structures for Permissions Management"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structures for Permissions.htm#_Toc500234573">
+      <TocEntry
+        Title="User"
+        Link="/Content/Platform/RCM/RCM Implement/User.htm#_Toc500234574" />
+      <TocEntry
+        Title="Attribute"
+        Link="/Content/Platform/RCM/RCM Implement/Attribute.htm#_Toc500234575" />
+      <TocEntry
+        Title="Group"
+        Link="/Content/Platform/RCM/RCM Implement/Group.htm#_Toc500234576" />
+      <TocEntry
+        Title="RoleAssignment"
+        Link="/Content/Platform/RCM/RCM Implement/RoleAssignment.htm#_Toc500234577" />
+      <TocEntry
+        Title="Role"
+        Link="/Content/Platform/RCM/RCM Implement/Role.htm#_Toc500234578" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Structure for BusinessUnitInfo"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structure for BusinessUnitInfo.htm#_Toc500234579">
+      <TocEntry
+        Title="BusinessUnitInfo"
+        Link="/Content/Platform/RCM/RCM Implement/BusinessUnitInfo.htm#_Toc500234580" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Structure for BusinessUnitAttribute"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structure for BusinessUnitAttribute.htm#_Toc500234581">
+      <TocEntry
+        Title="BusinessUnitAttribute"
+        Link="/Content/Platform/RCM/RCM Implement/BusinessUnitAttribute.htm#_Toc500234582" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Structure for BusinessHierarchy"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structure for BusinessHierarchy.htm#_Toc500234583">
+      <TocEntry
+        Title="BusinessHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/BusinessHierarchy.htm#_Toc500234584" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Structure for BusinessHierarchyInfo"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structure for BusinessHierarchyInfo.htm#_Toc500234585" />
+    <TocEntry
+      Title="Data Structure for BusinessHierarchyNode"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structure for BusinessHierarchyNode.htm#_Toc500234586" />
+    <TocEntry
+      Title="Data Structure for Business Unit Management"
+      Link="/Content/Platform/RCM/RCM Implement/Data Structure for Business.htm#_Toc500234587">
+      <TocEntry
+        Title="BusinessUnit"
+        Link="/Content/Platform/RCM/RCM Implement/BusinessUnit.htm#_Toc500234588" />
+    </TocEntry>
+    <TocEntry
+      Title="Web Services for RCMPermissionRepositoryService"
+      Link="/Content/Platform/RCM/RCM Implement/Web Services for RCMPermissionRepositoryService.htm#_Toc500234589">
+      <TocEntry
+        Title="Web Services for User Management"
+        Link="/Content/Platform/RCM/RCM Implement/Web Services for User Management.htm#_Toc500234590" />
+      <TocEntry
+        Title="addUser"
+        Link="/Content/Platform/RCM/RCM Implement/addUser.htm#_Toc500234591" />
+      <TocEntry
+        Title="removeUser"
+        Link="/Content/Platform/RCM/RCM Implement/removeUser.htm#_Toc500234592" />
+      <TocEntry
+        Title="updateUser"
+        Link="/Content/Platform/RCM/RCM Implement/updateUser.htm#_Toc500234593" />
+      <TocEntry
+        Title="updateUserProperty"
+        Link="/Content/Platform/RCM/RCM Implement/updateUserProperty.htm#_Toc500234594" />
+      <TocEntry
+        Title="getUsersByCriteria"
+        Link="/Content/Platform/RCM/RCM Implement/getUsersByCriteria.htm#_Toc500234595" />
+      <TocEntry
+        Title="countUsersByCriteria"
+        Link="/Content/Platform/RCM/RCM Implement/countUsersByCriteria.htm#_Toc500234596" />
+      <TocEntry
+        Title="getUserByLoginName"
+        Link="/Content/Platform/RCM/RCM Implement/getUserByLoginName.htm#_Toc500234597" />
+      <TocEntry
+        Title="getUsersInBU"
+        Link="/Content/Platform/RCM/RCM Implement/getUsersInBU.htm#_Toc500234598" />
+      <TocEntry
+        Title="Web Services for Groups"
+        Link="/Content/Platform/RCM/RCM Implement/Web Services for Groups.htm#_Toc500234599" />
+      <TocEntry
+        Title="addGroup"
+        Link="/Content/Platform/RCM/RCM Implement/addGroup.htm#_Toc500234600" />
+      <TocEntry
+        Title="removeGroup"
+        Link="/Content/Platform/RCM/RCM Implement/removeGroup.htm#_Toc500234601" />
+      <TocEntry
+        Title="updateGroup"
+        Link="/Content/Platform/RCM/RCM Implement/updateGroup.htm#_Toc500234602" />
+      <TocEntry
+        Title="getAllGroups"
+        Link="/Content/Platform/RCM/RCM Implement/getAllGroups.htm#_Toc500234603" />
+      <TocEntry
+        Title="getSubjectGroups"
+        Link="/Content/Platform/RCM/RCM Implement/getSubjectGroups.htm#_Toc500234604" />
+      <TocEntry
+        Title="assignToGroup"
+        Link="/Content/Platform/RCM/RCM Implement/assignToGroup.htm#_Toc500234605" />
+      <TocEntry
+        Title="removeFromGroup"
+        Link="/Content/Platform/RCM/RCM Implement/removeFromGroup.htm#_Toc500234606" />
+    </TocEntry>
+    <TocEntry
+      Title="Web Services for Role Assignment"
+      Link="/Content/Platform/RCM/RCM Implement/Web Services for Role Assignment.htm#_Toc500234607">
+      <TocEntry
+        Title="assignToRole"
+        Link="/Content/Platform/RCM/RCM Implement/assignToRole.htm#_Toc500234608" />
+      <TocEntry
+        Title="removeRoleAssignment"
+        Link="/Content/Platform/RCM/RCM Implement/removeRoleAssignment.htm#_Toc500234609" />
+      <TocEntry
+        Title="getSubjectRoleAssignments"
+        Link="/Content/Platform/RCM/RCM Implement/getSubjectRoleAssignment.htm#_Toc500234610" />
+      <TocEntry
+        Title="getAllRoles"
+        Link="/Content/Platform/RCM/RCM Implement/getAllRoles.htm#_Toc500234611" />
+    </TocEntry>
+    <TocEntry
+      Title="Web Services for Business Unit Management"
+      Link="/Content/Platform/RCM/RCM Implement/Web Services for Business.htm#_Toc500234612">
+      <TocEntry
+        Title="Web Services for Business Unit"
+        Link="/Content/Platform/RCM/RCM Implement/Web Services for Business_1.htm#_Toc500234613" />
+      <TocEntry
+        Title="getBusinessUnit"
+        Link="/Content/Platform/RCM/RCM Implement/getBusinessUnit.htm#_Toc500234614" />
+      <TocEntry
+        Title="getAllBusinessUnits"
+        Link="/Content/Platform/RCM/RCM Implement/getAllBusinessUnits.htm#_Toc500234615" />
+      <TocEntry
+        Title="getBusinessUnitListByIDList"
+        Link="/Content/Platform/RCM/RCM Implement/getBusinessUnitListByIDL.htm#_Toc500234616" />
+      <TocEntry
+        Title="getOrphanedBusinessUnits"
+        Link="/Content/Platform/RCM/RCM Implement/getOrphanedBusinessUnits.htm#_Toc500234617" />
+      <TocEntry
+        Title="addBusinessUnit"
+        Link="/Content/Platform/RCM/RCM Implement/addBusinessUnit.htm#_Toc500234618" />
+      <TocEntry
+        Title="updateBusinessUnit"
+        Link="/Content/Platform/RCM/RCM Implement/updateBusinessUnit.htm#_Toc500234619" />
+      <TocEntry
+        Title="updateBusinessUnit2"
+        Link="/Content/Platform/RCM/RCM Implement/updateBusinessUnit2.htm#_Toc500234620" />
+      <TocEntry
+        Title="removeBusinessUnit"
+        Link="/Content/Platform/RCM/RCM Implement/removeBusinessUnit.htm#_Toc500234621" />
+      <TocEntry
+        Title="removeBusinessUnitBulk"
+        Link="/Content/Platform/RCM/RCM Implement/removeBusinessUnitBulk.htm#_Toc500234622" />
+      <TocEntry
+        Title="getBusinessUnitByIdentifier"
+        Link="../../../../Content/Platform/RCM/RCM Implement/getBusinessUnitByIdentif.htm#_Toc500234623" />
+      <TocEntry
+        Title="Web Services for BusinessUnitInfo"
+        Link="../../../../Content/Platform/RCM/RCM Implement/getBusinessUnitByIdentif.htm#_Toc500234624" />
+      <TocEntry
+        Title="getBusinessUnitInfoList"
+        Link="/Content/Platform/RCM/RCM Implement/getBusinessUnitInfoList.htm#_Toc500234625" />
+      <TocEntry
+        Title="Web Services for BusinessHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/Web Services for BusinessHierarchy.htm#_Toc500234626" />
+      <TocEntry
+        Title="getDefaultHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/getDefaultHierarchy.htm#_Toc500234627" />
+      <TocEntry
+        Title="setDefaultHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/setDefaultHierarchy.htm#_Toc500234628" />
+      <TocEntry
+        Title="getHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/getHierarchy.htm#_Toc500234629" />
+      <TocEntry
+        Title="getHierarchyBusinessUnits"
+        Link="/Content/Platform/RCM/RCM Implement/getHierarchyBusinessUnit.htm#_Toc500234630" />
+      <TocEntry
+        Title="getBusinessUnitAllHierarchies"
+        Link="/Content/Platform/RCM/RCM Implement/getBusinessUnitAllHierar.htm#_Toc500234631" />
+      <TocEntry
+        Title="getHierarchyList"
+        Link="/Content/Platform/RCM/RCM Implement/getHierarchyList.htm#_Toc500234632" />
+      <TocEntry
+        Title="getHierarchyInfo"
+        Link="/Content/Platform/RCM/RCM Implement/getHierarchyInfo.htm#_Toc500234633" />
+      <TocEntry
+        Title="addHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/addHierarchy.htm#_Toc500234634" />
+      <TocEntry
+        Title="updateHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/updateHierarchy.htm#_Toc500234635" />
+      <TocEntry
+        Title="removeHierarchy"
+        Link="/Content/Platform/RCM/RCM Implement/removeHierarchy.htm#_Toc500234636" />
+      <TocEntry
+        Title="updateHierarchyInfo (Updating Basic Hierarchy Information"
+        Link="../../../../Content/Platform/RCM/RCM Implement/updateHierarchyInfo Updating.htm#_Toc500234637" />
+      <TocEntry
+        Title="Web Service for External URL"
+        Link="../../../../Content/Platform/RCM/RCM Implement/updateHierarchyInfo Updating.htm#_Toc500234638" />
+      <TocEntry
+        Title="createExternalSourceInstance"
+        Link="/Content/Platform/RCM/RCM Implement/createExternalSourceInst.htm#_Toc500234639" />
+      <TocEntry
+        Title="Web Service for Removing a Record from a Platform List"
+        Link="/Content/Platform/RCM/RCM Implement/Web Service for Removing a.htm#_Toc500234640" />
+      <TocEntry
+        Title="Web Service for Removing Blotters via Identifiers"
+        Link="/Content/Platform/RCM/RCM Implement/Web Service for Removing Blotters.htm#_Toc500234641" />
+      <TocEntry
+        Title="ACMResult purgeBlotters"
+        Link="/Content/Platform/RCM/RCM Implement/ACMResult purgeBlotters.htm#_Toc500234642" />
+    </TocEntry>
+    <TocEntry
+      Title="Connecting to RCM Web Services"
+      Link="/Content/Platform/RCM/RCM Implement/Connecting to RCM Web Services.htm#_Toc500234643">
+      <TocEntry
+        Title="Java Example"
+        Link="/Content/Platform/RCM/RCM Implement/Java Example.htm#_Toc500234644" />
+      <TocEntry
+        Title="C# Example"
+        Link="/Content/Platform/RCM/RCM Implement/C Example.htm#_Toc500234645" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Installing and Using the JReport Designer"
+    Link="../../../../Content/Platform/RCM/RCM Implement/Installing and Using the JReport.htm#_Toc500234646"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Create a file called connections.mf under JReport/Bin"
+      Link="../../../../Content/Platform/RCM/RCM Implement/Installing and Using the JReport.htm#_Toc500234647"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Save a copy of actimize.jar to your JReport folder"
+      Link="/Content/Platform/RCM/RCM Implement/Save a copy of actimize jar.htm#_Toc500234648">
+      <TocEntry
+        Title="Edit the JReport.bat file"
+        Link="../../../../Content/Platform/RCM/RCM Implement/Edit the JReport bat file.htm#_Toc500234649" />
+      <TocEntry
+        Title="Create a New Catalog Using JReport Designer"
+        Link="../../../../Content/Platform/RCM/RCM Implement/Edit the JReport bat file.htm#_Toc500234650" />
+      <TocEntry
+        Title="Create a new UserDataSource"
+        Link="../../../../Content/Platform/RCM/RCM Implement/Edit the JReport bat file.htm#_Toc500234651" />
+      <TocEntry
+        Title="Define a Query for a Catalog"
+        Link="../../../../Content/Platform/RCM/RCM Implement/Edit the JReport bat file.htm#_Toc500234652" />
+      <TocEntry
+        Title="Add Parameters to the Query (Optional)"
+        Link="/Content/Platform/RCM/RCM Implement/Add Parameters to the Query.htm#_Toc500234653" />
+      <TocEntry
+        Title="Create a new Report for the Selected Catalog"
+        Link="/Content/Platform/RCM/RCM Implement/Create a new Report for the.htm#_Toc500234654" />
+    </TocEntry>
+    <TocEntry
+      Title="Utilizing RCM UDF and UDS in JReport"
+      Link="/Content/Platform/RCM/RCM Implement/Utilizing RCM UDF and UDS.htm#_Toc500234655">
+      <TocEntry
+        Title="JReport UDS and UDF"
+        Link="../../../../Content/Platform/RCM/RCM Implement/JReport UDS and UDF.htm#_Toc500234656" />
+      <TocEntry
+        Title="UDF in JReport"
+        Link="../../../../Content/Platform/RCM/RCM Implement/JReport UDS and UDF.htm#_Toc500234657" />
+    </TocEntry>
+    <TocEntry
+      Title="Limitations and Guidelines"
+      Link="/Content/Platform/RCM/RCM Implement/Limitations and Guidelines.htm#_Toc500234658" />
+    <TocEntry
+      Title="Report Development Guidelines"
+      Link="/Content/Platform/RCM/RCM Implement/Report Development Guidelines.htm#_Toc500234659" />
+    <TocEntry
+      Title="Configuring JReport for a Non-English Language"
+      Link="/Content/Platform/RCM/RCM Implement/Configuring JReport for a.htm#_Toc500234660" />
+    <TocEntry
+      Title="Customizing JReport Icons"
+      Link="/Content/Platform/RCM/RCM Implement/Customizing JReport Icons.htm#_Toc500234661" />
+  </TocEntry>
+  <TocEntry
+    Title="Reviewing RCM Logs"
+    Link="/Content/Platform/RCM/RCM Implement/Reviewing RCM Logs.htm#_Toc500234662"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="Clearing Second Level Cache"
+    Link="/Content/Platform/RCM/RCM Implement/Clearing Second Level Cache.htm#_Toc500234663"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl" />
+  <TocEntry
+    Title="The Heartbeat Mechanism"
+    Link="/Content/Platform/RCM/RCM Implement/The Heartbeat Mechanism.htm#_Toc500234664"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Default Possible Results"
+      Link="/Content/Platform/RCM/RCM Implement/Default Possible Results.htm#_Toc500234665"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Configuring the Possible Results"
+      Link="/Content/Platform/RCM/RCM Implement/Configuring the Possible Results.htm#_Toc500234666" />
+  </TocEntry>
+  <TocEntry
+    Title="Using the Log4j Tool"
+    Link="/Content/Platform/RCM/RCM Implement/Using the Log4j Tool.htm#_Toc500234667"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Activate and Configure Log4j"
+      Link="/Content/Platform/RCM/RCM Implement/Activate and Configure Log4j.htm#_Toc500234668"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="Change the Log4J Configuration"
+        Link="/Content/Platform/RCM/RCM Implement/Change the Log4J Configuration.htm#_Toc500234669" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Text Limitations of The Rich Text Editor"
+    Link="/Content/Platform/RCM/RCM Implement/Text Limitations of The Rich.htm#_Toc500234670"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Removal of HTML Elements"
+      Link="/Content/Platform/RCM/RCM Implement/Removal of HTML Elements.htm#_Toc500234671"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Example of Sanitization"
+      Link="/Content/Platform/RCM/RCM Implement/Example of Sanitization.htm#_Toc500234672" />
+    <TocEntry
+      Title="Multi Language"
+      Link="/Content/Platform/RCM/RCM Implement/Multi Language.htm#_Toc500234673" />
+  </TocEntry>
+  <TocEntry
+    Title="Custom Attributes for RCM Users (User Attributes)"
+    Link="/Content/Platform/RCM/RCM Implement/Custom Attributes for RCM.htm#_Toc500234674"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Custom Attributes for RCM Users (User Attributes)"
+      Link="/Content/Platform/RCM/RCM Implement/Custom Attributes for RCM_1.htm#_Toc500234675"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Configure Custom Attributes"
+      Link="/Content/Platform/RCM/RCM Implement/Configure Custom Attributes.htm#_Toc500234676" />
+    <TocEntry
+      Title="Map Custom Attributes to LDAP Attributes"
+      Link="/Content/Platform/RCM/RCM Implement/Map Custom Attributes to LDAP.htm#_Toc500234677" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Back.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Back.flpgl"
+    conditions="Default.PrintOnly" />
+</CatapultToc>

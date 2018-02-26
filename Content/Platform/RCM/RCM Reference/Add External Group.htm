@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="701" MadCap:lastWidth="1220">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref105909422"></a><a name="_Toc489949795"></a>Add External Group</h1>
+        <p class="Body">When an external method of authentication is used, such as LDAP, the Administrator must ensure that the <MadCap:variable name="RCM Actimize.ProductCode" /> includes all relevant groups that are maintained within the external server.</p>
+        <p class="Body">Click the <span class="Strong">Add External Group</span> link within the Manage Groups activity bar to open the Select External Group window that enables you to search for the LDAP group that you want to add to the <MadCap:variable name="RCM Actimize.ProductCode" />. </p>
+        <p class="Procedure">To select an LDAP group:</p>
+        <ol start="1">
+            <li>Enter the name, or any letter that is included within the name, and click <span class="Strong">Go</span> to search through all LDAP groups for the group that you require. The list of all LDAP groups that contain the entered letter(s) appears within the Available Groups list box.</li>
+        </ol>
+        <ol start="2">
+            <li>Select the group that you want to add to <MadCap:variable name="RCM Actimize.ProductCode" />.</li>
+        </ol>
+        <ol start="3">
+            <li>Click <span class="Strong">Next</span> to add it to the main list of <MadCap:variable name="RCM Actimize.ProductCode" /> groups.</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">You cannot assign users to external LDAP groups since this information is based on the LDAP server configuration.</p>
+        </div>
+        <p class="Body">Once you have added all LDAP groups to the <MadCap:variable name="RCM Actimize.ProductCode" /> list of groups, you can continue by synchronizing the <MadCap:variable name="RCM Actimize.ProductCode" /> user list with the relevant LDAP users. The <MadCap:variable name="RCM Actimize.ProductCode" /> list of users must be synchronized with those users who are associated with the LDAP groups that you added to the <MadCap:variable name="RCM Actimize.ProductCode" />. This can be performed using:</p>
+        <ul>
+            <li>The Manage <span class="Strong">LDAP </span><span class="Strong" style="font-family: Wingdings;">à</span><span class="Strong"> Synchronize</span> action. This feature enables you to automatically synchronize the list of RCM users with the LDAP list. The RCM list is synchronized to include all users who belong to the LDAP groups that were added to the <MadCap:variable name="RCM Actimize.ProductCode" />. (For more information, see <MadCap:xref href="Synchronize List of Users.htm#_Ref105906263" class="ParaTextOnly">Synchronize List of Users with LDAP Users List</MadCap:xref>.)</li>
+        </ul>
+        <ul>
+            <li>The <span class="Strong">Manage Users </span><span class="Strong" style="font-family: Wingdings;">à</span><span class="Strong"> Add External Users</span> option. This enables you to select the LDAP users manually. (For more information, see <MadCap:xref href="#_Ref105909422" class="ParaTextOnly">Add External Group</MadCap:xref>.)</li>
+        </ul>
+    </body>
+</html>

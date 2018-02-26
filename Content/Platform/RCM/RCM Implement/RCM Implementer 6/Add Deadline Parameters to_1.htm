@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref252803185"></a>Add Deadline Parameters to a Step</h1>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">Adding a deadline to a Step is optional. A Step can be without a deadline</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Deadline Parameters to_1.png" style="visibility: visible;mso-wrap-style: square;width: 324px;height: 118px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Procedure">To add a deadline to a step:</p>
+        <ol start="1">
+            <li>Select the checkbox in order to add a deadline to a step.</li>
+        </ol>
+        <p>Enter the number of days/hours/minutes that should pass before the deadline occurs or use the arrow icons to display the desired number of days:</p>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Deadline Parameters to_1_1.png" style="visibility: visible;mso-wrap-style: square;width: 393px;height: 23px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The following checkboxes may also be used in order to add parameters to the deadline:</p>
+        <ul>
+            <li><span class="Strong">Send email Notification</span> – Enables you to indicate the number of days/hours/minutes before the deadline in which an email is sent to the user.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Create Reminder</span> – Enables you to indicate the number of days/hours/minutes before the deadline in which a reminder about the deadline is displayed to the user.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Change Step to</span> – Enables you to select the step of the case after the deadline is reached. The required escalation step needs to be added to the workflow first. The selection of the escalated step creates an automatic transition between the currently in focus step and the selected escalated step. Note that the <span class="Strong">Allow manual transition</span> checkbox for the transition arrow is enabled when this parameter is defined.</li>
+        </ul>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">When creating a deadline, verify the following:</p>
+        <ul>
+            <li>The case should belong to an case type that has been associated with a workflow definition.<br />Even though a deadline may be defined for a step, it will only apply to a case in that step when the case type is associated with the workflow. </li>
+        </ul>
+        <ul>
+            <li>All the "mail.smtp.*" RCM configuration parameters must be defined.</li>
+        </ul>
+        <ul>
+            <li>The case must have an owner. </li>
+        </ul>
+        <ul>
+            <li>The case owner must have a defined email address.</li>
+        </ul>
+    </body>
+</html>

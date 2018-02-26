@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4841" MadCap:lastWidth="1219">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref452017966"></a><a name="_Toc489949530"></a>Add a Form</h1>
+        <p class="Body">You can add a form only to a work item that is a case item.</p>
+        <p class="Body">An outgoing form enables you to complete regulatory forms that can later be filed to a regulatory agency. For example, a SAR or CTR form may be filled in and then filed to FinCEN in accordance with this regulatory agency’s rules and regulations. Your organization may also provide you with customized forms that may be used as questionnaires and other user input.</p>
+        <p class="Body">Select a case item or from the Case Item details page click the <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add a Form.png" style="visibility: visible;mso-wrap-style: square;width: 55px;height: 31px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /> Form menu and click <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Case Items Toolbar.png" style="visibility: visible;mso-wrap-style: square;width: 18px;height: 17px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /> <span class="Strong">Add</span> <span class="Strong">Form</span> to add a form to a case item.</p>
+        <p class="Body">The Select form type window opens.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add a Form_1.png" style="visibility: visible;mso-wrap-style: square;width: 356px;height: 342px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Select a relevant form from the list and click <span class="Strong">OK</span>.</p>
+        <h4 class="NoNumber">Form Creation and Report Generation Flow</h4>
+        <p class="Body">Once a form has been created, it may be saved for further editing. After the user completes a form, then the RCM generates a transferable format of the form in order to transfer it or report it to the appropriate agencies (for example, US FinCEN efile). </p>
+        <h4 class="NoNumber">Forms Steps</h4>
+        <p class="Body">The step of the each form is updated based on where the form is in the form creation/report generation process. </p>
+        <p class="Body">The following describe the possible form steps:</p>
+        <ul>
+            <li><span class="Strong">In process</span> – This is the default step of the form once it is created. In this step, the form may be edited and is not used to generate a report.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Ready for report</span> – This step indicates that the form is ready to be reported. The form cannot be edited while in this step unless it is reverted back to the In process step by opening the form and clicking <span class="Strong">Reclaim</span>.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Reported pending</span> – Once a reportable form is generated, the RCM changes the step to Reported pending. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Reported - success,</span> <span class="Strong">Reported failed</span> – After E-files for forms are sent to the third-party organization, a response should be received from that organization that indicates whether the submission was successful or failed. Once information about the filed forms is received and updated (based on the process that is supported within your organization) the form step is automatically updated within the RCM. </li>
+        </ul>
+        <h4 class="NoNumber">Validate Forms</h4>
+        <p class="Body">Once users complete the form, they need to click the <span class="Strong">Validate</span> button to check that the information entered contains no errors and meets the form validation requirements. </p>
+        <p class="Body">If users click <span class="Strong">Finish </span>while there are validation errors, then those errors are displayed. The form cannot be submitted by clicking <span class="Strong">Finish</span> until all the validation errors have been resolved.</p>
+        <p class="Procedure">To validate a form:</p>
+        <ol start="1">
+            <li>Once the form is complete, click <span class="Strong">Validate</span> to ensure that all fields entered are correct and the required information is provided.</li>
+            <p class="Body">Any validation errors appear in a list at the top of the form in a yellow box. Each field where validation failed is highlighted with a red border as shown in the following example:</p>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add a Form_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+        </ol>
+        <ol start="2">
+            <li>Correct all validation errors, and click <span class="Strong">Validate</span> again.</li>
+            <p class="Body">If there are no validation errors, a message is displayed indicating that the form is valid.</p>
+        </ol>
+        <ol start="3">
+            <li>Once the form is valid, click <span class="Strong">Finish</span> to submit the form.</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">You have the option to click <span class="Strong">Save</span> during this procedure and continue to validate the form at a later time.</p>
+        </div>
+        <h4 class="NoNumber">Amend Forms</h4>
+        <p class="Body">If a form was completed and has the status of <span class="Strong">Reported – pending</span> or <span class="Strong">Reported – success</span>, it cannot be edited. If information in the form needs to be changed, the form can be opened and amended. This creates a duplicate of the form (with a new name and ID).</p>
+        <p class="Body">After the duplicated form is edited, the form is returned back to the <span class="Strong">Ready for report</span> status so that it can be used to generate a new report (via the <span class="Strong">Finish</span> button). Reports are generated from both the original and duplicated forms. </p>
+        <p class="Procedure">To amend a form:</p>
+        <ol start="1">
+            <li>Open the relevant form by clicking the link in the <span class="Strong">Identifier</span> column. The selected form opens.</li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add a Form_3.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+        </ol>
+        <ol start="5" MadCap:continue="true">
+            <li>Click <span class="Strong">Amend</span>. </li>
+            <p class="Body">A duplicate form is created with a new name and ID, as shown below. A full copy of all attachments is made as well. The new name assigned to the amended form is &lt;original name – Amendment&gt;. </p>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add a Form_4.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+            <p class="Body">The form status changes to <span class="Strong">In process</span>.</p>
+        </ol>
+        <ol start="6" MadCap:continue="true">
+            <li>Complete the duplicated form as required and click either:<ul><li>Save to save the form and complete it later, or</li><li>Finish to submit the report and change its status to Ready for report. </li></ul></li>
+        </ol>
+        <h4 class="NoNumber">Reclaim Forms</h4>
+        <p class="Body">If a completed form was not yet generated as a report, and has one of the following form statuses, it cannot be edited:</p>
+        <ul>
+            <li>Ready for report</li>
+        </ul>
+        <ul>
+            <li>Reported – Rejected</li>
+        </ul>
+        <ul>
+            <li>Closed – Non issue </li>
+        </ul>
+        <ul>
+            <li>Closed – Reported externally</li>
+        </ul>
+        <p class="Body">If information in a form with one of the above statuses needs to be edited, users can reclaim the form.</p>
+        <p class="Body">After the reclaimed form is edited, the form is returned back to the <span class="Strong">Ready for report</span> status so that it can be used to generate a report (via the <span class="Strong">Finish</span> button). A report is generated only from the updated form.</p>
+        <p class="Procedure">To reclaim a form:</p>
+        <ol start="1">
+            <li>Open the relevant form by clicking the link in the <span class="Strong">Identifier</span> column. The selected form opens.</li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add a Form_5.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+        </ol>
+        <ol start="8" MadCap:continue="true">
+            <li>Click <span class="Strong">Reclaim</span>. </li>
+            <p class="Body">The form status changes to <span class="Strong">In process</span>.</p>
+        </ol>
+        <ol start="9" MadCap:continue="true">
+            <li>Edit the reclaimed form as required and click either:<ul><li><span class="Strong">Save</span> to save the form and complete it later, or</li><li><span class="Strong">Finish</span> to submit the report and change its status to <span class="Strong">Ready for report.</span></li></ul></li>
+        </ol>
+    </body>
+</html>

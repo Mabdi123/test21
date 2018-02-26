@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397432083"></a><a name="_Toc500234340"></a>Define a Language as the Current RCM Language</h1>
+        <p class="Body">The following describes setting up the current RCM language.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define a Language as the Current.png" style="visibility: visible;mso-wrap-style: square;width: 222px;height: 189px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">In order to have a specific Non-English language displayed in the RCM you must do the following after the translation has been completed:</p>
+        <ol start="1">
+            <li>Set the selected language as the current language by right clicking on the specific language node and selecting the <span class="Strong">Set As Current</span> option.</li>
+        </ol>
+        <ol start="2">
+            <li>The RCM users must logout of their current session and clear the cache of their Web browser. After these actions are done, they can login again in order to view the RCM in the selected language.</li>
+        </ol>
+        <ol start="3">
+            <li>Update the value of the parameter actimize.language.currentACMLanguage via the Config parameters tab of admin.jsp. The value of the parameter should be the identifier of the language that you want to be displayed in the RCM. In order to support multiple languages, configure this parameter in the acm.ini file for each RCM server.</li>
+        </ol>
+    </body>
+</html>

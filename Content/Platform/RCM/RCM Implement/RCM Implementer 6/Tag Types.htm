@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref454801469"></a><a name="_Toc500234381"></a>Tag Types</h1>
+        <p class="Body">Tag Types provide the ability to connect notes via the RCM Alert types and Blotter Transaction Types by tagging them with the same value. Validation on the values of the tags is also defined by the implementer. </p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types.png" style="visibility: visible;mso-wrap-style: square;width: 550px;height: 125px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">For example an account tag can include validation for a minimum length of 9 characters and a maximum length of 14 characters and it must begin with the letters abc (e.g., aac12345678). When the user adds the note for the relevant Alert Type or Transaction type an account tag appears. If the user enters a value for this tag then it must be entered according the defined validation settings. When the account number is entered correctly a tool tip indicates that the account number is valid.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_1.png" style="visibility: visible;mso-wrap-style: square;width: 407px;height: 235px;" />
+        </p>
+        <p class="Body">If the account number is not valid then the input is underlined in red and a tool tip provides the reason for the invalid input.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_2.png" style="visibility: visible;mso-wrap-style: square;width: 404px;height: 231px;" />
+        </p>
+        <p class="Procedure">To create a Tag type:</p>
+        <ol start="1">
+            <li>Click the <span class="Strong">Create new Tag</span> <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_3.png" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 13px;" /> icon:</li>
+        </ol>
+        <ol start="2">
+            <li>Enter a display name and an identifier for this tag. The identifier is used as a reference ID for this Tag. Optionally, enter a description for this tag.</li>
+        </ol>
+        <p class="Procedure">Tag Validations:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 124px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Enter the minimum and maximum characters for this tag. For example, if the tag is for an account number that is between 9 and 11 numbers then enter 9 for <span class="Strong">min length</span> and 11 for <span class="Strong">max length</span>.</p>
+        <ul>
+            <li>You have the option to add a JavaScript function that verifies the tag’s value. </li>
+        </ul>
+        <p class="Body">The JavaScript validation function accepts a single string argument (the tag value) and returns a string that stores the validation result. The validation result string should be an empty string when the validation is successful and an error message when it fails. The function definition should not include a function name. Click the more <span class="Strong">info link</span> of the RCM Designer in order to view examples for JavaScript validation functions. If the user attempts to confirm an input that is not valid then a warning message appears and the note cannot be saved.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_5.png" style="visibility: visible;mso-wrap-style: square;width: 280px;height: 99px;" />
+        </p>
+        <ul>
+            <li>You have the option to add a drill down query (DDQ) for validating the data. The DDQ should receive one parameter and return two values: The parameter and the additional information can be a db column value or a concatenation of different columns. The possible scenarios for DDQ validation are the following: </li>
+        </ul>
+        <ul>
+            <li>Drill down query did not return any results. The value is underlined in yellow and a tooltip provides the reason for the invalid value.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_6.png" style="visibility: visible;mso-wrap-style: square;width: 475px;height: 34px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The user has the option to confirm this value even when it is not validated by the DDQ.</p>
+        <ul>
+            <li>Drill down query returned more than 1 result for the value. The value is underlined in yellow and a tooltip provides the reason for the invalid value.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_7.png" style="visibility: visible;mso-wrap-style: square;width: 446px;height: 31px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The user has the option to confirm this value even when it is not validated by the DDQ.</p>
+        <ul>
+            <li>DDQ result is valid: value is underlined in black and a tooltip indicates that the value is valid.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Tag Types_8.png" style="visibility: visible;mso-wrap-style: square;width: 463px;height: 37px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+    </body>
+</html>

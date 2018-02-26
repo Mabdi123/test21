@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref340585172"></a><a name="_Toc500234365"></a>XSL API</h1>
+        <p class="Body">Exposes the option to convert date value to XsltExtensionsFunctions:</p>
+        <p class="Code">convertToUserDateTimeFormat(dateValue)</p>
+        <p class="Code">convertToUserDateTimeFormat(dateValue, sourceDateFormat)</p>
+        <p class="Body">The XSL must contain ‘xmlns:actimize’ in the header (see example for more details)</p>
+        <p class="Body">Example:</p>
+        <div>
+            <p class="Code">&lt;?xml version="1.0" encoding="UTF-8" ?&gt; </p>
+            <p class="Code"><a href="file://netapp01/professional services group/Documentation/WORKING DIRECTORIES/Platform/RCM 5.5 Working Directory/Implementer Guide/-">-</a> &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:actimize="com.actimize.infrastructure.util.XsltExtensionsFunctions"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;xsl:template match="/"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;html&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;xsl:for-each select="/enrichedAlert"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;table width="100%"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;tr&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td colspan="2"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;table width="100%"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;tr&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td colspan="4" bgcolor="#BBFFFF"&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Alert Attributes:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;tr bgcolor="#C2C2C2"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td width="15%"&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Name:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td width="40%"&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Value:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td width="20%"&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Date:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;xsl:for-each select="attributes/attribute"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;tr&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;xsl:value-of select="@name" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;xsl:value-of select="@value" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/My Documents/pty.xsl">-</a> &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;xsl:value-of select="actimize:convertToUserDateTimeFormat('2012-07-31 11:00:00')" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:for-each&gt;</p>
+            <p class="Code">&#160; &lt;/table&gt;</p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code">&#160; &lt;/table&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:for-each&gt;</p>
+            <p class="Code">&#160; &lt;/html&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:template&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:stylesheet&gt;</p>
+        </div>
+    </body>
+</html>

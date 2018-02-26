@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref436143887"></a><a name="_Toc500234037"></a>Use the Workflow Asynch Execution Tool</h1>
+        <p class="Body">The Workflow Asynch Execution Tool is a utility that runs the workflow escalation process (All RCM utilities and their respective readme file can be found in the \Utilities\bin folder). </p>
+        <p class="Body">The process performs the following actions:</p>
+        <ul>
+            <li>Sends an email to the owner on each work item that has an email date that has passed, Note that the work item must be assigned to a user that has an email address </li>
+        </ul>
+        <ul>
+            <li>Changes the step of a work item whose deadline has passed and was defined to move to another step after the deadline.</li>
+        </ul>
+        <p class="Body">Before running the utility, verify that the following jars are in your class path:</p>
+        <ul>
+            <li>jaxrpc.jar</li>
+        </ul>
+        <ul>
+            <li>axis.jar</li>
+        </ul>
+        <ul>
+            <li>path to your wsclient (web service jar) this can be done by editing the asynch_execution.bat (asynch_execution.sh for Unix) file</li>
+        </ul>
+    </body>
+</html>

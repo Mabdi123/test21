@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="3408" MadCap:lastWidth="732">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref448924234"></a><a name="_Ref461963125"></a><a name="_Toc500234015"></a>Assign General Information for Alert Type</h1>
+        <p class="Body">The following describes the Alert Type General tab. </p>
+        <p class="Body">In the Alerts bar Types tab select an alert type. The General tab opens.</p>
+        <p>
+            <img src="../../../Resources/Images/alert_type_general_tab.PNG" />
+        </p>
+        <p>The following parameters are found in the General tab:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Parameter</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Name of the alert type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the identifier that you want to appear within the RCM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Description</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Provide a description, if required. You can access a larger text area for the description by clicking the <span class="Strong">Edit</span> button beside the field box.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Abbreviated Name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter an abbreviated name for the alert type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Display Name Template</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This field is used for creating a complex displaying value of the item in the RCM Related Items tab &gt; Items Picker window. For information refer to the <span class="Emphasis">RCM Reference Guide</span>.</p>
+                        <p class="Body">It is used to add a static string combined with the values of the common and custom item fields. The default value of this field when it is left blank is the value of its identifier. Examples for entering values into the field:</p>
+                        <p class="Body">The c1 field value is: ${c1} </p>
+                        <p class="Body">The item identifier is: ${identifier}</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Create New Identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select to create a unique numeric identifier in order to support backward compatibility.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Document type declaration</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Indicates whether or not there is an inclusion of a doctype at the beginning of the HTML output for the alert display. The value of this parameter must be supported by the VTL, XSL and CSS files used by the alert type. Select the document type declaration: </p>
+                        <ul>
+                            <li><span class="Strong">Explicit</span> (HTML): Multi Web browser support. Refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Installation Guide</span> for the full list of supported web browsers.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Without</span> (Compatibility Mode): Backward compatibility mode. Supports the Internet Explorer web browser.</li>
+                        </ul>
+                        <p class="ConvertNote"><span class="Strong">NOTE:</span>
+                        </p>
+                        <ul>
+                            <li>When an alert type is created in the <span class="Strong">C</span><span class="Strong">ase</span><span class="Strong"> Item</span> category and the <span class="Strong">Use </span><span class="Strong">default display</span><span class="Strong"> for case item details</span> checkbox is selected (in the Alert Details tab), the alert type will always have the <span class="Strong">Explicit</span> document type.</li>
+                        </ul>
+                        <ul>
+                            <li>In order to use the updated attachments functionality in item details, the <span class="Strong">Document type declaration</span> must be set to <span class="Strong">Explicit</span>. Items with the <span class="Strong">Without (Compatibility Mode)</span> declaration type, display the existing attachments functionality from the details page. For more information about attachments, refer to the <span class="Emphasis">RCM Reference Guide.</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">From Version</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">An optional version string (made up of numbers separated by dots such as, 10.3.4 or 1.0.0.33). The version is the minimum solution version in the XSL pathfor the specific alert type. When specified, this value determines the minimal alert type version that should have the doctype header. Older alerts will still appear without the doctype declaration.</p>
+                        <p class="ConvertNote"><span class="Strong">NOTES:</span>
+                        </p>
+                        <ul>
+                            <li>The <span class="Strong">From Version</span> value only applies to alert types in <span class="Strong">Explicit</span> (HTML) mode which are not of the Case Items Alert Category.</li>
+                        </ul>
+                        <ul>
+                            <li>If no value is specified, all alerts of the given type will have the doctype header.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Category</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the category for this alert. The available categories are the following:</p>
+                        <ul>
+                            <li><span class="Strong">Alerts:</span> Alert type is for work items. Work items of this type contain information about suspicious transactions or other activities for a specific entity or party (the default setting).</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">DART:</span> Alert type is for DART (Investigation Tool Alert). See <MadCap:xref href="Setting Up DART Views.htm#_Ref321742623" class="ParaTextOnly">Setting Up DART Views</MadCap:xref> <MadCap:xref href="Setting Up DART Views.htm#_Ref321742628" class="ParaTextOnly">Setting Up DART Views</MadCap:xref>, page <MadCap:xref href="Setting Up DART Views.htm#_Ref321742633" class="PageNumberOnly">1</MadCap:xref>.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Ad-hoc Blotters:</span> Alert type is for ad-hoc Blotters.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Case Items:</span> Alert type is for case work items. Case items are work items with cases functionality.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Entities:</span> Alert type is for entities. An entity is an individual (customer, party, counterparty, institution) and information about the individual (such as, address) from an external perspective.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Custom:</span> A customized work item. See also <MadCap:xref href="Work Items.htm#_Ref220906780" class="ParaTextOnly">Work Items</MadCap:xref>.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Allow Manual Alerts</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the checkbox to enable the RCM user to create manual alerts of this type. </p>
+                        <p class="Body">If you selected this option then you must also do the following:</p>
+                        <ol start="1">
+                            <li>
+                                <p>In the GUI tab of the admin.jsp site, edit the GUI item <span class="Strong">alerts.actions.titleworkItems.createalert</span>. </p>
+                                <p class="Body">
+                                    <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Assign General Information_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                                </p>
+                            </li>
+                        </ol>
+                        <ol start="2">
+                            <li>Select the checkbox <span class="Strong">Visible</span> and click <span class="Strong">Finish</span><span class="Strong">.</span></li>
+                        </ol>
+                        <ol start="3">
+                            <li>Click Apply Changes.</li>
+                        </ol>
+                        <p class="Body">Manual alerts are created via a wizard where the user enters all the required information on the alert. </p>
+                        <p class="Body">For more information refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Reference Guide</span> or online help. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Indexed for Global Search</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the checkbox in order to add all alerts of this alert type to the Global search index of RCM. </p>
+                        <p class="Body">Refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Installation Guide</span> for more information on installing and configuring the Solr search server.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Apply Entity Matching/Resolution</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the checkbox to enable RCM to enable the entity matching or entity resolution feature and verify whether or not any incoming work item of this type already exists.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Details Can be Shown in Visual Story</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Select the checkbox to enable the Visual Story View tab. This allows the alert type details to be displayed in the Visual Story View format in RCM. For details see <MadCap:xref href="Visual Story View.htm">Setting Up Visual Story View</MadCap:xref>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="Body">For information on the <span class="Strong">Can be used as related item</span> and <span class="Strong">Select custom layout form</span> checkboxes, see <MadCap:xref href="Setting Up Work Items Alerts_1.htm#_Ref358649986" class="ParaTextOnly"> Setting Up Work Items/Alerts Types Relations</MadCap:xref>.</p>
+        <p class="Body">For information on the <span class="Strong">Can be a Consolidation Target</span> and its related checkboxes, see <MadCap:xref href="Work Items Alerts Consolidation.htm#_Ref334538828" class="ParaTextOnly">Work Items/Alerts Consolidation</MadCap:xref>.</p>
+        <div class="Reference">
+            <p class="Body">For information regarding the<span class="Strong"> Mapping to Form Types</span> tab refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Custom Layouts for Manual Alerts Implementer’s Guide</span>.</p>
+        </div>
+    </body>
+</html>

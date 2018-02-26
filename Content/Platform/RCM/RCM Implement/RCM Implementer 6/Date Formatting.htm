@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234375"></a>Date Formatting</h1>
+        <p class="Body">It is vital that dateInputFormat and dateDisplayFormat should be in the same order. For example, if you change dateDisplayFormat from MM/dd/yyyy to dd/MM/yyyy then you must change dateInputFormat from M/d/y to d/M/y.</p>
+        <p class="Body">If the dateInputFormat is: M/d/y and the dateDisplayFormat is MM/dd/yyyy then the following user input samples are translated to 01/07/2005: </p>
+        <ul>
+            <li>1/7/05</li>
+        </ul>
+        <ul>
+            <li>01/7/2005</li>
+        </ul>
+        <ul>
+            <li>01/07/2005</li>
+        </ul>
+        <p class="Body">Date format guidelines:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Format</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Details</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">d</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Accepts day of month in one or two digits</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Accepts day of month only in 2 digits</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">M</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Accepts month in one or two digits</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">MM </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Accepts month only in 2 digits</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">y</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Accepts year in 2 or 4 digits format</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">yy</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Same, accepts only 2 digits</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">yyyy</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Same, accepts only 4 digits</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">The flow of the date-format resolution process is as follows:</p>
+        <ol start="1">
+            <li>If no formatter information is supplied then the configuration parameter date format is used (either date or datetime, depending on the field’s data type).</li>
+        </ol>
+        <ol start="2">
+            <li>If the formatter information contains one of the built in constants (acm_date, acm_time &amp; acm_datetime) then the appropriate format is used accordingly.</li>
+        </ol>
+        <ol start="3">
+            <li>If the formatter contains another string then that string is used as the specific date format (for example: mm-dd-yyyy).</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234645"></a>C# Example</h1>
+        <div>
+            <p class="Code">// Step 1 - Create a cookie container<br />System.Net.CookieContainer cookieContainer = new System.Net.CookieContainer();</p>
+            <p class="Code">#region Step 2 - Log in<br />&#160; AuthenticationWebService.ACMResult result;<br />&#160; // Connect to the authentication web service<br />&#160; ACMAuthenticationServiceService authenticationWebService = new <br /> ACMAuthenticationServiceService();<br />&#160; // Assign the cookie container<br />&#160; authenticationWebService.CookieContainer = cookieContainer;<br />&#160; // Log in<br />&#160; result = authenticationWebService.login( "admin", "password" );<br />&#160; if (!result.Step) Console.WriteLine( "Error: Logging failed" );</p>
+            <p class="Code">#endregion</p>
+            <p class="Code">#region Step 3 - Connect to alert web service<br />AlertServiceService asService = new AlertServiceService();<br />// Assign the cookie container<br />asService.CookieContainer = cookieContainer;</p>
+            <p class="Code">#endregion</p>
+            <p class="Code">// Step 4<br />// At this stage, you can build an Alert structure and call the relevant function in asService<br />// :</p>
+        </div>
+        <p class="Code">&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

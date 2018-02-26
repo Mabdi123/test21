@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="944" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref435531090"></a>Define Barriers</h1>
+        <p class="Body">By default a transition has no barrier (Barrier weight equals 0). In order to provide a barrier weight of 1 to a transition, select the <span class="Strong">Mark as barrier</span> checkbox. In order to define a barrier weight that is greater than 1 you should also select the <span class="Strong">Require at least x users on this Work Item to advance to the target step</span> checkbox and enter the exact number of users.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Definine Barriers.png" style="visibility: visible;mso-wrap-style: square;width: 559px;height: 54px;" />
+        </p>
+        <p class="Body">This displays the properties of a transition that has a barrier weight of 2 - at least 2 distinct users are required to review the step before a barrier is removed.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">It is possible to define up to 10 barriers per transition.</p>
+        <p class="SubHeading">Deadlines\Global Deadlines</p>
+        <p class="Body">Deadlines and global deadlines bypass all barrier rules and therefore when any type of deadline occurs, the transition is made regardless of the various barrier settings in the workflow.</p>
+        <p class="SubHeading">Changing or Updating a Step via a Web Service</p>
+        <p class="Body">The ChangeAlertStatus or updateAlert Web Services use administrator rights and therefore bypass all barrier rules.</p>
+        <p class="SubHeading">Changing a Step via a Plugin API</p>
+        <p class="Body">If a step transition is forbidden via barrier rules then the transition fails when a Plugin API attempts to move to the relevant step.</p>
+        <p class="SubHeading">Behavior for Bulk Actions</p>
+        <ul>
+            <li><a name="_Ref113098848"></a>Changing multiple steps from Alerts table: If one or more of the marked items is blocked due to review rules then the respective steps in the change step window are grayed out due to review rules for all the marked items and the bulk action cannot be performed.</li>
+        </ul>
+        <ul>
+            <li>Change multiple via from Plugin API: If for example, you attempt to change a step to two alerts at once, review rules and the review rules allow only the first transition then the first transition succeeds and the transition for the second alert fails (An error appears in the related logs about the second alert failed transition).</li>
+        </ul>
+    </body>
+</html>

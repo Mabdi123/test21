@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234361"></a>XSL Translation Examples</h1>
+        <p class="Body">The XML file for all examples:</p>
+        <div>
+            <p class="Code">&lt;alert&gt;</p>
+            <p class="Code">&lt;content&gt;</p>
+            <p class="Code">&lt;status&gt;Open&lt;/status&gt;</p>
+            <p class="Code">&lt;attachments&gt;</p>
+            <p class="Code">&lt;attachment description="First file"&gt;</p>
+            <p class="Code">&lt;path&gt;c:/files/file1.doc&lt;/path&gt;</p>
+            <p class="Code">&lt;/attachment&gt;</p>
+            <p class="Code">&lt;attachment description="Second file"&gt;</p>
+            <p class="Code">&lt;path&gt;c:/files/file2.xls&lt;/path&gt;</p>
+            <p class="Code">&lt;/attachment&gt;</p>
+            <p class="Code">&lt;/attachments&gt;</p>
+            <p class="Code">&lt;/content&gt;</p>
+            <p class="Code">&lt;/alert&gt;</p>
+        </div>
+        <p class="Body">Initially, in RCM Designer, define a custom resource string in the base language for the module ‘Actimize’:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/XSL Translation Examples.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 50px;" />
+        </p>
+        <p class="Body">Then, translate the resource strings to a local language. In this example the translations are indicated with a ‘~’ character at the beginning and end of the value:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/XSL Translation Examples_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 63px;" />
+        </p>
+        <p class="Body">Add the following to the xsl header :</p>
+        <div>
+            <p class="Code">&lt;xsl:stylesheet version="1.0" xmlns:xsl="<a href="http://www.w3.org/1999/XSL/Transform">http://www.w3.org/1999/XSL/Transform</a>" xmlns:xalan="<a href="http://xml.apache.org/xalan">http://xml.apache.org/xalan</a>" xmlns:rcm="com.actimize.infrastructure.util.XsltExtensionsElements"</p>
+            <p class="Code">extension-element-prefixes="rcm"&gt;</p>
+            <p class="Code">&lt;xalan:component prefix="rcm" elements="setModule t"&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;xalan:script lang="javaclass" src="xalan://com.actimize.infrastructure.util.XsltExtensionsElements"/&gt;</p>
+            <p class="Code">&lt;/xalan:component&gt;</p>
+        </div>
+        <p class="Body">The ‘setModule’ XSL tag can be used to define a global module for all translations in the XSL file:</p>
+        <p class="Code">&lt;rcm:setModule name=”AML” /&gt;</p>
+        <p class="Body">If the module is ACTIMIZE then the line is not needed. The &lt;rcm:t&gt; tag uses the ‘ACTIMIZE’ module by default if no other module was set.</p><span class="Strong">Translating values by using their base value</span>
+        <p class="Body"><span class="Strong">Option1</span> – Translating a textual value using the 'text' attribute</p>
+        <p class="Code">&lt;rcm:t text="Open" /&gt;</p>
+        <p class="Body">The Result: <span class="Code">~ Open ~</span></p>
+        <p class="Body"><span class="Strong">Option 2</span> – Translating a computed value (Xpath, variable, exc.) using the 'select' attribute</p>
+        <p class="Code">&lt;rcm:t select="/alert/content/status" /&gt;</p>
+        <p class="Body">The Result:<span class="Code">~ Open ~</span></p>
+        <p class="Body">Both 'text' and 'select' can be translated by resource string identifier as well by using the 'byId' attribute (default is false)</p>
+        <p class="Code">&lt;rcm:t byId="true" text="aml.open" /&gt;</p>
+        <p class="Body">The Result: <span class="Code">~ Open ~</span></p>
+        <p class="Body">Additional optional parameters are: module, escaping:</p>
+        <p class="Body">‘module’ can be used to overwrite a global module for an explicit translation</p>
+        <p class="Body">escaping can be either "html" (the default), "js" or "none"</p>
+        <p class="Code">&lt;rcm:t select="/alert/content/status" module="AML" escapingType="none"/&gt;</p>
+        <p class="Body">The Result: <span class="Code">~ Open ~</span></p><span class="Strong">Three methods to pass parameters:</span>
+        <p class="Body"><span class="Strong">Method 1:</span> Using paramX for computed values (Xpath, variables, etc.) and tparamX for textual values. X is the parameter number.</p>
+        <div>
+            <p class="Code">&lt;xsl:variable name="myVariable"&gt;Alert&lt;/xsl:variable&gt;</p>
+            <p class="Code">&lt;rcm:t text="Item of type {0} is {1}" module="ACTIMIZE" param0="$myVariable" tparam1="New"/&gt;</p>
+        </div>
+        <p class="Body">The Result: <span class="Code">~ Item of type Alert is New ~</span></p>
+        <p class="Body"><span class="Strong">Method 2:</span> Reading multiple parameters at once with xpath using the ‘params’ attribute: </p>
+        <p class="Code">&lt;rcm:t text="Item of type {0} is {1}" module="ACTIMIZE" params="/alert/content/attachments/attachment/path"/&gt;</p>
+        <p class="Body">The Result: <span class="Code">~ Item of type c:/files/file1.doc is c:/files/file2.xls ~</span></p>
+        <p class="Body"><span class="Strong">Method 3:</span> Writing params in line with the value using inline-params attribute</p>
+        <p class="Code">&lt;rcm:t text="Item of type {0} is {1}@@Alert@@New" module="ACTIMIZE" inline-params="true" /&gt;</p>
+        <p class="Body">The Result: <span class="Code">~ Item of type Alert is New ~</span></p><span class="Strong">Display Example</span>
+        <p class="Body">The XSL file:</p>
+        <div>
+            <p class="Code">&#160; &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xalan="http://xml.apache.org/xalan" xmlns:rcm="com.actimize.infrastructure.util.XsltExtensionsElements" extension-element-prefixes="rcm"&gt;</p>
+            <p class="Code">&#160; &lt;xalan:component prefix="rcm" elements="setModule t"&gt;</p>
+            <p class="Code">&#160; &lt;xalan:script lang="javaclass" src="xalan://com.actimize.infrastructure.util.XsltExtensionsElements" /&gt; </p>
+            <p class="Code">&#160; &lt;/xalan:component&gt;</p>
+            <p class="Code">&#160; &lt;xsl:template match="/"&gt;</p>
+            <p class="Code">&#160; &lt;rcm:setModule name="AML" /&gt; </p>
+            <p class="Code">&#160; &lt;html&gt;</p>
+            <p class="Code">&#160; &lt;table width="100%"&gt;</p>
+            <p class="Code">&#160; &lt;tr&gt;</p>
+            <p class="Code">&#160; &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Item:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;rcm:t byId="true" module="ACTIMIZE" text="actimize.item of type {0} is {1}" tparam0="Alert" tparam1="new" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code">&#160; &lt;tr&gt;</p>
+            <p class="Code">&#160; &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Alert status:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;rcm:t select="/alert/content/status" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code">&#160; &lt;tr&gt;</p>
+            <p class="Code">&#160; &lt;td colspan="2" bgcolor="#BBFFFF"&gt;</p>
+            <p class="Code">&#160; &lt;b&gt;Alert attachments:&lt;/b&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code">&#160; &lt;xsl:for-each select="alert/content/attachments/attachment"&gt;</p>
+            <p class="Code">&#160; &lt;tr&gt;</p>
+            <p class="Code">&#160; &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;rcm:t select="@description" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;td&gt;</p>
+            <p class="Code">&#160; &lt;xsl:value-of select="path" /&gt; </p>
+            <p class="Code">&#160; &lt;/td&gt;</p>
+            <p class="Code">&#160; &lt;/tr&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:for-each&gt;</p>
+            <p class="Code">&#160; &lt;/table&gt;</p>
+            <p class="Code">&#160; &lt;/html&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:template&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:stylesheet&gt;</p>
+        </div>
+        <p class="Body">The output is displayed in Alert details:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/XSL Translation Examples_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 110px;" />
+        </p>
+    </body>
+</html>

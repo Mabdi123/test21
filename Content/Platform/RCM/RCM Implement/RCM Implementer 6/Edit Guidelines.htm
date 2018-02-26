@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234310"></a><a name="_Ref500313220"></a>Edit Guidelines</h1>
+        <p class="Body">The $(&lt;parameter&gt;) syntax indicates that the value of the parameter is dependent on another parameter that is in the parentheses. For example, the value $(actimize.workingdirectory) indicates that there is a dependency on the value of the parameter actimize.workingdirectory</p>
+        <p class="Body">Values that are taken from the command line of the Java console (-D&lt;name&gt;=&lt;value&gt; syntax) are entered in the following syntax:</p>
+        <p>system:&lt;command&gt;</p>
+        <p class="Body">For example, the value ${system:user.home} indicates that the value of the path retrieved from the from value in the system. </p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">Hovering the mouse cursor over a specific parameter displays a tool tip with the actual value of the parameter.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit Guidelines.png" style="visibility: visible;mso-wrap-style: square;width: 322px;height: 77px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Parameters that have erroneous values are displayed in red. For example, in this value the colon character was accidentally entered twice:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit Guidelines_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 31px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">If no value is provided for a system value then the default setting is retrieved from the database. Otherwise, value is not resolved.</p>
+    </body>
+</html>

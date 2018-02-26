@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="640" MadCap:lastWidth="906">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref105906263"></a><a name="_Toc489949811"></a>Synchronize List of Users with LDAP Users List</h1>
+        <p class="Body">Once you have added all relevant LDAP groups to the <MadCap:variable name="RCM Actimize.ProductCode" /> list of groups, you can continue by synchronizing the <MadCap:variable name="RCM Actimize.ProductCode" /> users list with the LDAP users list. </p>
+        <p class="Body">The system only synchronizes the <MadCap:variable name="RCM Actimize.ProductCode" /> list to include those users who are associated with the LDAP groups that you added to the <MadCap:variable name="RCM Actimize.ProductCode" />. </p>
+        <div class="Note">
+            <p class="Body">Circular references (for example, A is a member of group B and B is a member of group A) are not allowed in LDAP.</p>
+        </div>
+        <p class="Procedure">To synchronize the list of RCM users with the LDAP users:</p>
+        <ul>
+            <li>Click <span class="Strong">Synchronize Users</span> in order to bring all LDAP users, who are associated with the LDAP groups that you have added, into the <MadCap:variable name="RCM Actimize.ProductCode" /> database.</li>
+            <p class="Body">This process may take some time. A message window is displayed when the process finishes, indicating success or failure.</p>
+        </ul>
+        <div class="Note">
+            <p class="Body">An external user is added to the <MadCap:variable name="RCM Actimize.ProductCode" /> only if that user is linked to a group and the group is linked to a role. If an external user attempts to login to the <MadCap:variable name="RCM Actimize.ProductCode" /> via Single Sign On and they are not linked to a group that has a role then they will not be able to login to the <MadCap:variable name="RCM Actimize.ProductCode" />.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName"
+    EvaluatedDefinition="Actimize">Actimize</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Risk Case Manager">Risk Case Manager</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Solution Guide">Solution Guide</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="RCM">RCM</Variable>
+  <Variable
+    Name="VersionNumber"
+    Comment=""
+    EvaluatedDefinition="5.13.0">5.13.0</Variable>
+  <Variable
+    Name="ReleaseDate"
+    Comment=""
+    EvaluatedDefinition="November 16, 2017">November 16, 2017</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="User's Guide">User's Guide</Variable>
+  <Variable
+    Name="HelpName"
+    Comment="Keep this short; use Acronyms where possible.  Can match the Product Code."
+    EvaluatedDefinition="RCM">RCM</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Reference Guide">Reference Guide</Variable>
+  <Variable
+    Name="CompanyName"
+    Comment=""
+    EvaluatedDefinition="NICE">NICE</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="NWM">NWM</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="NWM">NWM</Variable>
+</CatapultVariableSet>

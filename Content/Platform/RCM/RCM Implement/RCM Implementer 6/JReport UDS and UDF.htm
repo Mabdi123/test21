@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234656"></a>JReport UDS and UDF</h1>
+        <p class="Body">In order to support various RCM related report features in JReport, RCM includes a kit that expands JReport functionality in the JReport designer. This is done using the UDS (User Data Source) and UDF (User Defined Function) facilities. The following provides detailed information about these options.</p>
+        <p class="SubHeading">Installation of UDS and UDF Functionality</p>
+        <p class="Body">UDS and UDF functionality are included as part of RCM runtime. In order to install the support in JReport designer you must do the following:</p>
+        <ol start="1">
+            <li>During the JReport Designer installation, in the Add Class Path step, add to the Class path list the jar files in the acm_jars folder.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/JReport UDS and UDF.png" style="visibility: visible;mso-wrap-style: square;width: 513px;height: 346px;" />
+        </p>
+        <p class="Body">These are the jar files placed in acm_jars folder and their usage:</p>
+        <ul>
+            <li><span class="Strong">actimize.jar</span> – For supporting UDS (User Data Source) and UDF (User Defined Function) functionality</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">jconn2.jar</span> – For connecting to the Sybase DB</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ojdbc14.jar</span> – For connecting to the Oracle DB</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">msbase.jar + mssqlserver.jar + msutil.jar (all of these 3 files)</span> – For connecting to the MSSQL DB</li>
+        </ul>
+        <p class="Body">As a result these jar files were added to the ADDCLASSPATH.<br />To check this, edit the setenv.bat file in the &lt;JReport_Designer_Home&gt;/bin folder.<br />Make sure it contains the acm_jars files you listed during the installation in the Add Class Path step.</p>
+        <p class="Body">Example:</p>
+        <p class="Code">set ADDCLASSPATH=%JAVAHOME%\lib\tools.jar;C:\actimize\acm_jars\actimize.jar;C:\actimize\acm_jars\jconn2.jar;C:\actimize\acm_jars\msbase.jar;C:\actimize\acm_jars\mssqlserver.jar;C:\actimize\acm_jars\msutil.jar;C:\actimize\acm_jars\ojdbc14.jar</p>
+        <ol start="2">
+            <li>Add the configuration of drivers for user data sources used by your system:<br />Edit the java execution line in “jreport.bat”, adding definitions for required DB drivers.<br />The addition used to support Oracle, Sybase and Microsoft SQ LServer:<br />Locate the text -Dinstall.root and immediately before this text add the driver configuration.<br />For example:</li>
+        </ol>
+        <p class="Code">"%JAVAHOME%\bin\java.exe" <br />"-Djdbc.drivers=com.sybase.jdbc2.jdbc.SybDriver:oracle.jdbc.driver.OracleDriver:com.microsoft.jdbc.sqlserver.SQLServerDriver" (line continued)</p>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/JReport UDS and UDF_1.png" style="visibility: visible;mso-wrap-style: square;width: 534px;height: 292px;" />
+        </p>
+        <ol start="3">
+            <li>Create the “connections.mf” file in the &lt;DESIGNER-HOME&gt;\bin folder. <br />For example:</li>
+        </ol>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/JReport UDS and UDF_2.png" style="visibility: visible;mso-wrap-style: square;width: 513px;height: 184px;" />
+        </p>
+        <ol start="4">
+            <li>Verify that every connection in your connection.mf file has a matching record on the connections tab of the admin.jsp file of the RCM. The connection name on both places must match (case sensitive).<br />The best practice is to check the DSN name of the table connections in the RCM repository with the name used in the connection.mf file<br />Note that there must be a new line (CRLF) after the password line.</li>
+        </ol>
+        <ol start="5">
+            <li>After these configurations you can start the JReport Designer using the JReport.bat file.</li>
+        </ol>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">UDS &amp; UDF functionality is not supported in a standalone JReport Server mode.</p>
+        <p class="SubHeading">User Data Source (UDS)</p>
+        <p class="Body">The UDS facility addresses two issues:</p>
+        <ul>
+            <li>Ability to switch data sources without changing the report.</li>
+        </ul>
+        <ul>
+            <li>Ability to use externally defined connection pools.</li>
+        </ul>
+        <p class="Body">To use the UDS, you need to use “UDS” objects instead of “Connection” and “Query” Objects. Note that UDS replaces both objects. </p>
+        <p class="SubHeading">Configure a Logical Connection</p>
+        <p class="Body">Connections are defined in “connections.mf”. For each connection you need to define a section in the following form:</p>
+        <div>
+            <p class="Code">Name: &lt;logical-name&gt;</p>
+            <p class="Code">ConnectionURL: &lt;jdbc-connection-string&gt;</p>
+            <p class="Code">Username: &lt;user-name&gt;</p>
+            <p class="Code">Password: &lt;password&gt;</p>
+        </div>
+        <p class="Body">For example:</p>
+        <div>
+            <p class="Code">Name: CRMDB</p>
+            <p class="Code">ConnectionURL: jdbc:oracle:thin:@crmserver:1521:crmdb</p>
+            <p class="Code">Username: alfred</p>
+            <p class="Code">Password: vertigo</p>
+        </div>
+        <p class="Body">The format is case-sensitive, and values must be preceded with a space.</p>
+        <p class="Body">Updating “connections.mf” requires restarting the JReport Designer.</p>
+        <p class="Body">Note that only JReport Designer uses this file. Runtime environment <span class="Strong">does not</span> use this file, and therefore security is not an issue.</p>
+        <p class="SubHeading">Define a UDS Query</p>
+        <ol start="1">
+            <li>In Catalog Browser, right click UserDataSource, and on the popup menu, click Add UserDataSource.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/JReport UDS and UDF_3.png" style="visibility: visible;mso-wrap-style: square;width: 155px;height: 299px;" alt="udsguide3" />
+        </p>
+        <ol start="2">
+            <li>In the Add User Data Source window, enter the following information:</li>
+        </ol>
+        <ul>
+            <li><span class="Strong">Name</span>: Logical name for your db query </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Class name:</span> This <span class="Strong">must be</span> com.actimize.infrastructure.uds.SQLDataSource</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Parameters:</span> String in the form &lt;DB-LOGICAL-NAME&gt;:&lt;QUERY&gt;. Query is a standard SQL query, and may also use JReport parameters. Following is an example:</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/JReport UDS and UDF.jpg" style="visibility: visible;mso-wrap-style: square;width: 417px;height: 314px;" alt="uds" />
+        </p>
+        <p class="Body">Note that in SQL Syntax the following queries are identical:</p>
+        <ul>
+            <li>”Select account_id From Accounts Where customer_name = ‘ ” @customer_name_param “ ‘ ”</li>
+        </ul>
+        <ul>
+            <li>”Select account_id From Accounts Where customer_name = ‘ ” +@customer_name_param+ “ ‘ ”</li>
+        </ul>
+        <ol start="3">
+            <li>Click <span class="Strong">OK</span>. Now you can expand the added UDS in the catalog browser, and view the table-like tree structure.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/JReport UDS and UDF_4.png" style="width: 201px;height: 412px;" />
+        </p>
+        <p><span class="Strong">Running </span><span class="Strong">the </span><span class="Strong">Report in </span><span class="Strong">RCM</span><span class="Strong"> Environment</span>
+        </p>
+        <p class="Body">To run the report in the RCM, you need to define it using RCM Designer and to upload the template files. For more information, see <MadCap:xref href="Setting up Report Definitions.htm#_Ref500325249" class="ParaTextOnly">Setting up Report Definitions</MadCap:xref>.</p>
+        <p class="Body">Before a report can be run in the RCM, you need to define the logical DB connection in the Connections tab of the RCM admin site. For details see <MadCap:xref href="Managing Connections Admin.htm#_Ref100995074" class="ParaTextOnly">Managing Connections - Admin Site Connections Tab </MadCap:xref>.</p><span class="Strong">SQL Tracing</span>
+        <p class="Body">If you want to view the SQL queries that pass through the UDS, SQL tracing can be enabled in JReport Designer by adding the following parameter to the Java command line in jreport.bat:</p>
+        <p class="Code">-DsqlTracing=on</p><span class="Strong">UDS Query Syntax</span>
+        <p class="Body">The UDS syntax must conform to the following </p>
+        <p class="Body">&lt;DB-LOGICAL-NAME&gt;=&lt;QUERY&gt;</p>
+        <p class="Body">Note that spaces before or after each of the 2 elements will be trimmed).</p>
+        <div>
+            <p class="Code">Example: </p>
+            <p class="Code">acme=</p>
+            <p class="Code">select * from alerts</p>
+        </div>
+        <ul>
+            <li>JReport parameters should be inserted using the parameter name preceded by an ‘@’ character (quotation marks and string concatenation are not needed). </li>
+        </ul>
+        <div>
+            <p class="Code">Example:</p>
+            <p class="Code">acme=</p>
+            <p class="Code">select * from alerts where alert_id = <span class="Strong">@alertId</span> or alert_internal_id = 1032</p>
+        </div>
+        <ul>
+            <li>If a word character (i.e,. a letter or an underscore) is needed immediately after a JReport parameter, then two quotation marks should be inserted to separate between the two (the quotation marks will not appear in the final query as they simply denote an empty string). </li>
+        </ul>
+        <div>
+            <p class="Code">Example: </p>
+            <p class="Code">acme=</p>
+            <p class="Code">select * from navigation where up_or_down = ‘<span class="Strong">@direction””</span>wards’</p>
+            <p class="Code">Resulting Query (when the parameter <span class="Emphasis">direction</span> is the word “up”):</p>
+            <p class="Code">select * from navigation where up_or_down = ‘<span class="Strong">up</span>wards’</p>
+        </div>
+        <ul>
+            <li>Non-string JReport parameters that were not set to any valid value before the report is generated are be inserted into the UDS parameter as the string NULL (this is due to JReport behavior). If you wish to convert this odd value into an empty string, you must precede the JReport parameter with the string <span class="Emphasis">{remove_null} </span>(including the curly brackets). </li>
+        </ul>
+        <div>
+            <p class="Code">Example:</p>
+            <p class="Code">acme=</p>
+            <p class="Code">select * from alerts where alert_id &lt; ‘<span class="Strong">{remove_null}@alertId</span>’</p>
+            <p class="Code">Resulting Query (when the parameter <span class="Emphasis">alertId</span> is empty):</p>
+            <p class="Code">select * from alerts where alert_id &lt; ‘’</p>
+        </div>
+        <p><a name="_Toc500234657"></a><span class="Strong">UDF</span><span class="Strong"> in JReport</span>
+        </p>
+        <p class="Body">User Defined Functions provide various RCM related report features. These functions are called as a part of the JReport “Formula” objects.</p>
+        <p class="SubHeading">General Usage</p>
+        <p class="Body">To use the UDF object in a formula you must import it to the beginning of the formula:</p>
+        <p class="Code">import acm from "CaseManagerFunctions";</p>
+        <p class="Body">Following this you can call functions by using Object Oriented (OO) syntax.</p>
+        <p class="Body">All RCM functions return strings. When the report is run in JReport Designer, the returned strings are hard-coded messages showing that the function was called. When the report is run in RCM they are actual values.</p>
+        <p class="SubHeading">Link to report notes</p>
+        <p class="Code">acm.getNotesLink(&lt;instance-id&gt;,&lt;segment-id&gt;,&lt;title&gt;);</p>
+        <ul>
+            <li>Instance-id: integer report instance id as passed in report parameter</li>
+        </ul>
+        <ul>
+            <li>Segment-id: String identifier for line or another report segment</li>
+        </ul>
+        <ul>
+            <li>Title: String for report note window title</li>
+        </ul>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">This report must be a popup window (target=_blank).</p>
+        <p class="SubHeading">Link to create manual alert</p>
+        <p class="Code">acm.getAlertsLinkByIdentifiers(&lt;alert-type-identifier&gt;,&lt;status-identifier&gt;,&lt;bu-identifier&gt;,&lt;set-phrase&gt;);</p>
+        <p class="Body">alert-type-identifier: String referring alert_type_identifier column from table acm_md_alert_types</p>
+        <p class="Body">status-identifier: String referring status_identifier from table acm_md_alert_statuses</p>
+        <p class="Body">Bu-identifier: String that defines Business unit</p>
+        <p class="Body">Set-phrase: String (URL Encoded) in format col1=val1&amp;col2=val2, where column names are taken from ALERTS table.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">This report must be a popup window (target=_blank).</p>
+        <p class="SubHeading">Getting note count per report</p>
+        <p class="Code">acm.getNoteCount(&lt;instance-id&gt;);</p>
+        <ul>
+            <li>Instance-id: integer report instance id as passed in report parameter</li>
+        </ul>
+        <p class="SubHeading">Getting note count per specific report segment</p>
+        <p class="Code">acm.getNoteCount(&lt;instance-id&gt;,&lt;segment-id&gt;);</p>
+        <ul>
+            <li>Instance-id: integer report instance id as passed in report parameter</li>
+        </ul>
+        <ul>
+            <li>Segment-id: String identifier for line/other report segment</li>
+        </ul>
+        <p class="SubHeading">Getting alert counts</p>
+        <p class="Code">acm.getAlertsCount(&lt;key-fields&gt;,&lt;key-values&gt;,&lt;sql-where-clause&gt;);</p>
+        <ul>
+            <li>Key-fields: ALERTS table fields, which will be used as keys in a map of alert counts. Usually this is a small set of P-Fields. Fields should be separated with the “|” character.</li>
+        </ul>
+        <ul>
+            <li>Key-values: corresponding values for the key fields in order to get a specific count. Again, use the “|” character to separate them</li>
+        </ul>
+        <ul>
+            <li>SQL-where-clause: String condition to apply to ALERTS table in order to filter the required alerts</li>
+        </ul>
+        <p class="Body">Example:</p>
+        <p class="Code">Acm.getAlertsCount(“P11|P17”,”784423|John, Doe”,”P12=’9342’”);</p>
+        <p class="SubHeading">Link to related alerts display screen</p>
+        <p class="Code">acm.getRelatedAlertsLink(&lt;sql-where-clause&gt;,&lt;title&gt;);</p>
+        <ul>
+            <li>SQL-where-clause: String condition to apply to ALERTS table in order to filter the required alerts</li>
+        </ul>
+        <ul>
+            <li>Title: string for title of related alerts window</li>
+        </ul>
+        <p class="SubHeading">Link to related alerts details (via SQL query)</p>
+        <p class="Code">acm.showRelatedAlertDetails(&lt;sql-where-clause&gt;,&lt;title&gt;);</p>
+        <ul>
+            <li>SQL-where-clause: String condition to apply to ALERTS table in order to filter the required alerts</li>
+        </ul>
+        <ul>
+            <li>Title: string for title of related alerts window</li>
+        </ul>
+        <p class="SubHeading">Link to related alerts list screen</p>
+        <p class="Code">acm.jumpToDynamicAlertsList(DbChar queryId,DbChar params,DbChar viewIdentifier,DbChar viewName)</p>
+        <ul>
+            <li>queryId: Drilldown Query identifier.</li>
+        </ul>
+        <ul>
+            <li>params: Drilldown Query parameters separated by the regular delimiter @@. For example: @@param1@@@@param2@@)</li>
+        </ul>
+        <ul>
+            <li>viewIdentifier: identifier of alerts view used to display related alerts (work items) ('myAlerts','allAlerts', etc.)</li>
+        </ul>
+        <ul>
+            <li>viewName: customized name of the view when displaying&#160; the result alerts (appears above the menu toolbar)</li>
+        </ul>
+        <p class="SubHeading">Link to related alert details screen (via Drilldown)</p>
+        <p class="Code">acm.jumpToDynamicAlertDetails(DbChar queryId,DbChar params,DbChar viewIdentifier,DbChar viewName)</p>
+        <ul>
+            <li>queryId: Drilldown Query identifier.</li>
+        </ul>
+        <ul>
+            <li>params: Drilldown Query parameters separated by the regular delimiter @@. For example: @@param1@@@@param2@@)</li>
+        </ul>
+        <ul>
+            <li>viewIdentifier: identifier of alerts View used to display related alerts ('myAlerts','allAlerts', etc.)</li>
+        </ul>
+        <ul>
+            <li>viewName: customized name of the View when displaying&#160; the result alerts (appears above the menu toolbar)</li>
+        </ul>
+        <p class="SubHeading">Getting sub report URL</p>
+        <p class="Code">acm.getSubreportUrl(&lt;reportTypeIdentifier&gt;,&lt;subReportName&gt;, &lt;params&gt;);</p>
+        <p class="Body">Report type identifier: The report type identifier that was deployed to Jreport</p>
+        <p class="Body">Sub report name: The name of the sub report that resides in the same folder as the main report. Example: thisSubreport.cls</p>
+        <p class="Body">Params: a list of the subreport parameters.</p>
+        <p class="Body">Example:</p>
+        <p class="Code">“jrs.param$businessUnitid=12&amp;jrs.param$userId=11&amp; jrs.param$alertType=12”</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">It is recommended to configure the target of the JHyperlink to parent. This will correctly launch the linked report in the same DHTML viewer.</p>
+    </body>
+</html>

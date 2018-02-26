@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2739" MadCap:lastWidth="995">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Additions XML Files</h1>
+        <p class="Body">The additions XML files enable implementers to add their configuration, without changing the original solution.xml file. This also enables easy upgrades of the Work Item Display Infra. Up to two “additions” files may be used to hold extra sections and information not already included in the solution XML file and to hold values that override the values in the solution XML file, if necessary. These files are merged with the solution XML file in the following order:</p>
+        <ul>
+            <li>&lt;filename&gt;_additions_1.xml overrides values in the solution XML file, and adds any new sections to it.</li>
+        </ul>
+        <ul>
+            <li>&lt;filename&gt;_additions_2.xml overrides values in the solution XML file (that now already includes values from the additions_1 XML file), and adds any new sections.</li>
+        </ul>
+        <p class="Body">For example, to change the case details UI displayed to the user, see the examples below to:</p>
+        <ul>
+            <li>Add a new preset (tab)</li>
+        </ul>
+        <ul>
+            <li>Add a new tab with an existing section, overwriting some attributes of that section</li>
+        </ul>
+        <ul>
+            <li>Remove a preset (tab) from the UI</li>
+        </ul>
+        <p class="Procedure">To add a new preset (tab) with a new section, see the following sample CaseDetails_additions_1.xml file:</p>
+        <p class="Code"><span class="Code">&lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;</span>
+        </p><span class="Code">&lt;DisplayConfiguration internalConfigurationFileName="internalXml/CaseDetails_internal.xml" infra-version="1.0.0.0"&gt;</span>
+        <p class="Code">&#160;</p><span class="Code">&#160;&#160; &lt;Presets id="presets"&gt;</span>
+        <p class="Code">&#160;</p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160; &lt;Preset media="screen" name="My New Tab" order="1" show="true"&gt;</span>
+        </p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;Sections&gt;</span>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;Section expanded="true" identifier="myNewSection" order="1" show="true"/&gt;</span>
+        </p>
+        <p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/Sections&gt;</span> <![CDATA[ ]]></p>
+        <p><span class="Code">&#160;&#160;&#160;&#160;&#160; &lt;/Preset&gt;</span>
+        </p>
+        <p><span class="Code">&#160;&#160; &lt;/Presets&gt;</span>
+        </p>
+        <p class="Code">&#160;</p><span class="Code">&#160;&#160; &lt;SectionsConfigurations id="SectionsConfigurations"&gt;</span>
+        <p class="Code">&#160;</p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160; &lt;SummarySection name="my New Section" numOfCols="2" identifier="myNewSection" size="L" alignment="left" /&gt;</span>
+        </p>
+        <p class="Code">&#160;</p>&#160;<span class="Code">&#160; &lt;/SectionsConfigurations&gt;&#160;&#160;&#160;</span>&#160;&#160;&#160;&#160;&#160;&#160; <p class="Code">&#160;</p><span class="Code">&lt;/DisplayConfiguration&gt;</span><div class="Note"><p class="Body">This new preset will be displayed as the second tab in the UI if the solution.xml file already has a preset with order=1 as it will be merged into the XML after the solution.xml file.</p></div><p class="Body"><img src="../../../Resources/Images/newfile/Additions XML Files.png" style="visibility: visible;mso-wrap-style: square;width: 573px;height: 117px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p><p class="Procedure">To add a new preset (tab) with a summary section, overwriting the text size and number of columns defined in the solution.xml file, see the following sample CaseDetails_additions_1.xml file. (The singleview.xml file has the following SummarySection definition: &lt;SummarySection name="Summary" numOfCols="2" identifier="summarySection" size="S" alignment="left" /&gt;)</p><p class="Code">&lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;</p><p class="Code">&#160;</p><p class="Code">&lt;DisplayConfiguration internalConfigurationFileName="internalXml/CaseDetails_internal.xml" infra-version="1.0.0.0"&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160; &lt;Presets id="presets"&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160;&#160;&#160;&#160; &lt;Preset media="screen" name="My New Tab" order="1" show="true"&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;Sections&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;Section expanded="true" identifier="summarySection" order="1" show="true"/&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/Sections&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160; &lt;/Preset&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160; &lt;/Presets&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160; &lt;SectionsConfigurations id="SectionsConfigurations"&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160;&#160;&#160;&#160; &lt;SummarySection identifier="summarySection" size="L" numOfCols="3"/&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160; &lt;/SectionsConfigurations&gt;</p><p class="Code">&#160;</p><p class="Code">&lt;/DisplayConfiguration&gt;</p><p class="Body"><img src="../../../Resources/Images/newfile/Additions XML Files_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 101px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p><p class="Procedure">To remove a preset (tab), see the following sample Presets section in the CaseDetails_additions_1.xml file:</p><p class="Code">&#160;&#160; &lt;Presets id="presets"&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160;&#160;&#160;&#160; &lt;Preset media="screen" name="Content" show="false"&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;Sections&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/Sections&gt;</p><p class="Code">&#160;&#160;&#160;&#160;&#160; &lt;/Preset&gt;</p><p class="Code">&#160;</p><p class="Code">&#160;&#160; &lt;/Presets&gt;</p><p>Since the setting in the CaseDetails_additions_1.xml file overwrite the settings in the CaseDetails.xml file, the Content preset (tab) will no longer appear.</p></body>
+</html>

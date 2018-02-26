@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref351557721"></a><a name="_Ref351557724"></a><a name="_Toc500234094"></a>Configure a Target Field</h1>
+        <p class="Body">The Target field that is mapped to the Consolidation Key field should be the initial row in the Target field table. The row highlighted in yellow impacts the decision to which consolidation item the Transaction Work Item is mapped.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure a Target Field.png" style="visibility: visible;mso-wrap-style: square;width: 573px;height: 103px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The table columns are:</p>
+        <ul>
+            <li>The aggregation function is a view only column that displays the aggregation for this target field, which was defined in the alert fields configuration tab.</li>
+        </ul>
+        <ul>
+            <li>The Source Type column indicates the type of source, which can be:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Source</span> – Mapping is done to the alert field.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Expression</span> – Mapping to the field source is done via an expression.</li>
+        </ul>
+        <ul>
+            <li>In the Source Field / Expression column, enter the specific alert field source or expression. If the source type is an alert field, from the drop-down menu, select the alert field as displayed in the following:</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure a Target Field_1.png" style="visibility: visible;mso-wrap-style: square;width: 209px;height: 141px;" />
+        </p>
+        <p class="Body">If the source type is an expression, enter the expression in the Spring Expression Language (SpEL), for example:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure a Target Field_2.png" style="visibility: visible;mso-wrap-style: square;width: 178px;height: 144px;" />
+        </p>
+        <p class="Body">For more information about entering expressions, see <MadCap:xref href="Fill in Expressions.htm#_Ref500246412" class="ParaTextOnly">Fill in Expressions</MadCap:xref>.</p>
+        <p class="Body">The CWI must have a BU field with a value mapped to it and the value can be defined by providing an alert field or an expression. Data types must match for all mappings.</p>
+        <ul>
+            <li>Populating the Condition Expression column is optional. This column adds a condition for mapping the field. The field is mapped only when the condition is true. The condition applies only to the consolidation of the specific field unless it is the consolidation key field (alerts.consolidation_key field in the RCM repository). When the consolidation key condition evaluates to false, no consolidation action occurs for that relationship. This mechanism enables determining which consolidation relationship is used when two work item types are related by more than one relationship. A blank (empty) condition is the same as a condition that evaluates to true.</li>
+        </ul>
+        <p class="Body">Conditions are populated using the Spring Expression Language (SpEL). </p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The condition expression can only store Boolean conditions, and the expression as a source can store different types of results.</p>
+        <p class="Body">Examples of expressions as a source:</p>
+        <p class="Body">${alertEntityId}+' '+${score}</p>
+        <p class="Body">${score} &lt; 50 ? ${alertId} : ${owner}</p>
+        <p class="Body">(In the second example, there is a condition, not a Boolean; if the score is less than 50, the alertId field is shown, otherwise the owner field is shown.)</p>
+        <p class="Body">Examples of condition expressions:</p>
+        <p class="Body">${score}&gt;50 and ${owner} == 'admin'.</p>
+        <p class="Body">${createDate} &gt; toDate('2009-11-11',’yyyy-MM-dd’)</p>
+    </body>
+</html>

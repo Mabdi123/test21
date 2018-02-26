@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Synchronizing Users Language Settings with LDAP</h1>
+        <p class="Body">RCM provides the ability to import user settings from LDAP sources and to synchronize them with RCM data. It is possible to import this attribute as part of the user’s RCM attributes when the user’s representation in LDAP contains the preferred language, In order to import this setting:</p>
+        <ol start="1">
+            <li>The key that is used by the LDAP for the language attribute should be inserted to the ‘actimize_ldap.properties’ file that is used for LDAP synchronization.</li>
+        </ol>
+        <ol start="2">
+            <li>The value of the identifier for the language as it appears in the RCM Designer should match the value of the language in the LDAP. When necessary it is possible to edit the RCM language identifier value in the RCM Designer in order to enforce the match.</li>
+        </ol>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The key name for mapping a language setting in the actimize.ldap.properties file is ‘language’.</p>
+    </body>
+</html>

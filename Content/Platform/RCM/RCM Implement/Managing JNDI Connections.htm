@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="890" MadCap:lastWidth="1197">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397422008"></a><a name="_Toc500234282"></a>Managing JNDI Connections</h1>
+        <p class="Body">When defining a JNDI connection, the following parameters must be populated:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Field</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Connection Name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The internal CM name that you want to assign to this connection.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">JNDI name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The name that was configured for the current connection in the server.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Database Type</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">The type of database for the new connection. The options are:</p>
+                        <ul>
+                            <li>DB2</li>
+                        </ul>
+                        <ul>
+                            <li>Hive-Cloudera</li>
+                        </ul>
+                        <ul>
+                            <li>Hive-Hortonworks</li>
+                        </ul>
+                        <ul>
+                            <li>Impala (using the hive2 driver)</li>
+                        </ul>
+                        <ul>
+                            <li>Impala (using the impala driver)</li>
+                        </ul>
+                        <ul>
+                            <li>MSSQL (Unicode)</li>
+                        </ul>
+                        <ul>
+                            <li>MSSQL</li>
+                        </ul>
+                        <ul>
+                            <li>Oracle (service)</li>
+                        </ul>
+                        <ul>
+                            <li>Oracle (sid)</li>
+                        </ul>
+                        <ul>
+                            <li>Oracle 10</li>
+                        </ul>
+                        <ul>
+                            <li>Spark</li>
+                        </ul>
+                        <ul>
+                            <li>Sybase</li>
+                        </ul>
+                        <p class="ConvertNote"><span class="Strong">NOTE:</span>
+                        </p>
+                        <p class="Body">The <span class="Strong">Database Type</span> must always be configured.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">In order to improve performance it is recommended to define a name space in the application server and RCM. In RCM, this parameter is defined in the actimize.jndi.namespace parameter that is in the Config Parameters tab of Admin.jsp. You should then define the initial context in actimize.jndi.environment parameter that is in the Config Parameters tab of Admin.jsp. An example for a value:</p>
+        <p class="Body">actimize.jndi.environment = java.naming.provider.url=iiop://&lt;host&gt;:&lt;server_port&gt; [^]</p>
+    </body>
+</html>

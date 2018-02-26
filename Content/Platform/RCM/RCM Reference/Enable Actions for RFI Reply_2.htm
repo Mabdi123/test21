@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1129" MadCap:lastWidth="1059">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949838"></a>Enable Actions for RFI Reply </h1>
+        <p class="Body">You can create an RFI template with placeholders that enable you to create links in RFIs with specific responses based on work item information. When you create and send the RFI, the response then can trigger the system to change a step in a workflow.</p>
+        <p class="Body">The following is the syntax for the reply placeholder.</p>
+        <p class="Body"><span class="Strong">$acmMail.mailtoLink(&lt;display link text&gt;,&lt;target step identifier&gt;,&lt;body&gt;,&lt;subject {optional}&gt;)</span>
+        </p>
+        <p class="Body">The received email will have a link instead of the placeholder. The text of the link is defined in the display link text parameter</p>
+        <p class="Body">The parameter values are as follows:</p>
+        <ul>
+            <li><span class="Strong">display link text:</span> The link text as displayed in the mail when HTML is available. You cannot use the “}”, ”{ characters </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">target step identifier: </span>The target step that you want the reply to enable the change.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">body:</span> Free text, the body of the reply email.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">subject:</span> Free text, the subject of the reply email (optional - the default subject will be the subject of the reply email)</li>
+        </ul>
+        <div class="Example">
+            <p class="Body">$acmMail.mailtoLink(“approve to buy”, “approve”, “Thanks for approving”, “approval request”)</p>
+        </div>
+        <div class="Note">
+            <p class="Body">A value of the display link text parameter can only be used once in a specific template.</p>
+        </div>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Enable Actions for RFI Reply_2.png" style="visibility: visible;mso-wrap-style: square;width: 550px;height: 435px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">For details on creating the RFI, see  <MadCap:xref href="Create RFI.htm#_Ref294424647" class="ParaTextOnly">Create RFI</MadCap:xref>.</p>
+    </body>
+</html>

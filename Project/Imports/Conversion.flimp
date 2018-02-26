@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="false" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="false" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" ConvertEquations="true" LastCollectTime="2017-12-19T10:05:52.3671693+02:00" ProjectName="FlareProject" ProjectFolder="F:\Madcap\Flare\Clients\NICE-Actimize\FlareProject\" AutoSync="false" AutoFitTables="true" UseHeaderRows="true" Stylesheet="../../Content/Resources/Stylesheets/Actimize.css" LastImport="2017-08-06T17:36:38.9796902+03:00">
+    <Files />
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles />
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1" />
+        <Map From="Heading 2" To="h1" />
+        <Map From="Heading 3" To="h1" />
+        <Map From="Heading 4" To="h1" />
+        <Map From="Heading 5" To="p.SubHeading" />
+        <Map From="Heading 6" To="p.SubHeading" />
+        <Map From="Appendix 3" To="h1.Appendix" />
+        <Map From="Appendix 2" To="h1.Appendix" />
+        <Map From="Appendix" To="h1.Appendix" />
+        <Map From="Body Indented 6" To="p.Body" />
+        <Map From="Body Indented 5" To="p.Body" />
+        <Map From="Body Indented 4" To="p.Body" />
+        <Map From="Body Indented 3" To="p.Body" />
+        <Map From="Body Indented 2" To="p.Body" />
+        <Map From="Body Indented" To="p.Body" />
+        <Map From="Body" To="p.Body" />
+        <Map From="Caption" To="p.(MS Word Style)" />
+        <Map From="Callout" To="p.(MS Word Style)" />
+        <Map From="Caption Indented 2" To="p.Caption" />
+        <Map From="Caption Indented" To="p.Caption" />
+        <Map From="Code Indented 6" To="p.Code" />
+        <Map From="Code Indented 5" To="p.Code" />
+        <Map From="Code Indented 4" To="p.Code" />
+        <Map From="Code Indented 3" To="p.Code" />
+        <Map From="Code Indented 2" To="p.Code" />
+        <Map From="Code Indented" To="p.Code" />
+        <Map From="Code Block Indented 3" To="p.Code" />
+        <Map From="Code Block Indented 2" To="p.Code" />
+        <Map From="Code Block Indented" To="p.Code" />
+        <Map From="Code Block" To="p.Code" />
+        <Map From="Code" To="p.Code" />
+        <Map From="Font 8 Note Table Heading Indented" To="p.ConvertNote" />
+        <Map From="Font 8 Note Table Heading" To="p.ConvertNote" />
+        <Map From="Font 8 Note Table Text Indented" To="p.ConvertNote" />
+        <Map From="Font 8 Note Table Text" To="p.ConvertNote" />
+        <Map From="Font 8 Note Table Bullet" To="p.ConvertNote" />
+        <Map From="Font 8 Table Body Indented 3" To="p.Body" />
+        <Map From="Font 8 Table Body Indented 2" To="p.Body" />
+        <Map From="Font 8 Table Body Indented" To="p.Body" />
+        <Map From="Font 8 Table Body" To="p.Body" />
+        <Map From="Font 8 Table Heading" To="p.TableHeading" />
+        <Map From="Font 9 Note Table Text Indented" To="p.Body" />
+        <Map From="Font 9 Note Table Text" To="p.Body" />
+        <Map From="Font 9 Note Table Heading Indented" To="p.ConvertNote" />
+        <Map From="Font 9 Note Table Heading" To="p.ConvertNote" />
+        <Map From="Font 9 Table Body Indented 3" To="p.Body" />
+        <Map From="Font 9 Table Body Indented 2" To="p.Body" />
+        <Map From="Font 9 Table Body Indented" To="p.Body" />
+        <Map From="Font 9 Table Body" To="p.Body" />
+        <Map From="Font 9 Table Heading" To="p.TableHeading" />
+        <Map From="Not H3" To="h3.NoNumber" />
+        <Map From="Not H2" To="h1" />
+        <Map From="Not H1" To="h1" />
+        <Map From="NoteHeading" To="p.ConvertNote" />
+        <Map From="Note Text Indented 2" To="p.Body" />
+        <Map From="Note Text Indented" To="p.Body" />
+        <Map From="Note Text" To="p.Body" />
+        <Map From="Note Table Text Indented" To="p.Body" />
+        <Map From="Note Table Text" To="p.Body" />
+        <Map From="Note Table Heading Indented" To="p.ConvertNote" />
+        <Map From="Note Table Heading" To="p.ConvertNote" />
+        <Map From="Note Heading Indented 2" To="p.ConvertNote" />
+        <Map From="Note Heading Indented" To="p.ConvertNote" />
+        <Map From="Revision History" To="h1.RevisionHistory" />
+        <Map From="Space After" To="p.Body" />
+        <Map From="Table Body Indented 3" To="p.Body" />
+        <Map From="Table Body Indented 2" To="p.Body" />
+        <Map From="Table Body Indented" To="p.Body" />
+        <Map From="Table Body" To="p.Body" />
+        <Map From="Table Heading" To="p.TableHeading" />
+        <Map From="ToDo" To="p.Procedure" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Code Character" To="span.Code" />
+        <Map From="Strong" To="span.Strong" />
+        <Map From="Emphasis" To="span.Emphasis" />
+    </CharacterStyles>
+    <NewTopicStyles>
+        <StyleName Name="Appendix" />
+        <StyleName Name="Appendix 2" />
+        <StyleName Name="Appendix 3" />
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+        <StyleName Name="Heading 4" />
+    </NewTopicStyles>
+    <UsedParagraphStyles>
+        <StyleName Name="Body" />
+        <StyleName Name="Body Indented" />
+        <StyleName Name="Body Indented 2" />
+        <StyleName Name="Body Indented 3" />
+        <StyleName Name="Bulleted List" />
+        <StyleName Name="Bulleted List 2" />
+        <StyleName Name="Bulleted List 3" />
+        <StyleName Name="Caption" />
+        <StyleName Name="Caption Indented" />
+        <StyleName Name="Comment Text" />
+        <StyleName Name="Confidential" />
+        <StyleName Name="Default" />
+        <StyleName Name="Font 9 Note Table Heading" />
+        <StyleName Name="Font 9 Note Table Text" />
+        <StyleName Name="Font 9 Table Body" />
+        <StyleName Name="Font 9 Table Bullets" />
+        <StyleName Name="Font 9 Table Heading" />
+        <StyleName Name="Font 9 Table Note Text" />
+        <StyleName Name="Font 9 Table NoteHeading" />
+        <StyleName Name="Font 9 Table Number List" />
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+        <StyleName Name="Heading 4" />
+        <StyleName Name="Heading 4 No Number" />
+        <StyleName Name="Heading 5" />
+        <StyleName Name="List Paragraph" />
+        <StyleName Name="Normal (Web)" />
+        <StyleName Name="Note Bullet" />
+        <StyleName Name="Note Bullet Indented" />
+        <StyleName Name="Note Heading Indented" />
+        <StyleName Name="Note Heading Indented 2" />
+        <StyleName Name="Note Table Body" />
+        <StyleName Name="Note Table Bullet" />
+        <StyleName Name="Note Table Heading" />
+        <StyleName Name="Note Table Text" />
+        <StyleName Name="Note Text" />
+        <StyleName Name="Note Text Indented" />
+        <StyleName Name="Note Text Indented 2" />
+        <StyleName Name="NoteHeading" />
+        <StyleName Name="Number List 2" />
+        <StyleName Name="Number List 3" />
+        <StyleName Name="Number List Indented" />
+        <StyleName Name="Numbered List" />
+        <StyleName Name="Numbered List alpha" />
+        <StyleName Name="Overview checks" />
+        <StyleName Name="Space After" />
+        <StyleName Name="Table Body" />
+        <StyleName Name="Table Body Indented" />
+        <StyleName Name="Table Body Indented 2" />
+        <StyleName Name="Table Body Indented 3" />
+        <StyleName Name="Table Bullets" />
+        <StyleName Name="Table Bullets 2" />
+        <StyleName Name="Table Heading" />
+        <StyleName Name="Table Text Note" />
+        <StyleName Name="TOC 1" />
+        <StyleName Name="TOC 2" />
+        <StyleName Name="TOC 3" />
+        <StyleName Name="ToDo" />
+        <StyleName Name="z Blank Header" />
+        <StyleName Name="z Confidential Footer" />
+        <StyleName Name="z Contents" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Body Char" />
+        <StyleName Name="Emphasis" />
+        <StyleName Name="Hyperlink" />
+        <StyleName Name="Note Text Indented Char" />
+        <StyleName Name="Strong" />
+        <StyleName Name="Table Body Char" />
+    </UsedCharacterStyles>
+</MsWordImport>

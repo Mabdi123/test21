@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1121" MadCap:lastWidth="1081">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234338"></a>Create a New Language and Assigning General Information</h1>
+        <p class="Body">You can create a new language as follows.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Create a New Language and.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Procedure">To create a new language:</p>
+        <ol start="1">
+            <li>From the Languages tab, click the <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/The Languages Tab_1.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 17px;" /> icon. The General and Translation tabs open.</li>
+        </ol>
+        <ol start="2">
+            <li>Using the options within the General tab, provide a name for this language.</li>
+        </ol>
+        <ol start="3">
+            <li>Enter the language Identifier that you want to appear within the RCM activity bar.</li>
+        </ol>
+        <ol start="4">
+            <li>Provide a description, if required. You can access a larger text area for the description by clicking the Edit button beside the Description field box.</li>
+        </ol>
+        <ol start="5">
+            <li>Select the relevant language code (e.g., Spanish –es) and the country code (e.g., Spain –ES). If the language is read form right to left (e.g., Hebrew) then select the Right to Left checkbox.</li>
+        </ol>
+        <ol start="6">
+            <li>Select the pattern for date formatting of this language. The display date is based on the Java Simple Date Format for displaying dates. If you are using a custom format and not one of the provided options then you must verify that it works by using it in the RCM date renderer and in the date picker. Textual date formats are only supported for English. For other languages, use only numeric date formats. <br />Examples:<br />MM/dd/yyyy (e.g., 03/26/2006)<br />yyyy-MM-dd (e.g., 2006-03-26)</li>
+        </ol>
+        <ol start="7">
+            <li>Select the pattern for time formatting of this language by selecting a valid Java Simple Date Format syntax for displaying time. Examples:<br />h:mm a (e.g., 4:08 PM)<br />HH:mm (e.g., 16:08)</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">If you do not specify a date or time format for the language then the formats are taken from the actimize.common.timeDisplayFormat and actimize.common.dateDisplayFormat parameters. These parameters can be edited in the Configuration Sets tab in System Configuration.</p>
+        </div>
+    </body>
+</html>

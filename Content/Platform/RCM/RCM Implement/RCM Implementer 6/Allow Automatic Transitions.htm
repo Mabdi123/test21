@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Allow Automatic Transitions</h1>
+        <p class="Body">Select the <span class="Strong">Allow automatic transition when touched</span> checkbox to enable this parameter. </p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Allow Automatic Transitions.png" style="visibility: visible;mso-wrap-style: square;width: 277px;height: 28px;" />
+        </p>
+        <p class="Body">An alert (work item) is considered as “touched” when one of the following actions occurs:</p>
+        <ul>
+            <li>The alert or case item priority is modified</li>
+        </ul>
+        <ul>
+            <li>The alert score is modified</li>
+        </ul>
+        <ul>
+            <li>The alert is assigned to a user and/or BU.</li>
+        </ul>
+        <ul>
+            <li>A note is added to the alert.</li>
+        </ul>
+        <ul>
+            <li>The alert is edited.</li>
+        </ul>
+        <ul>
+            <li>Change priority is performed on a case item.</li>
+        </ul>
+        <ul>
+            <li>Item details are viewed (see the actimize.common.touchOnView configuration parameter).</li>
+        </ul>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">Each step node can have only one transition node that enables automatic transition when touched.</p><span class="Strong">Automatic Transitions</span>
+        <p class="Body">In addition to the checkbox, automatic transitions are enabled as follows:</p>
+        <ul>
+            <li>When the alert is not associated with a workflow, any common action (assign, add note, change score, change priority, update) causes the alert to move from the default step to the In process step. </li>
+        </ul>
+        <ul>
+            <li>When the config parameter <span class="Strong">touchOnView</span> is on, the alert is in the default step, and the user views the alert details, it will change automatically to the In process step.&#160; </li>
+        </ul>
+    </body>
+</html>

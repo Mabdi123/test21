@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  PatchHeadingLevels="true"
+  Medium="pdf"
+  ConditionTagExpression="include[Default.PrintOnly or &quot;RCM Custom.RCM&quot;] exclude[Default.Hide or Default.ScreenOnly or &quot;RCM Custom.NWM&quot;] "
+  MasterToc="/Project/TOCs/Platform/RCM/Review TOC.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Variables>
+    <Variable
+      Name="RCM Actimize/GuideName">Reference Guide</Variable>
+    <Variable
+      Name="Actimize/GuideName">Reference Guide</Variable>
+    <Variable
+      Name="Actimize/SolutionName">Risk Case Manager</Variable>
+    <Variable
+      Name="Actimize/VersionNumber">5.13.0</Variable>
+    <Variable
+      Name="Actimize/ReleaseDate">November 20, 2017</Variable>
+    <Variable
+      Name="RCM Actimize/ReleaseDate">November 20, 2017</Variable>
+  </Variables>
+  <PDF
+    CollapsedBookmarks="true"
+    TitleBar="DocumentTitle"
+    PageLayout="OneColumn"
+    InitialMagnification="100"
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Author="NICE Actimize"
+    Title="[%=Actimize.CompanyName%] [%=Actimize.SolutionName%] [%=Actimize.VersionNumber%] [%=Actimize.GuideName%]" />
+</CatapultTarget>

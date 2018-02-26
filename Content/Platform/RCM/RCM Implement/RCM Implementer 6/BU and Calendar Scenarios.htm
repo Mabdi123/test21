@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>BU and Calendar Scenarios</h1>
+        <p class="Body">The following are example scenarios for associating BUs with the correct calendar name.</p><span class="Strong">Scenario 1:</span>
+        <p class="Body">Work item assigned BU5, and the system selects <span class="Strong">Calendar 3.</span></p><span class="Strong">Scenario 2:</span>
+        <p class="Body">Work item assigned BU3. BU3 is found in Hierarchy 1 under the parent BU1. The system selects <span class="Strong">Calendar 1</span> because it is under the parent BU with that calendar.</p><span class="Strong">Scenario 3:</span>
+        <p class="Body">Work item assigned BU4. BU4 is found in two hierarchies – 1 and 2. The system selects <span class="Strong">Calendar 1</span> because it is located in Hierarchy 1 which is the default hierarchy.</p><span class="Strong">Scenario 4:</span>
+        <p class="Body">Work item assigned BU8. BU8 is found in two hierarchies – 2 and 3. There is a conflict because BU8 is associated with Calendar 3 in Hierarchy 2 and Calendar 4 in Hierarchy 3. The system does not select a calendar because there is no default hierarchy and therefore does not use a configured calendar for calculating deadlines (for BU8 the deadline is calculated using Days configuration).</p>
+    </body>
+</html>

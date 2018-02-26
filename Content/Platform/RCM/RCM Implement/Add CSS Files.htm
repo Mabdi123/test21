@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="473" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234403"></a>Add CSS Files</h1>
+        <p class="Body">For every image that you add to RCM you need to add a CSS file to one of the following paths:</p>
+        <ul>
+            <li>To the VFS:</li>
+        </ul>
+        <p class="Code">&lt;VFS&gt;\app_gui_items\ RCM \&lt;theme&gt;\actions\css</p>
+        <ul>
+            <li>Inside the .war file:</li>
+        </ul>
+        <p class="Code">&lt;Web root&gt;\app_gui_items\ RCM \&lt;theme&gt;\actions\css</p>
+        <p class="Body">The CSS class name should be in format: .custom-&lt;icon file name&gt;. IIf the file name, for example is: add_new_alert.png, then CSS file should be named add_new_alert.css and its content should be in the following structure:</p>
+        <div>
+            <p class="Code">.custom-add_new_alert{</p>
+            <p class="Code">background: url(‘../icons_picker/add_new_alert.png’) no-repeat;</p>
+            <p class="Code">}</p>
+        </div>
+    </body>
+</html>

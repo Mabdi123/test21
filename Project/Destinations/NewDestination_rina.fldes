@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\netapp01\Shared Documents\Development\Platform\Java\ACM Team\Documentation\Docs\Help\5.13"
+  Port=""
+  ViewUrl=""
+  Type="file"
+  UploadLogFile="false"></CatapultDestination>

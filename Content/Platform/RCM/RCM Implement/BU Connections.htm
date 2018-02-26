@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1585" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234204"></a>BU and Calendar Associations</h1>
+        <p class="Body">The following illustrates the connection between business units and calendars and how the system selects the relevant calendar to use for a specific BU.</p>
+        <div class="Note">
+            <p class="Body">The default hierarchy is always selected if a BU is in two hierarchies.</p>
+        </div>
+        <p class="SubHeading">Hierarchy 1 (Default Hierarchy)</p>
+        <ul>
+            <li>BU1 (Calendar 1)</li>
+        </ul>
+        <ul>
+            <li>BU2 (Calendar 2)</li>
+        </ul>
+        <ul>
+            <li>BU3</li>
+        </ul>
+        <ul>
+            <li>BU4</li>
+        </ul>
+        <ul>
+            <li>BU6</li>
+        </ul>
+        <p class="SubHeading">Hierarchy 2 </p>
+        <ul>
+            <li>BU5 (Calendar 3)</li>
+        </ul>
+        <ul>
+            <li>BU4</li>
+        </ul>
+        <ul>
+            <li>BU8</li>
+        </ul>
+        <p class="SubHeading">Hierarchy 3</p>
+        <ul>
+            <li>BU9 (Calendar 4)</li>
+        </ul>
+        <ul>
+            <li>BU8</li>
+        </ul>
+        <p class="SubHeading">Calendar Scenarios</p>
+        <p class="Body">The following are example scenarios for associating BUs with the correct calendar name.</p>
+        <p><span class="Strong">Scenario 1:</span>
+        </p>
+        <p class="Body">Work item assigned BU5, and the system selects <span class="Strong">Calendar 3.</span></p>
+        <p><span class="Strong">Scenario 2:</span>
+        </p>
+        <p class="Body">Work item assigned BU3. BU3 is found in Hierarchy 1 under the parent BU1. The system selects <span class="Strong">Calendar 1</span> because it is under the parent BU with that calendar.</p>
+        <p><span class="Strong">Scenario 3:</span>
+        </p>
+        <p class="Body">Work item assigned BU4. BU4 is found in two hierarchies – 1 and 2. The system selects <span class="Strong">Calendar 1</span> because it is located in Hierarchy 1 which is the default hierarchy.</p>
+        <p><span class="Strong">Scenario 4:</span>
+        </p>
+        <p class="Body">Work item assigned BU8. BU8 is found in two hierarchies – 2 and 3. There is a conflict because BU8 is associated with Calendar 3 in Hierarchy 2 and Calendar 4 in Hierarchy 3. The system does not select a calendar because there is no default hierarchy and therefore does not use a configured calendar for calculating deadlines (for BU8 the deadline is calculated using Days configuration).</p>
+        <p class="SubHeading">Deadline Recalculations</p>
+        <p class="Body">In certain cases there are changes that affect calendar calculations for step deadlines. These include BU changes and platform list data changes (adding and removing dates). </p>
+        <div class="Example">
+            <p>Example (using the hierarchies above)</p>
+            <p class="Body">Work item assigned BU5, and the system selects <span class="Strong">Calendar 3</span>.</p>
+            <p class="Body">The step deadlines for the workflow of this work item are configured to business days based on calendar 3. If between two steps the BU for this item is changed to BU 9, then the deadline for the next step is caluculated according to calendar 4. This recalculation only applies to workflow step deadlines and not global deadlines, which remain as originally configured.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Front.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    AutoEndOnLeftPage="disabled"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Legal.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="Default.PrintOnly"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/TOC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    PageNumberReset="reset"
+    PageNumberFormat="lower-roman"
+    PageNumber="1"
+    ChapterNumber="0"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Instructions/Revision History for Instructions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Instructions/Working in Flare.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    PageNumberReset="reset"
+    PageNumberFormat="decimal"
+    StartSection="false"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Working in Flare_Print.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      conditions="Default.PrintOnly"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl"
+      VolumeNumberReset="continue"
+      PageType="left"
+      SectionNumberReset="continue"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Flare Terminology"
+      Link="/Content/Instructions/Flare Terminology.htm"
+      BreakType="pageLayout"
+      PageType="left"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Set Up New Project"
+      Link="/Content/Instructions/Set Up a Conversion Flare Project.htm" />
+    <TocEntry
+      Title="Prepare Word Document"
+      Link="/Content/Instructions/Prepare Word Document.htm" />
+    <TocEntry
+      Title="Import Word Document to Flare"
+      Link="/Content/Instructions/Import Word Document to Flare.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Configure TOC Properties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Create the PDF Target.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/How to Create the Online Help Target.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Clean up in Flare (after import).htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Instructions/How to Apply Table Styles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Instructions/How to Apply Note Styles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Instructions/Advanced Flare List Clean-Up.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/How to Apply the Global Project.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/How to Create a PDF.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/How to Create an OLH.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Prettify.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="Working in the GIT Bound Actimize Project"
+    Link="/Content/Instructions/Working in the GIT Bound Actimize Project.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl"
+    ReplaceMergeNode="false"
+    PageType="first">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Source Control.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Branch in GIT (Versioning).htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Bind to GIT.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/GIT Workflows.htm" />
+    <TocEntry
+      Title="Import Project from GIT"
+      Link="/Content/Instructions/Import Project from GIT.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/Import Conversion Project to Actimize Project.htm"></TocEntry>
+    <TocEntry
+      Title="Switch GIT Branch"
+      Link="/Content/Instructions/Switch GIT Branches.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Resources/Snippets/Snippets Usage.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="Topic Based Writing (TBW)"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl"
+    Link="/Content/Instructions/Topic Based Writing (TBW).htm"
+    PageType="first">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/TBW/Topic Types.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/TBW/Task Topics.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/TBW/Reference Topics.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/TBW/Concept Topics.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/TBW/Headings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Instructions/TBW/The Short Description.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Back.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Back.flpgl"
+    conditions="Default.PrintOnly" />
+</CatapultToc>

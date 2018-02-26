@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234669"></a>Change the Log4J Configuration</h1>
+        <p class="Body">The first line of the file, by default, is set to:</p><span class="Strong">log4j.rootLogger=WARN, memory, servlet</span>
+        <p class="Body">This sets the logging properties so that messages are sent to the <span class="Strong">ACM LogViewer Servlet</span> and to <span class="Strong">Memory</span>, and displays all messages from the ‘warn’ level and higher </p>
+        <p class="Body">Implementers can edit the log4j.properties file by changing the first line to include any combination of the options “R”, “stdout” or “Servlet”. You can also include, in this line, one of the filter options (FATAL, ERROR, WARN, INFO, or DEBUG).</p>
+        <p class="Body">The options for writing the log messages are as follows:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1"><span class="Strong">Options</span>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1"><span class="Strong">Description</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Memory</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The log messages will be stored in a memory buffer and flushed to a file if an error occurs.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Servlet</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The log messages will be displayed within the ACM LogViewer servlet.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">R</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The log messages will be written to a regular file.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">stdout</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">The log messages will be logged to the Web Server Console.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">The options for filtering the log messages are as follows:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1"><span class="Strong">Options</span>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1"><span class="Strong">Description</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">FATAL</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Shows only the fatal error messages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">ERROR</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Shows all error messages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">WARN</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Shows all warning and error messages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">INFO</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Shows all information, warning and error messages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">DEBUG</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Shows all messages, including debug messages.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table><span class="Strong">Example:</span>
+        <p class="Body">If you set the first line to the following:</p>
+        <p class="Body">log4j.rootLogger=INFO, R, Servlet</p>
+        <p class="Body">Messages will be:</p>
+        <ul>
+            <li>Logged at a filter level of information messages and higher</li>
+        </ul>
+        <ul>
+            <li>Saved to a regular file</li>
+        </ul>
+        <ul>
+            <li>Directed to the ACM LogViewer</li>
+        </ul>
+        <p class="Body">You must configure each of the options that you include within the first line of this file (within the sections that follow this first line). In other words, if you select to write messages to a regular file and to the servlet, then you should leave the servlet section as it is configured by default, and then also make sure that the ‘rolling file appender’ settings are configured according to your needs. </p><span class="Strong">To configure the log4j to write to a regular file:</span>
+        <p class="Body">If you enable the R option in the first line of the actimize_log4j.properties file, you must edit the lines after the following comment:</p>
+        <div>
+            <p class="Code"># rolling file appender - use if you want ALL logging to be made to files</p>
+            <p class="Code"># Note threshold - it will affect performance and file usability.</p>
+        </div>
+        <p>Configure this section as follows:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1"><span class="Strong">Line in File</span>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1"><span class="Strong">Change to:</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">log4j.appender.R=org.apache.log4j.RollingFileAppender</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Don’t change</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">log4j.appender.R.File=actimizeLogs.log</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the path and filename to which you want to write the log. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">log4j.appender.R.MaxFileSize</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This parameter controls the maximum file size. Default is 4096KB.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">log4j.appender.R.MaxBackupIndex</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This parameter controls the number of files written to the directory. The default is 10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">log4j.appender.R.layout=org.apache.log4j.PatternLayout</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Don’t change</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">log4j.appender.R.layout.ConversionPattern=%d %p %c - %m%n</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Don’t change</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">When configured for your system, log information is also available within the Web Application Server log.</p>
+        <p class="Body">&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

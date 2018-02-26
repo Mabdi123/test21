@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="814" MadCap:lastWidth="1245">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949779"></a>Define Permissions</h1>
+        <p class="Body">Each work item and each report, which is distributed to the Risk Case Manager, is distributed to a specific business unit. </p>
+        <p class="Body">When an Administrator assigns a role to a user, this role is assigned for a specific Business unit. For example, the administrator can assign John the role of Officer for the Business Unit New York, but not for Washington. As a result, the user has permission to view work items and reports and perform actions only for those work items and reports that were distributed to the relevant business unit (i.e. the one that is assigned together with the role). </p><span class="Strong">Example:</span>
+        <p class="Body">John is a user who is a member of the New York business unit.</p>
+        <p class="Body">The RCM Administrator creates (among others) the following roles:</p>
+        <ul>
+            <li><span class="Strong">Manager</span>: who can view all work items, but cannot perform any actions pertaining to those work items. In this example, Managers can also view and open all Management Reports but do not have permission to delete reports. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Supervisor</span>: who can view all work items and can perform all actions available for the work items module. Furthermore, the Supervisor can view all Management and Supervision reports and can perform all actions available within the Reports Module.</li>
+        </ul>
+        <p class="Body">The Administrator assigns the role Manager to John for the business unit Canada (a business unit that John is not associated with).</p>
+        <p class="Body">The Administrator assigns the role Supervisor to John for his own business unit (i.e. New York).</p>
+        <h4 class="NoNumber">Result:</h4>
+        <p class="Procedure">For work items distributed to the Canada Business Unit</p>
+        <ul>
+            <li>John will be able to view all work items distributed to the Canada business unit but will not be able to perform any actions regarding those work items. </li>
+        </ul>
+        <ul>
+            <li>John will be able to view all Management Reports distributed for the Canada business unit but will not be able to delete any of these reports.</li>
+        </ul>
+        <p class="Procedure">For work items distributed to the New York Business Unit</p>
+        <ul>
+            <li>John will be able to view all work items and perform all actions on work items that are distributed to the New York business unit. </li>
+        </ul>
+        <ul>
+            <li>John will be able to view all Management and Supervision reports for New York and will be able to perform all actions regarding these reports.</li>
+        </ul>
+    </body>
+</html>

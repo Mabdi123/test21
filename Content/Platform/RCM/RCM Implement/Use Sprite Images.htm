@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref436897487"></a><a name="_Toc500234405"></a>Use Sprite Images</h1>
+        <p class="Body">Sprite images can be inserted in same path as the other images but it is recommended to insert them in sub folder of actions. For example:</p>
+        <p class="Body">\Web root\app_gui_items\rcm\&lt;theme&gt;\actions\sprite_icons_picker</p>
+        <p class="Procedure">To insert a sprite image, do the following:</p>
+        <ol start="1">
+            <li>Edit or create a GUI item..</li>
+        </ol>
+        <ol start="2">
+            <li>Select any customized image from icons picker. For example, my_add_attachment.png.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use Sprite Images.png" style="visibility: visible;mso-wrap-style: square;width: 340px;height: 380px;" />
+        </p>
+        <ol start="3">
+            <li>Finish the process of editing the GUI Item by applying it.</li>
+        </ol>
+        <ol start="4">
+            <li>Add the CSS related code according to the following syntax:</li>
+        </ol>
+        <div>
+            <p class="Code">.custom-&lt;selected custom image name&gt;{</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; background: url('&lt;path to sprite folder&gt;/&lt;name of sprite image&gt;') &lt;pixel coordinates of specific image in sprite file&gt;&lt;First coordinate - left and second- top)&gt;;</p>
+            <p class="Code">}</p>
+        </div>
+        <p>For example</p>
+        <div>
+            <p class="Code">.custom-my_add_attachment{</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; background: url('../sprite_icons_picker/icons.png') 32px 32px;</p>
+            <p class="Code">}</p>
+        </div>
+    </body>
+</html>

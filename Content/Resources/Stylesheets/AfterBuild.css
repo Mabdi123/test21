@@ -1,0 +1,331 @@
+/*<meta />*/
+/* v1.1.1 */
+
+.search-filter span {
+  white-space: nowrap;
+}
+.search-filter-content {
+  right: 33px;
+}
+#responsiveHeader .logo {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+#resultList .url {
+  display: none;
+}
+#search-sidebar {
+  top: 75px;
+  height: 35px;
+  background-color: #ffffff;
+  position: absolute;
+  display: inline-block;
+  right: 24px;
+}
+#search-field-sidebar {
+  border-style: none;
+  box-shadow: none;
+  border: none 1px #dddddd;
+  background-color: #ffffff;
+  color: #4b5f83;
+  font-size: 12px;
+}
+div.search-submit-wrapper {
+  right: 0px;
+  background-color: #ede9e9;
+}
+
+/* control left panel width */
+
+.hide-extras.active #navigation[role="complementary"] {
+  /* this is the width of the left panel */
+  display: block;
+  top: 69px;
+  /*top pushes left Toc pull out panel down so that you still see the logo */
+  width: 30%;
+}
+
+/* make contentBody (topic area) 0 to stay behind left panel */
+
+.active #contentBody[role="main"] {
+  /*this is the position of the topic area */
+  right: 0px;
+  left: 315px;
+}
+
+/*divider bar between toc and body - border */
+
+#navigationResizeBar {
+  mc-disabled: true;
+  background-color: #ffffff;
+  left: 315px;
+  margin-left: 0px;
+  top: 80px;
+  width: 10px;
+}
+#navigationResizeBar:hover:after {
+  background: #efede3;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+}
+
+/* end of bar between toc and body */
+
+
+/* end of toc control */
+
+html.left-layout #show-hide-navigation {
+  mc-disabled: true;
+  background: transparent url('../Assets/Images/OLH/TOC_collapse.png') no-repeat;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: block;
+  height: 62px;
+  left: 0;
+  margin-top: 0;
+  overflow: visible;
+  position: absolute;
+  top: 13px;
+  width: 40px;
+}
+  html.left-layout #navigationResizeBar.nav-closed #show-hide-navigation {
+  background: transparent url('../Assets/Images/OLH/TOC_expand.png') no-repeat;
+}
+html.left-layout #contentBody.nav-closed {
+  left: 0;
+}
+ul._Skins_RelatedTopics {
+  background-color: #bbd9ed;
+}
+ul.mc-component {
+  line-height: 24px;
+}
+div#toc {
+  line-height: 24px;
+  font-size: 14px;
+}
+ul {
+  margin: 0px;
+}
+#contentBody {
+  left: 315px;
+}
+h2 {
+  font-size: 2em;
+}
+.menu-icon a {
+  height: 40px;
+}
+.toc-icon {
+  position: absolute;
+  top: 3px;
+  border: none;
+}
+img {
+  mc-thumbnail-max-height: auto;
+  mc-thumbnail-max-width: auto;
+}
+.MCPopupContainer {
+  background-color: transparent;
+  border: none 0px transparent;
+  padding: 0px;
+  position: absolute;
+  cursor: pointer;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  z-index: 10001;
+}
+.MCPopupContainer2 {
+  background-color: transparent;
+  border: none 0px transparent;
+  padding: 0px;
+  position: absolute;
+  cursor: pointer;
+  -moz-box-shadow: 0px 0px 0px #FFFFFF;
+  -webkit-box-shadow: 0px 0px 0px #FFFFFF;
+  box-shadow: 0px 0px 0px #FFFFFF;
+}
+.Thumb_maxHeight100 {
+  width: 0px;
+  height: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.menu-icon {
+  mc-image: inherit;
+}
+
+/* .tabs-nav
+{
+	margin-top: 0px;
+} */
+
+.tabs active {
+  margin-top: 0px;
+}
+div#contentBodyInner {
+  border: none;
+}
+.button-group-container-right {
+  float: right;
+}
+p.taskItem_task_0 {
+  font-size: 12px;
+  margin-left: 0px;
+  line-height: 16px;
+}
+p.taskHeading_task_0 {
+  font-weight: bold;
+}
+#responsiveHeader #search-sidebar {
+  display: block;
+}
+.button-separator {
+  margin-top: 5px;
+  width: 2px;
+  height: 27px;
+}
+@media only screen and (max-width: 1279px) {
+  /* aligned left margin for tablet */
+  .left-layout #contentBody[role="main"] {
+    left: 0px;
+  }
+  .menu-icon a span {
+    position: absolute;
+    top: 0px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('Resources/Images/Skin/TOC.png') no-repeat center center;
+  }
+  #responsiveHeader .logo>img {
+    height: 50px;
+  }
+  #responsiveHeader #search-sidebar {
+    top: -15px;
+  }
+  .hide-extras.active #navigation[role="complementary"] {
+    top: 60px;
+  }
+  #search-sidebar {
+    right: 24px;
+  }
+  #header {
+    display: block;
+  }
+  .toggle-topbar {
+    position: absolute;
+    left: 0px;
+    top: 69px;
+    width: 40px;
+  }
+  .toggle-topbar a {
+    position: relative;
+    display: block;
+    background-image: url('Resources/Images/Skin/TOC.png');
+  }
+  /* Tabs */
+  .tabs {
+    margin-top: 0px;
+  }
+  /* Let's get this party started */
+  ::-webkit-scrollbar {
+    width: 7px;
+    /* for vertical scroll */
+    margin-right: 10px;
+    height: 7px;
+    /* for horizontal scroll */
+    padding-right: 10px;
+    position: fixed;
+    right: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #d0d2d3;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #929394;
+  }
+  /* end of scrollbar */
+  /***********************************/
+}
+
+/*
+ * Additions by Shlomo
+ */
+
+#header {
+  background-color: #0082b5;
+}
+#header .logo {
+  margin-left: 0;
+}
+#header-title {
+  color: #ffffff;
+  font-family: "Open Sans Light", Arial;
+  font-size: 1.375rem;
+  position: absolute;
+  right: 16px;
+  top: 29px;
+  /* width: 238px; */
+}
+.search-bar {
+  display: flex;
+  left: 350px;
+  margin-top: -11px;
+  position: absolute;
+  right: 289px;
+}
+#search-field {
+  flex-basis: 100%;
+  width: auto;
+}
+.tabs-nav {
+  display: none;
+}
+.tabs-panel {
+  top: 0;
+}
+.search-filter-content ul li,
+.tabs-panel li {
+  border-bottom: solid 1px #efede3;
+}
+.toolbar-buttons {
+  left: 75px;
+}
+#searchPane {
+  padding-left: 60px;
+  right: 298px;
+}
+#resultList b {
+  font-weight: normal;
+  background-color: #ffff66;
+}
+#resultList .title {
+  margin-bottom: 0.2rem;
+}
+#resultList .title a:visited {
+  color: #009edb;
+}
+#resultList .description {
+  line-height: 1.4rem;
+}
+.tabs-panel li li:last-child {
+  border-bottom: none;
+}
+.tabs-panel li.tree-node div {
+  margin: 0.2rem 0;
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2012" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234019"></a>Assign Predefined Notes</h1>
+        <p class="Body">You can assign predefined notes for alerts as follows.</p>
+        <h3 class="NoNumber">Maintain Predefined Notes within the RCM Designer</h3>
+        <p class="Body">All notes that are available for assignment to an alert type are written to the Notes Table within the RCM database. Notes within this table may be:</p>
+        <ul>
+            <li><span class="Strong">Common Notes</span> – These are automatically assigned to all alert types.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Available Notes</span> – These are notes which can, optionally, be assigned to any alert type using the Designer Alert Types <span style="font-family: Wingdings;">à</span> Assigned Predefined Notes page.</li>
+        </ul>
+        <p class="Body">These notes are originally defined via the Predefined Notes page in the Alert Configuration tab. For more information, see <MadCap:xref href="Alert Predefined Notes.htm#_Ref112563027" class="ParaTextOnly">Alert Predefined Notes</MadCap:xref>.</p>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Maintain Predefined Notes.png" style="border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <h3 class="NoNumber">Customize the Assignment of Notes</h3>
+        <p class="Body">You can add any Available Note to the list of Selected Notes for the alert type that you are defining.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Customize the Assignment of.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;">
+            </img>
+        </p>
+        <p class="Body">All Common Notes appear in the RCM Designer Alert Types <span style="font-family: Wingdings;">à</span>Assigned Predefined Notes path within the drop-down list of notes that are available to the RCM Web Application end users.</p>
+        <p class="Body">Following shows the RCM Notes schema list that corresponds with the example of the Assigned Predefined Notes List shown above:</p>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Customize the Assignment of_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;">
+            </img>
+        </p>
+        <p class="Procedure">To add a note to the list of selected notes:</p>
+        <ul>
+            <li>Select the note that you want to add from the list of Available Notes and click <span class="Strong">Add</span>.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">Available Notes only appear within this list if there are notes, defined within the Notes table of the RCM database, that are assigned the value 0 for the For_all_types field.</p>
+            <p class="Body">The note is added to the list of Selected Notes. You can also click on the <span class="Strong">Use all Resolutions</span> checkbox in order to use all resolutions that are currently included within the Resolutions table of the RCM database.</p>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

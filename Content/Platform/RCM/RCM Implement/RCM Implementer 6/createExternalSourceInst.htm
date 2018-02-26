@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234639"></a>createExternalSourceInstance</h1>
+        <p class="Code">ACMResult createExternalSourceInstance(in ExternalInstanceData instanceData,in String instanceContent)</p>
+        <p class="Body"><span class="Emphasis">Description</span>: This method allows you to define a report instance of type external URL that points to the specified URL.</p>
+        <p class="Body">IN</p>
+        <ul>
+            <li><span class="Strong">ExternalInstanceData</span> – Accepts the following:</li>
+        </ul>
+        <ul>
+            <li>ExternalTypeEnum (enter value ExternalURL)</li>
+        </ul>
+        <ul>
+            <li>InstanceName (Required)</li>
+        </ul>
+        <ul>
+            <li>BusinessUnitIdentifier (Required)</li>
+        </ul>
+        <ul>
+            <li>GenerationDate</li>
+        </ul>
+        <ul>
+            <li>BusinessDate(The date format is: "yyyy-MM-dd HH:mm:ss")</li>
+        </ul>
+        <ul>
+            <li>BusinessUser</li>
+        </ul>
+        <ul>
+            <li>GeneratingSystem (e.g. AIS, Designer)</li>
+        </ul>
+        <ul>
+            <li>ReportDefinitionId (Required. This must be a report type that was defined, within the RCM Designer, for an External URL).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">InstanceContent</span> – The URL that provides the report.</li>
+        </ul>
+    </body>
+</html>

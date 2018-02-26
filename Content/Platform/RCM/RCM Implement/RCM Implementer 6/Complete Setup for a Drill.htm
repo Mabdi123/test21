@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397253999"></a><a name="_Toc500234242"></a>Complete Setup for a Drill-Down Query</h1>
+        <p class="Body">Once you have defined the query, you can </p>
+        <p class="Procedure">To display results of the Drill-Down Query:</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">When a drill down query is used with alerts.jsp, then the query returns only one field – alert_id.</p>
+        <ol start="1">
+            <li>Update the xml to contain the relevant element for the defined parameters.</li>
+            <li>In the XSL that renders the alert XML to the screen, forward the query to <span class="Strong">XMLDrillDown.jsp</span>, passing the following parameters:</li>
+        </ol>
+        <ul>
+            <li>queryId - the query ID</li>
+        </ul>
+        <ul>
+            <li>values - list of parameters separated by @@ in the order they appear in the query parameters table in RCM Designer.</li>
+        </ul>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">While it is possible to place the link to the drill down query directly in the XML, it is recommended to place it in the XSL. By placing the link in the XSL, you maintain a better separation between the data and the formatting.</p>
+        <p class="Body">The path to the XMLDrillDown.jsp should be relative.</p>
+        <p class="Body">Following is the html format for a query that accepts two parameters (param_value1, param_value2):</p>
+        <p class="Code">./XMLDrillDown.jsp?queryId=query1&amp;values=@@param_value1@@@@param_value2@@</p>
+        <p class="Body">The following is an example, showing one method for creating the above html using xsl:</p>
+        <div>
+            <p class="Code">&lt;xsl:attribute name="href"&gt;</p>
+            <p class="Code">&lt;xsl:text&gt;./XMLDrillDown.jsp?queryId=&lt;/xsl:text&gt;</p>
+            <p class="Code">&lt;xsl:value-of select="queryId"/&gt;</p>
+            <p class="Code">&lt;xsl:text&gt;&amp;amp;values=&lt;/xsl:text&gt;</p>
+            <p class="Code">&lt;xsl:for-each select="param"&gt;</p>
+            <p class="Code">&lt;xsl:if test=". != ''"&gt;</p>
+            <p class="Code">&lt;xsl:text&gt;@@&lt;/xsl:text&gt;</p>
+            <p class="Code">&lt;xsl:value-of select="."/&gt;</p>
+            <p class="Code">&lt;xsl:text&gt;@@&lt;/xsl:text&gt;</p>
+            <p class="Code">&lt;/xsl:if&gt;</p>
+            <p class="Code">&lt;/xsl:for-each&gt;</p>
+            <p class="Code">&lt;/xsl:attribute&gt;</p>
+        </div>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">You must add the "&lt;a&gt;" tag before “&lt;xsl:attribute name="href"&gt;”</p>
+    </body>
+</html>

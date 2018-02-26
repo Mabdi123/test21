@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234644"></a>Java Example</h1>
+        <div>
+            <p class="Code">String SERVER = "RCMserver:8080/actimize";</p>
+            <p class="Code">String AUTH = "/services/authService";</p>
+            <p class="Code">String ALERTS = "/services/alertsService";</p>
+            <p class="Code">URL authServer=new URL("http://" + SERVER + AUTH);</p>
+            <p class="Code">URL alertsServer=new URL("http://" + SERVER + ALERTS);</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">// Step 1</p>
+            <p class="Code">// Configure ssl support</p>
+            <p class="Code">// for client-side authentication only</p>
+            <p class="Code">System.setProperty("javax.net.ssl.trustStore", "/path/to/truststore");</p>
+            <p class="Code">System.setProperty("javax.net.ssl.trustStorePassword", "your trust store password");</p>
+            <p class="Code">// for server side authentication</p>
+            <p class="Code">System.setProperty("javax.net.ssl.trustStore", "/path/to/keystore");</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">// for both server-side and client-side authentication</p>
+            <p class="Code">System.setProperty("javax.net.ssl.keyStore", "/path/to/keystore");</p>
+            <p class="Code">System.setProperty("javax.net.ssl.keyStorePassword", "your key store password");</p>
+            <p class="Code">// optional, if you use type other than the default JKS</p>
+            <p class="Code">System.setProperty("javax.net.ssl.keyStoreType","JKS");</p>
+            <p class="Code">System.setProperty("javax.net.ssl.trustStoreType","JKS");</p>
+            <p class="Code">// Step 2</p>
+            <p class="Code">ACMAuthenticationServiceServiceLocator authLocator = </p>
+            <p class="Code">new ACMAuthenticationServiceServiceLocator();</p>
+            <p class="Code">AuthServiceSoapBindingStub service = </p>
+            <p class="Code">(AuthServiceSoapBindingStub) authLocator.getauthService(authServer);</p>
+            <p class="Code">authLocator.setMaintainSession(true);</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">// Step 3</p>
+            <p class="Code">boolean success=service.login("user", "password").isStatus();</p>
+            <p class="Code">// Step 4</p>
+            <p class="Code">Call authCall = authLocator.getCall();</p>
+            <p class="Code">org.apache.axis.MessageContext msgContext = authCall.getMessageContext();</p>
+            <p class="Code">String cookie = msgContext.getStrProp(HTTPConstants.HEADER_COOKIE);</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">// Step 5</p>
+            <p class="Code">ACMAlertsServiceServiceLocator asLocator=</p>
+            <p class="Code">new ACMAlertsServiceServiceLocator();</p>
+            <p class="Code">AlertsServiceSoapBindingStub asService =</p>
+            <p class="Code">(AlertsServiceSoapBindingStub)asLocator.getalertsService(alertsServer);</p>
+            <p class="Code">asLocator.setMaintainSession(true);</p>
+            <p class="Code">asService._setProperty(HTTPConstants.HEADER_COOKIE,cookie);</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">// Step 6</p>
+            <p class="Code">// At this stage, you can build an Alert structure and call the relevant function in asService</p>
+            <p class="Code">// :</p>
+        </div>
+    </body>
+</html>

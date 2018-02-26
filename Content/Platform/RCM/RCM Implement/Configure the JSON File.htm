@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234429"></a>Configure the JSON File </h1>
+        <p class="Body">It is recommended to copy an existing JSON file and then modify it for the Best Practice that you are defining. Initially, save the copied JSON file with the name of the Best Practice that you are creating and create a folder that has the same name. For example, ‘Create a Platform List.json’ and the folder ‘Create a Platform List’.</p>
+        <p class="Body">Each JSON file contains the Best Practice name, description and steps’ properties. The Best Practice JSON file includes the following properties:</p>
+        <ul>
+            <li>BestPracticeName: Enter the name of the Best Practice as it will appear on the menu. For example, Create a Platform List. This name should be identical to the Best Practice folder name.</li>
+        </ul>
+        <ul>
+            <li>BestPracticeDescription: The description of the Best Practice. For example, "This best practice explains how to create a Platform List in the RCM Designer".</li>
+        </ul>
+        <ul>
+            <li>Steps: Each step is defined via the following properties:</li>
+        </ul>
+        <ul>
+            <li>Name: Enter the name of the step as it will appear on the panel. For example, "Create a New Platform List Definition".</li>
+        </ul>
+        <ul>
+            <li>Type: There are two types of steps:</li>
+        </ul>
+        <ul>
+            <li>Designer: The step is done in the RCM Designer.</li>
+        </ul>
+        <ul>
+            <li>Informative: The step is done on another application (e.g., AIS) and information is provided on this step without pointing to its location.</li>
+        </ul>
+        <ul>
+            <li>Description: Provide a description of the specific step as it will appear on the Best Practice Panel. For example, Select between an AIS or RCM defined Platform List.</li>
+        </ul>
+        <ul>
+            <li>Icon: Define the step icon. The available icons are defined in the BestPracticeIconsTable.doc file that is provided in the Best Practices subfolder of the RCM Designer’s build folder. For example:</li>
+        </ul>
+        <p class="Body">C:\Program Files (x86)\Actimize\CaseManagerDesigner\Bin\Best Practices\ BestPracticeIconsTable.doc</p>
+        <ul>
+            <li>Images: The images are defined for the related help (More Details) window of the step. Initially, you should create a subfolder in a specific Best Practice folder that has the same name as the step. For example, the folder “Create a New Platform List Definition” is created as a subfolder in the “Create a Platform List’ folder. In this folder all the help files for the step are inserted. <br />Insert the image files in the subfolder. These files can be any type of image files (bmp, jpg, png, etc.). </li>
+        </ul>
+        <p class="Body">Enter the names of the images according to the order in which they will appear in the More Details window. For example,<br />"Step1Image1.png",<br />"Step1Image2.png",<br />"Step1Image3.png",<br />"Step1Image4.png",<br />"Step1Image5.png"</p>
+        <ul>
+            <li>GoLocation: Define the location in the RCM Designer that is displayed once the Go button of the step is pressed. Note that this configuration is relevant only to Designer type steps and not to informative type steps. If you are defining an informative step then define the value of the GoLocation as ‘null’. The GoLocation includes the following properties:</li>
+        </ul>
+        <ul>
+            <li>Module: This is the name of the module as it appears on the Entities bar. For example, Platform Lists.</li>
+        </ul>
+        <p class="Body"> <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure the JSON File.png" style="visibility: visible;mso-wrap-style: square;width: 164px;height: 195px;" /></p>
+        <ul>
+            <li>Tab: This is the name of the tab as it appears on the screen. For example, Platform Lists</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure the JSON File_1.png" style="visibility: visible;mso-wrap-style: square;width: 201px;height: 201px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li>Document: Optional property that defines an object in the RCM repository. For example, List 2 (one of the lists displayed in the previous screenshot):</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure the JSON File_2.png" style="visibility: visible;mso-wrap-style: square;width: 505px;height: 98px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li>DocumentTab: Optional property that defines the specific tab of a page. For example, Fields: </li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure the JSON File_3.png" style="visibility: visible;mso-wrap-style: square;width: 452px;height: 98px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li>Command: Optional property that defines the specific button in the toolbar of the tab. Name of command is the same as the tooltip name without the text that may appear in parentheses .For example, Add new field.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure the JSON File_4.png" style="visibility: visible;mso-wrap-style: square;width: 461px;height: 98px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            <br />If you do not define the command property then the orange arrow will not be displayed after the Go button is pressed.</p>
+    </body>
+</html>

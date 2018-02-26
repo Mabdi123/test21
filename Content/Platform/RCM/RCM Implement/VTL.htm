@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234364"></a>VTL</h1>
+        <p class="Code">convertToUserDateTimeFormat(dateValue, sourceDateFormat) </p>
+        <p class="Body">Converts a given date value from the input date format to the user expected date format.<br />The second parameter is optional. If it is not present, format is yyyy-MM-dd HH:mm:ss. </p>
+        <p class="Body">Usage: </p>
+        <p class="Code">$vtlUtils.convertToUserDateTimeFormat(“2012-06-27 15:28:00”)</p>
+        <p class="Body">Or</p>
+        <p class="Code">$ vtlUtils.convertToUserDateTimeFormat(“27/06/2012 15:28:00”, “dd/MM/yyyy HH:mm:ss”)</p><span class="Strong">Full Example:</span>
+        <div>
+            <p class="Code">&lt;TR&gt;</p>
+            <p class="Code">&#160; &lt;TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;b&gt;Date Format:&lt;/b&gt;</p>
+            <p class="Code">&#160; &lt;/TD&gt;</p>
+            <p class="Code">&#160; &lt;TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;input type="text" value='$vtlUtils.convertToUserDateTimeFormat("1978-04-15 01:02:03")' /&gt;</p>
+            <p class="Code">&#160; &lt;/TD&gt;</p>
+            <p class="Code">&lt;/TR&gt;</p>
+        </div>
+    </body>
+</html>

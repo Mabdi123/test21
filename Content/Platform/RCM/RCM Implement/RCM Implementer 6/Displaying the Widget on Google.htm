@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Displaying the Widget on Google Chrome</h1>
+        <p class="Body">When loading the widget in Google Chrome, change the JavaScript function to:</p>
+        <div>
+            <p>$(window).on('load',loadAlertsWidget);</p>
+            <p class="Code">You also have the option to use the following script that detects the type of browser:</p>
+            <p class="Code">if(window.attachEvent){</p>
+            <p>window.attachEvent('onload',loadAlertsWidget);</p>
+            <p>}else{</p>
+            <p>$(window).on('load',loadAlertsWidget);</p>
+            <p>}</p>
+        </div>
+    </body>
+</html>

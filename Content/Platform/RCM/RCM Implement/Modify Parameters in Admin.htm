@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1574" MadCap:lastWidth="1007">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397428177"></a><a name="_Toc500234309"></a>Modify Parameters in Admin Site</h1>
+        <p class="Body">The RCM_md_config_params table can be viewed by selecting the Config Parameters tab within the RCM Admin Site - Customization application.</p>
+        <p class="Body"> <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Modify Parameters in Admin.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p>
+        <p class="Body">Two different types of parameters are maintained within the RCM_md_config_params table:</p>
+        <ul>
+            <li>Parameters that have default values assigned. It is recommended not to modify these parameters unless a recommendation is made by Technical Support. Changing default parameters can cause performance problems.</li>
+        </ul>
+        <ul>
+            <li>Parameters that have null values assigned. These parameters can be adjusted in order to customize the CM application functionality. Changing null values will change the way in which the application reacts but will not affect the connection between the RCM application and the AIS Server. </li>
+        </ul>
+        <p class="Body">Parameters that include the <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Modify Parameters in Admin_1.png" style="visibility: visible;mso-wrap-style: square;width: 12px;height: 16px;" /> in the “!” column indicate that when this parameter is edited, the server must be restarted.</p>
+        <p class="Body">Parameters that do not include the ‘?’ character in the <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Modify Parameters in Admin_2.png" style="visibility: visible;mso-wrap-style: square;width: 14px;height: 14px;" /> column indicate that when this parameter is edited, a validation mechanism is implemented. For example, the following message may appear when attempting to enter characters in a parameter that accepts only integer values:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Modify Parameters in Admin_3.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Procedure">To edit a parameter within the RCM_md_config_params table:</p>
+        <ol start="1">
+            <li>Select the parameter that you want to edit within the table by clicking on the radio button beside the parameter name.</li>
+        </ol>
+        <ol start="2">
+            <li>
+                <p>Select Edit Parameter from the activity bar for this module.</p>
+                <p class="Body">The Edit Configuration Parameters window opens with the currently defined value for the selected parameter</p>
+                <p>
+                    <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Modify Parameters in Admin_4.png" style="visibility: visible;mso-wrap-style: square;" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>Enter the value that you require in the Value field. Note that some of the parameters should only be edited by authorized personnel, according to instructions from support. For a full description of each of the parameters within this table, see <MadCap:xref href="Edit Guidelines.htm#_Ref500313220" class="ParaTextOnly">Edit Guidelines</MadCap:xref>.</li>
+        </ol>
+    </body>
+</html>

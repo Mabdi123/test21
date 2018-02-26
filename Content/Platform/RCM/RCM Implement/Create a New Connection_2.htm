@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="2088" MadCap:lastWidth="879">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234299"></a>Create a New Connection</h1>
+        <p class="Body">The following window opens when you create a new AIS connection:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Create a New Connection_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Procedure">To create a new connection:</p>
+        <ol start="1">
+            <li>Enter the required information for the new connection. The following fields should be filled in:</li>
+        </ol>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Field</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Virtual Connection </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select this checkbox only if you are planning to create AIS connections in a Multi-Tenant environment. For more information refer to <MadCap:xref href="Create AIS Connections in.htm#_Ref348952368" class="ParaTextOnly">Create AIS Connections in a Multi-Tenant Environment</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter a unique identifier for the AIS connection.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">URL</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the AIS URL.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Use LDAP Authentication</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select LDAP authentication to only require the user name and have LDAP authenticate the user. If selected, the password field is disabled.</p>
+                        <p class="Body">AIS supports two methods for authenticating AIS users – internal authentication and LDAP authentication.</p>
+                        <p class="Body">With internal authentication, AIS receives from RCM a user name and password upon connection, and confirms that they match the credentials stored internally in AIS.</p>
+                        <p class="Body">With LDAP authentication, AIS receives from RCM an LDAP domain and user name upon connection, confirms that the user name is defined in AIS and also that the user name is defined in the LDAP server.</p>
+                        <p class="Body">In both methods, the user name provided is only checked on the AIS side, and is not authenticated as an RCM user, whether or not there is an RCM user defined with the same user name.</p>
+                        <p class="Body">The connection will use LDAP authentication if the <span class="Strong">Use LDAP authentication</span> checkbox is selected, or internal authentication otherwise.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">User name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the user name of an AIS user with admin privileges. If using LDAP authentication, enter both the domain and user name in the format Domain\User.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Password</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the password of the AIS user (in <span class="Strong">User n</span><span class="Strong">ame</span> field). If using LDAP authentication, this field is not applicable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Keep alive</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select this checkbox to keep the TCP/IP connection with the AIS alive by verifying it at predefined intervals (see <span class="Strong">Keep alive timeout </span>field). By default, this option is enabled.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Keep alive timeout (sec)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the interval in seconds at which to verify that the connection is alive. Default interval is 149 minutes (8940 seconds).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Pool Size</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the maximum number of connections to AIS that RCM may keep concurrently for this connection definition. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Call timeout (ms)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Enter the call timeout in milliseconds. The value of this parameter indicates the amount of time that RCM waits for AIS to answer before it displays an error message. -1 indicates no timeout, RCM waits for an AIS response indefinitely.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">&#160;</p>
+        <ol start="2">
+            <li>Add AIS functions. AIS and the function names are not bound during solution development (i.e., not hard coded in XSL). Therefore the AIS functions that can be called are listed in RCM administration panel. A function list can be considered as part of the AIS connection, and defined in the AIS connection window (a sub-grid). Fill in the function attributes:</li>
+        </ol>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Attribute</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Mandatory</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">RCM internal identifier.</p>
+                        <p class="Body">Must be unique in RCM (unique across all functions in all AIS connections).</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Yes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Process name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">The name of the running AIS process</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Yes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Flow name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">The name of the Flow as it is defined in the AIS. Refer to the AIS Visual Modeler Help for more information</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Yes</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="3">
+            <li>Click <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Create a New Connection_1.png" class="Icon" /> to validate the connection information.</li>
+        </ol>
+        <ol start="4">
+            <li>
+                <p>Save the connection.</p>
+                <ul>
+                    <li>If the connection is successful, the connection becomes active immediately after clicking <span class="Strong">Save</span>.</li>
+                    <ul>
+                        <li>If the connection fails, the information is still saved within the list of connections.</li>
+                    </ul>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

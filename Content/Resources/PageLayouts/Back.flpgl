@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="Left" Width="800" Height="800" Padding="20px" PageSize="Letter" PageType="left" PaddingLeft="2.3cm" PaddingRight="2.3cm" PaddingTop="2.54cm" PaddingBottom="2.54cm" Orientation="portrait">
+        <Frame X="-87px" Y="648px" Width="21.59cm" Height="8.255cm" Flow="body" Right="-87px" Bottom="-96px" BackgroundType="Solid" BackgroundColor="#d0d2d3" Anchors="" PaddingLeft="0.65cm" PaddingRight="0.65cm" PaddingBottom="0" PaddingTop="0.65cm" />
+    </Page>
+</PageStyles>

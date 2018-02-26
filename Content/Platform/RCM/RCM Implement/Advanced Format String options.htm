@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref238784098"></a>Advanced Format String options of Link Formatter</h1>
+        <p class="Body">Each link is composed of: &lt;a href=[HREF][STYLE][TARGET]&gt;[DISPLAY]&lt;/a&gt;</p>
+        <p class="Body">All parts but the [STYLE] part can be defined in a Format String.</p><span class="Strong">Set URL Style</span>
+        <p class="Body">On field properties, set “Additional Styling (css)” field, to contain the style you want for the URL.</p><span class="Strong">Set Renderer Format string</span>
+        <p class="Body">All other URL parts: HREF, TARGET and DISPLAY can be set in the “Format String” field by using the following format (in any order):</p>
+        <p class="Code">&lt;href&gt;…&lt;/href&gt;&lt;display&gt;…&lt;display&gt;&lt;target&gt;…&lt;/target&gt;</p>
+        <p class="Body">&lt;display&gt; and &lt;target&gt; parts are optional. If you did not enter these parts then the URL will contain their default value.</p>
+        <p class="Body">&lt;display&gt; default value: field value</p>
+        <p class="Body">&lt;target&gt; default value: _self</p>
+        <p class="Body">&lt;href&gt; and &lt;display&gt; parts can contain:</p>
+        <ul>
+            <li>Hard coded data</li>
+        </ul>
+        <ul>
+            <li>Any field value by identifier (the term “field” refers to the items defined in the Fields tab of the View)</li>
+        </ul>
+        <ul>
+            <li>Current field value</li>
+        </ul><span class="Strong">Hard Coded Format</span>
+        <p class="Body">Hard coded format can contain any string that is permissible in that URL portion:</p>
+        <p class="Body">&lt;target&gt; values: &lt;window name&gt;, _blank, _parent, _top</p>
+        <p class="Body">&lt;display&gt; values: any value</p>
+        <p class="Body">&lt;href&gt; values: any value that can be in the URL HREF part</p><span class="Strong">Fetching field value</span>
+        <p class="Body">In order to fetch the field value, use the following format:</p>
+        <div>
+            <p class="Code">&lt;fetch&gt;[field identifier]&lt;/fetch&gt;</p>
+            <p class="Code">OR</p>
+            <p class="Code">&lt;fetch&gt;&lt;value/&gt;&lt;/fetch&gt;</p>
+        </div>
+        <p class="Body">For example:</p>
+        <p class="Body"><span class="Code">&lt;fetch&gt;owner&lt;/fetch&gt;</span> returns the alert owner full name.</p>
+        <p class="Body"><span class="Code">&lt;fetch&gt;Open Date&lt;/fetch&gt;</span> returns the alert open date time.</p>
+        <p class="Body"><span class="Code">&lt;fetch&gt;&lt;value/&gt;&lt;/fetch&gt;</span> returns the current field value</p><span class="Strong">Escaping Field Value</span>
+        <p class="Body">If you want to escape the field value, use the following format:</p>
+        <div>
+            <p class="Code">&lt;fetch escape=’js’&gt;[field identifier] OR &lt;value/&gt;&lt;/fetch&gt;</p>
+            <p class="Code">&lt;fetch escape=’url’&gt;[field identifier] OR &lt;value/&gt;&lt;/fetch&gt;</p>
+            <p class="Code">&lt;fetch escape=’js-url’&gt;[field identifier] OR &lt;value/&gt;&lt;/fetch&gt;</p>
+        </div>
+        <p class="Body">Using escape=’js-url’ escape the field value twice. First by URL and then by JavaScript.</p><span class="Strong">Examples:</span>
+        <div>
+            <p class="Code">Format: </p>
+            <p class="Code">&lt;href&gt;javascript:location.href='http://&lt;fetch escape="js-url"&gt;str1&lt;/fetch&gt;';&lt;/href&gt;</p>
+            <p class="Code">Fields value:</p>
+            <p class="Code">str1 = <a href="http://www.google.com">www.google.com</a></p>
+            <p class="Code">current field: myLink</p>
+            <p class="Code">Result:</p>
+            <p class="Code">&lt;A href=javascript:location.href='http://www.google.com'&gt;myLink&lt;/A&gt;</p>
+        </div>
+        <p>&#160;</p>
+        <div>
+            <p class="Code">Format: </p>
+            <p class="Code">&lt;href&gt;http://&lt;fetch&gt;customField1&lt;/fetch&gt;&lt;/href&gt;&lt;display&gt;&lt;fetch&gt;&lt;value/&gt;&lt;/fetch&gt;&lt;/display&gt;&lt;target&gt;_blank&lt;/target&gt;</p>
+            <p class="Code">Fields value:</p>
+            <p class="Code">customField1= <a href="http://www.google.com">www.google.com</a></p>
+            <p class="Code">current field: myLink</p>
+            <p class="Code">Result:</p>
+            <p class="Code">&lt;A href='http://www.google.com’ target=”_blank”&gt;myLink&lt;/A&gt;</p>
+        </div>
+    </body>
+</html>

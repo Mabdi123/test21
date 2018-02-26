@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref431298762"></a><a name="_Toc500234388"></a>Create the Action GUI Item Type</h1>
+        <p class="Body">In the GUI Items wizard you can create a GUI item based on the Action type.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Create the Action GUI Item.png" style="visibility: visible;mso-wrap-style: square;width: 371px;height: 419px;" />
+        </p>
+        <p class="Body">The GUI Item Attributes page for the Action item type contains the following fields:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Field</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Module</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the Module that you want this GUI item to be added to (e.g. Lists, Thresholds, etc.)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter a name for the GUI item. (For example, Change Step for the action item performChangeStep().)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Tooltip</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The text that will appear as a tooltip for the item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Type</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the relevant action Type:</p>
+                        <ul>
+                            <li><span class="Strong">Action:</span> An action icon that runs a specific javascript call when the user clicks on it. </li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Separator:</span> A visual indicator that separates between icons or menu items. When you select a Separator the icon and script fields do not appear. A name is required for the identifier of the separator and the tooltip field can be left blank.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Scope</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the screens where the action appears:</p>
+                        <ul>
+                            <li><span class="Strong">All:</span> The action appears in both list and details screens of the module.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Details:</span> The action only appears in details screen of the module.</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">List:</span> The action only appears in the list screen of the module.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Icon</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select an icon from the icon picker. It is recommended to select an icon that has the same name as the action. For example, selecting add_attachment.png for an action named Add Attachment.</p>
+                        <p class="Body">
+                            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Create the Action GUI Item_1.png" style="visibility: visible;mso-wrap-style: square;width: 209px;height: 221px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Script</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the relevant JavaScript based function for the action.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Selection</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This property provides the ability to display the action as disabled until the user selects an item. The following options are available:</p>
+                        <ul>
+                            <li><span class="Strong">Any:</span> No selection required. The action is always displayed as enabled regardless of item selection. </li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Single: </span>Only a single item selection is required in order to enable the action. Selection of more than one item disables the action. </li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">Multiple: </span>One or more item selection is required in order to enable the action. Select the visible checkbox in order for the item to be displayed.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Visible</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Select to make this item visible in the RCM display. Only users with relevant permissions can view displayed GUI items.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

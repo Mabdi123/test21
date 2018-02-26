@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2221" MadCap:lastWidth="1012">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref454795594"></a><a name="_Toc500234214"></a>Set Up User Defined Data Types (UDDT) in the Database</h1>
+        <p class="Body">The User Defined Data Types (UDDT) enable you to create predefined drop-down lists and picker fields for settings. When a setting field is linked to UDDT, only the values of the predefined drop-down list or picker field are displayed. </p>
+        <div class="Note">
+            <p class="Body">This method is used for backward compatibility. It is recommended that UDDT configuration be performed in the Designer via the User Defined Data Types tab. For details see <MadCap:xref href="Configuring User Defined Data.htm#_Ref448238963" class="ParaTextOnly">Configuring User Defined Data Types</MadCap:xref>.</p>
+        </div>
+        <p class="Body">The following example illustrates how to create a UDDT from an external database:</p>
+        <ol start="1">
+            <li>Find the connection ID for the relevant external database by viewing the <span class="Strong">connections</span> table of the RCM in the external DB (e.g., SQL Server). In this example, the connection ID is 1 for the DB Test2.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Set Up User Defined Data Types.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ol start="2">
+            <li>Open the ACM_md_uddt table in the RCM Repository and add the new UDDT attributes:</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">For List UDDT all fields after e_type are not relevant. The following fields are not relevant for drill down pickers: query, value_field, id_field.</p>
+        </div>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th colspan="2" class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Attribute</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                    <td>&#160;</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Id_field</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">A sequential number for the id of the UDDT.</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">name</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">The name of the UDDT. In this example, the name of the UDDT is Employees in Dept 3 since this UDDT is created to display only the employees in department 3 from the Employees table. </p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Set Up User Defined Data Types_1.png" style="z-index: 7;visibility: visible;mso-wrap-style: square;mso-wrap-distance-left: 9pt;mso-wrap-distance-top: 0;mso-wrap-distance-right: 9pt;mso-wrap-distance-bottom: 0;mso-position-horizontal: left;mso-position-horizontal-relative: text;mso-position-vertical: top;mso-position-vertical-relative: text;margin-left: 0;" />
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">connection id</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">The connection id to the external database where the table is stored. In this example it is 1.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">query</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">An SQL query for displaying the desired records of the table. In this example the SQL query returns only the employees in department 3 from the Employees table:</p><span class="Emphasis">Select EmployeeID,EmployeeFulName from employees where EmployeeDept=3</span>
+                        <p class="Body">For details on filtering via a parameter, see <MadCap:xref href="Filter via a Parameter.htm#_Ref250389202" class="ParaTextOnly">Filter via a Parameter</MadCap:xref>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">value_field</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">The field in the database that stores the internal IDs of the records in the table. In this example it is EmployeeID</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">display_field</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">The field in the database whose records will be displayed in the RCM Threshold. In this example it is EmployeeFullName.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">e_type</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">The default drop-down list of the UDDT. For simple UDDT (used in Settings model) this value is List. For Drill Down Picker control this value Is Picker.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">ddq_identifier</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Identifier of the DDQ that is displayed in the picker screen.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">js_parameters_call</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Fully implemented JavaScript function that is responsible for selecting the initial DDQ parameters. Parameter values could be provided hardcoded in the body of the function or picked up from existing fields in the source screen.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Js_callback</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Provides an implementation of the picker callback function. The role of this function is to populate values selected by the user in the picker window. The function runs in the opener window (i.e. it has full access to its DOM objects).</p>
+                        <p class="Body">Example:</p>
+                        <p class="Body">function (arr){document.getElementById('account_name').value =arr[0];}<br />The example receives an array of values and populates html fields named account_name with first value provided in the array. Note that the function input parameter is an array of values the user selects in the picker and ordered in the same way as columns in the DDQ. The column is mandatory.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1"><span class="Strong">picker_vtl</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">In order to change the parameters layout or add any additional functionality (e.g., radio buttons selection, hiding some of parameters, etc.) a column picker_vtl is provided. This example provides a simple VTL code that displays all DDQ parameter fields in the default way but increases field’s left padding to 50px:</p>
+                        <p class="Body">&lt;table height="100%" border="0" cellpadding="0" cellspacing="0"&gt;<br />&lt;tr&gt;<br />&lt;td width="100%" valign="top" height="100%" style="padding:50px;"&gt;<br />&lt;table width="100%" border="0" cellpadding="0" cellspacing="8"&gt;<br />#foreach($f in ${fields})<br />&lt;tr&gt;<br />&lt;td class="clsBoldText" height="20" nowrap&gt;f.alias&lt;/td&gt;<br />&lt;td class="clsText" width="100%" nowrap&gt;<br />$f.htmlControl<br />&lt;/td&gt;<br />&lt;/tr&gt;<br />#end<br />&lt;/table&gt;<br />&lt;/td&gt;<br />&lt;/tr&gt;<br />&lt;/table&gt;<br />The VTL context is populated with the fields attribute of type list. Each field in the list represents a single DDQ parameter and is of type DrillDownVTLField</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Set Up User Defined Data Types_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

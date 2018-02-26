@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Platform/AIS/AIS_Install/AIS_Installation_4_24.fltoc"
+  PatchHeadingLevels="true"
+  Medium="pdf"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.Hide or Default.ScreenOnly] "
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Variables>
+    <Variable
+      Name="Actimize/GuideName">Installation Guide</Variable>
+    <Variable
+      Name="Actimize/CatalogNumber">XXXX</Variable>
+    <Variable
+      Name="Actimize/DocumentVersion">4.24.2</Variable>
+    <Variable
+      Name="Actimize/HelpName">AIS INSTALLATION HELP</Variable>
+    <Variable
+      Name="Actimize/ProductCode">AIS</Variable>
+    <Variable
+      Name="Actimize/SolutionName">AIS</Variable>
+    <Variable
+      Name="Actimize/VersionNumber">2.24.0</Variable>
+    <Variable
+      Name="Actimize/ReleaseDate">November 22, 2017</Variable>
+  </Variables>
+  <PDF
+    CollapsedBookmarks="true"
+    TitleBar="DocumentTitle"
+    PageLayout="OneColumn"
+    InitialMagnification="100"
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Author="NICE Actimize"
+    Title="[%=Actimize.CompanyName%] [%=Actimize.SolutionName%] [%=Actimize.VersionNumber%] [%=Actimize.GuideName%]" />
+</CatapultTarget>

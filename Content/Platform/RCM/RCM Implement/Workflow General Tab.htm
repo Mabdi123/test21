@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="1587" MadCap:lastWidth="986">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref466367508"></a><a name="_Toc500234024"></a>Workflow General Tab</h1>
+        <p class="Body">Select an item workflow in the Step Workflow tab of the Entities pane.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow General Tab.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The following options are available in the workflow General tab.</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Field</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter a name for the workflow.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enter the alert/item workflow identifier.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Description</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The workflow description. You can access a larger text area for the description by clicking the <span class="Strong">Edit</span> button.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td colspan="2" class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Global Deadline section – configure the workflow deadlines for the following features.</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow General Tab_1.png" style="visibility: visible;mso-wrap-style: square;width: 463px;height: 114px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                        <p class="ConvertNote"><span class="Strong">NOTE:</span>
+                        </p>
+                        <p class="Body">Business days are calculated according to the Business Calendar – Days and Business Calendar – BU Associations OOTB platform lists in the RCM UI. For details, see <MadCap:xref href="Business Calendar Lists.htm#_Ref466978481" class="ParaTextOnly">Business Calendar Lists</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Send Email Notification</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to indicate the number of <span class="Strong">Business D</span><span class="Strong">ays</span>/<span class="Strong">Days</span>/<span class="Strong">Hours</span>/<span class="Strong">M</span><span class="Strong">inutes</span> before the deadline in which an email is sent to the owner of the alert.</p>
+                        <p class="Body">The options for email are:</p>
+                        <ul>
+                            <li>Standard email, for example:</li>
+                        </ul>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow General Tab_2.png" style="visibility: visible;mso-wrap-style: square;width: 489px;height: 25px;" />
+                        </p>
+                        <ul>
+                            <li>RFI template based email. For information, refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Reference Guide, </span>in Managing RFI Templates.</li>
+                        </ul>
+                        <p class="Body">You must enter the relevant RFI identifier in the actimize.workflow.deadline.defaultRFITemplate config parameter. For details, see <MadCap:xref href="Parameter Descriptions.htm#_Ref433279157" class="ParaTextOnly">Parameter Descriptions</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Create Reminder </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to indicate the number of <span class="Strong">Business Days</span>/<span class="Strong">Days</span>/<span class="Strong">Hours</span>/<span class="Strong">Minutes</span> before the deadline in which a reminder about the deadline is displayed to the user.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Change Step to</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Enables you to select the step of the alert after the deadline is reached. The required escalation step needs to be added to the workflow first. The selection of the escalated step creates an automatic Transition between the currently in focus step and the selected escalated step. Note that the <span class="Strong">Allow manual transition</span> checkbox for the transition arrow is enabled when this parameter is defined.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

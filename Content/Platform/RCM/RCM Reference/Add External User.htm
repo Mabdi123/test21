@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="829" MadCap:lastWidth="1220">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949783"></a>Add External User </h1>
+        <p class="Body">Click the <span class="Strong">Add External User</span> link within the Manage Users activity bar to open the Select External User window that enables you to search for any LDAP user that you want to add to the <MadCap:variable name="RCM Actimize.ProductCode" />. This feature is only available for specific users. See your administrator for more information.</p>
+        <p class="Body">Once all LDAP groups are defined within the <MadCap:variable name="RCM Actimize.ProductCode" /> database, it is possible to automatically synchronize the list of <MadCap:variable name="RCM Actimize.ProductCode" /> users with the LDAP list of relevant users, using the <span class="Strong">Manage LDAP -&gt; Synchronize</span> option. (For more information about automatic synchronization, see <MadCap:xref href="Synchronize List of Users.htm#_Ref105906263" class="ParaTextOnly">Synchronize List of Users with LDAP Users List</MadCap:xref>). If, however, a specific LDAP user does not appear within the <MadCap:variable name="RCM Actimize.ProductCode" /> list of users after synchronization, Administrators can search for that user and add the user manually using the Select External User window. </p>
+        <p class="Procedure">To search for an external user:</p>
+        <p class="Body">If there are multiple domains, select the domain under which the user is registered. </p>
+        <ol start="1">
+            <li>Within the <span class="Strong">User name prefix</span> field, enter the user name or any letter that is included within the name. </li>
+        </ol>
+        <ol start="2">
+            <li>Click <span class="Strong">Go</span> to search through the LDAP user list for the user that you require. A list of all LDAP users that contain the entered letter(s) appears within the Available Users list box.</li>
+        </ol>
+        <ol start="3">
+            <li>From the <span class="Strong">Available </span><span class="Strong">Users</span> box, select the user that you want to add to <MadCap:variable name="RCM Actimize.ProductCode" />. </li>
+        </ol>
+        <ol start="4">
+            <li>Click <span class="Strong">Next </span>to proceed to save this user to the <MadCap:variable name="RCM Actimize.ProductCode" /> database and to continue to the next status in the wizard. The second status in the wizard displays additional information. Some of the information may be supplied by LDAP and some may be information that the user must supply.</li>
+        </ol>
+        <ol start="5">
+            <li>If you want to allow this external user to also be able to access the <MadCap:variable name="RCM Actimize.ProductCode" /> using the <MadCap:variable name="RCM Actimize.ProductCode" /> internal login page, click the <span class="Strong">Allow logging into RCM using a login name and password</span> checkbox.</li>
+        </ol>
+        <p class="Body">The window expands, enabling you to enter an internal <MadCap:variable name="RCM Actimize.ProductCode" /> user name and password for this user.</p>
+        <div class="Note">
+            <p class="Body">An external user is added to the <MadCap:variable name="RCM Actimize.ProductCode" /> only if that user is linked to a group and the group is linked to a role. If an external user attempts to login to the <MadCap:variable name="RCM Actimize.ProductCode" /> via Single Sign On and they are not linked to a group that has a role then they will not be able to login to the <MadCap:variable name="RCM Actimize.ProductCode" />.</p>
+        </div>
+        <p class="Body">You cannot assign users to external LDAP groups since this information is based on the LDAP server configuration.</p>
+        <p class="Body">You can delete external users.</p>
+    </body>
+</html>

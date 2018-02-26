@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234128"></a>assignableItemsDDQIdentifier Parameter</h1>
+        <p class="Body">This parameter includes the identifier of the initial mandatory DDQ. This DDQ finds and orders the work items that can be assigned to the user. This DDQ is defined in the RCM Designer. It sets the applicable fields and prepares place holder parameters for optional on-site RCM application configuration. See also <MadCap:xref href="Changing the Values of the.htm#_Ref319507134" class="ParaTextOnly">Changing the Values of the DDQs in the RCM</MadCap:xref>, page <MadCap:xref href="Changing the Values of the.htm#_Ref319507134" class="PageNumberOnly">1</MadCap:xref>.</p>
+        <p class="Body">If there is an error regarding the DDQ default values then an error message is returned.</p>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">The DDQ must return the identifier of the work item</p>
+        <p class="Body">The result set size is limited to one record</p>
+        <p class="Body">Examples of DDQ:</p>
+        <p class="Body">Example 1:</p>
+        <div>
+            <p class="Code">select a.item_id</p>
+            <p class="Code">from v_acm_items a</p>
+            <p class="Code">where</p>
+            <p class="Code">&#160;&#160; a.owner_join_id is null and fl_deleted=0 and closed_date is null</p>
+            <p class="Code">&#160;&#160; and {$permissions$alerts$a}</p>
+            <p class="Code">&#160;&#160; order by a.item_date desc</p>
+        </div>
+        <p>Example 2:</p>
+        <div>
+            <p class="Code">select a.item_id</p>
+            <p class="Code">from v_acm_items a</p>
+            <p class="Code">left join v_acm_alert_custom_fields b on a.custom_attr_join_id = b.custom_field_join_id</p>
+            <p class="Code">where</p>
+            <p class="Code">&#160;&#160; a.owner_join_id is null and fl_deleted=0 and closed_date is null</p>
+            <p class="Code">&#160;&#160; and {$permissions$alerts$a}</p>
+            <p class="Code">&#160;&#160; and b.cs11 = 'Securities'</p>
+            <p class="Code">&#160;&#160; order by a.item_date desc</p>
+        </div>
+    </body>
+</html>

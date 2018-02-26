@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref340586365"></a>Format Custom Field Values for Translation</h1>
+        <p class="Body">The Translated String option of the Column Display Formatter for a custom field appears in all views (Alert Views, Case Views, etc.).</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Format Custom Field Values.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 166px;" />
+        </p>
+        <p class="Body">It is for translating the actual data in the field and displaying the translated values in the RCM. Specify the module for the data translation in the Format String field. If this field is left empty then the module is ‘Actimize’.</p>
+        <p class="Body">The formatter is used for translation of simple base values (e.g. ‘yes’,’no’). If the base value requires parameters (e.g. "hello {0}") then the data in the column needs to contain the parameters that use the same syntax in the XSL APIs ("hello {0}@@John"). See also <MadCap:xref href="XSL API.htm#_Ref340585172" class="ParaTextOnly">XSL API</MadCap:xref>, page <MadCap:xref href="XSL API.htm#_Ref340585172" class="PageNumberOnly">1</MadCap:xref>.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">RCM always uses the exact match option on the columns with this formatter when searching in the filter by and advanced filter. </p>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1405" MadCap:lastWidth="698">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref436826694"></a><a name="_Toc500234076"></a>Configure Kerberos Authentication</h1>
+        <div class="Note">
+            <p class="Body">RCM Kerberos only supports the IMAP protocol. The protocol is used regardless of what you set for the 'protocol' configuration parameter.</p>
+        </div>
+        <p class="Body">Kerberos authentication requires doing the following tasks:</p>
+        <ol start="1">
+            <li>An SSL connection is required. When Kerberos is enabled, RCM always uses a TLS connection regardless of what you configure for the 'encryption' configuration parameters. Therefore, you must add Kerberos Server SSL certificates to the RCM keystore.</li>
+        </ol>
+        <ol start="2">
+            <li>Create the jaas.conf file on any path in your machine and define the relevant settings as displayed in the following example:</li>
+        </ol>
+        <div>
+            <p class="Code">&#160; com.sun.security.jgss.initiate {</p>
+            <p class="Code">&#160; com.sun.security.auth.module.Krb5LoginModule required </p>
+            <p class="Code">&#160; principal="&lt;kdc principal&gt;" </p>
+            <p class="Code">&#160; doNotPrompt="true" </p>
+            <p class="Code">&#160; debug="false" </p>
+            <p class="Code">&#160; ticketCache="C:\\&lt;path to cache file&gt;\\&lt;cache file&gt;" </p>
+            <p class="Code">&#160; useTicketCache="true" </p>
+            <p class="Code">&#160; realm="&lt;realm&gt;"</p>
+            <p class="Code">&#160; isInitiator="true";</p>
+            <p class="Code">};</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">com.sun.security.jgss.accept {</p>
+            <p class="Code">&#160; com.sun.security.auth.module.Krb5LoginModule required </p>
+            <p class="Code">&#160; principal="&lt;mail server principal&gt;" </p>
+            <p class="Code">&#160; doNotPrompt="true" </p>
+            <p class="Code">&#160; ticketCache="C:\\&lt;path to cache file&gt;\\&lt;cache file&gt;" </p>
+            <p class="Code">&#160; useTicketCache="true" </p>
+            <p class="Code">&#160; storeKey="true"</p>
+            <p class="Code">&#160; debug="false" </p>
+            <p class="Code">&#160; realm="&lt;realm&gt;";</p>
+            <p class="Code">};</p>
+        </div>
+        <ol MadCap:continue="true">
+            <li>Configure the following Kerberos parameters in the email collaboration page:<ol MadCap:continue="true"><li>Enable Kerberos: Enable outgoing and incoming mail authorization using Kerberos.</li><li>Authorization ID: Enter the Authorization ID of the client used for Kerberos authentication.</li><li>Realm: Enter the realm required for Kerberos validation.</li><li>Realm KDC: Enter the location of Key Distribution Center (KDC) for the given realm.</li><li>Login Configuration File: Enter the path to the ‘jaas.conf’ login configuration file.</li><li>Save your settings and restart the RCM server.</li></ol></li>
+        </ol>
+    </body>
+</html>

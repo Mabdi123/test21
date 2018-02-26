@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="First" Width="800" Height="800" Padding="20px" PageSize="Letter" PageType="first" PaddingLeft="2.3cm" PaddingRight="2.3cm" PaddingTop="2.54cm" PaddingBottom="2.54cm" Orientation="portrait" BackgroundImage="../Assets/Images/PageLayouts/chapter-first.png">
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="2in" Y="0.6875in" Right="0in" Bottom="0in" Width="450px" Height="798px">
+        </Frame>
+        <Frame X="-30px" Y="23px" Width="190px" Height="37px" Flow="decoration0" Right="482px" Bottom="804px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="ChapterLabel">APPENDIX</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+    <Page Name="Left" Width="800" Height="800" Padding="20px" PageSize="Letter" PageType="left" PaddingLeft="2.3cm" PaddingRight="2.3cm" PaddingTop="2.54cm" PaddingBottom="2.54cm" Orientation="portrait" BackgroundImage="../Assets/Images/PageLayouts/chapter-second.png">
+        <Frame Flow="header" Anchors="Left,Right,Top" Right="0in" Bottom="9.25in" X="0in" Y="-0.75in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" Height="0.5in" VerticalAlign="bottom" TextAlign="left" Width="642px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Anchors="Left,Right,Bottom" Right="0in" Bottom="-0.75in" X="0in" Y="9.25in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="0.5in" TextAlign="center" VerticalAlign="middle" Width="642px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <MadCap:snippetBlock xhtml:src="../Snippets/PageLayouts/Footer.flsnp" />
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="2in" Y="0.6875in" Right="0in" Bottom="0in" Width="450px" Height="798px">
+        </Frame>
+    </Page>
+</PageStyles>

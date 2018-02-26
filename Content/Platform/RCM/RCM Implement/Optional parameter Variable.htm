@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="4216" MadCap:lastWidth="1051">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Optional Parameter Variable Samples</h1>
+        <div>
+            <p class="Code">&lt;xsl:variable name="optionalParams"&gt;</p>
+            <p class="Code">&lt;actionsGroupIdentifier&gt;actions1&lt;/actionsGroupIdentifier&gt;</p>
+            <p class="Code">&lt;baseQueryIdentifier&gt;2QUAXZNG&lt;/baseQueryIdentifier&gt;</p>
+            <p class="Code">&lt;preventNewConditions&gt;false&lt;/preventNewConditions&gt;</p>
+            <p class="Code">&lt;showResetButton&gt;true&lt;/showResetButton&gt;</p>
+            <p class="Code">&lt;showRefreshButton&gt;true&lt;/showRefreshButton&gt;</p>
+            <p class="Code">&lt;showCountResults&gt;true&lt;/showCountResults&gt;</p>
+            <p class="Code">&lt;disableFilterByExample&gt;false&lt;/disableFilterByExample&gt;</p>
+            <p class="Code">&lt;filterDisplayMode&gt;both&lt;/filterDisplayMode&gt;</p>
+            <p class="Code">&lt;pagingSize&gt;6&lt;/pagingSize&gt;</p>
+            <p class="Code">&lt;selectionMode&gt;multi&lt;/selectionMode&gt;</p>
+            <p class="Code">&lt;showBaseQueryConditions&gt;true&lt;/showBaseQueryConditions&gt;</p>
+            <p class="Code">&lt;userQueryXml&gt;</p>
+            <p class="Code">&lt;query&gt;</p>
+            <p class="Code">&lt;queryCondition class="boolean_condition"&gt;</p>
+            <p class="Code">...</p>
+            <p class="Code">&lt;/queryCondition&gt;</p>
+            <p class="Code">&lt;queryFields&gt;</p>
+            <p class="Code">...</p>
+            <p class="Code">&lt;/queryFields&gt;</p>
+            <p class="Code">&lt;/query&gt;</p>
+            <p class="Code">&lt;/userQueryXml&gt;</p>
+            <p class="Code">&lt;/xsl:variable&gt;</p>
+        </div><span class="Strong">Sample with DDQ</span>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">Due to page width limit, not all indentation marks are displayed in the sample.</p>
+        <div>
+            <p class="Code">&lt;xsl:variable name="optionalParams"&gt;</p>
+            <p class="Code">&lt;actionsGroupIdentifier&gt;MyActions1&lt;/actionsGroupIdentifier&gt;</p>
+            <p class="Code">&lt;baseQueryIdentifier&gt;31QE9PXW-GA9U-53FL-O9SI-Z32LU33NC9JM&lt;/baseQueryIdentifier&gt;</p>
+            <p class="Code">&lt;preventNewConditions&gt;false&lt;/preventNewConditions&gt;</p>
+            <p class="Code">&lt;disableFilterByExample&gt;false&lt;/disableFilterByExample&gt;</p>
+            <p class="Code">&lt;filterDisplayMode&gt;both&lt;/filterDisplayMode&gt;</p>
+            <p class="Code">&lt;pagingSize&gt;200&lt;/pagingSize&gt;</p>
+            <p class="Code">&lt;selectionMode&gt;multi&lt;/selectionMode&gt;</p>
+            <p class="Code">&lt;showBaseQueryConditions&gt;true&lt;/showBaseQueryConditions&gt;</p>
+            <p class="Code">&lt;showRefreshButton&gt;true&lt;/showRefreshButton&gt;</p>
+            <p class="Code">&lt;showResetButton&gt;true&lt;/showResetButton&gt;</p>
+            <p class="Code">&lt;showExportButton&gt;true&lt;/showExportButton&gt;</p>
+            <p class="Code">&lt;ddqPickers&gt;</p>
+            <p class="Code">&lt;ddqPicker&gt;</p>
+            <p class="Code">&lt;fieldIdentifier&gt;C_View_alert_internal_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&lt;ddqIdentifier&gt;C_DDQ_int&lt;/ddqIdentifier&gt;</p>
+            <p class="Code">&lt;ddqParams&gt;@@6@@&lt;/ddqParams&gt;</p>
+            <p class="Code">&lt;/ddqPicker&gt;</p>
+            <p class="Code">&lt;ddqPicker&gt;</p>
+            <p class="Code">&lt;fieldIdentifier&gt;C_View_bu_internal_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&lt;ddqIdentifier&gt;C_DDQ_date&lt;/ddqIdentifier&gt;</p>
+            <p class="Code">&lt;ddqParams&gt;@@11/29/2009@@&lt;/ddqParams&gt;</p>
+            <p class="Code">&lt;/ddqPicker&gt;</p>
+            <p class="Code">&lt;ddqPicker&gt;</p>
+            <p class="Code">&lt;fieldIdentifier&gt;C_View_owner_identifier&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&lt;ddqIdentifier&gt;C_DDQ_string&lt;/ddqIdentifier&gt;</p>
+            <p class="Code">&lt;ddqParams&gt;@@@@&lt;/ddqParams&gt;</p>
+            <p class="Code">&lt;/ddqPicker&gt; </p>
+            <p class="Code">&lt;/ddqPickers&gt;</p>
+            <p class="Code">&lt;userQueryXml&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;queryCondition class="boolean_condition"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;operator&gt;or&lt;/operator&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;children&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;boolean_condition&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;operator&gt;and&lt;/operator&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;children&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;comparison__condition&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;displayMode&gt;Editable&lt;/displayMode&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;operator&gt;GT&lt;/operator&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;children&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;field__term&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_bu_internal_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/field__term&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;value__term&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;value&gt;100&lt;/value&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/value__term&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/children&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/comparison__condition&gt; </p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/children&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/boolean_condition&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/children&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/queryCondition&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;queryFields&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_alert_internal_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;sortingField&gt;0&lt;/sortingField&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;ascSort&gt;false&lt;/ascSort&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_alert_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;sortingField&gt;0&lt;/sortingField&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;ascSort&gt;true&lt;/ascSort&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_alert_date&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;sortingField&gt;1&lt;/sortingField&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;ascSort&gt;false&lt;/ascSort&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_owner_identifier&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;ascSort&gt;false&lt;/ascSort&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_alert_type_internal_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;ascSort&gt;false&lt;/ascSort&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;fieldIdentifier&gt;C_View_bu_internal_id&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;ascSort&gt;false&lt;/ascSort&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/queryFields&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/query&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;/userQueryXml&gt;</p>
+            <p class="Code">&lt;/xsl:variable&gt;</p>
+        </div>
+    </body>
+</html>

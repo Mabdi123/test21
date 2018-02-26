@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="1013" MadCap:lastWidth="1025">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>The Condition Syntax</h1>
+        <p class="Body">The condition syntax may include the following elements:</p>
+        <ul>
+            <li>Boolean, Numeric and String values like true, false, “abc”, 3, -6.76 etc.</li>
+        </ul>
+        <ul>
+            <li>Custom field placeholders in the format of ${custom_field_identifier}.</li>
+        </ul>
+        <ul>
+            <li>Operators such as '!', 'and', 'or', '+', '*', etc.</li>
+        </ul>
+        <p class="Body">Evaluation: The condition evaluation process consists of two stages:</p>
+        <ol start="1">
+            <li>Replacement of Custom field placeholders with their respective values (taken from the grid line)</li>
+            <li>Evaluation of the resulting expression using Spring Expression Language (SpEL) engine.</li>
+        </ol>
+        <p class="Body">Boolean operations:</p>
+        <ul>
+            <li>${cb1}</li>
+        </ul>
+        <ul>
+            <li>!${cb1}</li>
+        </ul>
+        <ul>
+            <li>${cb1} or !${cb2}</li>
+        </ul>
+        <p class="Body">Mathematical equations:</p>
+        <ul>
+            <li>${ci1} &gt; 2</li>
+        </ul>
+        <ul>
+            <li>${ci1}*${ci2} / ${ci3} == 6 + ${ci4}</li>
+        </ul>
+        <p class="Body">Textual operations:</p>
+        <ul>
+            <li>${cs1} == 'a'</li>
+        </ul>
+        <ul>
+            <li>${cs1} &lt; 'block'</li>
+        </ul>
+        <ul>
+            <li>${cs1} + 'b' == 'ab'</li>
+        </ul>
+        <p class="Body">Regular Expressions:</p>
+        <ul>
+            <li>${cs1} matches '\d{3}-\d{7}'</li>
+        </ul>
+        <div class="Example">
+            <p class="Body">The following examples demonstrate the various types of expressions that can be used. In these examples, we assume that:</p>
+            <ul>
+                <li>cb1, cb2, … are the identifiers of Boolean custom fields</li>
+            </ul>
+            <ul>
+                <li>ci1, ci2, … are the identifiers of Integer custom fields</li>
+            </ul>
+            <ul>
+                <li>cs1, cs2, … are the identifiers of String custom fields</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2353" MadCap:lastWidth="724">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref250995829"></a>Add Conditional Formatting</h1>
+        <p class="Body">Conditional formatting supports the following formatting styles:</p>
+        <ul>
+            <li>Apply style on the entire cell</li>
+        </ul>
+        <ul>
+            <li>Apply style on part of the field value</li>
+        </ul>
+        <ul>
+            <li>Change the displayed data</li>
+        </ul>
+        <ul>
+            <li>Conditional styling (based on current/other field value)</li>
+        </ul>
+        <p class="Body">If the Conditional Formatter property is empty, then cell is rendered the following way:</p>
+        <ul>
+            <li><span class="Strong">Cell style</span> – The default cell style and in case Additional Styling property is set, it is applied on top of the default style.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Cell content</span> – The cell value in the format that was set by the Column Display Formatter property.</li>
+        </ul>
+        <p class="Body">If “Conditional Formatter” property is set, the cell will get rendered as follow:</p>
+        <ul>
+            <li><span class="Strong">Cell style</span> – Conditional Formatter style on top of Additional Styling on top of default styling. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Cell content</span> – The value as defined in the XSL</li>
+        </ul>
+        <p class="Body">Use XSL</p>
+        <p class="Body">In the Conditional Formatter property you can write a valid XSL code which defines the cell style and value. Since you are using XSL, you can use a wide variety of formatting options for the cell rendering.</p>
+        <p class="Body">Fetch record data</p>
+        <p class="Body">From the XSL you can access any field value of the current record, using value-of command:</p>
+        <p class="Code">&lt;xsl:value-of select="fields/field[@identifier='First name']/text()"/&gt;</p>
+        <p class="Body">Example:</p>
+        <div>
+            <p class="Code">&lt;xsl:stylesheet version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform'&gt;</p>
+            <p class="Code">&lt;xsl:template match="/"&gt;</p>
+            <p class="Code"> &lt;span&gt;</p>
+            <p class="Code">&#160; &lt;xsl:if test="fields/field[@identifier='MovieRating']/text() &amp;lt; 4"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160; &lt;xsl:attribute name="style"&gt;background-color:#F5EDB1&lt;/xsl:attribute&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:if&gt;</p>
+            <p class="Code">&#160; &lt;xsl:value-of select="fields/field[@identifier='renderedCellValue']/text()"/&gt;</p>
+            <p class="Code">&lt;/span&gt;</p>
+            <p class="Code">&lt;/xsl:stylesheet&gt;</p>
+            <p class="Code">&lt;/xsl:template&gt;</p>
+        </div>
+        <p class="Body">XML to use in the XSL</p>
+        <p class="Body">The following structure in CellRenderingInfo object is defined after the <span class="Strong">Conditional Formatter</span> property of a view field is defined,</p>
+        <p class="Code">&lt;fields&gt;<br />&lt;field identifier=”cellValue”&gt;&lt;/field&gt;<br />&lt;field identifier=”renderedCellValue”&gt;&lt;/field&gt;<br />&lt;/fields&gt;</p>
+        <p class="Body">Add fields that the XSL refers to this structure. This is achieved by parsing the XSL and searching for the string "fields/field[@identifier=”.<br />The previous XSL example uses “fields/field[@identifier='score'”, and therefore, the XML structure of this cell is the following:</p>
+        <p class="Code">&lt;fields&gt;<br />&lt;field identifier=”cellValue”&gt;&lt;/field&gt;<br />&lt;field identifier=”renderedCellValue”&gt;&lt;/field&gt;<br />&lt;field identifier=”score”&gt;&lt;/field&gt;<br />&lt;/fields&gt;</p>
+        <p class="Body">After having all values, the XSL uses the updated XML and displays the XSL result in the cell.</p>
+        <div class="Note">
+            <p class="Body">Conditional Styling can be materialized but it cannot be archived.<br />cellValue returns the date value based on the actimize.common.dateDisplayFormat or formatted according to&#160; the user's format.</p>
+        </div>
+        <p class="Body"><span class="Strong">Support For External XSL Files</span>
+        </p>
+        <p class="Body">The formatter can support external XSL files. For example, in RCM Designer the following code can be added:</p>
+        <p class="Code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;<br />&lt;xsl:include href="conditional_formatter_include.xsl" /&gt;<br />&lt;xsl:template match="/"&gt;<br />&lt;xsl:call-template name="appendFieldValue" /&gt;<br />&lt;/xsl:template&gt;<br />&lt;/xsl:stylesheet&gt;</p>
+        <p class="Body">Contents of conditional_formatter_include.xsl file:</p>
+        <p class="Code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;<br />&lt;xsl:template name="appendFieldValue"&gt;<br />{&lt;xsl:value-of select="fields/field[@identifier='cellValue']" /&gt;}<br />&lt;/xsl:template&gt;<br />&lt;/xsl:stylesheet&gt;</p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="715" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref498951941"></a><a name="_Toc500234038"></a>Use the RCM Scheduler for Workflow Deadlines Jobs</h1>
+        <p class="Body">The RCM Scheduler has a workflow escalation job that may be used instead of the Workflow Asynch Execution Tool. This job of the RCM Scheduler checks the deadlines and deadline actions on a regularly set interval. It is controlled by the following configuration parameters in the Config Parameters tab of admin.jsp:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the RCM Scheduler for.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <ul>
+            <li><span class="Strong">actimize</span><span class="Strong">.workflow.deadline.auto.enable</span> – A Boolean (Yes/No) parameter that defines whether or not the deadline checking Job is enabled. By default the parameter value is false (disabled).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">actimize.workflow.deadline.checkInterval</span> – An Integer value that defines the interval in minutes between executions of the deadline checking job. This value must be greater or equal to 5 and has a default value of 15. Note that an upgraded RCM to version 5.1 has the value of 1440 (24 hours). Only one instance of this job runs at any time and therefore it only occupies one thread on the scheduler.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">actimize.scheduler.user</span> – Defines the authorized RCM user (default is admin). Failure to define this parameter or to set a user that does not exist results in an error in the job. The RFI job also uses this parameter and when this parameter is not defined (empty) then its value is the user that enabled the RFI feature.</li>
+        </ul>
+    </body>
+</html>

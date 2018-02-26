@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref250389202"></a><a name="_Toc500234215"></a>Filter via a Parameter</h1>
+        <p class="Body">This feature provides support for the following runtime parameters:</p>
+        <ul>
+            <li>System parameters</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">'</span><span class="Strong">{$userIdentifier}</span><span class="Strong">'</span> – Currently logged in User identifier. If default value was specified in parameter then this definition is not used.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">'</span><span class="Strong">{$userBu}</span><span class="Strong">'</span> – Currently logged in User’s BU identifier. If no BU is assigned to the user then the default value is used. If no default value defined then an empty string is returned.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">'</span><span class="Strong">{$tenant}</span><span class="Strong">'</span> – </li>
+        </ul>
+        <ul>
+            <li>In Multi-Tenant environment value is replaced with the user tenant or returns an exception when no tenant is defined. </li>
+        </ul>
+        <ul>
+            <li>In a non Multi-Tenant environment value is replaced with the “"actimize.common.tenant.defaultValue" parameter.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">'{$userlang}'</span> – Logged in user language</li>
+        </ul>
+        <ul>
+            <li>User defined parameter:<br />{$&lt;parameter_name&gt;:&lt;parameter_default_value&gt;}</li>
+        </ul>
+        <ul>
+            <li>Custom parameter: <br />'{$&lt;Custom parameter&gt;}'</li>
+        </ul>
+        <ul>
+            <li>Follow these rules when adding filtering parameters to the UDDT query:</li>
+        </ul>
+        <ul>
+            <li>Parameter must be in single quotes when a Char value is provided:<br />Example:<br />Select id, value from tbl where char_value = ‘{$char_param:any}’</li>
+        </ul>
+        <ul>
+            <li>Numeric values should not be in single quotes.<br />Example:<br />Select&#160; id, value from tbl where int_value = {$int_param:5}</li>
+        </ul>
+        <p class="Body">Using a Custom Parameter</p>
+        <ul>
+            <li>Use a read only table that includes HTML links in one of its columns. This read only table calls another table in the database via the HTML links.</li>
+        </ul>
+        <ul>
+            <li>The called table is a regular table (not read only).</li>
+        </ul>
+        <p class="Body">Example:</p>
+        <p class="Body">Query from UDDT table: </p>
+        <p class="Code">select * from uddt_country_city where country_name = '{$custom_param:}'</p>
+        <p class="Body">Relevant cell in column of read only table that includes a link in HTML:</p>
+        <p class="Code">&lt;a href="display.settings.act.go?thresholdId=threshold_list&amp;custom_param=USA&amp;task=runSQL"&gt;Thresholds&lt;/a&gt;</p>
+        <p class="Body">The <span class="Strong">Thresholds </span>link of USA row is clicked by the RCM user:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Filter via a Parameter.png" style="visibility: visible;mso-wrap-style: square;width: 278px;height: 189px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The relevant called table is displayed:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Filter via a Parameter_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 50px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+    </body>
+</html>

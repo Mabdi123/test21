@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234121"></a>RCMAPI.RelatedWorkItemsWidget(widgetId, htmlContainerId, optionalParams)</h1>
+        <p class="Body">This API is similar to the WorkItemsWidget but is intended for a very specific task. This API can only be used from the Work Item details page and it can only show the children of that item rather than allowing the basis for selecting the work items on a generic drill down query.</p>
+        <p class="Body">For example, if the details page shows item 'A' that has two related items 'B' &amp; 'C', then only these two items will be shown in the widget grid. This restriction allows for a much simpler API call and setup. No drill down query needs to be created and the API arguments list is shorter.</p>
+        <p class="Body">Specifically, the two options ddqIdentifier &amp; ddqParams are no longer needed. A sample call to this API may include the following code:</p>
+        <div>
+            <p class="Code">var myRelatedWorkItemsWidget = new RCMAPI.RelatedWorkItemsWidget('w1', 'div1', {</p>
+            <p class="Code">viewIdentifier: "allAlerts",</p>
+            <p class="Code">actionsGroupIdentifier: "workItemsWidgetActions"</p>
+            <p class="Code">});</p>
+            <p class="Code">myRelatedWorkItemsWidget.draw();</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="12" MadCap:lastHeight="1102" MadCap:lastWidth="976">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref454201313"></a><a name="_Toc500234326"></a>APF Comparer Tool</h1>
+        <p class="Body">The APF Comparer tool enables you to compare two RCM APF files to see where objects have been changed, updated, added or removed.</p>
+        <p class="Procedure">To compare APFs:</p>
+        <ol start="1">
+            <li>Navigate to <span class="Strong">File</span> -&gt; <span class="Strong">Compare APFs…</span><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/APF Comparer Tool.png" style="visibility: visible;mso-wrap-style: square;width: 436px;height: 243px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ol start="2">
+            <li>
+                <p>In the Compare APFs window enter the following:</p>
+                <ul>
+                    <li><span class="Strong">APF 1:</span> - Enter or browse to select the first file you want to compare.</li>
+                    <ul>
+                        <li><span class="Strong">APF 2:</span> - Enter or browse to select the second file you want to compare.</li>
+                        <ul>
+                            <li><span class="Strong">Remove Workflow Definitions</span> – Select this option to remove the workflow comparison for alerts and cases to avoid showing these workflow differences. Because workflows are displayed in hierarchies, identical workflows can be represented differently across environments. This can appear as many differences in the APF comparison even though the workflows are identical. </li>
+                            <ul>
+                                <li><span class="Strong">Comparison Utility</span> – Click the <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/APF Comparer Tool_1.png" style="visibility: visible;mso-wrap-style: square;width: 17px;height: 20px;" /> icon to expand the Comparison Utility section to configure the tool parameters.</li>
+                                <ul>
+                                    <li><span class="Strong">Path</span> – Enter or browse to the path for the compare tool you want to use. You can also drag an exe file from Windows Explorer to the Path field.</li>
+                                    <ul>
+                                        <li><span class="Strong">Arguments</span> – You can add any supported arguments in this section. The only mandatory arguments are $input_file1 and $input_file2 which are placeholders for the input files.<div class="Example"><p class="Body">$input_file1 $input_file2</p></div></li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>Click <span class="Strong">Compare</span> to begin the compare process in your selected tool.</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">All APF Comparer window settings are saved per user even when Designer is closed</p>
+            <p class="Body">Only the content.xml file in the APF is compared, and not the header.xml and the users.xml.</p>
+        </div>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="3107" MadCap:lastWidth="1025">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397253986"></a><a name="_Toc500234239"></a>Define the Query</h1>
+        <p class="Body">Defining the query involves the following procedures:</p>
+        <ul>
+            <li>Selecting the Connector</li>
+        </ul>
+        <ul>
+            <li>Entering the SQL Query</li>
+        </ul>
+        <ul>
+            <li>Defining any required parameters for the query.</li>
+        </ul>
+        <ul>
+            <li>Indicating whether or not you want to display a selected parameter within the Change Query popup window that opens from the Drill Down Results within the RCM application.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">If your database is NMSSQL, the database table or view must use NVARCHAR (not VARCHAR) column types.</p>
+        </div>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Query.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Procedure">To define the query:</p>
+        <ol start="1">
+            <li>Select the relevant connector from the Connector drop down list. The available connectors are retrieved from the connections table in the RCM database. (For details, see <MadCap:xref href="Managing Connections Admin.htm#_Ref100995074" class="ParaTextOnly">Managing Connections - Admin Site Connections Tab</MadCap:xref>.)</li>
+        </ol>
+        <ol start="2">
+            <li>Enter the query.</li>
+        </ol>
+        <ol start="3">
+            <li>(Optional) With the cursor in the location that you want to place a parameter, click <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Query_1.png" style="width: 28px;height: 29px;" /> within the Parameter/Query toolbar to add a new parameter in the selected location.</li>
+        </ol>
+        <ol start="4">
+            <li>A new parameter is added to the query and to the list of parameters.</li>
+        </ol>
+        <ol start="5">
+            <li>Enter a name for the parameter within the <span class="Strong">Parameter Name</span> field.</li>
+        </ol>
+        <p class="Body">The parameter name is updated within the query and within the list.</p>
+        <ol start="6">
+            <li>If the parameter type is Char but the parameter must hold a date, select the <span class="Strong">Show date picker for parameter</span> checkbox. As a result, RCM will display the date picker and input for this field will be restricted to values from the date picker.<div class="Note"><p class="Body">If you select the <span class="Strong">Show date picker for parameter</span> checkbox, you must also select the <span class="Strong">Allow searching by this parameter</span> checkbox at the bottom of the window.</p></div></li>
+        </ol>
+        <ol start="7">
+            <li>If you want a selected parameter to appear in the Advanced Parameters window (that opens from the Drill Down Results window when you click <span class="Strong">Change Query</span>), select the <span class="Strong">Allow searching by this parameter</span> checkbox at the bottom of the window and indicate the data type for this parameter.<p class="Body">This enables the RCM user to change values for these parameters, as shown in the following example:</p><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Query_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ol start="8">
+            <li>Save the new query.</li>
+        </ol>
+        <p class="Body">By default, DDQs are saved with the maximum security level enforced. This means that queries are converted to prepared statements during runtime.</p>
+        <p class="Body">At the normal security level, queries are run with basic security checks.</p>
+        <p class="Body">At the high security level, queries are run with basic security checks and partial syntax validation.</p>
+        <p class="Body">For both normal and high security levels:</p>
+        <ul>
+            <li>Queries are not converted to prepared statements.</li>
+        </ul>
+        <p class="Body">For both high and maximum security levels:</p>
+        <ul>
+            <li>Values for Date type fields must be entered without surrounding quotation marks.</li>
+        </ul>
+        <ul>
+            <li>Values for Char type fields must be entered with surrounding quotation marks.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">DDQs that had a maximum security level prior to RCM 5.13 that are imported or upgraded are set to the high security level so that they behave as before.</p>
+        </div>
+        <p class="Procedure">To change the security level:</p>
+        <ol start="1">
+            <li>From the menu in the Query Definition tab, click the <span class="Strong">Advanced Options</span> button (<img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Query_3.png" style="visibility: visible;mso-wrap-style: square;width: 18px;height: 16px;" />). The Advanced Options window is displayed:<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Query_4.png" style="visibility: visible;mso-wrap-style: square;width: 498px;height: 187px;" /></p></li>
+        </ol>
+        <ol start="2">
+            <li>Select <span class="Strong">Normal Security Level</span> or <span class="Strong">High Security Level</span>.</li>
+        </ol>
+        <ol start="3">
+            <li>Click <span class="Strong">OK</span>.</li>
+        </ol>
+        <p class="Procedure">To edit an existing query:</p>
+        <p class="Body">All queries that are already defined within the RCM database appear within the Queries list in the Entities pane. </p>
+        <ol start="1">
+            <li>Select the required query and click <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Attributes_4.png" style="width: 29px; height: 29px;" class="Icon" /> to view the SQL query. Any parameters that were previously defined for this query appear within the parameters list.</li>
+            <li>You can edit the query, add or remove parameters and indicate whether a selected parameter can be viewed within the Change Query popup.</li>
+            <li>Save the query.</li>
+        </ol>
+    </body>
+</html>

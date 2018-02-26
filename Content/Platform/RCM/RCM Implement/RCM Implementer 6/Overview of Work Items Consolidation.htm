@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="592" MadCap:lastWidth="724">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref396812946"></a><a name="_Toc500234085"></a>Overview of Work Items Consolidation</h1>
+        <p class="Body">In consolidation, relevant fields are consolidated via predefined aggregation functions. Work Item Consolidation is available for both manual and distributed alerts. There are two types of work items in this process:</p>
+        <ul>
+            <li><span class="Strong">Transaction Work Item (TWI)</span> – An alert that is mapped to a specific alert type that results from a transaction or any other automatic relation (for example, an account-level activity alert that the work item consolidates to a party level). AIS deploys TWI instances to RCM. You have the option to define a TWI as either Standard or Transient. A standard work item updates the CWI with the relevant consolidated logic and is created as a separate work item. When a standard TWI is updated, the associated CWIs are also updated. A transient work item updates the associated CWIs with the relevant consolidated logic but is not created as a separate work item.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Consolidated Work Item (CWI)</span> – An alert/item, mapped to a specific alert type, which represents a work item that is an entity. Its children are the related TWIs.</li>
+        </ul>
+        <p class="Body">When a TWI is generated, predefined conditions that are described in this chapter indicate to RCM whether to create a new CWI or to consolidate the TWI into an existing CWI and enrich the sorting process of specific CWI items. For example, if there are 20 CWIs then the conditions define the initial CWI that is consolidated when a TWI matches more than one CWI for the same relationship.</p>
+    </body>
+</html>

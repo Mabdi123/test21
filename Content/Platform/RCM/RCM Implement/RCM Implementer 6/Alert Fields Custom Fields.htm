@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="2094" MadCap:lastWidth="986">
+    <head>
+        <link href="../../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref112751194"></a><a name="_Toc500234007"></a>Alert Fields - Custom Fields</h1>
+        <p>Custom Fields are the additional fields, which may appear in a specific alert view and in the Advanced Filter window. (Each view can be composed of Built In Fields and Custom Fields).</p>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Alert Fields Custom Fields.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The purpose of a custom field is to enable the RCM to capture and store business data on the alert. These fields are an extension to the basic data that can be stored by an alert such as workflow fields, description, and score, and are only useful once they are associated with an alert type.</p>
+        <p class="Body">Once the data is stored in a custom field for an alert, RCM can then provide this data as enriched alert details. These details are available within the List View displays, the filters, and the Edit Item button.</p>
+        <p class="Body">You can remove, add or modify custom fields. Each custom field is assigned to a specific table and record in the RCM database.</p>
+        <p class="Body">The icons available within the Custom Fields window are as follows:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Icon</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">
+                            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Alert Fields Custom Fields_1.png" style="visibility: visible;mso-wrap-style: square;width: 27px;height: 23px;" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to add a new custom field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">
+                            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Attributes_5.png" style="width: 29px;height: 28px;" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Deletes a selected custom field.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">The options that are available within the Custom Fields page are:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Option</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Display Title</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Title of field as it will appear in the Advanced Filter window.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to enter a reference ID for this Business Type, which later can be identified by an external application.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Description</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Custom field description.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Table</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">A view only field that indicates the table where this field is stored. All tables are stored in the database of RCM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Field</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select field where custom field data is stored via the drop-down list. Each field has a specific number and an icon that indicates its type (e.g. <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Alert Fields Custom Fields_2.png" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 14px;" /> is an integer).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Size</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Size of the field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Business Type</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">An optional setting that enables you to associate custom field(s) with a Business Type. See <MadCap:xref href="Business Types.htm#_Ref121127643" class="ParaTextOnly">Business Types</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Has Range</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <ul>
+                            <li><span class="Strong">True</span> – User will view two fields that allow entering data for a specific range</li>
+                        </ul>
+                        <ul>
+                            <li><span class="Strong">False</span> – One field appears for end user.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Predefined Value List</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to link a custom field with a value list. In the column heading, select Add New from the drop-down list. The following window opens.</p>
+                        <p class="Body">
+                            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Alert Fields Custom Fields_3.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                        <p class="Body">See also <MadCap:xref href="General Configuration Value.htm#_Ref433624734" class="ParaTextOnly">General Configuration - Value Lists</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Sensitive Data Mask</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">See <MadCap:xref href="Map a Custom Field to a Mask.htm#_Ref338080215" class="ParaTextOnly">Map a Custom Field to a Mask</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Indexed for global search</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Adds the values of this custom field to the Global Search index of RCM. Refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Installation G</span><span class="Emphasis">uide</span> for more information on installing and configuring the Solr search server. A custom field that is masked for sensitive data cannot be indexed for global search.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note">
+            <p class="Body">In Selective mode the following custom field attributes are not overwritten: </p>
+            <ul>
+                <li>
+                    <ul><span style="list-style-type: disc;" class="Strong">Display Title</span>
+                    </ul>
+                </li>
+                <li>
+                    <ul><span style="list-style-type: disc;" class="Strong">Description</span>
+                    </ul>
+                </li>
+                <li>
+                    <ul><span style="list-style-type: disc;" class="Strong">Sensitive Data Mask</span>
+                    </ul>
+                </li>
+                <li><span class="Strong">Indexed for global search</span><![CDATA[  ]]></li>
+            </ul>
+            <p class="Body">All other attributes are overwritten.</p>
+        </div>
+    </body>
+</html>

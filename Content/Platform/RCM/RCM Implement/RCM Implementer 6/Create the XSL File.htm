@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234108"></a>Create the XSL File</h1>
+        <p class="Body">Create XSL files for each alert type that will include a widget. The XSL file includes:</p>
+        <ul>
+            <li>JavaScript command that creates the widget</li>
+        </ul>
+        <ul>
+            <li>Instructions for combining the widget in the display (HTML) for Internet Explorer</li>
+        </ul>
+        <p class="Body">XSL file example with comments inside it:</p>
+        <div>
+            <p class="Code">&#160; &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code"> HTML DEFINITION </p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code">&#160; &lt;head&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code">Creating a widget while adding the optional parameters</p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code">&#160; &lt;script language="javascript"&gt;function loadWorkItemsWidget() { var WorkItemsWidget1 = new WorkItemsWidget('w1', 'div1', { viewIdentifier: "Ch_View", ddqIdentifier: "AlertIdByOwner", ddqParamValues: ["admin", "09-22-04", 251], selectionMode: RCMAPI.GridSelectionModesEnum.MULTI, showResetButton: true, showRefreshButton: true }); WorkItemsWidget1.draw(); } window.attachEvent('onload',loadWorkItemsWidget);&lt;/script&gt; </p>
+            <p class="Code">&#160; &lt;/head&gt;</p>
+            <p class="Code">&#160; &lt;body&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code">Calling for the widget as div1</p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code">&#160; &lt;div id="div1" style="border: 2px solid blue; width: 100%; height: 100%" /&gt; </p>
+            <p class="Code">&#160; &lt;/body&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:template&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:stylesheet&gt;</p>
+        </div>
+        <p class="Body">All XSL files should be inserted in the app_gui_items folder (the path can be changed in the config parameter actimize.alerts.pathToXSL).</p>
+    </body>
+</html>

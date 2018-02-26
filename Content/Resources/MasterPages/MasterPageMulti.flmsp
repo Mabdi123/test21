@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="158" MadCap:lastWidth="1453">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>
+        </title>
+        <link rel="Stylesheet" href="../Stylesheets/AfterBuild.css" />
+        <script type="text/javascript" src="custom.js">
+        </script>
+    </head>
+    <body>
+        <MadCap:breadcrumbsProxy />
+        <div class="sideContentContainer">
+            <div class="sideContentLeft">
+                <MadCap:bodyProxy />
+            </div>
+            <div class="sideContentRight">
+                <MadCap:relationshipsProxy />
+            </div>
+        </div>
+        <div style="display:none;">
+            <MadCap:variable id="help-name" name="Actimize.HelpName" />
+            <img src="../Assets/Images/OLH/banner_logo.svg" alt="" />
+        </div>
+        <script src="/Content/Resources/MasterPages/TOC_config.js">
+        </script>
+        <script src="/Content/Resources/MasterPages/TOC_script.js">
+        </script>
+    </body>
+</html>

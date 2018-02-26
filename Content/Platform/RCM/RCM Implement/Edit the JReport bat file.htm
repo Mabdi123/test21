@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234649"></a>Edit the JReport.bat file</h1>
+        <p class="Body">To run JReport reports within RCM you must edit the JReport.bat file to include:</p>
+        <ul>
+            <li>All drivers for user data sources used by your system</li>
+        </ul>
+        <ul>
+            <li>A pointer to the actimize.jar file that you copied to the <span class="Strong">&lt;JReport_Home&gt;/lib</span> folder.</li>
+        </ul>
+        <p class="Procedure">To specify user data source drivers:</p>
+        <ol start="1">
+            <li>From the JReport_Home/bin folder, open the JReport.bat file in a text editor.</li>
+        </ol>
+        <ol start="2">
+            <li>Locate the text <span class="Strong">-Dinstall.root</span>, as shown below:</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file.png" style="width: 441px;height: 297px;" />
+        </p>
+        <ol start="3">
+            <li>Immediately before this text add the following text:</li>
+        </ol>
+        <p class="Body"><span class="Strong">“Djdbc.drivers=</span>&lt;driver1_name:driver2_name....&gt;</p>
+        <ol start="4">
+            <li>Add each of the drivers that are appropriate for your system (e.g. oracle.jdbc.driver, etc.). Use a colon to separate between the driver names (as shown in the example below).</li>
+        </ol>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The screen capture below shows an example of drivers. You must enter the appropriate drivers for your system.</p>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_1.png" style="width: 441px;height: 288px;" />
+        </p>
+        <p class="Procedure">To add a pointer to the actimize.jar file:</p>
+        <ol start="1">
+            <li>Locate, within the JReport.bat file, the text <span class="Strong">-classpath </span>as shown below:</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_2.png" style="width: 538px;height: 192px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ol start="2">
+            <li>Add the following text immediately after the <span class="Strong">-classpath”</span> section (as shown in the example below):</li>
+        </ol>
+        <p class="Body">%REPORTHome%\lib\actimize.jar,</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_3.png" style="width: 528px;height: 154px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ol start="3">
+            <li>Save the <span class="Strong">JReport.bat</span> file.</li>
+        </ol>
+        <p><a name="_Toc500234650"></a><span class="Strong">Create</span><span class="Strong"> a New Catalog Using JReport Designer</span>
+        </p>
+        <p class="Procedure">To create a new Catalog:</p>
+        <ol start="1">
+            <li>Open JReport Designer.</li>
+        </ol>
+        <ol start="2">
+            <li>From the JReport Designer main window, select File <span style="font-family: Wingdings;">à</span> New Catalog to open the Input New Catalog Name window.</li>
+        </ol>
+        <ol start="3">
+            <li>Enter a name for the new report catalog and select the path where you want to save the catalog file (as shown in the example below).</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_4.png" style="visibility: visible;mso-wrap-style: square;width: 425px;height: 145px;" />
+        </p>
+        <p class="Body">All files that are generated for this new report must be saved to the path to which you save this catalog file.</p>
+        <ol start="4">
+            <li>Click <span class="Strong">O</span><span class="Strong">K</span> to save this <span class="Strong">.cat </span>file to the specified location.</li>
+        </ol>
+        <ol start="5">
+            <li>The Catalog Browser automatically opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_5.png" style="visibility: visible;mso-wrap-style: square;width: 193px;height: 370px;" />
+        </p>
+        <p><a name="_Toc500234651"></a><span class="Strong">Create</span><span class="Strong"> a new UserDataSource</span>
+        </p>
+        <p class="Procedure">To create a new User Data Source</p>
+        <ol start="1">
+            <li>From the JReport Designer Catalog Browser window, right mouse click on User Data Source and select New User Data Source from the resulting popup menu (or select User Data Source within the tree and click <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_6.png" style="width: 19px;height: 28px;" /> in the upper left corner of the window).</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_7.png" style="width: 259px;height: 96px;" />
+        </p>
+        <p class="Body">The Add User Data Source window opens, enabling you to enter the appropriate information for the data sources that you require.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_8.png" style="visibility: visible;mso-wrap-style: square;width: 425px;height: 321px;" />
+        </p>
+        <ol start="2">
+            <li>In the Name field enter the name ACM_REPOSITORY. </li>
+        </ol>
+        <p class="Body">This is the default name for the RCM connection. You can use a different name, if required, but you must make sure that the name that you use for this User Data Source is defined within the <span class="Strong">RCM</span><span class="Strong"> Admin</span> site, within the <span class="Strong">Connections</span> tab. </p>
+        <ol start="3">
+            <li>In the Class Name field, enter the following Class Name:</li>
+        </ol>
+        <p class="Body">com.actimize.infrastructure.uds.SQLDataSource</p>
+        <p class="Body">This class is provided within the<span class="Strong"> actimize.jar </span>file that you saved under <span class="Strong">JReport/lib</span>.</p>
+        <ol start="4">
+            <li>Click inside the Parameters entry field box.</li>
+        </ol>
+        <p class="Body">If the class is specified correctly (and the actimize.jar file is saved to the appropriate location), you will see the following text under the Class Name field (as shown in the example below)</p>
+        <p class="Body">The class implements: jet.datasource.JRUserDataSource</p>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_9.png" style="width: 413px;height: 173px;" />
+        </p>
+        <p><a name="_Toc500234652"></a><span class="Strong">Define</span><span class="Strong"> a Query for a Catalog</span>
+        </p>
+        <p class="Procedure">To define a Query for the Catalog:</p>
+        <ol start="1">
+            <li>In the Parameters entry box, type in one of the connections that you added to the <span class="Strong">connections.mf</span> file (see Creating a file called connection.mf under JReport/Bin on page <MadCap:xref href="Installing and Using the JReport.htm#Create_connections_mf" class="PageNumberOnly">1</MadCap:xref> above for information about this step).</li>
+        </ol>
+        <ol start="2">
+            <li>Enter the relevant query (separated from the connection information with a colon) as shown in the example below:</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_10.png" style="width: 384px;height: 288px;" />
+        </p>
+        <ol start="3">
+            <li>Click OK to accept this User Data Source and query and to return to the Catalog Browser.</li>
+        </ol>
+        <ol start="4">
+            <li>Within the Catalog Brower, click User Data Source to see the new user data source that you just defined with all the columns that are relevant for the specified query.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Edit the JReport bat file_11.png" style="visibility: visible;mso-wrap-style: square;width: 178px;height: 343px;" />
+        </p>
+    </body>
+</html>

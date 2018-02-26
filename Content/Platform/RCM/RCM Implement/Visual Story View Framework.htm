@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1327" MadCap:lastWidth="995">
+    <head>
+    </head>
+    <body>
+        <h1>Visual Story View Framework</h1>
+        <p>The Visual Story View is a framework for providing a uniform user interface across solutions when working with work items in RCM. It is comprised of UI components that use an XML layout configuration to control the UI.</p>
+        <p>The Visual Story View is installed in the RCM as follows:</p>
+        <p>VFS - app_gui_items\rcm\workItemDisplayInfra</p>
+        <p>RCM WAR - app_gui_items\rcm\workItemDisplayInfra</p>
+        <p>The figure below shows the files required to implement the Visual Story View.</p>
+        <div class="Note">
+            <p>Make sure you select the Use Visual Story View checkbox for the alert type. For details see <MadCap:xref href="Location of XSL Files.htm">Location of XSL Files.</MadCap:xref></p>
+        </div>
+        <p>
+            <img src="../../../Resources/Images/single_view_framework.png" />
+        </p>
+        <ul>
+            <li>The <span class="Strong">singleview.xsl </span>file contains the configurations of the Visual Story View (singleview) XML files and the Work Item Display Infra XSL files. It is set in the RCM Designer, and is associated with an Alert type in RCM.</li>
+            <li>The <span class="Strong">singleview.xml </span>file contains the configuration (layout and contents) of each section of the UI.</li>
+            <li>The <span class="Strong">workItemInfraDisplay.xsl </span>file in the RCM Work Item Display Infra package renders the HTML display. The workItemInfraDisplay.xsl file refers (via the singleview.xsl file) to the Visual Story View XML files that hold the configuration values, thereby controlling what is or is not displayed, and how the displayed items appear on the screen. Likewise, the workItemInfraPDF.xsl file refers (via the solutionPDF.xls file) to the same XML files that hold the configuration values, thereby controlling what is or is not displayed, and how the displayed items appear in the PDF.</li>
+        </ul>
+        <p>The following files can be used to modify the configuration values in the Visual Story View:</p>
+        <ul>
+            <li>additions_1.xml – This file is written by the implementer. Its name must have the format &lt;name&gt;_additions_1.xml. It contains parameter values that override some or all of the settings in singleview.xml, and may contain additional items to display (not included in singleview.xml) and their settings. See The Additions XML Files.</li>
+            <li>additions_2.xml – This file is written by the customer implementer. Its name must have the format &lt;name&gt;_additions_2.xml. It contains parameter values that override some or all of the settings in singleview.xml or additions_1.xml, and may contain additional items to display (not included in singleview.xml or additions_1.xml) and their settings. See The Additions XML Files.</li>
+        </ul>
+        <p>The additions XML files are merged with the Visual Story XML file, overwriting existing values with custom values and adding any new elements, fields and values.</p>
+    </body>
+</html>

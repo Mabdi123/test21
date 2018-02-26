@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2203" MadCap:lastWidth="780">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949781"></a>Add New User</h1>
+        <p class="Body">The Create User window enables a System Administrator to add the standard user details for users who access the <MadCap:variable name="RCM Actimize.ProductCode" /> by means of internal authentication (i.e., accessing the <MadCap:variable name="RCM Actimize.ProductCode" /> internal login page and entering an <MadCap:variable name="RCM Actimize.ProductCode" /> user name and password). Mandatory fields are marked with an asterisk. To access the application via the <MadCap:variable name="RCM Actimize.ProductCode" /> login page, an <MadCap:variable name="RCM Actimize.ProductCode" /> user must be assigned an <MadCap:variable name="RCM Actimize.ProductCode" /> user name and password by the Administrator.</p>
+        <p class="Body">If the Administrator wants to force the user to reset the password after the initial login, then the option <span class="Strong">User must change password at next login</span> must be selected.</p>
+        <p class="Body">Click the <span class="Strong">Add New User</span> link within the Manage Users activity bar to open the Create User window. This enables you to add internal <MadCap:variable name="RCM Actimize.ProductCode" /> users.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add New User.png" style="visibility: visible;mso-wrap-style: square;width: 536px;height: 566px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <div class="Note">
+            <p class="Body">When Single Sign On is used by your organization, external user information can be selected using the <span class="Strong">Add External User</span> option or retrieved automatically from the external authentication system using the <span class="Strong">Manage LDAP </span><span class="Strong" style="font-family: Wingdings;">à</span><span class="Strong"> Synchronize</span> option. (See <MadCap:xref href="Synchronize List of Users.htm#_Ref105906263" class="ParaTextOnly">Synchronize List of Users with LDAP Users List</MadCap:xref>) </p>
+        </div>
+        <p class="Body">The Create User window includes the following fields:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Option</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Login name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The user login name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">User identifier</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The user identifier.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Full name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The user’s full name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Business Unit</p>
+                        <p class="Body">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Indicates the business unit to which this user belongs. </p>
+                        <p class="Body">Each organization is mapped according to at least one organizational hierarchy. This hierarchy usually reflects the divisions, departments etc. within the organization. Each user is a member of <span class="Strong">one</span> business unit, which reflects the position of this user within the organizational hierarchy. </p>
+                        <p class="Body">The user’s business unit does not determine the permissions that this user is assigned, but may be used during the assignment of roles (which do determine permissions for a user). When roles are assigned to a user, it is possible to assign a role that pertains only to that user’s business unit. For more information about the relationship between business units and roles, see <MadCap:xref href="About RCM Permissions.htm#_Ref85879170">About [%=RCM Actimize.ProductCode%] Permissions</MadCap:xref>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Email</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The user’s email address.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Language</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Select the relevant language for the user from the drop-down list.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Time Zone</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Select the time zone in which the specific user is located. This is used by any feature that displays date data in terms of a user's own local time zone (including daylight savings time).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">In addition to the standard user details, the Add New User window enables you to select a business unit for this user, as follows:</p>
+        <p class="Procedure">To enter the business unit for a new user:</p>
+        <ol start="1">
+            <li>Click the <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Application Links and Options_3.png" style="visibility: visible;mso-wrap-style: square;width: 21px;height: 20px;" /> icon beside this field to open the Business Unit Explorer, to select the Business Unit that you require for this user. </li>
+        </ol>
+        <ol start="2">
+            <li>Use the Business Unit Hierarchy drop-down list to select the hierarchy that you currently require.</li>
+            <p class="Body">Once you select a hierarchy, the Hierarchy tree shows the nodes of the highest level Business Units for this hierarchy.</p>
+        </ol>
+        <ol start="3">
+            <li>Click <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Advanced Filter_6.png" style="width: 14px;height: 14px;" /> in the tree to open a node and view the business units that are children of the selected node.</li>
+        </ol>
+        <ol start="4">
+            <li>Select the Business Unit name that you require and click <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Change Step_2_14.png" style="visibility: visible;mso-wrap-style: square;width: 59px;height: 19px;" /> to add it to the User Details page.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

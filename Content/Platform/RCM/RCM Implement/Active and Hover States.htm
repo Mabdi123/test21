@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234404"></a>Active and Hover States</h1>
+        <p class="Body">In addition to the main image file, you have the option to create a unique look when the user hovers on an image or when the action related to the image is active. Add another file for every state to the following path:</p>
+        <ul>
+            <li>To the VFS:</li>
+        </ul>
+        <p class="Code">&lt;VFS&gt;\app_gui_items\rcm\&lt;theme&gt;\actions\css</p>
+        <ul>
+            <li>Inside the .war file:</li>
+        </ul>
+        <p class="Code">&lt;Web root&gt;\app_gui_items\rcm\&lt;theme&gt;\actions\css</p>
+        <p class="Body">You can use any file name that you want, but it is recommended to use the suffixes ‘_hover’, ‘ _active’&#160; in order to distinguish between the different states:</p>
+        <ul>
+            <li>‘{original_file_name}_hover’ (e.g. ‘add_new_alert_hover.png’)</li>
+        </ul>
+        <ul>
+            <li>‘{original_file_name}_active’ (e.g. ‘add_new_alert_active.png’)</li>
+        </ul>
+        <p class="Body">For each file, a CSS class needs to be added to the CSS file in the same method as it was added for the main image file. The CSS class name should be in the format: .custom-&lt;file name&gt;<span class="Strong">:hover</span>, and .custom-&lt;file name&gt;<span class="Strong">:active</span>.</p>
+        <p class="Body">Example:</p>
+        <div>
+            <p class="Code">.custom-add_new_alert:hover{</p>
+            <p class="Code">background: url(‘../add_new_alert_hover.png’) no-repeat;</p>
+            <p class="Code">}</p>
+            <p class="Code">.custom-add_new_alert:active{</p>
+            <p class="Code">background: url(‘../add_new_alert_active.png’) no-repeat;</p>
+            <p class="Code">}</p>
+        </div>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">The action in a toolbar does not a display an image when you delete the file or when the CSS file refers to an invalid file. Instead, no image is displayed for the specific button. For example:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Active and Hover States.png" style="visibility: visible;mso-wrap-style: square;width: 496px;height: 68px;" />
+        </p>
+        <p class="Body">Always clear the browser cache before viewing the changes that have been made in the toolbar.</p>
+    </body>
+</html>

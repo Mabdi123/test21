@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="1498" MadCap:lastWidth="685">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Link the Step Nodes</h1>
+        <div class="Important">
+            <p class="Body">There are a number of Transition features that are currently only available for alerts. For details see <MadCap:xref href="Set Up Workflows.htm#_Ref162240793" class="ParaTextOnly">Set Up Workflows</MadCap:xref>.</p>
+        </div>
+        <ul>
+            <li>Link the step nodes with a transition arrow by dragging an arrow from the first step node to the second step node: drag the mouse from the first node when the cursor icon changes to the shape of a pointing hand (<img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Link the Step Nodes.png" style="visibility: visible;mso-wrap-style: square;width: 12px;height: 15px;" />) and then drag it to the second node.<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Link the Step Nodes_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" alt="worlflow" /></p><p class="Body">Define the transition between the two steps by clicking on their mutual transition arrow and by defining the transition arrow’s properties. Note that the transition arrow’s color changes to green when it is selected.</p><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Link the Step Nodes_1_1.png" style="visibility: visible;mso-wrap-style: square;" /></p></li>
+        </ul>
+        <p class="Body">The transition properties include the following parameters:</p>
+        <ul>
+            <li>
+                <p><span class="Strong">Allow automatic transition when touched</span> – Select checkbox to enable this parameter. A case is considered as “touched” when one of the following actions occur:</p>
+                <ul>
+                    <li>The case priority is modified</li>
+                    <li>The case is assigned to a user and/or BU.</li>
+                    <li>A note is added to the case.</li>
+                    <li>The case is edited.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="Note">
+            <p class="Body">Each Step Node can have only one transition node that enables automatic transition when touched.</p>
+        </div>
+        <ul>
+            <li><span class="Strong">Allow manual transition</span> – This checkbox is relevant only when an automatic transition between the initial step and the selected escalated Step has been defined via deadline settings of the step. See also <MadCap:xref href="Add Deadline Parameters to_1.htm#_Ref252803185" class="ParaTextOnly">Add Deadline Parameters to a Step</MadCap:xref>. When this checkbox is selected the user can manually move to the next step that has been defined as an automatic transition before the deadline occurs.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Restrict Back</span> – By default all steps enable recalling a step. <ul><li>Recalling a step enables the user to go back to the previous step as part of the workflow transition. To disable this type of transition for the specific step select the <span class="Strong">Restrict Back</span> checkbox.</li></ul></li>
+        </ul>
+        <ul>
+            <li>
+                <p><span class="Strong">Require note on transition</span> – Select one of the following options from the drop-down menu:</p>
+                <ul>
+                    <li><span class="Strong">No</span> – The user does not need to add a note in order to move to the next step.</li>
+                    <ul>
+                        <li><span class="Strong">On Forward</span> – The user must add a note in order to move to the next step.</li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

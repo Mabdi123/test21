@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234377"></a>Quick Filter Guidelines</h1>
+        <p class="Body">Quick filter uses a different format since a database specific SQL code is required for the filtering to speed up the loading of Alerts / Cases screens. Since there is no trivial way to translate the Java date format to a specific database format, the following configuration parameter was added:</p>
+        <p class="Body">actimize.common.quickFilterDateConversionString</p>
+        <p class="Body">This parameter is used to format date columns when using Quick Filter. <br />‘?’ is a placeholder for the column name </p>
+        <p class="Body">Examples: </p>
+        <p class="Body">Formatting a date in the form Month/Day/Year and time in 12 hour format in Oracle<br />to_char(?,'MM/DD/YYYY HH12:MI:SS AM')<br />Format a date in the form Month/Day/Year and time in 24 hour format in MSSQL: (convert(varchar,?,101) + ' ' + convert(varchar,?,108)). </p>
+    </body>
+</html>

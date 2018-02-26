@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1112" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>External URL</h1>
+        <p class="Body">When External URL is selected as the Report Provider, reports are provided by means of an External URL Web Service (see the <a href="updateHierarchyInfo Updating.htm#webserviceurl">Web Service for External URL in Appendix C </a>for more information). </p>
+        <p>
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/External URL.png" style="border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Report Types that use an External URL provider must be assigned a policy that is defined as follows:</p>
+        <ul>
+            <li>Materialization Policy must always be set to never</li>
+        </ul>
+        <ul>
+            <li>Archiving must always be set to never</li>
+        </ul>
+        <ul>
+            <li>Purge policy must always be set to never.</li>
+        </ul>
+        <ul>
+            <li>Notes and Sign off can be set to any of the existing options.</li>
+        </ul>
+        <p class="Body">When the report provider is an external URL, the Materialization and Archive formats are not required. Also Report Provider Data and Report Parameters are not required for this definition.</p>
+        <p class="Body">If reports are uploaded from an external URL, it is necessary to specify:</p>
+        <ul>
+            <li>Report Name</li>
+        </ul>
+        <ul>
+            <li>Report Identifier (this can be the same as the name)</li>
+        </ul>
+        <ul>
+            <li>Display Category</li>
+        </ul>
+        <ul>
+            <li>An appropriate policy that is defined for reports provided from external URL.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">Note that the policy for external URL reports refers only to Notes. An external URL report is never materialized, archived or purged.</p>
+        </div>
+    </body>
+</html>

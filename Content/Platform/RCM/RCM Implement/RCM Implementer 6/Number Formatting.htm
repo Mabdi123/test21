@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref398044126"></a><a name="_Toc500234373"></a>Number Formatting</h1>
+        <p class="Body">RCM has number display formatting abilities for work items and cases columns that are defined in the RCM Designer. Additionally, a string can be formatted with special characters:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Symbol </p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Location </p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Localized? </p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Meaning</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0 </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Digit </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body"># </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Digit, zero shows as absent</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">. </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Decimal separator or monetary decimal separator</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">- </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Minus sign</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">, </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Grouping separator</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">E </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Separates mantissa and exponent in scientific notation. No requirement to be in quotes in prefix or suffix.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">; </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Subpattern boundary </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Separates positive and negative subpatterns</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">% </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Prefix or suffix </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Multiplies by 100 and displays as percentage</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">\u2030 </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Prefix or suffix </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Y </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Multiplies by 1000 and displays as per mille</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">₪<br />(\u00A4) </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Prefix or suffix </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">N </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Currency sign, replaced by currency symbol. If doubled, replaced by international currency symbol. If present in a pattern, the monetary decimal separator is used instead of the decimal separator.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">' </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Prefix or suffix </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">N </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Used to quote special characters in a prefix or suffix, for example, "'#'#" formats 123 to "#123". To create a single quote itself, use two in a row: "# o'clock".</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">You must logout of the RCM in order to enable the formatting. Note that the format is cached at the user level. </p>
+        <p class="Body">Examples:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="Body">Value</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="Body">Format</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="Body">Result</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0.99</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">##.# </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">1</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0.99</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">##.0</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">1.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0.99</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">##.#%</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">99%</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0.99</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">##.0%</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">99.0%</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0.99</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">##.#'%'</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">1%</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0.99</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">##.##'%'</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">0.99%</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">30.4</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">₪#.##;(₪#.##)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">$30.40</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">-30.4</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">₪#.##;(₪#.##)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">($30.40)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">Also refer to the Java documentation on the Class DecimalFormat.</p>
+    </body>
+</html>

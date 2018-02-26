@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref500246412"></a>Fill in Expressions</h1>
+        <p class="Body">The Expression and Condition Expression columns are both based on the Spring Expression Language (SPeL). Further information on SPeL is also available in the springsource.org website.</p>
+        <p class="Body">Syntax</p>
+        <ul>
+            <li>The expression syntax may include the following elements:</li>
+        </ul>
+        <ul>
+            <li>Boolean, Numeric and String values such as true, false, “abc”, 3, -6.76, and so on.</li>
+        </ul>
+        <ul>
+            <li>Custom field placeholders in the format of ${custom_field_identifier}.</li>
+        </ul>
+        <ul>
+            <li>Operators such as: !, and, or, +, *, and so on.</li>
+        </ul>
+        <ul>
+            <li>Conditional expressions - if… then…</li>
+        </ul>
+        <ul>
+            <li>String functions</li>
+        </ul>
+        <p class="Body">Evaluation</p>
+        <p class="Body">The condition evaluation process consists of two stages:</p>
+        <ol start="1">
+            <li>Replacement of custom field placeholders with their respective values (taken from the grid line).</li>
+            <li>Evaluation of the resulting expression using the Spring Expression Language (SpEL) engine.</li>
+        </ol>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">If any of the custom field placeholders evaluates to null, then the entire expression is considered to be false.</p>
+        <p class="Body">If you want to evaluate a numeric field that may store a number that is greater than 2,147,483,647 (which is the maximum number for an integer field), use a conversion to Long field type, as displayed in the following example:</p>
+        <p class="Body">new Long('${ACT_FF_cr15}') &lt; 10000000000.0</p>
+        <p class="Body">Examples</p>
+        <p class="Body">The following examples demonstrate various types of expressions that can be used. In these examples the following is assumed:</p>
+        <p class="Body">cb1, cb2 are the identifiers of Boolean custom fields</p>
+        <p class="Body">ci1, ci2 are the identifiers of Integer custom fields</p>
+        <p class="Body">cs1, cs2 are the identifiers of String custom fields</p>
+        <p class="Body">Boolean operations:</p>
+        <p class="Body">${cb1}</p>
+        <p class="Body">!${cb1}</p>
+        <p class="Body">${cb1} or !${cb2}</p>
+        <p class="Body">Mathematical equations:</p>
+        <p class="Body">${ci1} &gt; 2</p>
+        <p class="Body">${ci1}*${ci2} / ${ci3} == 6 + ${ci4}</p>
+        <p class="Body">Textual operations:</p>
+        <p class="Body">${cs1} == 'a'</p>
+        <p class="Body">${cs1} &lt; 'block'</p>
+        <p class="Body">${cs1} + 'b' == 'ab'</p>
+        <p class="Body">Regular Expressions:</p>
+        <p class="Body">${cs1} matches '\d{3}-\d{7}'</p>
+        <p class="Body">Conditional Expressions:</p>
+        <p class="Body">${ci1} &gt; 500 ? ${ci1} : ${ci2}</p>
+        <p class="Body">Parent referencing example:</p>
+        <p class="Body">Spring expressions can be used to determine the logic for updating the consolidated fields. Within these expressions, the CWI fields can be referenced by prefixing the field name with "cwi.", for example "cwi.buIdentifier". The TWI fields do not take a prefix. Parent referencing is limited to the following fields: buIdentifier, statusState, statusIssue, statusIdentifier, and owner, and is only allowed for condition expressions, not for mapping data expressions. Changes in the values of the TWI fields may cause the CWI field values to be recalculated. If the relation between the TWI and CWI is removed, the CWI field values are recalculated.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">If a Spring expression is used in a condition expression of the consolidation key field, the parent (CWI) key field value cannot be referenced.</p>
+        <p class="Body">The getBuAttr(buIdentifier:String, attributeName:String) function can be used to reference the BU attributes of the TWI or CWI. This function can be used within expressions. In the following example, the priority business unit attribute is first created by the implementer and assigned values. Then it can be referenced, as in the Spring sample expression below:</p>
+        <p class="Code">getBuAttr(${buIdentifier},'priority') &gt; getBuAttr(${cwi.buIdentifier},'priority')</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The function above compares number values. For string or other comparisons, the relevant Spring expression must be used.</p>
+        <p class="Body">The functions parameters are:</p>
+        <ul>
+            <li><span class="Strong">buIdentifier</span> – The business unit identifier</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">attributeName</span> – The name of the attribute associated with the business unit in its metadata</li>
+        </ul>
+        <p class="Body">If the TWI is the first TWI, the CWI has not yet been created. Therefore, parent referencing (to the CWI) will result in an error. Thus, the isFirstTWI method can be used to avoid such errors by including it in the expression, for example:</p>
+        <div>
+            <p class="Code">isFirstTWI()</p>
+            <p class="Code">or</p>
+            <p class="Code">nvl(getBuAttr(${buIdentifier},'priority'),’0’) &gt; nvl(getBuAttr(${cwi.buIdentifier},'priority'),’0’)</p>
+        </div>
+        <p class="Body">Even if the both the TWI and CWI exist, but the attribute referenced does not exist, this will result in an error. To handle the case where the value is null, it is recommended to use the NVL function that returns the attribute value if it is not null, or a fixed value if the attribute value is null. For example:</p>
+        <p class="Code">nvl(getBuAttr(${buIdentifier},'priority'),0)</p>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="954" MadCap:lastWidth="698">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234180"></a>Set up Purge Policy</h1>
+        <p class="Body">
+            <MadCap:keyword term="Purge Policy">&#160;</MadCap:keyword>The Purge policy determines when the materialized report should be purged (i.e., when the materialized file is removed from the RCM). This is different from user deletion of a report. When a user deletes a report, the report remains on-line for the amount of time stipulated by the archive policy. The materialized instance of the report is only removed from the system according to the Purge policy.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Set up Purge Policy.png" style="border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The options that are available within the Purge Policy page are:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Option</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Purge X days after the report is archived</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">When this policy is selected, the materialized report can be purged at the specified amount of time after the report is archived. The reports are purged by running the CMPeriodicMaintenance utility, which purges the reports not earlier than the time specified in the purge policy. (For more information about this utility, refer to your <span class="Emphasis">RCM</span><span class="Emphasis"> Installation Guide</span>).</p>
+                        <p class="Body">This option is only relevant if you select, in the previous Archive page, that the report definition supports archiving. If you indicated that the reports should never be archived then the option to purge after archive is not applicable. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Purge X days after the report is deleted</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">When this policy is selected, the materialized report can be purged at the specified amount of time after the report is deleted by the user. </p>
+                        <p class="Body">The reports are purged by running the CMPeriodicMaintenance utility, which purges reports that were deleted after the time specified in the purge policy.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Never purge</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">When this policy is selected, the materialized report is never removed from the RCM. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

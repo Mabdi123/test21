@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref306178058"></a><a name="_Ref306178062"></a><a name="_Toc500234253"></a>Create Condition Display Modes</h1>
+        <p class="Body">Condition display modes are defined in the query XML. A standard query XML contains nodes such as comparison_condition, boolean__condition, etc. These nodes store the details of the field, operator and values used by the condition. <br />The display modes are defined in a new XML node named “displayMode” as displayed in the following example:</p>
+        <div>
+            <p class="Code">&lt;comparison__condition&gt;</p>
+            <p class="Code">&lt;operator&gt;LT&lt;/operator&gt;</p>
+            <p class="Code">&lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&lt;displayMode&gt;Locked&lt;/displayMode&gt;</p>
+            <p class="Code">&lt;children&gt;</p>
+            <p class="Code">&lt;field__term&gt;</p>
+            <p class="Code">&lt;fieldId&gt;20002&lt;/fieldId&gt;</p>
+            <p class="Code">&lt;/field__term&gt;</p>
+            <p class="Code">&lt;value__term&gt;</p>
+            <p class="Code">&lt;value&gt;1&lt;/value&gt;</p>
+            <p class="Code">&lt;/value__term&gt;</p>
+            <p class="Code">&lt;/children&gt;</p>
+            <p class="Code">&lt;/comparison__condition&gt; </p>
+        </div>
+        <p class="Body">The available display modes are:</p>
+        <ul>
+            <li><span class="Strong">Editable</span> – The user can view the condition, change its field, operator or values, and even remove it completely from the query. This is a normal DART condition and it is also the default display mode when no display mode is specified.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Mandatory</span> – The user can view the condition and change its value but the field cannot change and the operator must be “is”. Also, the condition cannot be removed. This is used to force the user to set a value for the query (for example, for performance reasons).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Locked</span> – The user can view the condition but cannot change any part of it or remove it. This type of display mode is useful for letting users know how the data was filtered.</li>
+        </ul>
+        <p class="Body">All locked conditions will appear in one group at the top of the query builder, and the user will be able to hide or show them using an expand/collapse link (the visibility of the locked section will be kept between requests).</p>
+        <ul>
+            <li><span class="Strong">Hidden</span> – The entire condition is hidden from the user and cannot be changed in any way.</li>
+        </ul>
+        <p class="Body">See also <MadCap:xref href="Records Widget APIs.htm#_Ref422157088" class="ParaTextOnly">Records Widget APIs</MadCap:xref>, page <MadCap:xref href="Designing the Layout.htm#_Ref306178426" class="PageNumberOnly">1</MadCap:xref>.</p>
+    </body>
+</html>

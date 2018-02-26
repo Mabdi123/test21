@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>MS SQL and Sybase Date/Time Quick Reference </h1>
+        <p class="Body">Usage: convert ( varchar ,?&#160; , style )<br />For&#160; MM/dd/yyyy HH:mm (24 hour format) enter the following format:<br />(convert( varchar,?, 101) + ' ' + convert( varchar,?, 108))</p>
+        <p class="Body">Style may be composed from the following parameters:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Without century (yy)</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">With century (yyyy)</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Standard</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Input/Output**</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">0 or 100 (*) </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Default</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">mon dd yyyy hh:miAM (or PM)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">1</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">101</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">USA</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">mm/dd/yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">2</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">102</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">ANSI</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">yy.mm.dd</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">3</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">103</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">British/French</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">dd/mm/yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">4</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">104</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">German</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">dd.mm.yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">5</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">105</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Italian</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">dd-mm-yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">6</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">106</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">dd mon yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">7</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">107</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Mon dd, yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">8</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">108</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">hh:mm:ss</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">9 or 109 (*) </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Default + milliseconds</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">mon dd yyyy hh:mi:ss:mmmAM (or PM)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">10</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">110</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">USA</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">mm-dd-yy</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">11</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">111</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">JAPAN</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">yy/mm/dd</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">12</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">112</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">ISO</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">yymmdd</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">13 or 113 (*) </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Europe default + milliseconds</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">dd mon yyyy hh:mm:ss:mmm(24h)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">14</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">114</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">hh:mi:ss:mmm(24h)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">20 or 120 (*) </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">ODBC canonical</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">yyyy-mm-dd hh:mi:ss(24h)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">21 or 121 (*) </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">ODBC canonical (with milliseconds)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">yyyy-mm-dd hh:mi:ss.mmm(24h)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">126(***)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">ISO8601</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">yyyy-mm-dd Thh:mm:ss:mmm(no spaces)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">130*</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Kuwaiti</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">dd mon yyyy hh:mi:ss:mmmAM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">-</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">131*</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Kuwaiti</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">dd/mm/yy hh:mi:ss:mmmAM</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

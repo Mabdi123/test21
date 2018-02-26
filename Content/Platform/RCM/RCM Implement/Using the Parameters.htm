@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Using the Parameters</h1>
+        <p class="Body">The following options are available for sending parameters for the resource string:</p>
+        <ul>
+            <li>Constant values can be passed using “tparam1”, “tparam2” … “tparamX”.</li>
+        </ul>
+        <ul>
+            <li>Values that need evaluation first (xpath, variable) can be passed using “param1”, “param2” … “paramX”.</li>
+        </ul>
+        <ul>
+            <li>Params numbering (whether its param or tparam) must be sequential:</li>
+        </ul>
+        <p class="Code">&lt;rcm:t text=”&lt;base_value&gt;” param1=”$aVariable” tparam2=”&lt;some value&gt;”/&gt;</p>
+        <ul>
+            <li>It is also possible to read multiple parameters at once using a given xpath:</li>
+        </ul>
+        <p class="Code">&lt;rcm:t select=”/xpath/for/value” params=”/xpath/for/params”/&gt;</p>
+        <ul>
+            <li>Another method is done by using inline parameters:</li>
+        </ul>
+        <p class="Code">&lt;rcm:t inline-params=”true” text=”some base value with param {0} and {1}@@first@@second” /&gt;</p>
+        <p class="Body">The base value/identifier and the parameters are all in the same attribute and split via the ‘@@’ characters.</p>
+        <p class="SubHeading">Translating Inline Parameters</p><span class="Strong">Translating a Parameter by Identifier</span>
+        <p class="Body">RCM translates the parameter by identifier when it is surrounded by 't{id:<span class="Emphasis">my.id</span>}'. For example:</p>
+        <p class="Code">“Field {0} changed@@t{id:custom.description.field.label}”</p><span class="Strong">Translating a Parameter by Base Value</span>
+        <p class="Body">RCM translates the parameter by base value when it is surrounded by 't{<span class="Emphasis">mybasestring</span>}'. For example:</p>
+        <p class="Code">“Field {0} changed@@t{My Field Label}”</p>
+        <p class="Body">The module is implicit and does not have to be specified. In the Translated String Renderer, it is specified by the renderer. In XSL, it is specified by the '&lt;rcm:t /&gt;' tag of '&lt;rcm:setModule /&gt;. As a result, the same module is used for the base string and for all the parameters.</p><span class="Strong">Localizing a Date Parameter</span>
+        <p class="Body">RCM displays dates in the user format when they are surrounded by 't{d:<span class="Emphasis">yyyy-mm-dd hh:mm;ss</span>}' and provided in an RCM Canonical format. 'yyyy-mm-dd hh:mm:ss' is the RCM canonical date format that is also used in Web services.</p>
+        <p class="Code">“Field {0} changed at time {1}@@t{My Field Label}@@t{d:2012-12-21 13: 14:15}”</p>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">If a resource string has several parameters, then it is valid to use more than one option: You can translate one parameter by identifier, the second by base, etc.</p>
+        <p class="Body">When translating by base value, the module is implicit. All parameters that use base values use the same module. However, when translating a parameter by identifier, you can use any identifier from any module.</p>
+        <p class="Body">Deep recursion is not supported. The parameters that are being translated must be simple i18n text without parameters.</p><span class="Strong">Escaping Mechanism</span>
+        <p class="Body">The following table illustrates the various escaping scenarios:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="Body">Scenario</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="Body">Syntax</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="Body">Output</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Print raw text that starts with 't{'</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">\t{John }</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">t{John}</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Print raw text that starts with '\' and any character after it</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">\\tSmith<br />\\abc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">\tSmith</p>
+                        <p class="Body">\abc</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Translate by base value that starts with 'id:'</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">t{\id:id:id}</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The translation of 'id:id:id' base value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Translate by base value that starts with 'd:'</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">t{\d:e:f}<br /><br />t{\abc}</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The translation of 'd:e:f' base value.<br />The translation of 'abc' base value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Translate by base value that starts with '\' and followed by any text</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">t{\\d:e:f}<br /><br />t{\\id:id:id}<br /><br />t{\\abc}</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">the translation of '\d:e:f' base value.<br />the translation of '\id:id:id' base value.<br />The translation of '\abc' base value.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table><span class="Strong">Escaping in XSL</span>
+        <p class="Body">The '{' and '}' characters that are displayed in the same attribute require escaping in XSL. There are two options to escape the '{' and '}' characters in XSL:</p>
+        <ul>
+            <li>Use the &lt;xsl:variable&gt; attribute 'select'. For example:</li>
+        </ul>
+        <p class="Body">&lt;xsl:variable name="Item1"&gt;param {0}@@t{baseTranslation}&lt;/xsl:variable&gt;</p>
+        <ul>
+            <li>&lt;rcm:t module="ACTIMIZE" inline-params="true" select="$Item1" /&gt;</li>
+        </ul>
+        <p class="Body">With escaping, do not use the <span class="Strong">&lt;xsl:variable&gt;</span> attribute 'text':</p>
+        <p class="Code">&lt;rcm:t module="ACTIMIZE" inline-params="true" text="param {0}@@t{{baseTranslation}}"/&gt;</p>
+    </body>
+</html>

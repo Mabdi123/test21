@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234672"></a>Example of Sanitization</h1>
+        <p class="Body">Complicated text pasted from Word:</p>
+        <p class="Code">&lt;p onclick=”gotoHarmfulSite()”&gt;Hello &lt;b&gt;World&lt;/b&gt;!&lt;a href=”<a href="http://www.harmful.com">http://www.harmful.com</a>”&gt;click me&lt;/a&gt;&lt;/p&gt;</p>
+        <p class="Body">Text after sanitization removes of the HTML elements (tags) that are not allowed:</p>
+        <p class="Code">&lt;p&gt;Hello &lt;b&gt;World&lt;/b&gt;!click me&lt;/p&gt;</p>
+    </body>
+</html>

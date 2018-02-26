@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="661" MadCap:lastWidth="1025">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397254003"></a><a name="_Toc500234243"></a>Add the Logged-in User Parameters to the DDQ</h1>
+        <p class="Body">This enhancement enables passing the parameters of the logged in user to the DDQ. This feature provides added security to the DDQ results by displaying filtered data according to the related Logged-in User. It supports passing the following parameters as part of the DDQ:</p>
+        <ul>
+            <li><span class="Strong">Logged-in User's Identifier</span> –User mandatory attribute, which always has a value. Its convention is {$UserIdentifier}</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Logged-in User's associated BU</span> – Optional User's attribute that can contain a null value. Its convention is {$UserBU :&lt;default&gt;}. Note that the default option is used in scenarios where User does not have an associated BU. If default user does not exist then an empty value is passed. For example, if the SQL is defined as "select F1, F2 from T1 where F3={$UserBU}" and the user's BU does not exist, then the query is interpreted as "select F1,F2 from T1 where F3='' ".</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">The identifier name has to be typed in exactly as it is in the text area for the SQL Query. It should not be added as a new (client side) parameter (i.e., do <span class="Strong">not</span> click the <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add the Logged in User Parameters.png" style="width: 19px;height: 10px;" /> icon in order to add it to the parameter list).</p>
+        </div>
+        <p class="Body">These two parameters can be used in the ‘where’ clause and in the ‘select’ statement.</p>
+        <div class="Example">
+            <ul>
+                <li>select login_name from acm_users where user_identifier = '{$UserIdentifier}'</li>
+            </ul>
+            <ul>
+                <li>b3312 is the default BU select name from acm_md_business_units where bu_identifier = '{$UserBU:b3312}'</li>
+            </ul>
+        </div>
+        <p class="Body">&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

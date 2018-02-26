@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397428186"></a><a name="_Toc500234315"></a>Parameters Related to Setting up the Distributed Cache</h1>
+        <p class="Body">RCM uses a cache system in order to improve performance when accessing global application data such as Alert Types, Alert Views, etc. In a distributed environment this cache is mirrored in all RCM instances using JBoss distributed cache.</p>
+        <p class="Body">Once you have deployed the RCM s on each of the machines within the distributed environment, edit the <span class="Strong">acm.ini</span> file for each deployment in order to switch from a standalone to a distributed cache environment.</p>
+        <p class="Procedure">To set up a distributed cache:</p>
+        <ol start="1">
+            <li>Remove the comment characters from the following lines:</li>
+        </ol>
+        <ul>
+            <li>actimize.cache = distributed</li>
+        </ul>
+        <ul>
+            <li>actimize.cache.distribution.host=239.0.0.0</li>
+        </ul>
+        <ul>
+            <li>actimize.navigation.cache.distribution.port=45559</li>
+        </ul>
+        <p class="Body">Note that all the machines must be configured to use the same ports.</p>
+        <ol start="2">
+            <li>If there are other systems on your subnet that are using the multicast IP and port that are included in this section, then you should change them.</li>
+        </ol>
+        <p class="Body">If you decide to change these values, use a Class D IP address. Class D address falls within the range of 224.0.0.0 through 239.255.255.255.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">This configuration does not work when machines are in different subnets.</p>
+        <p class="Body">When the RCM servers are spread across a number of WANs (subnets), you must also configure following parameters:</p>
+        <ul>
+            <li>Remove the comment characters from the parameter actimize.cache.wan as shown in the following example:</li>
+        </ul>
+        <p class="Code">actimize.cache.wan = true</p>
+        <ul>
+            <li>Remove the comment characters from the parameter actimize.cache.wan.machines and enter the local machines IP addresses as the values. <br />Note that the list of distributed machines must start with the address of the local machine with the RCM server.<br />For example:</li>
+        </ul>
+        <p class="Code">actimize.cache.wan.machines = 212.64.45.54,212.64.45.44 </p>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

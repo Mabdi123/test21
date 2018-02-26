@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="5305" MadCap:lastWidth="1059">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref421100524"></a><a name="_Ref421100537"></a><a name="_Ref421100545"></a><a name="_Toc489949837"></a>Create RFI Templates</h1>
+        <p class="Body">You can create RFI templates to then use when you create and send RFI emails relating to work items. Click the <span class="Strong">Create RFI Template</span> link within the Manage RFI Templates activity bar to open the Create RFI Template window.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Create RFI Templates.png" style="visibility: visible;mso-wrap-style: square;width: 543px;height: 516px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The Create RFI Template window contains the following fields:</p>
+        <ul>
+            <li><span class="Strong">Template Name:</span> The name for the template which can then be used in the Create RFI window. See <MadCap:xref href="Create RFI.htm#_Ref294424647" class="ParaTextOnly">Create RFI</MadCap:xref>. (This field is mandatory)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Identifier:</span> A unique identifier for the template. (This field is mandatory)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Template Details Tab: </span>Contains the parameters for creating a template</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">RFI Name:</span> The name of the RFI email.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">To, CC, Bcc</span><span class="Strong">:</span> The email addresses of the recipients in one or more of these fields. These fields are identical to email message fields. Use a ';' to separate between addresses.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Subject:</span> The subject for the email.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Attach item data as PDF:</span> Select to include the relevant work item details in the email. This checkbox remains selected for this template each time you select it for an RFI.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Attach all work item attachments:</span> Select to include all work item attachments in the email. This allows you to add attachments automatically without manually selecting each one. This checkbox remains selected for this template each time you select it when creating an RFI. The default is deselected.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Message:</span> Text box for entering data to the recipients on the RFI. Identical to the body of an email message.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Item Type Associations Tab: </span>Enables you to associate the template to work item types. Each template must be associated with an item type. This enables you to attach only relevant templates to work items of a specific type.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Create RFI Templates_1.png" style="visibility: visible;mso-wrap-style: square;width: 565px;height: 511px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li><span class="Strong">All Item Types:</span> Associates the template with all work item types. This is the default selection.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Selected Item Type:</span> Displays the list of item types. Select one or more work item types to be associated with the template.</li>
+        </ul>
+        <p>Click <span class="Strong">Save</span> to save the RFI template details.</p>
+        <div class="Note">
+            <p class="Body">Using two number signs (##) in a row of text in the RFI body, deletes the row.</p>
+        </div>
+        <h4 class="NoNumber">VTL in Templates</h4>
+        <p class="Body">You can create a template using VTL that then uses the relevant work item details when you create an RFI.</p>
+        <p class="Body">The context for the VTL is the work item common fields and custom fields. The syntax is as follows:</p>
+        <ul>
+            <li>For extracting supported common fields and custom fields: $fields.get(&lt;fieldidentifier&gt;).<br />For example: <span class="Strong">$fields.get("</span><span class="Strong">alertId</span><span class="Strong">")</span></li>
+        </ul>
+        <p class="Body">Supported Common Fields:</p>
+        <p class="Body">alertDate</p>
+        <p class="Body">alertId (identifier)</p>
+        <p class="Body">alertTypeIdentifier</p>
+        <p class="Body">alertOriginalBusinessUnitIdentifier</p>
+        <p class="Body">buIdentifier</p>
+        <p class="Body">closedDate</p>
+        <p class="Body">createDate</p>
+        <p class="Body">deadline_date</p>
+        <p class="Body">details</p>
+        <p class="Body">email_date</p>
+        <p class="Body">lastReadUser (read user full name)</p>
+        <p class="Body">lastUpdateUser (update user full name)</p>
+        <p class="Body">highlight_date</p>
+        <p class="Body">lastReadDate</p>
+        <p class="Body">lastUpdateDate</p>
+        <p class="Body">alertOriginalBusinessUnitName</p>
+        <p class="Body">alertTypeName</p>
+        <p class="Body">businessUnitName</p>
+        <p class="Body">score</p>
+        <p class="Body">alertTypeShortName</p>
+        <p class="Body">statusIdentifier</p>
+        <p class="Body">status</p>
+        <p class="Body">alertTypeCategory</p>
+        <p class="Body">owner (owner full name)</p>
+        <p class="Body">ownerLoginName (owner login name)</p>
+        <p class="Body">ownerExternalIdentifier</p>
+        <p class="Body">statusIssue</p>
+        <p class="Body">statusState</p>
+        <ul>
+            <li>For extracting user information the VTL syntax is: <br />$userInfo.get("buName") or $userInfo.get("fullName") or $userInfo.get("loginName").<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Reference/Create RFI Templates_2.png" style="visibility: visible;mso-wrap-style: square;width: 421px;height: 376px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <ul>
+            <li>You can also extract user attribute information based on the user attributes xml file. For more information, refer to the RCM Self Developer Guide. For user attributes, the syntax is:<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Reference/Create RFI Templates_3.png" style="visibility: visible;mso-wrap-style: square;width: 465px;height: 573px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <ul>
+            <li>For extracting business unit  attribute information the VTL syntax is: $alertBU.get(“BU_ATTR_ID”)<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Reference/Create RFI Templates_4.png" style="visibility: visible;mso-wrap-style: square;width: 486px;height: 550px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <div class="Note">
+            <p class="Body">VTL can be used in all fields of the RFI template, except for <span class="Strong">Template Name</span> and <span class="Strong">Identifier</span>.</p>
+        </div>
+        <h4 class="NoNumber">Relations in VTL</h4>
+        <p class="Body">You can also create templates that apply to relations of entities in work items. For example, if a person has more than one account you can connect to several accounts related to one person.</p>
+        <p class="Body">Example:</p>
+        <p class="Body">first relation name: $relations.get("boss-of","companyx_Person").get(0).get("companyx_FIRST_NAME") </p>
+        <p class="Body">You can also connect to relations in a loop, meaning that all available relations are included.</p>
+        <p class="Body">Example:</p>
+        <p class="Body">#foreach( $relation in $relations.get("boss-of","companyx_Person"))</p>
+        <p class="Body">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Relation name: $relation.get("companyx_FIRST_NAME")</p>
+        <p class="Body">#end</p>
+    </body>
+</html>

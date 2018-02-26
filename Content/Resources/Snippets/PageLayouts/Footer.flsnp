@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="108.6667" MadCap:lastWidth="950">
+    <head>
+    </head>
+    <body>
+        <p class="FooterConfidential">PRODUCT CONFIDENTIAL</p>
+        <table style="width: 100%;border-top-style: solid;border-top-width: 0.5pt;border-top-color: #009edb;">
+            <col />
+            <col style="width: 2cm;" />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top;">
+                        <p class="FooterLeft">Actimize <MadCap:variable name="Actimize.SolutionName" /> <MadCap:variable name="Actimize.GuideName" /></p>
+                    </td>
+                    <td style="vertical-align: top;">
+                        <p class="FooterRight">Page <MadCap:variable name="System.PageNumber" /></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

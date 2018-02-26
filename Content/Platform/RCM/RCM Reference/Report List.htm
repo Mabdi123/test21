@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="1457" MadCap:lastWidth="926">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref87774820"></a><a name="_Toc489949491"></a>Report List</h1>
+        <p class="Body">You can click on a column title within the Report List to sort the list by that column (For example, click Business Date to sort the list by that date, or click Report Name to view all reports sorted by their names). </p>
+        <p class="Body">The columns for the Reports list are: </p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Option</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Select an Item in the List.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" alt="Picture1" />
+                            <br />(checkboxes)</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Click on a checkbox to perform an operation on the selected report (e.g., add note or view history for the selected report). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">(State indicator)</p>
+                        <p class="Body">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This column may display icons that indicate information about the requirements or state of the report, as follows:</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Trade Blotters List_1.png" style="visibility: visible;mso-wrap-style: square;width: 20px;height: 15px;" alt="Picture2" /> indicates that the report must be signed off. </p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Trade Blotters List_2.png" style="visibility: visible;mso-wrap-style: square;width: 25px;height: 17px;" alt="Picture2" />indicates that the corresponding report was signed off.</p>
+                        <p class="Body">When no icon appears within this column, the corresponding report is presented for information purposes and does not require any action.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Report ID</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The ID of this report. The report ID’s are hyperlinks that enable you to open the report by clicking on the link.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Report Name</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The name of this report. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Status</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The current status of the report. Possible report status can be:</p>
+                        <p class="Body"><span class="Strong">New</span> – the report has not yet been viewed or dealt with by any user.</p>
+                        <p class="Body"><span class="Strong">Purged</span> – The <MadCap:variable name="RCM Actimize.ProductCode" />has purged the report according to the policy that was in effect for that report. Purging a report instance is the act of removing the materialized file from the RCM and leaving the metadata intact. Once purged, you can no longer open the report from the Risk Case Manager.</p>
+                        <p class="Body"><span class="Strong">Archived</span> – The materialized report instance, along with supporting data such as notes, has been copied to an external file <MadCap:variable name="RCM Actimize.ProductCode" />. Once archived, the files can be managed by a third-party document management system or managed as part of other file system backup processes. </p>
+                        <ul>
+                            <li>If a user from a specific BU archived a report, it can then be viewed by a user from other business units.</li>
+                        </ul>
+                        <ul>
+                            <li>In the Archived view, you can view the details of the user who performed the sign off.</li>
+                        </ul>
+                        <p class="Body"><span class="Strong">Signed-off</span>: The report has been signed off by the responsible user.</p>
+                        <p class="Body"><span class="Strong">Viewed: </span>The report has been opened and viewed (it is no longer New). Note that a report has the status of Viewed only until some other action has occurred, such as signing off, or archiving.</p>
+                        <p class="Body">Certain statuses are stronger (more interesting) than others and therefore override the display of the weaker Status indicators. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Generated on</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The date on which the query for this report was run. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Generated by</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This column indicates whether the report was generated automatically by the <MadCap:variable name="RCM Actimize.ProductCode" />as a scheduled report or was generated On demand by the user. (For more information about On-Demand reports, see <MadCap:xref href="On_Demand_Reports.htm#_Ref204492303" class="ParaTextOnly">On-Demand Reports</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Business Unit</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The business unit to which this report was distributed. For more information about business units, see <MadCap:xref href="About RCM Permissions.htm#_Ref85879170" class="ParaTextOnly">About RCM Permissions</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Owner</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The user who is responsible for investigating or viewing this report.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Sign-Off date</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">When Sign-Off is required this column indicates the date on which Sign-Off was performed. This column is only relevant for reports that have been signed off (for example, reports that appear with an <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Trade Blotters List_2.png" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 16px;" alt="Picture2" /> icon). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Sign-Off user</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">When Sign-Off is required this column shows the name of the user who performed Sign-Off. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Availability</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Indicates whether the report is maintained: </p>
+                        <p class="Body"><span class="Strong">Online: </span>The report can be viewed and opened from the <MadCap:variable name="RCM Actimize.SolutionName" />. </p>
+                        <p class="Body"><span class="Strong">Offline</span>: The report has been purged and archived, so it is available as an archived file offline. To access an archived report you can make a request to the System Administrator to restore the report.</p>
+                        <p class="Body"><span class="Strong">Not available: </span>The report has been purged but not archived (and therefore is not available any more).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Report Type</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Indicates the type of the report.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

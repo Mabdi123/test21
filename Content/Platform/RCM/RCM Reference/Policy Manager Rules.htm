@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="3256" MadCap:lastWidth="1245">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949415"></a>Policy Manager Rules</h1>
+        <p class="Body">In the Policy Manager you can create the rules that determine the score value of the match level of the existing entity compared to the incoming entity. The rules compare fields from the incoming entity to fields from an existing entity. </p>
+        <p class="Body">For details on policy manager, see <MadCap:xref href="Policy_Manager.htm#_Ref390677019" class="ParaTextOnly">Policy Manager</MadCap:xref>.</p>
+        <h4 class="NoNumber">Rule Conditions</h4>
+        <p class="Body">You can create rules based on policy types such as, person or account, using the relevant fields. This enables you to set criteria for the system to find potential matches for incoming entities. Entity matching rules must compare incoming and existing entity fields.</p>
+        <p class="Body">For example:</p>
+        <ul>
+            <li>Select two fields to compare in one condition: <p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Reference/Policy Manager Rules.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <ul>
+            <li>Create two separate conditions where fields are configured based on values:<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Reference/Policy Manager Rules_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <h4 class="NoNumber">Rule Operator</h4>
+        <p class="Body">The <span class="Strong">Is similar to</span> operator for the Entity Matching feature, enables you to check if two fields are similar to each other. This allows you to compare two fields with a maximum of two different characters. </p>
+        <p class="Body">For example if an incoming full name has a similar spelling to an existing full name, as follows:</p>
+        <ul>
+            <li>Full name of existing: John Doe </li>
+        </ul>
+        <ul>
+            <li>Full name of incoming: Jon Do</li>
+        </ul>
+        <p class="Body">In this case the rule is triggered and the pair is given a score.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Policy Manager Rules_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <h4 class="NoNumber">Rule Scores</h4>
+        <p class="Body">After you have set a rule condition, you set rule scores in the Actions tab below the rule criteria. A score is given according to the action you want taken on entities that meet the rule criteria. Rule scores can be defined by tens (10, 20, 30 and so on). Score thresholds are set in the platform lists as follows:</p>
+        <ul>
+            <li>Entity match is between 90-100 </li>
+        </ul>
+        <ul>
+            <li>Doubt is between 20-80</li>
+        </ul>
+        <ul>
+            <li>No match is between 0-10</li>
+        </ul>
+        <p class="Body">These are the default Entity Matching thresholds that are customizable in the Entity Matching platform list thresholds.</p>
+        <p class="Body">If a rule states that for the person policy type, the incoming full name must equal the existing entity full name, then you might set a score of 90. This means that if the incoming entity has the same full name as an existing entity, it gets the score of 90 and is a match.</p>
+        <p class="Body">For details on the platform lists, see <MadCap:xref href="Entity Matching List Thresholds.htm#_Ref401494748" class="ParaTextOnly">Entity Matching List Thresholds</MadCap:xref>.</p>
+        <h4 class="NoNumber">Rule Priority</h4>
+        <p class="Body">You can also set rule priorities which designate specific rule criteria as more important and thereby making the entity with a match according to the criteria, a likelier match. For details, see <MadCap:xref href="Set Remove the Rule Priority.htm#_Ref205526445" class="ParaTextOnly">Set/Remove the Rule Priority</MadCap:xref>.</p>
+        <h4 class="NoNumber">Example of Entity Matching Rule</h4>
+        <p class="Body">In the example below, for the Policy type ERCM Person_user5, the rule <span class="Strong">Birthdate and SSN</span> was created. </p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Policy Manager Rules_3.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">This rule has two conditions:</p>
+        <ul>
+            <li>Incoming entity birth date and existing entity birth date must be equal </li>
+        </ul>
+        <ul>
+            <li>Incoming entity Social Security number and existing entity Social Security number must be equal</li>
+        </ul>
+        <p class="Body">The rule score that was given is 90 meaning if both criteria match the entities are a match.</p>
+        <h4 class="NoNumber">Expression Builder</h4>
+        <p class="Body">In the Policy Manager expression builder you can create functions using strings only. In addition you can create Entity Matching functions for use with relation sets, such as a group of addresses that belong to a single entity. </p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Policy Manager Rules_4.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">You can set the following functions:</p>
+        <ul>
+            <li><span class="Strong">ERCM_SETS_ARE_IDENTICAL: </span>All details in the incoming entity must match all details in the all of the existing relation sets. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ERCM_SETS_SHARE_ITEM:</span> The incoming entity can share at least one of the strings of the existing set.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">For system purposes all data types in policy manager rules are defined as strings.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234595"></a>getUsersByCriteria</h1>
+        <p class="Code">ACMResult getUsersByCriteria(in String userFilter,in String businessUnitIdentifierFilter, in int startFrom, in int maxRecords,out&#160; User[] users);</p>
+        <p class="Body"><span class="Emphasis">Description</span>: This method accepts a name filter and a business unit filter. Based on this, it generates a list of users and returns a section of them starting from a user located in the startFrom location and counting until the max records.</p>
+        <p class="Body">IN</p>
+        <ul>
+            <li><span class="Strong">userFilter</span> – A user full name. If this field is passed as null there will be no filter.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">businessUnitIdentifierFilter</span> – Business Unit Identifier. If passed as null there will be no filter.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">startFrom</span> – Start from number. A valid number must be entered (e.g., 0).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">maxRecords</span> – The number of users to retrieve. A valid number must be entered (e.g., 1000).</li>
+        </ul>
+        <p class="Body">OUT</p>
+        <ul>
+            <li><span class="Strong">u</span><span class="Strong">sers</span> – An array of User objects.</li>
+        </ul>
+    </body>
+</html>

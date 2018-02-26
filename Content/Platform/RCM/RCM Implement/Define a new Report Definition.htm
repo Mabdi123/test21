@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1636" MadCap:lastWidth="1012">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref99882972"></a><a name="_Toc500234169"></a>Define a new Report Definition – Adding General Information</h1>
+        <div class="Note">
+            <p class="Body">This feature is available as part of the ERCM license.</p>
+        </div>
+        <p class="Procedure">To start a new report definition:</p>
+        <ol start="1">
+            <li>Select the category under which you want this report to appear.</li>
+            <li>Click <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define a new Report Definition.png" style="width: 28px;height: 19px;" /> to open the three tabs, on the right side of the window. These enable you to enter the required information for this new report definition.<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define a new Report Definition_1.png" style="border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <ol start="3">
+            <li>Enter the name and description that you want for this report definition. You can use the Edit button, beside the description field box, to open a window that provides more room for entering the required text for the description.</li>
+            <li>The external Identifier for this report is automatically generated according to the name of the report. You can (optionally) change this identifier if required.</li>
+            <li>
+                <p>Select the Report Provider for this report. The options are:</p>
+                <ul>
+                    <li><span class="Strong">JReport</span> – The report was created using the JReport Designer.</li>
+                    <li><span class="Strong">External URL</span> – The report was created externally and can be accessed via an external URL web service.</li>
+                </ul>
+            </li>
+        </ol>
+        <ol start="6">
+            <li>Select the Display Category that is appropriate for this report. Note that the category that you selected from the Design Entities list automatically appears in this field. You can change the selection if you want.</li>
+            <li>Select the Policy that is appropriate for this report. For a detailed description of the policy options see <MadCap:xref href="Set up New Report Policies.htm#_Ref100047397" class="ParaTextOnly">Set up New Report Policies</MadCap:xref>.</li>
+            <li>Select the format in which you want the materialized instance of this report to be saved. Report instance materialization is when the report becomes a static file managed by RCM. A report instance must first be materialized before archiving is possible. The options are:</li>
+        </ol>
+        <ul>
+            <li>
+                <p><span class="Strong">None</span> – This should be selected only if you never want a materialized instance to be created for this report. Until a report is materialized, it can be displayed in the JReport DHTML format, allowing ‘slice and dice’ operations.</p>
+                <ul><span style="list-style-type: square;" class="Strong">Text format</span>
+                </ul>
+                <ul><span style="list-style-type: square;" class="Strong">Excel format</span>
+                </ul>
+                <ul><span style="list-style-type: square;" class="Strong">HTML format</span>
+                </ul>
+                <ul><span style="list-style-type: square;" class="Strong">PDF format</span>
+                </ul>
+            </li>
+        </ul>
+        <ol start="9">
+            <li>Select the format in which you want the archived report to be saved. When a report is archived, the materialized report instance, along with supporting data such as notes, is copied to an external file system. Once archived, the files can be managed by a third party document management system or managed as part of other file system backup processes. The options are:</li>
+        </ol>
+        <ul>
+            <li>
+                <p><span class="Strong">None</span> – An archived file is not saved for this report. If a materialized instance of the report is not created, you must select None for Archive format since a report can only be archived after materialization.</p>
+                <ul><span style="list-style-type: square;" class="Strong">Text format</span>
+                </ul>
+                <ul><span style="list-style-type: square;" class="Strong">Excel format</span>
+                </ul>
+                <ul><span style="list-style-type: square;" class="Strong">HTML format</span>
+                </ul>
+                <ul><span style="list-style-type: square;" class="Strong">PDF format</span>
+                </ul>
+            </li>
+        </ul>
+        <ol start="10">
+            <li>Check on the <span class="Strong">Use alternative archiving materialization layout</span> if you want the layout of the archived file to appear according to a layout that was specifically defined for archiving purposes. When checked on, you are prompted to enter two different report files and you must upload both reports – the first one is used for the materialized report that displays within the RCM and the second one is used to define the layout for the display of the archived file.</li>
+            <li>Check on the <span class="Strong">Enable on-demand report generation for this report</span> if you want the report to be available within the On-Demand Reports module, as a report that can be generated On- Demand.</li>
+        </ol>
+    </body>
+</html>

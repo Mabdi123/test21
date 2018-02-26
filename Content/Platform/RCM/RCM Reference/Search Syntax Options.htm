@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="3283" MadCap:lastWidth="1012">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949328"></a>Search Syntax Options</h1>
+        <p class="Body">The following illustrates the various search options that can be used. </p>
+        <h4 class="NoNumber">Regular Words</h4>
+        <ul>
+            <li>Search string: John<br />Finds items that contain the word ‘John’.</li>
+        </ul>
+        <h4 class="NoNumber">Multiple Words</h4>
+        <ul>
+            <li>Search string: John Jane<ul><li>Finds items that contain the word ‘John’ or the word ‘Jane’ or both.</li><li>Each word is optional, but at least one word is mandatory.</li><li>Higher ranking is given to items that contain all the words, or the entire expression.</li></ul></li>
+        </ul>
+        <div class="Note">Search words delimited by a space character create an "OR" search.</div>
+        <h4 class="NoNumber">Mandatory and Prohibited Words</h4>
+        <ul>
+            <li>Search string: +John Jane<br />Finds items that must contain the word ‘John’ and optionally contain the word ‘Jane’</li>
+        </ul>
+        <ul>
+            <li>Search string: +John -Jane<br />Finds items that must contain the word ‘John’ and must not contain the word ‘Jane’. The restriction applies for the whole item, not per field.</li>
+        </ul>
+        <ul>
+            <li>Search string +John Jill -Jane<br />Finds items that must contain ‘John’, may contain ‘Jill’, but must not contain ‘Jane’</li>
+        </ul>
+        <ul>
+            <li>Search string +John -John<br />Finds no items.</li>
+        </ul>
+        <h4 class="NoNumber">Boolean Operators</h4>
+        <ul>
+            <li>Search string: John and Jane<br />Finds items that contain both words. Basically the same as “+John +Jane”.</li>
+        </ul>
+        <ul>
+            <li>Search string: John or Jane<br />Finds items that contain at least one of the words.</li>
+        </ul>
+        <h4 class="NoNumber">Phrases</h4>
+        <ul>
+            <li>Search string: “Jill Jones”<br />Finds items containing the text “Jill Jones” as if it was one word.</li>
+        </ul>
+        <ul>
+            <li>Search string: “Jill Jones” John<br />Finds items containing either ‘Jill Jones’ or ‘John’.</li>
+        </ul>
+        <h4 class="NoNumber">Search String by Specific Field</h4>
+        <p class="Body">You can search according to fields that are designated in the <MadCap:variable name="RCM Actimize.ProductCode" /> in implementation, as follows:</p>
+        <p>Built In (Common) Fields:</p>
+        <ul>
+            <li><span class="Strong">identifier</span>: Work item identifier. Example - <span class="Strong">i</span><span class="Strong">dentifier:01345677</span></li>
+        </ul>
+        <ul>
+            <li><span class="Strong">type_name</span>: Work item type full name</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">type_abbr_name</span>: Work item type short name</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">bu_exact</span>: Business unit of work item</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">owner</span>: Identifier of work item owner. Example - <span class="Strong">o</span><span class="Strong">wner:</span><span class="Strong">“</span><span class="Strong">John Smith</span><span class="Strong">”</span></li>
+        </ul>
+        <ul>
+            <li><span class="Strong">owner_name</span>: Name of work item owner</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">description</span>: Description of work item</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">score_field</span>: The score of the work item</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">note</span>: The work item notes</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">audit</span>: The work item audits</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">attachments</span>: The work item attachments</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">rfi</span>: The RFI text messages</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">priority_identifier:</span> Priority of case items, possible values: low, medium, high.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">alert_name:</span> Names of all items (such as, work item, case item).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">rfi_attachment:</span> Attachments received from RFI replies.</li>
+        </ul>
+        <p>Custom Fields: </p>
+        <p class="Body">Custom fields that are indexed in global search are dependent on your organization’s implementation. If you want to search according to other fields contact your administrator for a list of custom field identifiers.</p>
+        <h4 class="NoNumber">Distance Factor</h4>
+        <ul>
+            <li>Search string “Jill Jones”~4<br />Finds items containing the word ‘Jill’ and the word ‘Jones’ within a distance of 4 or less words.</li>
+        </ul>
+        <h4 class="NoNumber">Wild Cards</h4>
+        <ul>
+            <li>Search string: mith*<br />Finds items containing words that begin with “mith”</li>
+        </ul>
+        <ul>
+            <li>Search string: h*o<br />Finds items with the words ‘h2o’, ‘hello’, ‘halo’, etc.</li>
+        </ul>
+        <ul>
+            <li>Search string: h?0<br />Finds items with the words ‘h2o’, ‘HBO’, etc.</li>
+        </ul>
+        <h4 class="NoNumber">Special Words for Filtering by Field</h4>
+        <p class="Body">The word ‘has’ followed by ‘:’</p>
+        <ul>
+            <li>Search string: has:notes<br />Finds items that include notes.</li>
+        </ul>
+        <ul>
+            <li>Search String: has:owner<br />Finds items that are assigned.</li>
+        </ul>
+        <ul>
+            <li>Possible values for this word are notes, attachments, owner, children, parents, cases, RFIs, deadlines, graphs.</li>
+        </ul>
+        <p class="Body">The word ‘is’ followed by ‘:’</p>
+        <ul>
+            <li>Search string: is:open<br />Finds items in open state.</li>
+        </ul>
+        <p class="Body">Possible values for this word: Open, closed, read, manual, issue, non_issue, no_determination</p>
+        <h4 class="NoNumber">Boosting Results</h4>
+        <ul>
+            <li>Search String: John^2 Jane<br />Finds items with the words ‘John’ or ‘Jane’. The term ‘John’ is boosted and items with this word will show up higher in the results.</li>
+        </ul>
+        <h4 class="NoNumber">Range Query</h4>
+        <p class="Body">Range query can be done on a specific field. The word ‘TO’ in the brackets has to be in upper case characters</p>
+        <ul>
+            <li>Search string: score_field:[10 TO 20]<br />Finds items with score field between 10 to 20.</li>
+        </ul>
+        <ul>
+            <li>Search string: business_date:[NOW/DAY-7DAY TO NOW/DAY]<br />Finds items from the last week, rounded to the day (hours and seconds are not counted)</li>
+        </ul>
+        <ul>
+            <li>Search string: business_date:[NOW-200DAY TO NOW-100DAY]<br />Finds items with business date between 200 days ago to 100 days ago</li>
+        </ul>
+        <ul>
+            <li>Search string: business_date:[2007-03-06T00:00:00Z TO NOW]<br />Using a specific date. Possible formats are:<br />Without milliseconds: yyyy-mm-ddThh:mm:ssZ<br />With milliseconds: yyyy-mm-ddThh:mm:ss.sssZ</li>
+        </ul>
+        <ul>
+            <li>Other supported dates include create_date, business_date, deadline_date, email_date, highlight_date, global_deadline_date, global_email_date, global_highlight_date, last_update_date, last_refresh_modified_date</li>
+        </ul>
+        <div class="Note">Search words delimited by a space character create an "OR" search.</div>
+    </body>
+</html>

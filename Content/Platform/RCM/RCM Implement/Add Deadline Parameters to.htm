@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="1460" MadCap:lastWidth="986">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref436143634"></a><a name="_Toc500234028"></a>Add Deadline Parameters to a Step</h1>
+        <p class="Body">You can add deadline parameters to a step including a reminder and email notification.</p>
+        <div class="Note">
+            <p class="Body">Adding a deadline to a step is optional. A step can be without a deadline.</p>
+        </div>
+        <p class="Body">Click a step and open the Step Properties Deadline tab.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add Deadline Parameters to.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Procedure">To add a deadline to a step:</p>
+        <ol start="1">
+            <li>In the Step Properties click the Deadline tab.</li>
+        </ol>
+        <ol start="2">
+            <li>Select the checkbox to add a deadline to a step and enter the number of <span class="Strong">Business Days</span>/<span class="Strong">Days</span>/<span class="Strong">Hours</span>/<span class="Strong">Minutes</span>that should pass before the deadline occurs or use the arrow icons to display the relevant number of days.</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">Business days are calculated according to the Business Calendar – Days and Business Calendar – BU Associations platform lists in the RCM UI. For details, see <MadCap:xref href="Business Calendar Lists.htm#_Ref466978481" class="ParaTextOnly">Business Calendar Lists</MadCap:xref>.</p>
+        </div>
+        <p class="Body">The following checkboxes may also be used in order to add parameters to the deadline:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="TableHeading">Field</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Send Email Notification</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to indicate the number of <span class="Strong">Business Days</span>/<span class="Strong">Days</span>/<span class="Strong">Hours</span>/<span class="Strong">Minutes</span> before the deadline in which an email is sent to the owner of the alert (item).</p>
+                        <p class="Body">The options for email are:</p>
+                        <ul>
+                            <li>Standard email, for example:</li>
+                        </ul>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow General Tab_2.png" style="visibility: visible;mso-wrap-style: square;" />
+                        </p>
+                        <ul>
+                            <li>RFI template based email. For information, refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Reference Guide, </span>in Managing RFI Templates.</li>
+                        </ul>
+                        <p class="Body">You must enter the relevant RFI identifier in the actimize.workflow.deadline.defaultRFITemplate config parameter. For details, see <MadCap:xref href="Parameter Descriptions.htm#_Ref433279157" class="ParaTextOnly">Parameter Descriptions</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Create Reminder </p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to indicate the number of <span class="Strong">Business Days</span>/<span class="Strong">Days</span>/<span class="Strong">Hours</span>/<span class="Strong">Minutes</span> before the deadline in which a reminder about the deadline is displayed to the user.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Change Step to</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Enables you to select the step of the alert after the deadline is reached. The required escalation step needs to be added to the workflow first. The selection of the escalated step creates an automatic Transition between the currently in focus step and the selected escalated step. Note that the <span class="Strong">Allow manual transition</span> checkbox for the transition arrow is enabled when this parameter is defined.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note">
+            <p class="Body">When creating a deadline, verify the following:</p>
+            <p class="Body">The work item (alert) should belong to an alert type that has been associated with a workflow definition. Even though a deadline may be defined for a step, it will only apply to an alert in that step when the alert type is associated with the workflow. </p>
+            <p class="Body">For Send Email Notification:</p>
+            <ul>
+                <li>All the <span class="Strong">mail.smtp.*</span> RCM configuration parameters must be defined.</li>
+            </ul>
+            <ul>
+                <li>The email goes to all of the relevant template recipients.</li>
+            </ul>
+        </div>
+    </body>
+</html>

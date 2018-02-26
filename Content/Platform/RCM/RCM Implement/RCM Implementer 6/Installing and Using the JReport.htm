@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"> <a name="_Toc500234646"></a>Installing and Using the JReport Designer</h1>
+        <p class="ConvertNote">NOTE:</p>
+        <ul><span style="list-style-type: disc;" class="Strong">The license for the JReport Designer is purchased separately.</span>
+        </ul>
+        <ul>
+            <li>The JReport Designer is not provided with your RCM installation.</li>
+        </ul>
+        <ul>
+            <li>To create and use reports in RCM, you must use JReport Designer V13 Update 3 (Version Number: 13.0.3.0).</li>
+        </ul>
+        <p class="Body">&#160;</p>
+        <p class="Body">Creating a new RCM Report using JReport Designer requires the following tasks:</p>
+        <ul>
+            <li>Create a connections.mf file under JReport/Bin</li>
+        </ul>
+        <ul>
+            <li>Copy the Actimize.jar file from your installation CD to the JReport/lib folder</li>
+        </ul>
+        <ul>
+            <li>Edit the JReport.bat file</li>
+        </ul>
+        <ul>
+            <li>Create a New Catalog</li>
+        </ul>
+        <ul>
+            <li>Add Parameters to the Query</li>
+        </ul>
+        <ul>
+            <li>Define Reports for the Catalog</li>
+        </ul>
+        <ul>
+            <li>Utilize RCM UDF and UDS in JReport (optional)</li>
+        </ul>
+        <ul>
+            <li>Configure JReport for a Non-English language (optional)</li>
+        </ul>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">When defining reports within the JReport Designer, it is possible to use the <span class="Strong">acm_db_views</span> that are deployed with your RCM Installation. The views are designed to enable you to query the RCM database. When using the RCM views, you can continue to use any reports that are based on the views, even if changes are made to the RCM database schema. For detailed information about these views, see Appendix B of this guide.</p>
+        <p><a name="_Toc500234647"></a><a name="Create_connections_mf"></a><span class="Strong">Create</span><span class="Strong"> a file called connections.mf under JReport/Bin</span>
+        </p>
+        <p class="Procedure">To create the connections.mf file</p>
+        <ol start="1">
+            <li>Using a text editor, create a new file and save it as <span class="Strong">connections.mf</span>.</li>
+        </ol>
+        <ol start="2">
+            <li>Type in version information and the information for each connection that is required for your system, as shown in the example below:</li>
+        </ol>
+        <p>
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Installing and Using the JReport.png" style="width: 461px;height: 317px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The <span class="Strong">connections.mf</span> file should include the following information, per connection:</p>
+        <ul>
+            <li><span class="Strong">Name:</span>&lt;connection_name&gt;</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ConnectionURL:</span>&lt;full URL for the connection driver&gt;</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Username:</span>&lt;user name for accessing the connection&gt;</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Password:</span>&lt;password for above user&gt;</li>
+        </ul>
+        <ul>
+            <li>Databases that require a catalog (e.g. Sybase and SQL) require the following additional information:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">DefaultCatalog:</span>&lt;database_name&gt;</li>
+        </ul>
+    </body>
+</html>

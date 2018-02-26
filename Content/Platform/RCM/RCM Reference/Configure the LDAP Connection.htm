@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1054" MadCap:lastWidth="906">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949810"></a>Configure the LDAP Connection</h1>
+        <p class="Body">If you are using LDAP, you must configure the LDAP connection parameters.</p>
+        <p class="Procedure">To configure the LDAP parameters:</p>
+        <ol start="1">
+            <li>Click the <span class="Strong">Configure LDAP connection</span> action item. The Test LDAP Connection window appears, enter the appropriate values for your system.</li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Configure the LDAP Connection.png" style="visibility: visible;mso-wrap-style: square;width: 258px;height: 261px;" />
+            </p>
+        </ol>
+        <ol start="2">
+            <li>According to your system requirements, set the values for the following parameters that are maintained within the Actimize Admin Site <span class="Strong">Configuration Parameters</span>:</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">Administrators can also assign values to these parameters from the RCM Admin Site application using the options under the Config Parameters tab.</p>
+        </div>
+        <p class="Body">Host Settings:</p>
+        <ul>
+            <li><span class="Strong">Host name or IP</span> - sets the value for the RCM Configuration parameter actimize.ldap.computerName</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Port</span> - sets the value for the cm_config parameter actimize.ldap.port</li>
+        </ul>
+        <p class="Body">Authorization Details</p>
+        <ul>
+            <li><span class="Strong">User DN</span> - sets the parameter for the configuration parameter actimze.ldap.userDN</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Password</span> - sets the value for the configuration parameter actimize.ldap.userPassword</li>
+        </ul>
+        <p class="Body"><span class="Strong">Base DN</span> - This parameter only appears for systems that use SunOne. This parameter sets the value for the configuration parameter actimize.ldap.domainDN. </p>
+        <ul>
+            <li>For Active Directory, set this parameter to null</li>
+        </ul>
+        <ul>
+            <li>For SunOne, set this to the appropriate domainDN</li>
+        </ul>
+    </body>
+</html>

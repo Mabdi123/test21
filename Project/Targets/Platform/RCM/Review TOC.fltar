@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Platform/RCM/Review TOC.fltoc"
+  ConditionTagExpression="include[Default.ScreenOnly or &quot;RCM Custom.Contents&quot; or &quot;RCM Custom.Heading2&quot; or &quot;RCM Custom.RCM&quot;] exclude[Default.Hide or Default.PrintOnly or &quot;RCM Custom.NWM&quot;] "
+  MasterPage="/Content/Resources/MasterPages/MasterPage.flmsp"
+  ExcludeUnreferencedContent="true"
+  DisableAutoSync="false"
+  TopNavTocPath="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="RCM Actimize/GuideName">Reference Guide</Variable>
+    <Variable
+      Name="Actimize/HelpName">RCM HELP</Variable>
+    <Variable
+      Name="Actimize/GuideName">Reference Guide</Variable>
+    <Variable
+      Name="Actimize/ProductCode">RCM</Variable>
+    <Variable
+      Name="Actimize/SolutionName">Risk Case Manager</Variable>
+    <Variable
+      Name="Actimize/VersionNumber">5.13.0</Variable>
+    <Variable
+      Name="RCM Actimize/HelpName">RCM help</Variable>
+    <Variable
+      Name="Actimize/ReleaseDate">November 20, 2017</Variable>
+    <Variable
+      Name="RCM Actimize/ReleaseDate">November 20, 2017</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/NewDestination_rina.fldes" />
+  </Destinations>
+</CatapultTarget>

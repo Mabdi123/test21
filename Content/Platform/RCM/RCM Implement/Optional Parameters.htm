@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Optional Parameters </h1>
+        <p class="Body">List of the parameters that are supported:</p>
+        <ul>
+            <li><span class="Strong">actionsGroupIdentifier:</span> the identifier of the GUI items action title that stores the GUI items for this Widget (if none is supplied, no actions combo will appear).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">baseQueryIdentifier:</span> the identifier of a query on this Widget’s data source that should be used as the base criteria for filtering (when none is supplied, the “where” clause will be empty).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">preventNewConditions:</span> Boolean parameter that controls whether the “add condition” link will be available to end users in this Widget (default value: false)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showCountResults:</span> Boolean parameter that controls whether the “count results” button will be available to end users Widget (default value: true)</li>
+        </ul>
+        <p class="Body">The “count results” link will NOT be shown when only a single page of results is available. In this scenario there’s already a count value displayed on the pager and there’s no need for running the query again. </p>
+        <ul>
+            <li><span class="Strong">disableFilterByExample:</span> Boolean parameter that controls whether the “filter-by-example” feature (i.e. the ability to add conditions to the query by clicking existing values in the grid) will be available to end-users (default value: false)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">filterDisplayMode: </span>a parameter that controls how the Widget panes will be shown the first time the Widget is opened. Possible values:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">query:</span> the query (AKA filter) section will occupy the entire Widget area and the table (AKA grid) will be hidden</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">table (default):</span> the table section will occupied the entire Widget area and the query section will be hidden</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">both: </span>the query and table sections will share the Widget area by 50%/50% ratio</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">tableAlways: </span>same as “table” but without giving the end-user an option to switch to a different display mode. This is useful in cases where the implementer is not interested in giving the end-user any filtering power. <br />Note that in this mode the “filter-by-example” feature is automatically disabled</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">pagingSize:</span> a parameter that controls the number of records per page (default: the value of the config parameter actimize.common.rowsInSegment)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">selectionMode: </span>a parameter that controls the behavior of grid selection. The possible values are:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Multi</span><span class="Strong">(default):</span> multiple selection allowed</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Single</span><span class="Strong">: </span>single selection allowed</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">None</span><span class="Strong">:</span> record selection is disabled and the selection box is not shown</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showBaseQueryConditions:</span> Boolean parameter that controls whether the base query conditions should be visible to the end-user (default value: true)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showResetButton:</span> Boolean parameter that controls whether the reset button should be visible to the end-user (default value: true)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">showRefreshButton:</span> Boolean parameter that controls whether the refresh button should be visible to the end-user (default value: true)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ShowExportButton:</span> Boolean parameter that controls whether the export button should be visible to the end-user (default value: true)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">stretchGridWidth: </span>Boolean parameter that controls whether or not the widget grid stretches itself. If set to true, the grid occupies the entire container width and the grid columns adjust accordingly (i.e. either shrink or increase in size). Default value is false.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">autoShrinkHeight: </span>Boolean parameter that controls whether or not the widget grid container automatically adjusts its height according to the widget contents. If set to true, the widget container automatically changes its height after the widget contents has been loaded. Therefore, at the end of this process the container adjusts its height to fit the contents. Default value is false.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">hideGridHeader</span><span class="Strong">: </span>Boolean parameter that controls whether or not the grid appears without its header (default: false).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">secondaryLayoutDisplayMode: </span>Defines the layout display mode. Possible values include the following:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">collapsed </span>(default)<span class="Strong">:</span> The layouts appear collapsed when the grid is drawn.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">expanded:</span> The layouts appear expanded when the grid is drawn.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">alwaysExpanded: </span>The layouts are not collapsible. The grid does not include the expand/collapse column.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">userQueryXml: </span>a node containing the following pieces of information:</li>
+        </ul>
+        <ul>
+            <li>additional filtering criteria (default is none)</li>
+        </ul>
+        <ul>
+            <li>The columns to display (default is the data source view)</li>
+        </ul>
+        <ul>
+            <li>The columns to sort by (default is no sorting)</li>
+        </ul>
+        <p class="Body">Example:</p>
+        <p class="Body">The structure of the userQueryXML node:</p>
+        <div>
+            <p class="Code">&lt;userQueryXml&gt;</p>
+            <p class="Code">&lt;query&gt;</p>
+            <p class="Code">&lt;queryCondition class="boolean_condition"&gt;</p>
+            <p class="Code">&lt;operator&gt;or&lt;/operator&gt;</p>
+            <p class="Code">&lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&lt;children&gt;</p>
+            <p class="Code">&lt;boolean_condition&gt;</p>
+            <p class="Code">&lt;operator&gt;and&lt;/operator&gt;</p>
+            <p class="Code">&lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&lt;children&gt;</p>
+            <p class="Code"><span class="Strong">[</span>1 or more comparison__condition nodes]&lt;/children&gt;</p>
+            <p class="Code">&lt;/boolean_condition&gt;</p>
+            <p class="Code">&lt;/children&gt;</p>
+            <p class="Code">&lt;/queryCondition&gt;</p>
+            <p class="Code">&lt;queryFields&gt;</p>
+            <p class="Code">[1 or more query__field nodes]</p>
+            <p class="Code">&lt;/queryFields&gt;</p>
+            <p class="Code">&lt;/query&gt;</p>
+            <p class="Code">&lt;/userQueryXml&gt;</p>
+        </div>
+        <ul>
+            <li><span class="Strong">ddqPickers:</span> allows the implementer to control which values will be available for the user for selection when filtering the records in the Records Widget. Note that the when you create the query in RCM Designer and select more than one column then the returned values that are returned via the RCM picker are always of the second column.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">dataOrigin: </span>Overrides the origin properties that was defined in the RCM Designer.</li>
+        </ul>
+        <p class="Body">Available fields and values:</p>
+        <ul>
+            <li><span class="Strong">t</span><span class="Strong">ype</span>
+            </li>
+        </ul>
+        <ul>
+            <li>DBTABLE</li>
+        </ul>
+        <ul>
+            <li>DDQ</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">objName</span>: The identifier of the DDQ or the name of the table or view.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">c</span><span class="Strong">onn</span>: The connection you want to switch to.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">params</span>: Relevant for the specific DDQ type only:The parameter list is configured in the DDQ and you can not add or remove parameters, only set the values.</li>
+        </ul>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body"><span class="Strong">type</span> and <span class="Strong">objName</span> are dependant parameters and if one is defined, the other must be as well. </p>
+        <p class="Body">Example</p>
+        <div>
+            <p class="Code">&lt;dataOrigin type="DDQ" objName="ddq_persons_oracle" conn="my_connection"&gt;</p>
+            <p class="Code"> &lt;params&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="gender"&gt;Male,Female&lt;/param&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="emp_name"&gt;%&lt;/param&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="boss_name"&gt;%&lt;/param&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="excluded_ages"&gt;1,2,3&lt;/param&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="min_age"&gt;35&lt;/param&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="max_age"&gt;100&lt;/param&gt;</p>
+            <p class="Code">&#160;&#160; &lt;param name="min_creation_date"&gt;1900-09-01 00:00:00&lt;/param&gt;</p>
+            <p class="Code"> &lt;/params&gt;</p>
+            <p class="Code">&lt;/dataOrigin&gt;</p>
+        </div>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">If you want to override the data source (a new DDQ, table or view), then you must change <span class="Strong">type</span> and <span class="Strong">objName</span> and all parameters are automatically changed.</p>
+        <p class="Body">If you want to change specific parameter values, you do not enter the <span class="Strong">type</span> and <span class="Strong">objName</span>, enter the values for the specific parameters you want to override.</p>
+        <ul>
+            <li><span class="Strong">adjustSecondaryLayoutWidth</span>: a Boolean parameter that adjusts the secondary layout for the same width as the top widget above it regardless of the data it has inside or how the layout was defined in the RCM Designer (default: false).</li>
+        </ul>
+        <p class="ConvertNote">NOTE</p>
+        <p class="Body">Using Extend wrap for a cell in the secondary layout is not supported when setting the adjustSecondaryLayoutWidth to True. It is recommended to set cell's wrap to Cut or Wrap.<br />If the adjustSecondaryLayoutWidth is set to True and the secondary layout is wider than the top widget's record above it, the secondary layout may appear wider than the top widget</p>
+        <p class="Body">Sample of a single internal element of type ‘comparison_condition’:</p>
+        <div>
+            <p class="Code">&lt;comparison__condition&gt;</p>
+            <p class="Code">&lt;displayMode&gt;Mandatory&lt;/displayMode&gt;</p>
+            <p class="Code">&lt;operator&gt;EQ&lt;/operator&gt;</p>
+            <p class="Code">&lt;disabled&gt;false&lt;/disabled&gt;</p>
+            <p class="Code">&lt;children&gt;</p>
+            <p class="Code">&lt;field__term&gt;</p>
+            <p class="Code">&lt;fieldIdentifier&gt;pivot_name&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&lt;/field__term&gt;</p>
+            <p class="Code">&lt;value__term&gt;</p>
+            <p class="Code">&lt;value&gt;ACC-3&lt;/value&gt;</p>
+            <p class="Code">&lt;/value__term&gt;</p>
+            <p class="Code">&lt;/children&gt;</p>
+            <p class="Code">&lt;/comparison__condition&gt;</p>
+        </div>
+        <p class="Body">Sample of a single internal element of type query_field:</p>
+        <div>
+            <p class="Code">&lt;query__field&gt;</p>
+            <p class="Code">&lt;fieldIdentifier&gt;pivot_date&lt;/fieldIdentifier&gt;</p>
+            <p class="Code">&lt;sortingField&gt;-1&lt;/sortingField&gt;</p>
+            <p class="Code">&lt;ascSort&gt;true&lt;/ascSort&gt;</p>
+            <p class="Code">&lt;/query__field&gt;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="5430" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234252"></a>Create the XSL File</h1>
+        <p class="Body">Create XSL files for each alert type that will include a Records Widget. The XSL file includes:</p>
+        <ul>
+            <li>DART parameters</li>
+        </ul>
+        <ul>
+            <li>JavaScript command that creates the Records Widget</li>
+        </ul>
+        <ul>
+            <li>Instructions for combining the Records Widget in the display (HTML)</li>
+        </ul>
+        <p class="Body">XSL file example with comments inside it:</p>
+        <div>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:actimize="com.actimize.infrastructure.util.XsltExtensionsFunctions"&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code"> WIDGET PARAMETERS </p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;xsl:variable name="optionalParams"&gt;</p>
+            <p class="Code">&#160; &lt;actionsGroupIdentifier&gt;MyActions1&lt;/actionsGroupIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;baseQueryIdentifier&gt;DOGU5B8D-9CBC-5G39-0KW5-UL74R9XQYI89&lt;/baseQueryIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;preventNewConditions&gt;false&lt;/preventNewConditions&gt; </p>
+            <p class="Code">&#160; &lt;disableFilterByExample&gt;true&lt;/disableFilterByExample&gt; </p>
+            <p class="Code">&#160; &lt;filterDisplayMode&gt;both&lt;/filterDisplayMode&gt; </p>
+            <p class="Code">&#160; &lt;pagingSize&gt;200&lt;/pagingSize&gt; </p>
+            <p class="Code">&#160; &lt;selectionMode&gt;multi&lt;/selectionMode&gt; </p>
+            <p class="Code">&#160; &lt;showBaseQueryConditions&gt;true&lt;/showBaseQueryConditions&gt; </p>
+            <p class="Code">&#160; &lt;showRefreshButton&gt;true&lt;/showRefreshButton&gt; </p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code"> For user-defined functions, define the parameters here. In Oracle, for parmeters that are &gt;4000 characters in length, set the parameter type to CLOB, otherwise set it to char. These parameters will be populated by RCM in the prepared statement.</p>
+            <p class="Code">&#160; --&gt;</p>
+            <p class="Code">&lt;dataSourceParameters&gt;</p>
+            <p class="Code">&lt;parameter&gt;2&lt;/parameter&gt;</p>
+            <p class="Code">&lt;parameter type="clob"&gt;aaaaa&lt;/parameter&gt;</p>
+            <p class="Code">&lt;/dataSourceParameters&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;userQueryXml&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;queryCondition class="boolean_condition"&gt;</p>
+            <p class="Code">&#160; &lt;operator&gt;or&lt;/operator&gt; </p>
+            <p class="Code">&#160; &lt;disabled&gt;false&lt;/disabled&gt; </p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;children&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;boolean_condition&gt;</p>
+            <p class="Code">&#160; &lt;operator&gt;and&lt;/operator&gt; </p>
+            <p class="Code">&#160; &lt;disabled&gt;false&lt;/disabled&gt; </p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;children&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;comparison__condition&gt;</p>
+            <p class="Code">&#160; &lt;displayMode&gt;Editable&lt;/displayMode&gt; </p>
+            <p class="Code">&#160; &lt;operator&gt;NE&lt;/operator&gt; </p>
+            <p class="Code">&#160; &lt;disabled&gt;false&lt;/disabled&gt; </p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;children&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;field__term&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_is_active&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;/field__term&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;value__term&gt;</p>
+            <p class="Code">&#160; &lt;value&gt;0&lt;/value&gt; </p>
+            <p class="Code">&#160; &lt;/value__term&gt;</p>
+            <p class="Code">&#160; &lt;/children&gt;</p>
+            <p class="Code">&#160; &lt;/comparison__condition&gt;</p>
+            <p class="Code">&#160; &lt;/children&gt;</p>
+            <p class="Code">&#160; &lt;/boolean_condition&gt;</p>
+            <p class="Code">&#160; &lt;/children&gt;</p>
+            <p class="Code">&#160; &lt;/queryCondition&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;queryFields&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_type&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_login_name&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_full_name&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_email&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_is_active&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_user_internal_id&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_user_identifier&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_bu_internal_id&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_is_external&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_last_successful_login&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_blocked_until&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;query__field&gt;</p>
+            <p class="Code">&#160; &lt;fieldIdentifier&gt;acm_users_language_internal_id&lt;/fieldIdentifier&gt; </p>
+            <p class="Code">&#160; &lt;sortingField&gt;-1&lt;/sortingField&gt; </p>
+            <p class="Code">&#160; &lt;ascSort&gt;false&lt;/ascSort&gt; </p>
+            <p class="Code">&#160; &lt;/query__field&gt;</p>
+            <p class="Code">&#160; &lt;/queryFields&gt;</p>
+            <p class="Code">&#160; &lt;/query&gt;</p>
+            <p class="Code">&#160; &lt;/userQueryXml&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:variable&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code"> HTML DEFINITION </p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;xsl:template match="/"&gt;</p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;head&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code">JavaScript API for calling Widget on page load</p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code">&#160; &lt;script language="javascript"&gt;function loadAlertsWidget() { RCMAPI.WidgetsManager.getWidgetById('w1').draw(); } window.attachEvent('onload', loadAlertsWidget);&lt;/script&gt; </p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code">XSL API for loading Records Widget and calling optional params</p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code">&#160; &lt;xsl:value-of select="actimize:createWidget('w1', 'div1', 'acm_users', $optionalParams)" disable-output-escaping="yes" /&gt; </p>
+            <p class="Code">&#160; &lt;/head&gt;</p>
+            <p class="Code">- &lt;!-- </p>
+            <p class="Code">HTML setting DIV to hold the Widget</p>
+            <p class="Code">&#160; --&gt; </p>
+            <p class="Code"><a href="../../../../../../../../../../Documents and Settings/ronens/Local Settings/Temporary Internet Files/Content.Outlook/ZTXO6FHH/ch_users (2).xsl">-</a> &lt;body&gt;</p>
+            <p class="Code">&#160; &lt;div id="div1" style="border: 2px solid blue; width: 100%; height: 100%" /&gt; </p>
+            <p class="Code">&#160; &lt;/body&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:template&gt;</p>
+            <p class="Code">&#160; &lt;/xsl:stylesheet&gt;</p>
+        </div>
+        <p class="Body">The value of the sortingField attribute determines the priority of the sorting order for the related field (‘fieldIdentifier’). A value of 1 is the highest priority, followed by 2, and then 3, etc. If a value is zero (0) or lower then sorting is not done by that field.</p>
+        <p class="Body">The value of the ascSort attribute determines if the field is ascending or descending. True is for an ascending order and False is for a descending order.</p>
+        <div class="Note">
+            <p class="Body">Fields sorting is only affected by what you configure in the XSL files. Sorting definitions in the RCM Designer do not affect the Records widget.</p>
+            <p class="Body">All XSL files should be inserted in the app_gui_items folder (the path can be changed in the config parameter actimize.alerts.pathToXSL). See also <MadCap:xref href="Records Widget APIs.htm#_Ref422157088" class="ParaTextOnly">Records Widget APIs</MadCap:xref>. </p>
+        </div>
+    </body>
+</html>

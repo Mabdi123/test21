@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Sample.fltoc"
+  PatchHeadingLevels="true"
+  Medium="pdf"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.Hide or Default.ScreenOnly] "
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Variables>
+    <Variable
+      Name="Actimize/GuideName">User's Guide</Variable>
+    <Variable
+      Name="Actimize/HelpName">SAMPLE HELP</Variable>
+    <Variable
+      Name="Actimize/ProductCode">SAMPLE</Variable>
+  </Variables>
+  <PDF
+    CollapsedBookmarks="true"
+    TitleBar="DocumentTitle"
+    PageLayout="OneColumn"
+    InitialMagnification="100"
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Author="NICE Actimize"
+    Title="[%=Actimize.CompanyName%] [%=Actimize.SolutionName%] [%=Actimize.VersionNumber%] [%=Actimize.GuideName%]" />
+</CatapultTarget>

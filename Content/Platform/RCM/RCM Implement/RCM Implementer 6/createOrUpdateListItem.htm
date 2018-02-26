@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234233"></a>createOrUpdateListItem</h1>
+        <p class="Code">RCMAPI.tuning.createOrUpdateListItem(list_identifier, item, applyToProduction);;</p>
+        <p class="Body">Parameters:</p>
+        <ul>
+            <li><span class="Strong">List_id</span> – The list identifier.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Item</span> – A JavaScript object representing the item.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">applyToProduction</span> – Optional Boolean parameter.&#160; When true, the item is applied to production. When false, the item is created or updated as a test item. The default value is false.</li>
+        </ul>
+        <p class="Body">Example:</p>
+        <div>
+            <p class="Code">var item = {</p>
+            <p class="Code">&#160;&#160;&#160; key_column1: "my key",</p>
+            <p class="Code">&#160;&#160;&#160; key_column2: "my second key",</p>
+            <p class="Code">&#160;&#160;&#160; value_column: "my test value",</p>
+            <p class="Code">};</p>
+            <p class="Code">// create or update a test item</p>
+            <p class="Code">RCMAPI.tuning.createOrUpdateListItem ("list1", item);</p>
+            <p class="Code">// create or update a test item</p>
+            <p class="Code">RCMAPI.tuning.createOrUpdateListItem ("list1", item, false);</p>
+            <p class="Code">// apply the item to production</p>
+            <p class="Code">RCMAPI.tuning.createOrUpdateListItem ("list1", item, true);</p>
+        </div>
+        <p class="Body">The item object has an exact representation of an object. Its members are exactly the fields that are defined in RCM meta-data. If the field identifiers contain special characters, then you need to create the item using a different JavaScript syntax:</p>
+        <div>
+            <p class="Code">var item = {}</p>
+            <p class="Code">item["key_column1"] = "my key";</p>
+            <p class="Code">item["key_column2"] = "my second key",</p>
+            <p class="Code">item["value_column"]: "my test value";</p>
+            <p class="Code">RCMAPI.tuning.createOrUpdateListItem ("list1", item);</p>
+        </div>
+        <p class="Body">You do not need to provide the test identifier or the tenant identifier as they are derived automatically from the context.</p><span class="Strong">Return value:</span>
+        <p class="Body">This method returns a JavaScript promise object, which allows registering three types of callbacks: success, error and completion.</p>
+        <p class="Body">Example:</p>
+        <div>
+            <p class="Code">var p = RCMAPI.tuning.createOrUpdateListItem("list1", item, true);</p>
+            <p class="Code">p.then(function () {</p>
+            <p class="Code">&#160;&#160;&#160; alert ("applied successfully");</p>
+            <p class="Code">}).fail(function(error) {</p>
+            <p class="Code">&#160;&#160;&#160; alert ("failed with error: " + error);</p>
+            <p class="Code">});</p>
+        </div>
+    </body>
+</html>

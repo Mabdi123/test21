@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234265"></a>A sample XSL page structure</h1>
+        <p class="Body">The following is a sample XSL.</p>
+        <div>
+            <p class="Code">&lt;xsl:stylesheet version="1.0" </p>
+            <p class="Code">&#160;&#160;&#160; xmlns:xsl="http://www.w3.org/1999/XSL/Transform"</p>
+            <p class="Code">&#160;&#160;&#160; xmlns:actimize="com.actimize.infrastructure.util.XsltExtensionsFunctions"&gt;</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">&lt;!-- WIDGET PARAMS --&gt;</p>
+            <p class="Code">&lt;xsl:variable name="optionalParams"&gt;</p>
+            <p class="Code">...</p>
+            <p class="Code">&lt;/xsl:variable&gt;</p>
+            <p class="Code">&#160;</p>
+            <p class="Code">&lt;!-- HTML DEFINITION --&gt;</p>
+            <p class="Code">&lt;xsl:template match="/"&gt;</p>
+            <p class="Code">&lt;head&gt;</p>
+            <p class="Code">&lt;script language="javascript"&gt;</p>
+            <p class="Code">function drawWidget() {</p>
+            <p class="Code">RCMAPI.WidgetsManager.getWidgetById("w1").draw();</p>
+            <p class="Code">}</p>
+            <p class="Code">window.attachEvent('onload', drawWidget);</p>
+            <p class="Code">&lt;/script&gt;</p>
+            <p class="Code">&lt;xsl:value-of </p>
+            <p class="Code">select="actimize:createWidget('w1', 'widgetdiv1', 'pivot_accounts', $optionalParams)" disable-output-escaping="yes" /&gt;</p>
+            <p class="Code">&lt;/head&gt;</p>
+            <p class="Code">&lt;body&gt;</p>
+            <p class="Code">&lt;div id="widgetdiv1" style="width: 300px; height: 300px" /&gt;</p>
+            <p class="Code">&lt;/body&gt;</p>
+            <p class="Code">&lt;/xsl:template&gt;</p>
+            <p class="Code">&lt;/xsl:stylesheet&gt;</p>
+        </div>
+    </body>
+</html>

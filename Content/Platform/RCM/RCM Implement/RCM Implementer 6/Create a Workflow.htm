@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="727" MadCap:lastWidth="1025">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref468683065"></a><a name="_Toc500234025"></a>Create a Workflow</h1>
+        <p class="Body">The following enables you to create a new workflow or assign steps.</p>
+        <p class="Procedure">To create a new alert workflow:</p>
+        <ol start="1">
+            <li>Using the options within the General tab, provide a name for this workflow.</li>
+        </ol>
+        <ol start="2">
+            <li>Enter the alert workflow Identifier.</li>
+        </ol>
+        <ol start="3">
+            <li>Provide a description, if required.</li>
+        </ol>
+        <ol start="4">
+            <li>Select the checkbox to add a deadline to a workflow and enter the relevant options.</li>
+        </ol>
+        <p class="Body">See <MadCap:xref href="Workflow General Tab.htm#_Ref466367508" class="ParaTextOnly">Workflow General Tab</MadCap:xref> for the available configuration options.</p>
+        <div class="Note">
+            <p class="Body">When creating a deadline, verify the following:</p>
+            <p class="Body">The work item (alert) should belong to an alert type that has been associated with a workflow definition. Even though a deadline may be defined for a step, it will only apply to an alert in that step when the alert type is associated with the workflow. </p>
+            <p class="Body">For Send Email Notification:</p>
+            <ul>
+                <li>All the <span class="Strong">mail.smtp.</span> RCM configuration parameters must be defined.</li>
+            </ul>
+            <ul>
+                <li>The alert must have an owner. </li>
+            </ul>
+            <ul>
+                <li>The alert owner must have a defined email address.</li>
+            </ul>
+            <ul>
+                <li>The email automatically goes to the work item owner. If the owner does not have a valid email address or the alert does not have owner, it is mandatory to enter an address in the TO field.</li>
+            </ul>
+        </div>
+    </body>
+</html>

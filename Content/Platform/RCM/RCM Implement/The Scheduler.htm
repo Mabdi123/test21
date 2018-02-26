@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref398117886"></a><a name="_Toc500234415"></a>The Scheduler</h1>
+        <p class="Body">The RCM scheduler is also in charge of running jobs for indexing the Solr server.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/The Scheduler.png" style="visibility: visible;mso-wrap-style: square;width: 387px;height: 283px;" />
+        </p>
+        <p class="Body">You can view the Scheduler status for Solr indexing by doing the following:</p>
+        <ol start="1">
+            <li>Go to the Connections tab of admin.jsp and click on the Diagnostic action link</li>
+        </ol>
+        <ol start="2">
+            <li>A window opens. Scroll down in order to view the Scheduler’s current settings.&#160; </li>
+        </ol>
+        <p class="Body">Related Solr indexing parameters include the following:</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="Body">actimize.scheduler.enable</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="Body">Enables/Disable the RCM scheduler. When this parameter is set to false, the scheduler does not run at all. This affects both Solr indexing and RFI. Modifying this parameter requires restarting the RCM.</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">actimize.scheduler.threadPoolSize</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Defines the size of the thread pool used by the scheduler. Required to be between 5 and 40. Solr uses half of the pool size.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">actimize.globalSearch.indexing.jobInterval</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Defines how often, in minutes, the global search indexing job should run. Required to be between 1 minute and 1440 minutes (1day).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">actimize.globalSearch.indexing.jobSize</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Defines how many items can be indexed in one execution of the indexing job. This parameter affects only the time needed for each execution, not the memory used by the indexing job. Required to be between 1,000 and 10,000.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

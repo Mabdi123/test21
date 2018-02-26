@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="827" MadCap:lastWidth="724">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref396994674"></a><a name="_Toc500234183"></a>Report Module Table Description</h1>
+        <p class="Body">Following is a description of the table, within the RCM database, that is used for this customization, and the fields that you can adjust in order to change the display. All fields within the RCM Report module are defined in the RCM database table RCM_MD_UI_COLUMN_DEFINITION.</p>
+        <p class="Body">The following fields, within this table, should not be changed (that is, they must be left hard coded):</p>
+        <ul>
+            <li>GRID_DEFINITION_ID</li>
+        </ul>
+        <ul>
+            <li>DESCRIMINATOR</li>
+        </ul>
+        <ul>
+            <li>COLUMN_IDENTIFIER</li>
+        </ul>
+        <ul>
+            <li>The GRID_DEFINITION_ID and DESCRIMINATOR fields are used by Hibernate, and COLUMN_IDENTIFIER is an identifier used in the code.</li>
+        </ul>
+        <p class="Body">The user can change the following fields for each column within the RCM Report Module display:</p>
+        <ul>
+            <li>VISIBILITY</li>
+        </ul>
+        <ul>
+            <li>DISPLAY_NAME</li>
+        </ul>
+        <ul>
+            <li>DISPLAY_ORDER</li>
+        </ul>
+        <ul>
+            <li>SORTING_FIELD</li>
+        </ul>
+        <ul>
+            <li>IS_ASC_SORT</li>
+        </ul>
+        <p class="Body">It is possible to change any of the above fields. However, if a column is set to invisible (i.e. Visibility is set to 0), you do not have to change the rest of the configurable fields (since this column will not appear within the display).</p>
+        <p class="Body">Multiple sorting is not currently supported. Only the field with the minimal value is used for system's default sorting configuration. Therefore the sort direction is valuable only for the field with the minimal value.</p>
+    </body>
+</html>

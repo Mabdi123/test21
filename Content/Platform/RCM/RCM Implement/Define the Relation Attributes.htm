@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="1116" MadCap:lastWidth="999">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref351557258"></a><a name="_Ref351557262"></a><a name="_Ref351558442"></a><a name="_Ref351558449"></a><a name="_Ref396812959"></a><a name="_Toc500234092"></a>Define the Relation Attributes for the Alert Type</h1>
+        <p class="Body">This tab also enables you to define the child alert type for each relation type and configure the specific target field of the CWI. You can also define whether or not the consolidation is transient or standard.</p>
+        <p class="Body">Go to the <span class="Strong">Related Item Types</span> tab of the CWI Alert Type. Note that a CWI can have a parent CWI.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Relation Attributes.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Procedure">To add a related item type association:</p>
+        <ol start="1">
+            <li>Click the <span class="Strong">Add New Relation Type Association</span> <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Relation Attributes_1.png" style="width: 17px; height: 18px;" class="Icon" /> icon.</li>
+            <li>Select the relation type. The Case Items Relation is available for parent items that have the Case Items alert type category. The child object associated with the parent cannot have the Case Items alert type. The Case Items Relation type cannot be edited or deleted.</li>
+            <li>Select the child object for this association. In this configuration, the child object is the TWI or child CWI. Two alert types can be related by more than one relation. For example, a person can be related to an account as Owner, as Payee or as a Suspect.</li>
+            <li>Select whether or not to enable/disable audit propagation. When audit propagation is enabled, the history audit of the consolidation is logged in the CWI and the related standard TWI.</li>
+            <li>
+                <p>Select one of the following options from the Supports Consolidation field:</p>
+                <ol start="1">
+                    <li><span class="Strong">None</span> – The consolidation does not occur.</li>
+                    <li><span class="Strong">Standard</span> – The TWI is consolidated to a CWI, and the TWI is generated as a separate and viewable work item.</li>
+                </ol>
+            </li>
+            <li><span class="Strong">Transient</span> – The TWI is consolidated to a CWI, but the TWI is not generated as a separate and viewable work item. The following message is displayed when the user adds a manual work item that is defined as a Transient TWI: This option is not available for the Case Items Relation type.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Relation Attributes_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <div class="Note">
+            <p class="Body">If a TWI has a standard consolidation relation to one CWI and a second transient consolidation relation to another CWI, then the TWI will be created but it will not be related to its transient CWI. Any update of the TWI will not be updated in the transient CWI as they are no longer related.</p>
+        </div>
+    </body>
+</html>

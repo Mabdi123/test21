@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234130"></a>Parameters of the Optional Grouping Method</h1>
+        <p class="Body">The last three parameters of the API are optional and refer to a grouping method that uses a second DDQ and also assigns related work items of the work item that was returned in the initial DDQ.</p>
+        <p class="Body">When grouping is enabled the logic of the API changes and common values of the grouping ID are also regarded as one alert (work item).</p>
+        <p class="Body">The parameters are the following:</p>
+        <ul>
+            <li><span class="Strong">groupingMethodFieldIdentifier</span> – The identifier of the custom or built in field of the Work Item that was returned in the initial DDQ of the API.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">groupingMethodDDQIdentifier</span> – The identifier of a second DDQ that is used to search for groups. It is expected to search with a condition based on the value found in the field defined via the “Grouping field”.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">groupingMethodParamIdentifier</span> – A parameter identifier in the second DDQ in which the value of the 'groupingMethodFieldIdentifier' is placed and used.</li>
+        </ul>
+        <p class="ConvertNote">NOTES:</p>
+        <ul>
+            <li>All three parameters are mandatory when one of them is added to a DDQ.</li>
+        </ul>
+        <ul>
+            <li>Grouping assignments are limited by the configuration parameter actimize.alerts.getNext.maxGroupSize that has a default value of 50. If the group reaches this limit, then group is assigned and a warning message appears stating that not all the work items in the group were assigned.</li>
+        </ul>
+        <ul>
+            <li>In the following examples of a DDQ that includes grouping, the grouping portion is shaded in grey and 'p14' is used as the grouping field. 'param1' is a parameter that was defined in the RCM Designer and is also the parameter in the GUI item 'groupingMethodParamIdentifier'.</li>
+        </ul>
+        <div>
+            <p class="Code">select a.item_id</p>
+            <p class="Code">from v_acm_items a</p>
+            <p class="Code">&#160;&#160; left join v_acm_alert_custom_fields b on a.custom_attr_join_id = b.custom_field_join_id</p>
+            <p class="Code">where</p>
+            <p class="Code">&#160;&#160; a.owner_join_id is null</p>
+            <p class="Code">&#160;&#160; and {$permissions$alerts$a}</p>
+            <p class="Code">&#160;&#160; order by a.item_date desc</p>
+            <p class="Code">select a.item_id </p>
+            <p class="Code">from v_acm_items a </p>
+            <p class="Code">&#160;&#160;&#160; left join v_acm_alert_custom_fields b on a.custom_attr_join_id = b.custom_field_join_id </p>
+            <p class="Code">where</p>
+            <p class="Code">&#160;&#160;&#160; a.p14 = ‘param1’</p>
+            <p class="Code">&#160;&#160;&#160; and a.owner_join_id is null </p>
+            <p class="Code">&#160;&#160;&#160; and {$permissions$alerts$a}</p>
+        </div>
+        <p class="Body">The following is an example of script for the GUI item that corresponds to the SQL query:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Parameters of the Optional.png" style="visibility: visible;mso-wrap-style: square;width: 553px;height: 359px;" />
+        </p>
+        <p class="ConvertNote">NOTES:</p>
+        <p class="Body">The grouping DDQ MUST also properly handle filtering alerts as it does in the initial DDQ.</p>
+        <p class="Body">You cannot just have a DDQ that searches only by the grouping custom field. This type of search would return all types of work items that are not appropriate for assignment such as including Items that have already been assigned, lack the required user permissions, and even deleted work items.</p>
+        <p class="Body">Therefore, in addition to the grouping custom field, you must specify the desired “pool” of work items on which the DDQ is searching for the grouping field value.</p>
+    </body>
+</html>

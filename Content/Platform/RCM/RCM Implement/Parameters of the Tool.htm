@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Parameters of the Tool</h1>
+        <p class="Body">The workflow_asynch_execution_tool.bat (workflow_asynch_execution_tool.sh for Unix) accepts the following parameters:</p>
+        <ul>
+            <li><span class="Strong">acm_nodes</span> (required) – URL that specifies location of a single ACM application (http://acmhost:8080/acm) or location of several ACM nodes (in a cluster or load balanced environment) separated by a comma (http://acmnode1:8080/acm;http://acmnode2:8080/acm)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">user</span> (required) – User name</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">password</span> (required) – Password</li>
+        </ul>
+        <p class="Body">If you are running the tool in SSL (https) you are also required to pass these additional parameters:</p>
+        <p class="Body">For server side only authentication:</p>
+        <ul>
+            <li><span class="Strong">ks</span> – path to keystore file containing server certificate</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">kspassword</span> – password for keystore</li>
+        </ul>
+        <ul>
+            <li>For client side authentication:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ks</span> – path to keystore file containing client certificate</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">kspassword</span> – password for client keystore</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">ts</span> – path to client truststore file</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">tspassword</span> – password for client truststore</li>
+        </ul>
+        <p class="Body">Example for running the tool:</p>
+        <p class="Code">&gt;workflow_asynch_execution_tool.bat (workflow_asynch_execution_tool.sh for Unix) -acm_nodes=http://actimizetest:8081/actimize -user=dan -password=mypass</p>
+    </body>
+</html>

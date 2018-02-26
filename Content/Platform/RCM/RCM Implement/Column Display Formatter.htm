@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="10" MadCap:lastHeight="5053" MadCap:lastWidth="688">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref152649233"></a><a name="c_display_formatter"></a>Column Display Formatter</h1>
+        <p class="Body">The <span class="Strong">Column Display Formatter </span>is also available for Case Views, Transaction Views, and DART Views. It provides the following formatting options for the text:</p>
+        <p class="Body">&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/Default.css');" class="TableStyle-Default" cellspacing="0">
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Day of the week renderer</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">&#160;</p>
+                        <p class="Body">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Translated String</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">&#160;</p>
+                        <p class="Body">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">String</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">No formatter is applied to text.</p>
+                        <p class="Body">The text is interpreted as HTML code. For example, <br />&lt;font color=green&gt;plus&lt;/font&gt; is displayed as a green plus.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Boolean</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">&#160;</p>
+                        <p class="Body">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">HTML</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">HTML</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Alert Details</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The text is displayed as a link to the relevant Alert Details page. </p>
+                        <p class="Body">This feature can only be used in the Work Items (Alerts) module.</p>
+                        <p class="Body">For Investigation Views, the value of the key column is used as the target Alert ID</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Link</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The text is interpreted as a valid URL. For example, <a href="http://www">http://www</a>.actimize.com is displayed as the URL <a href="http://www.actimize.com">www.actimize.com</a></p>
+                        <p class="Body">Using $key and $value in Formatter string</p>
+                        <p class="Body">Examples:</p>
+                        <p class="Body">Formatter string: $value</p>
+                        <p class="Body">&#160;</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p class="TableHeading">Alert ID</p>
+                                    </th>
+                                    <th>
+                                        <p class="TableHeading">Data of Specific Cell</p>
+                                    </th>
+                                    <th>
+                                        <p class="TableHeading">Resulting link</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="Body">1</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body"><a href="http://www">http://www</a>.actimize.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">&lt;A href=”http://www. actimize.com”&gt;<a href="http://www">http://www</a>. Actimize.com&lt;/a&gt;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="Body">2</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body"><a href="http://www">http://www</a>.nice.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">&lt;A href=”http://www. nice.com”&gt;<a href="http://www">http://www</a>. Nice.com&lt;/a&gt;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Body">Formatter string: JavaScript: displayDetails($key, $value)</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p class="TableHeading">Alert ID</p>
+                                    </th>
+                                    <th>
+                                        <p class="TableHeading">Data of Specific Cell</p>
+                                    </th>
+                                    <th>
+                                        <p class="TableHeading">Resulting link</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="Body">1</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">30</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">A href=”JavaScript: displayDetails(1, 30)”&gt;30&lt;/a&gt;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="Body">2</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">40</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">&lt;A href=”JavaScript: displayDetails(2, 40)”&gt;40&lt;/a&gt;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Body">Formatter string: Javascript: alert(“Alert id=$key\ncell value=$value”) returns the following when Alert ID is 15 and value is 12:</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Column Display Formatter.png" style="visibility: visible;mso-wrap-style: square;width: 210px;height: 127px;" />
+                        </p>
+                        <p class="Body">See also <MadCap:xref href="Advanced Format String options.htm#_Ref238784098" class="ParaTextOnly">Advanced Format String options of Link Formatter</MadCap:xref>.</p>
+                        <p class="Body">Creates a link that opens the View Notes window.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Link to Notes</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Link to Notes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Email</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">The text is interpreted as a valid email address and is displayed as link to an email message for the specific address. For example sales@actimize.com is displayed as the email link <a href="mailto:sales@actimize.com">sales@actimize.com</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Number</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Formats the value based on the input mask that is entered in the Format String text box (input mask example: ###0,00).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Hidden zeroes</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Hides zero values and displays all other values as strings with no additional formatting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Date</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This formatter is relevant only for fields that display a date. In this selection, you must also enter the format string for the date (e.g., mm/dd/yyyy) in the <span class="Strong">Format String</span> field.<br />For example: Format string field input is mm/dd/yy displays the text 4/12/2004 as 04/12/04. Additional values include:</p>
+                        <p class="Body"><span class="Strong">A</span><span class="Strong">CM_date</span> – formats the date using the configuration parameter “actimize.common.dateDisplayFormat” (i.e., “12/31/2006”)</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Column Display Formatter_1.png" style="visibility: visible;mso-wrap-style: square;width: 220px;height: 19px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                        <p class="Body">ACM_time – formats the date using the configuration parameter “actimize.common.timeDisplayFormat” (i.e., “11:59 AM”)</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Column Display Formatter_2.png" style="visibility: visible;mso-wrap-style: square;width: 196px;height: 19px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                        <p class="Body">ACM_datetime – formats the date using both of the above in this order: &lt;DATE&gt;&lt;SPACE&gt;&lt;TIME&gt; (i.e., “12/31/2006 11:59 AM”)</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Column Display Formatter_3.png" style="visibility: visible;mso-wrap-style: square;width: 196px;height: 21px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                        <p class="Body">If no formatter data is supplied then configuration parameter date format is used (either date or datetime – depending on the field’s data type).</p>
+                        <p class="Body">If the formatter data contains one of the built in constants (acm_date, acm_time &amp; acm_datetime) then the appropriate format is used accordingly.</p>
+                        <p class="Body">If the formatter contains some other string then that string is used as the specific date format (for example: mm-dd-yyyy).</p>
+                        <p class="Body">If an incorrect value is entered in this field then the date is rendered to the MM/dd/yyyy format.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">User Local Date</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables you to set the time zone for the view according to the user’s local time zone. </p>
+                        <p class="Body"><span class="Strong">Format String</span> for <span class="Strong">User Local Date</span> is the same as the <span class="Strong">Date</span> option format (see above).</p>
+                        <p class="Body">For this configuration you must set the system time zone in the actimize.common.timeZone config parameter, and the user local time zone in the Administration module. For more information, refer to the <span class="Emphasis">RCM Reference Guide</span>. </p>
+                        <p class="Body">For LDAP users, the time zone can also be set using LDAP properties.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Icons</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">A number of special fields can be displayed as icons. For example, the Owned by me field can be displayed as <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Column Display Formatter_4.png" style="visibility: visible;mso-wrap-style: square;width: 14px;height: 17px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />. In order to display these special fields as icons, select the following:</p>
+                        <p class="Body">For Attachments select Attachments as the column display formatter. </p>
+                        <p class="Body">For case step field select Case Step – issue in order to display an image of the case step (Issue/Non-Issue/Undetermined).<br />Alternatively, select Case Step – state in order to display an image of the case of the step state (Open/Closed).</p>
+                        <p class="Body">For Priority field select Case Priority in order to display an image that is based on its priority’s value.</p>
+                        <p class="Body">For Step ID field select Step – issue as the column display formatter.</p>
+                        <p class="Body">For State field select Step – issue as the column display formatter.</p>
+                        <p class="Body">For Owned by me field select owner as the column display formatter.</p>
+                        <p class="Body">For Score field select Score in order to display an icon that is based on the score’s value.</p>
+                        <p class="Body">For Signoff field select Signoff in order to display an icon that displays the signoff step (Signed off, Not signed off).</p>
+                        <p class="Body">For Reviewed select Trade Reviewed in order to display an icon that indicates whether the trade is reviewed or not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">XSL</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Generates a pop-up window with alert details that are enriched via an XML file. The format is based on a specific XSL field.</p>
+                        <p class="Body">Enter the following parameters in the Format String field: &lt;xsl_file&gt; (relative to actimize.alerts.pathToXSL config param) ,&lt;width&gt;(optional) ,&lt;height&gt; (optional)</p>
+                        <p class="Body">Example: BX.XSL,200,200</p>
+                        <p class="Body">XSLT rendering allows the developer to add a custom alert pop-up window that is a subset of the alert details XML as follows:</p>
+                        <p class="Body">1.In RCM Designer, create an Alert View.</p>
+                        <p class="Body">2.In the fields tab select any field and select XSLT as the "Column Display Formatter".</p>
+                        <p class="Body">3.In the “Format String”, enter the rendering tool parameters:</p>
+                        <p class="Body">&lt;XSL-FILE-NAME&gt;[,px-width[,px-height]]</p>
+                        <p class="Body">where &lt;XSL-FILE-NAME&gt; is the XSL file path relative to the “actimize.alerts.pathToXSL” configuration parameter. The px-width and px-height parameters are optional. You also have the option to only enter the px-width parameter as the px-height parameter is calculated automatically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Jump to Alerts</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Displays any field with a link to related alerts, and resembles the JumpToDynamicAlerts JavaScript function.</p>
+                        <p class="Body">Format String textbox should include the following parameters: &lt;DrillDownQueryIdentifier&gt;,[&lt; drillDownQueryParameter(s)&gt;],&lt;list | details&gt;,&lt;alertsViewIdentifier&gt;,&lt;free text view name&gt;</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p class="TableHeading">Parameter</p>
+                                    </th>
+                                    <th>
+                                        <p class="TableHeading">Comments</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="Body">&lt;DrillDownQueryIdentifier&gt;</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">A drill down query identifier that should be in the following format "select alert_id from alerts [where ...]"</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="Body">&lt;drillDownQueryParameters&gt;</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">An ampersand delimited list of custom field identifiers (not common fields) that are matched respectively with the drill down query parameters (or empty if the drill-down query has no parameters).</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="Body">&lt;list|details&gt;</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">Displays the results in an Alert list or in an Alert details mode</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="Body">&lt;alertsViewIdentifier&gt;</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">Any valid system or user defined Alert View identifier. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="Body">&lt;free text view name&gt;</p>
+                                    </td>
+                                    <td>
+                                        <p class="Body">A custom title of the alert list view</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Body">Example of input for a query named accountAlertsQuery with one parameter, and a transaction custom field with the identifier accountNumber:</p>
+                        <p class="Body">accountAlertsQuery, accountNumber,list,allAlerts,Account Alerts</p>
+                        <p class="Body">Example 1:</p>
+                        <p class="Body">DDQ: <span class="Strong">getAlertsByDateRange(fromDate, toDate)</span></p>
+                        <p class="Body">Identifiers of the custom fields that the DDQ parameter values will be taken from (respectively): <span class="Strong">cdFromDate, cdToDate</span></p>
+                        <p class="Body">Display mode: <span class="Strong">list</span></p>
+                        <p class="Body">View Identifier: <span class="Strong">allAlerts</span></p>
+                        <p class="Body">Custom view name: <span class="Strong">Account Alerts</span></p>
+                        <p class="Body">Format string structure: <span class="Strong">getAlertsByDateRange,cdFromDate&amp;cdToDate,list,allAlerts,Account Alerts</span></p>
+                        <p class="Body">Example 2:</p>
+                        <p class="Body">DDQ: <span class="Strong">getFirstAlert()</span></p>
+                        <p class="Body">Display mode: <span class="Strong">details</span></p>
+                        <p class="Body">View Identifier: <span class="Strong">allAlerts</span></p>
+                        <p class="Body">Custom view name: <span class="Strong">Account Alerts</span></p>
+                        <p class="Body">Format string structure: <span class="Strong">getFirstAlert,,details,allAlerts,Account Alerts</span></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Trade Alerts</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This option is only available for Transaction views and only for fields that are associated with icons. </p>
+                        <p class="Body">For example, the field no. of alerts is associated with the <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Column Display Formatter_5.png" style="visibility: visible;mso-wrap-style: square;width: 15px;height: 20px;" /> icon, and it is displayed in the RCM UI when Trade Alerts is selected as the Display Formatter.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Blotter Alerts</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Displays an image indicating whether or not the Blotter has related alerts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Blotter Trades Link</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Formats a Blotter identifier string value into a link that opens the trades (transactions) window.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Case Priority</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">This option is available for case items only.</p>
+                        <p class="Body">Adds an icon to the priority field that is based on its priority value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Translated String</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">See <MadCap:xref href="Format Custom Field Values.htm#_Ref340586365" class="ParaTextOnly">Format Custom Field Values for Translation</MadCap:xref>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

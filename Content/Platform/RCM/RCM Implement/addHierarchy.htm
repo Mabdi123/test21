@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234634"></a>addHierarchy</h1>
+        <p class="Code">ACMResult addHierarchy(in BusinessHierarchy businessHierarchy,<br />in BusinessUnit[] newBusinessUnitList,<br />in BusinessUnit[] updatedBusinessUnitList,<br />out int businessHierarchyId,<br />out int[] newBusinessUnitIdList)</p>
+        <p class="Body"><span class="Emphasis">Description</span><span class="Emphasis">: </span>This method accepts full data for a business hierarchy and registers it in the RCM repository.</p>
+        <p class="Body">IN</p>
+        <ul>
+            <li><span class="Strong">businessHierarchy</span> – Description of the new hierarchy. Note that references to new nodes should be by their unique negative ID.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">newBusinessUnitList</span> – New business units that will be part of this hierarchy.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">updatedBusinessUnitList</span> – Existing business units that will be part of this hierarchy.</li>
+        </ul>
+        <p class="Body">OUT</p>
+        <ul>
+            <li><span class="Strong">businessHierarchyId</span> – ID of the created hierarchy for use with other APIs.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">newBusinessUnitIdList</span> – IDs of all newly created business units ordered as the “newBusinessUnitList” parameter.</li>
+        </ul>
+        <p>NOTE:</p>
+        <p>Internal IDs should not be stored as they are not portable between environments. Refer to <MadCap:xref href="IDs and Identifiers.htm#_Ref145653193" class="ParaTextOnly">RCM uses two types of fields when identifying objects:</MadCap:xref>, page <MadCap:xref href="IDs and Identifiers.htm#_Ref145653194" class="PageNumberOnly">1</MadCap:xref>.</p>
+    </body>
+</html>

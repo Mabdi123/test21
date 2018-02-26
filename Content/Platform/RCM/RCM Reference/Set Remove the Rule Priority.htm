@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="600" MadCap:lastWidth="1220">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref205526445"></a><a name="_Toc489949683"></a>Set/Remove the Rule Priority</h1>
+        <p class="Body">This option enables you to define when the rule is executed in relation to the other rules. When priority rules are triggered, they override any other action regardless of the action’s severity. For example, if a rule stipulates that transactions performed by employees on a white-list should be passed (e.g., action = PASS TRANSACTION), then such transactions will pass even if some other rule recommends blocking the same transaction. A specific rule may be required to be processed before all other rules. Therefore it should be defined to be rule with order number 1.</p>
+        <p class="Procedure">To set a priority to a rule:</p>
+        <ol start="1">
+            <li>Select the rule that you want to prioritize·</li>
+        </ol>
+        <ol start="2">
+            <li>Select the rule and then in the <span class="Strong">More actions</span> drop-down menu click the <span class="Strong">Priority</span> option. The number 1 is now added to the Order column for that rule. </li>
+            <li>To prioritize the next rule, repeat the previous statuses. The number 2 is now added to the <span class="Strong">Order</span> column for that rule.</li>
+        </ol>
+        <div class="Note">
+            <p class="Body">All rules that are not prioritized are processed after the prioritized rules.</p>
+        </div>
+        <p class="Procedure">To remove the rule’s order number:</p>
+        <ol start="1">
+            <li>Select the rule that you no longer want to prioritize·</li>
+        </ol>
+        <ol start="2">
+            <li>Select the rule and then in the <span class="Strong">More actions</span> drop-down menu click the <span class="Strong">Non priority</span> option.</li>
+            <li>The order number is now removed from the <span class="Strong">Order</span> column of that rule.</li>
+        </ol>
+    </body>
+</html>

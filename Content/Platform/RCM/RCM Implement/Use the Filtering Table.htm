@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="3493" MadCap:lastWidth="1038">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Use the Filtering Table</h1>
+        <p class="Body">The filtering table enables you to filter the reasons.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The filtering table includes the following columns:</p>
+        <ul>
+            <li><span class="Strong">Field</span> – The reasons list view field.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Filter Type</span> – The type of the filter:&#160; </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">User Defined</span> – May be selected for all view fields.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Alert Type Identifier</span> – May be selected only for view fields of the String data type.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Alert BU Identifier</span> – May be selected only for view fields of the String data type.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">User BU Identifier</span> – May be selected only for view fields of the String data type</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Tenant Identifier</span> – May be selected only for view fields of the String data type.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">User Attribute</span> – May be selected for all view fields.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Filter</span> – The filter value for ‘User Defined’ or ‘User Attribute’ filter types. The filter is created by combining all the conditions and using an “AND” operator between them. This filter definition is used in the RCM’s change step window, exposing reasons according to its conditions. Each alert may have one or more reasons associated to it which may be added or removed throughout the alert lifecycle.</li>
+        </ul>
+        <p class="Body">The types of filters include the following: </p>
+        <ul>
+            <li><span class="Strong">User Defined</span> – Enables a user defined filter based on the field data type. Once this type is selected, the filter column is enabled and exposes the user to an editor for filter definition according to the view field data type. If you are adding a filter for a view field of the type String, then the sub-condition for this entry is created by using the OR operator between the string values.<p class="Body">For example, in the following filtering definition, the filter includes a given entry of the list only if the field value is ‘Cybercrime’ OR ‘Deposit’.</p><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p><p class="Body">If you are adding a filter for a view field of the type DateTime, then the range specified is relative to the current date. For example:</p><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p><p class="Body">In this filtering definition, the filter includes a given entry of the list only if its field value is between 3 to 9 days old.</p><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_3.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Alert Type Identifier</span> – The filter includes a given entry of the list only if its field value equals to the current Alert Type Identifier. The current alert type is the type of the alert to which the RCM user changes the step.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Alert BU Identifier</span> – The filter includes a given entry of the list only if its field value equals to the current Alert BU Identifier.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">User BU Identifier</span> – The filter includes a given entry of the list only if its field value equals to the logged in user’s BU identifier.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Tenant Identifier</span> – The filter includes a given entry of the list only if its field value equals to the logged in user’s tenant identifier.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">User Attribute</span> – The filter includes a given entry of the list only if its field value equals to the selected user attribute. The list of user defined attributes is set according to the logged in user. The exposed user attributes in the Filter column are only those with the same data type as the field data type. The user defined filter may also include the following special values in a string view field filter:</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">${current_user_bu_identifier}</span> – Equivalent to User BU Identifier</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">${alert_type_identifier}</span> – Equivalent to User BU Identifier</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">${alert_bu_identifier}</span> – Equivalent to Alert BU Identifier</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">${tenant_identifier}</span> – Equivalent to Tenant Identifier</li>
+        </ul>
+        <p><span class="Strong">Example</span>
+        </p>
+        <p class="Body">A reasons list (‘Fraud Reasons’) containing fraud related reasons is defined. The list contains a number of fraud reasons from various fraud types (Remote banking &amp; Commercial banking, Cybercrime, Card, Deposit, etc.):</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_4.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">For a specific workflow transition (Ready<span style="font-family: Wingdings;">à</span>In Process), the following reasons filtering may be defined:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_5.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">According to this definition the reasons entries that are available for the RCM user are only those that meet the following conditions:</p>
+        <ul>
+            <li>Alert Type field value equals the current alert type identifier.</li>
+        </ul>
+        <ul>
+            <li>Priority field value is set to 5 or higher.</li>
+        </ul>
+        <ul>
+            <li>Category (fraud type) field value is set to Cybercrime or Deposit.</li>
+        </ul>
+        <p class="Body">The logged in user is initiating a step change from Ready to In Process to an alert of type with identifier FF_XXX. The entries that meet the filter conditions are marked in green:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_6.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The entries are displayed in the change step window:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Use the Filtering Table_7.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+    </body>
+</html>

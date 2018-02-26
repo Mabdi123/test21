@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Methods for TWI Fields with Null Values</h1>
+        <p class="Body">These methods are only relevant in scenarios where the TWI fields can be null. This implies that the TWI fields are not mandatory and are set to populate the CWI fields. The methods were added to avoid occurrences of empty fields or ‘null’ appearing as a string, which may affect future data or related processes. Use these methods when you define an expression, such as in the Source Field/Expression column or Condition Expression column. There are three methods/expressions you can use:</p>
+        <ol start="1">
+            <li><span class="Strong">nvl</span> – Example: <span class="Strong">nvl (${a}, '') + 'b'</span> (nvl(${score}, '') + ${bunit_identifier})</li>
+        </ol>
+        <p class="Body">If the score field is null then replace it with '' (meaning that the value will be left out without any spaces and only the bunit_identifier will be shown).</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Methods for TWI Fields with.png" style="visibility: visible;mso-wrap-style: square;width: 480px;height: 195px;" />
+        </p>
+        <ol start="2">
+            <li><span class="Strong">Elvis</span><span class="Strong"> operator</span> – Example: <span class="Strong">${a}?:'' + 'b'</span> (${score}?:'' +${bunit_identifier} )</li>
+        </ol>
+        <p class="Body">If the score field is null then replace it with '' (meaning that the value will be left out without any spaces and only the bunit_identifier will be shown).</p>
+        <p class="Body">Note that if you want to place the 'b' value before the 'a' field then you must use parentheses (for example, ('b' +${a}?'')).</p>
+        <ol start="3">
+            <li><span class="Strong">Concat</span> – Example: concat (${a},'b') (concat (${score},${bunit_identifier} )</li>
+        </ol>
+        <p class="Body">If the score field is null, leave only the bunit_identifier.</p>
+    </body>
+</html>

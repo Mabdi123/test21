@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="1161" MadCap:lastWidth="711">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234066"></a>Data Mask Expression</h1>
+        <p class="Body">This expression defines how selected custom fields are masked when they are displayed. </p><span class="Strong">Syntax</span>
+        <p class="Body">The expression syntax may include the following elements:</p>
+        <ul>
+            <li>Boolean, Numeric and String values such as true, false, 'NA', 1111 etc.</li>
+        </ul>
+        <ul>
+            <li>Value - the value is a String property that stores the current custom field value.</li>
+        </ul>
+        <ul>
+            <li>translate (resource string identifier) - returns the translation of the given custom field.</li>
+        </ul>
+        <ul>
+            <li>getValueWords(String regularExpression) - splits the value according to the given regular expression.</li>
+        </ul>
+        <ul>
+            <li>getWord(String regularExpression, int index) - returns the word number X (according to index) after splitting the value. If there is no word of the given index, returns null</li>
+        </ul>
+        <ul>
+            <li>Any String Java class methods.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">If you want to display a blank value, enter " ".</p>
+        </div>
+        <p class="Body"><span class="Strong">Evaluation</span>
+        </p>
+        <p class="Body">
+            <p>If the expression contains the 'value' property, the current custom field is evaluated as a string.</p>
+        </p>
+        <p class="Body">If the custom field is of type Date or Date Time, then value is in the format: 'yyyy-MM-dd HH:mm:ss'.</p>
+        <div class="Example">
+            <ul>
+                <li>The following example demonstrates a masking expression for getting initials of a name:<p class="Code">value.charAt(0) + (getValueWords(' ').length &gt; 1 ? '.' + getValueWords(' ')[1].charAt(0) : '') + (getWord(' ', 2)?.charAt(0)?:'')</p></li>
+            </ul>
+            <ul>
+                <li>Getting initials using regular expression:</li>
+            </ul>
+            <p class="Code">value.replaceAll('\b(.).*?\b\s?', '$1.')</p>
+            <ul>
+                <li>Showing translation of one of the sensitive data translations:<p class="Code">translate('general.sensitiveData.maskedValue')</p></li>
+            </ul>
+            <ul>
+                <li>Display XXX when the user does not have permission to view the field:<p class="Code">XXX</p></li>
+            </ul>
+            <ul>
+                <li>Showing the 4 last digits of a number (or write a string of digits):<p class="Code">value.length() &gt; 4 ? value.substring(value.length()-4, value.length()) : value</p></li>
+            </ul>
+        </div>
+    </body>
+</html>

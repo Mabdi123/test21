@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="3155" MadCap:lastWidth="1051">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref396809494"></a><a name="_Toc500234061"></a>Add VTL Code in the Relevant Parent Form</h1>
+        <p class="Body">For more information on adding Entity related VTL code to a form, refer to the <span class="Emphasis">RCM</span><span class="Emphasis"> Forms Implementation Guide</span>. The following is an example for a <span class="Strong">Person</span> form that is the custom layout form for the <span class="Strong">Person</span> Alert Type (pertinent part of example is highlighted in yellow). </p>
+        <div>
+            <p class="Code">&lt;script language=javascript&gt;</p>
+            <p class="Code">resizeManualAlertDialog(640,480);</p>
+            <p class="Code">&lt;/script&gt;</p>
+            <p class="Code">&lt;TABLE style="table-layout:fixed" cellspacing=0 cellpadding=0&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="15" width="315px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="4" width="84px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;b&gt;$acmForms.getFieldCaption("First name"):&lt;/b&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="9" width="189px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;input type="text" style="width:189px; height:20px; " $acmForms.bindText("First name") /&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="15" width="315px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="4" width="84px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;b&gt;$acmForms.getFieldCaption("Last name"):&lt;/b&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="9" width="189px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;input type="text" style="width:189px; height:20px; " $acmForms.bindText("Last name") /&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="15" width="315px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="4" width="84px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;b&gt;$acmForms.getFieldCaption("Age"):&lt;/b&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="4" width="84px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;input type="text" style="width:84px; height:20px; " $acmForms.bindText("Age") /&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="15" width="315px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="5" width="105px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;b&gt;$acmForms.getFieldCaption("Gender"):&lt;/b&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="5" width="105px" style="text-overflow: ellipsis; overflow: hidden;"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;select style="width:105px; height:21px; " $acmForms.bindSelect("Gender")&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $acmForms.getValueListOptions("Gender", "genders")</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/select&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="15" width="315px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;TR height="21px"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="4" width="84px" style="text-overflow: ellipsis; overflow: hidden;"&gt;&lt;b&gt;Subordinates:&lt;/b&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD width="21px"&gt;&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;TD colspan="9" width="189px" style="text-overflow: ellipsis; overflow: hidden;"&gt;$acmForms.relationsPicker("boss-of", "person")&lt;/TD&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/TR&gt;</p>
+            <p class="Code">&lt;/TABLE&gt;</p>
+        </div>
+        <p class="Body">After adding the relevant code to the form, you must select the form as the custom layout form of the parent work item (Alert) Type.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Add VTL Code in the Relevant.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Note that child work items may also be implemented by using custom layout forms.</p>
+        <p class="Body">&#160;</p>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

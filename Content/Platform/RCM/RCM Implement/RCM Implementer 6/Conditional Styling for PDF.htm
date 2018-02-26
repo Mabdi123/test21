@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Conditional Styling for PDF Output</h1>
+        <p class="Body">This feature extends conditional styling support for PDF output. In addition, it also enables defining unique conditional styling for PDF that is different from the displayed (HTML) conditional styling.</p>
+        <p class="SubHeading">HTML Tags Automatically Converted to PDF</p>
+        <p class="Body">The following HTML tags are supported in the PDF output:</p>
+        <ul>
+            <li>p, br</li>
+        </ul>
+        <ul>
+            <li>b, i, u</li>
+        </ul>
+        <ul>
+            <li>strong, em</li>
+        </ul>
+        <ul>
+            <li>table, tbody, tfoot, thead, tr, td</li>
+        </ul>
+        <ul>
+            <li>span</li>
+        </ul>
+        <ul>
+            <li>Span with tooltip. For example:</li>
+        </ul>
+        <p class="Code">&lt;span title="some tooltip"&gt;hello&lt;/span&gt;</p>
+        <p class="Body">Expected PDF result: the textual contents of the span (tooltip value is ignored).</p>
+        <ul>
+            <li>Img tags with src, alt &amp; title attributes. For example:</li>
+        </ul>
+        <p class="Code">&lt;img src="app_gui_items\TC\images\icon.png" alt="my icon" title=”some title” /&gt;</p>
+        <p class="Body">Expected PDF result: img tag ignored.</p>
+        <ul>
+            <li>Div with style attributes – width and height. For example:</li>
+        </ul>
+        <p class="Code">&lt;div style="width:100%;height:100%;" title=""&gt;&lt;/div&gt;</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The conversion mechanism is case sensitive. Only lower case tag names are treated.&#160; Unsupported tags (including upper case tags that are currently unsupported) are ignored (i.e., the textual content is displayed as if the containing tag itself was not there). Table tag without a tbody component causes the rendering to fail. Unsupported attribute values have no effect over the result and are ignored. For example: border=”4” on table tag. <br />Secondary layouts are supported.</p>
+        <p class="SubHeading">Enable the Feature Rendering Engine</p>
+        <p class="Body">The Boolean parameter actimize.pdf.supportConditionalStylingForPdf determines whether or not conditional styling is supported during export to PDF. When set to false, conditional styling definitions are ignored on the PDF output and instead the original rendered value of each cell is displayed.</p>
+        <p class="SubHeading">Unique Conditional Styling for PDF Output</p>
+        <p class="Body">You have the option to define two separate sections in the XSL: one for HTML display and one for PDF output. The Boolean value ‘forPdf’ indicates whether the current processing is part of the PDF generation or the regular HTML output. </p>
+        <p class="Body">Example of ‘forPdf’ used in the conditional styling XSL. Notice that the defined cell color has two different syntaxes (one color definition for HTML and another color definition for XSL-FO): </p>
+        <div>
+            <p class="Code">&lt;xsl:choose&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;xsl:when test="fields/@forPdf = 'true'"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;fo:block color="#ff0000"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;xsl:value-of select="fields/field[@identifier='cellValue']/text()"/&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/fo:block&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/xsl:when&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;xsl:otherwise&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;font color="#ff0000"&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;xsl:value-of select="fields/field[@identifier='cellValue']/text()"/&gt;</p>
+            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/font&gt;</p>
+            <p class="Code">&#160;&#160;&#160; &lt;/xsl:otherwise&gt;</p>
+            <p class="Code">&lt;/xsl:choose&gt;</p>
+        </div>
+    </body>
+</html>

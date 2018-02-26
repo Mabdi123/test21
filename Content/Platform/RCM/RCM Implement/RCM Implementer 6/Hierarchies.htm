@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500233993"></a>Hierarchies</h1>
+        <p class="Body">Each organization is mapped according to at least one Business Unit Hierarchy. This hierarchy can reflect the breakdown of the organization in terms of Headquarters or Branch offices, or in terms of divisions, departments etc. There may be more than one hierarchy associated with the company. For example one hierarchy may reflect the functional structure of the company (e.g., Brokerage Compliance Dept., AML Dept., etc.) while another may reflect the regional organization of the company. </p>
+        <p class="Body">Following are examples of two different types of hierarchies that could be defined for the same organization:</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Hierarchies.png" style="width: 576px;height: 317px;" />
+        </p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Hierarchies_1.png" style="width: 576px;height: 393px;" />
+        </p>
+        <p class="Body">The Business Unit Hierarchies, which you design within the RCM Designer, enable the system to distribute alerts and reports to the Risk Case Manager, filtered according to the relevant unit with which the information is associated. </p>
+        <p class="Body">Similarly, Administrators assign permissions according to Business Units. Since the same user may perform different roles for different Business Units (e.g., a person may perform the role of Compliance Officer for all of the USA, but may perform the role of Senior Compliance Officer only for the NY Brokerage Compliance Branch of your organization), permissions are assigned according to roles <span class="Emphasis">per business unit</span>. (For a detailed description of assigning permissions to users, refer to your <span class="Emphasis">RCM</span><span class="Emphasis"> Reference Guide</span><span class="Emphasis">.</span>) </p>
+        <p class="Body">By defining different hierarchies, RCM users can select the hierarchy that best suits the type of assignment or the type of report that they require. </p>
+        <p class="Body">For example, with the above sample hierarchies, it would be possible to distribute an administrative report that was relevant for all of the USA (regardless of the type of functions that are performed by the business units) by selecting the <span class="Strong">Geographic hierarchy </span><span class="Strong" style="font-family: Wingdings;">à</span><span class="Strong"> the USA Business Unit</span> and then selecting an option to <span class="Strong">Apply to all Descendants</span>. In this way, you can distribute this report to all units within the USA without having to select each of the US business units individually.</p>
+        <p class="Body">If, however, you have a report that is relevant for all Brokerage Compliance Officers (regardless of region) then it would be easier to select the <span class="Strong">Functional Hierarchy </span><span class="Strong" style="font-family: Wingdings;">à</span><span class="Strong"> Compliance HQ</span> Business Unit, and then select <span class="Strong">Apply to all Descendants</span>.</p>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName"
+    EvaluatedDefinition="Actimize">Actimize</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Sample">Sample</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="User's Guide">User's Guide</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="RCM">RCM</Variable>
+  <Variable
+    Name="VersionNumber"
+    Comment=""
+    EvaluatedDefinition="2.6.0">2.6.0</Variable>
+  <Variable
+    Name="ReleaseDate"
+    Comment=""
+    EvaluatedDefinition="January 1, 2018">January 1, 2018</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Implementer's Guide">Implementer's Guide</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Getting Started Guide">Getting Started Guide</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Reference Guide">Reference Guide</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Installation Guide">Installation Guide</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="Essentials">Essentials</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="AML-CTR">AML-CTR</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="AML-WLF">AML-WLF</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="AML-SAM">AML-SAM</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="AML-CDD">AML-CDD</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="ABC">ABC</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="RCM HELP">RCM HELP</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="ABC HELP">ABC HELP</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="AML CDD HELP">AML CDD HELP</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="ESSENTIALS AML HELP">ESSENTIALS AML HELP</Variable>
+  <Variable
+    Name="DocumentVersion"
+    Comment=""
+    EvaluatedDefinition="DocVer">DocVer</Variable>
+  <Variable
+    Name="CatalogNumber"
+    Comment=""
+    EvaluatedDefinition="CatNum">CatNum</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Risk Case Manager (RCM)">Risk Case Manager (RCM)</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Customer Due Diligence (CDD)">Customer Due Diligence (CDD)</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="AML-Watch List Filtering (WLF)">AML-Watch List Filtering (WLF)</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Market Surveillance Enterprise (MSE)">Market Surveillance Enterprise (MSE)</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="FMC MSE HELP">FMC MSE HELP</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="FMC MSE">FMC MSE</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Analytics Guide">Analytics Guide</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="FMC MSC HELP">FMC MSC HELP</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="FMC Markets Surveillance &#xD;&#xA;Cloud (MSC)">FMC Markets Surveillance 
+Cloud (MSC)</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="FRAUD IFM HELP">FRAUD IFM HELP</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="IFM">IFM</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Integrated Fraud Management (IFM)">Integrated Fraud Management (IFM)</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Unified Data Manager (UDM)">Unified Data Manager (UDM)</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="UDM">UDM</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="UDM HELP">UDM HELP</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="Release Notes">Release Notes</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="ERCM HELP">ERCM HELP</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="ERCM">ERCM</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Quality Assurance Solution (QAS)">Quality Assurance Solution (QAS)</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Visual Modeler and AIS Server">Visual Modeler and AIS Server</Variable>
+  <Variable
+    Name="ProductCode"
+    Comment=""
+    EvaluatedDefinition="AIS">AIS</Variable>
+  <Variable
+    Name="HelpName"
+    Comment=""
+    EvaluatedDefinition="AIS HELP">AIS HELP</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Anti-Bribery &amp; Corruption (ABC)">Anti-Bribery &amp; Corruption (ABC)</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Essentials AML / Fraud">Essentials AML / Fraud</Variable>
+  <Variable
+    Name="SolutionName"
+    Comment=""
+    EvaluatedDefinition="Enterprise Risk Case Manager (ERCM)">Enterprise Risk Case Manager (ERCM)</Variable>
+</CatapultVariableSet>

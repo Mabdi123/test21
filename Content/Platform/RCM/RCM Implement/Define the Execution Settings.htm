@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1405" MadCap:lastWidth="724">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref397251226"></a><a name="_Toc500234229"></a>Define the Execution Settings in the Execution Tab</h1>
+        <p class="Body">The Execution tab enables you to configure the AIS Execution plan that is used to run each of the tests for this Tuning Context.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Execution Settings.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Procedure">To define the settings in this tab:</p>
+        <ol start="1">
+            <li><span class="Strong">Select the AIS connection</span> – Click the Refresh button and select the AIS connection from the drop-down menu.</li>
+            <li><span class="Strong">Execution Plan</span> – Click the Refresh button and select a specific Execution Plan from the drop-down menu that displays all the Execution Plans of the connected AIS. </li>
+            <li><span class="Strong">Arguments Table</span> – The Arguments table displays the mapping of the arguments. These are the arguments to the selected Execution Plan. They are automatically synchronized from AIS when the connector or selected Execution Plan is refreshed. You can define the argument value type by clicking on the arrow of the Value Type field. A drop-down menu enables you to select the relevant value type as shown in the following screenshot:<p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Execution Settings_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p><p class="Body">You can then select the appropriate value from the Value dropdown menu by clicking on its arrow as shown in the following screenshot:</p><p class="Body"><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Define the Execution Settings_2.png" style="visibility: visible;mso-wrap-style: square;width: 395px;height: 104px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ol>
+        <p class="Body">Each argument can be populated via one of the following methods:</p>
+        <ol start="1">
+            <li><span class="Strong">RCM</span><span class="Strong"> Internal value</span> – The value is set by an RCM session-based parameter such as the user or tenant. One of the arguments must be set to the Test Identifier internal value. In a Multi-Tenant mode another argument must be set to the Tenant Identifier internal value. The value(s) are not visible to the end users.</li>
+        </ol>
+        <ol start="2">
+            <li><span class="Strong">Regular</span> (default) – The value is provided by the user as a free-text string.</li>
+        </ol>
+        <ol start="3">
+            <li><span class="Strong">Constant</span> – The value is hard-set on this screen. The value is not visible to the end users.</li>
+        </ol>
+        <ol start="4">
+            <li><span class="Strong">Value list</span> – The value is selected from a list of values configured in the General section.</li>
+        </ol>
+        <ol start="5">
+            <li><span class="Strong">Drill-Down Query</span> (DDQ) – The user is presented with a picker for selecting a value based on the results of a runtime query.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Front.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    AutoEndOnLeftPage="disabled"
+    conditions="Default.PrintOnly"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Legal.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="Default.PrintOnly"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/TOC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    PageNumberReset="reset"
+    PageNumberFormat="lower-roman"
+    PageNumber="1"
+    ChapterNumber="0"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Platform/RCM/RCM Reference/RCM Audit History.htm" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="../../../../Content/Sample/AppendixHeadings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="../../../../Content/Resources/PageLayouts/Appendix.flpgl"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberFormat="upper-alpha">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="../../../../Content/Sample/AppendixHeadingsContent.htm"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="../../../../Content/Resources/PageLayouts/Content.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="../../../../Content/FrontMatter/Back.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="../../../../Content/Resources/PageLayouts/Back.flpgl"
+    conditions="Default.PrintOnly" />
+</CatapultToc>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1916" MadCap:lastWidth="1245">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref435510733"></a><a name="_Toc489949463"></a>Add Note</h1>
+        <p class="Body">Select one or more Trades and click the <span class="Strong">Add Note</span> button within the Trades toolbar to open the Add Note window. This enables you to select a note that is available within a list of predefined notes, or to enter a note that is relevant for describing the progress of the Trade(s).</p>
+        <p class="Body">The type of note that you can add depends on the trades that you selected. Different trades support different note options (for example, some trades do not support adding free text, or do not support all of the predefined note options). </p>
+        <p class="Body">When you add a note to more than one trade at the same time, you only see those options that are supported by all selected trades types. If you require an option that is not supported by one of the selected trades, try selecting the trades one at a time. </p>
+        <p class="Procedure">To select a predefined note:</p>
+        <ul>
+            <li>Click the arrow at the end of the available field to view the complete list of predefined notes that are configured for your RCM.</li>
+        </ul>
+        <p class="Body">You can select any existing note and then add or edit text according to your needs, or you can choose to directly type into the available field.</p>
+        <h4 class="NoNumber">Note with Tags</h4>
+        <p>Some of the work items and Blotter transactions may include notes with tags. </p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_2_1.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Body">Tags are fields within the note window that enable you to enter specific information on the note. For example, a tag may be an Account field that enables you to enter the related accounts for the note. Tag values are verified by the RCM. For example an <span class="Strong">account</span> tag can include validation for a minimum length of 9 characters and a maximum length of 14 characters and it must begin with the letters aac (e.g., aac12345678). If the value is not entered correctly then the account is underlined in red and the note cannot be saved. A tooltip provides information on the reason why the value is not valid.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_2_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Body">Values that are underlined in yellow indicate that the value was entered in the correct format but one of the following scenarios occurred:</p>
+        <ul>
+            <li>An RCM drill down query (DDQ) on the entered value did not return any results. The value is underlined in yellow and a tooltip provides the reason for the invalid value. For example, Jane Smith is entered as a value for a Broker tag and the RCM could not find a Broker named Jane Smith when it ran a drill down query on this value.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Body">You have the option to confirm this value even when it is not validated by the DDQ.</p>
+        <ul>
+            <li>An RCM drill down query returned more than 1 result for the value. The value is underlined in yellow and a tooltip provides the reason for the invalid value. For example, John Smith is entered as a value for a Broker tag and the RCM found more than one Broker named John Smith when it ran a drill down query on this value.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_3.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Body">You have the option to confirm this value even when it is not validated by the DDQ.</p>
+        <p class="Body">A valid value is underlined in black and a tooltip indicates that the value is valid.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_4.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <div class="Example">
+            <p class="Body">The <span class="Strong">Broker</span> and <span class="Strong">Account</span> tags are examples for possible tags within notes. Your organization may define different tags than these examples.</p>
+        </div>
+    </body>
+</html>

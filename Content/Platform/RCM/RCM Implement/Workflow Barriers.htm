@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="4111" MadCap:lastWidth="1025">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref420592381"></a><a name="_Ref420592387"></a><a name="_Toc500234034"></a>Workflow Barriers</h1>
+        <p class="Body">Workflows allow you to give specific validations for changing steps based on review rules. </p>
+        <p class="Body">Workflow barriers enable setting up rules that require one or more users to review a step before the transition is made. This can also be referred to as four-eye review. A review can only occur when a step is changed.</p>
+        <div class="Note">
+            <p class="Body">A step transition does not necessarily include a barrier, meaning it is not counted as reviewed.</p>
+        </div>
+        <p class="Body">The following terms are relevant for workflow step transitions:</p>
+        <ul>
+            <li><span class="Strong">Review:</span> The change step action (on a transition with barriers).</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Barrier:</span> Definition of the number of required reviewers at that point needed to advance to the next step.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Barrier Weight: </span>Represents the number of distinct users (that changed previous steps) required to move to the next step. If you define barrier 8 in a transition, it means you need 7 other users to have reviewed in previous steps in the workflow.<div class="Note"><p class="Body">If the other users changed steps without barriers on the transition then barrier weight=0 and those transitions were not considered reviewed.</p></div></li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Barrier weight 0:</span> No barriers are defined for the transition, meaning it does not require review and is not counted as reviewed for the next transition. This is the default value for any transition.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Barrier weight 1: </span>One person must review the step change.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Barrier</span><span class="Strong"> weight</span><span class="Strong"> 1+</span><span class="Strong">X: </span>At least two people must review the step before it can be changed.</li>
+        </ul>
+        <p class="Body">For details on barrier weight setup see <MadCap:xref href="Definine Barriers.htm#_Ref435531090">Define Barriers</MadCap:xref>.</p>
+        <p class="Body"><span class="Strong">Barrier </span><span class="Strong">Examples</span>
+        </p>
+        <p class="Body">All barriers are cumulative, that is if a barrier of two is provided to a transition then it is counted with the number of barriers for the previous transition. </p>
+        <p class="Body">The following examples describe two scenarios, the first where the workflow is correct and the second where it is incorrect.</p>
+        <p class="Body"><span class="Strong">Example 1</span>
+        </p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers.png" style="visibility: visible;mso-wrap-style: square;width: 253px;height: 319px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li>A barrier weight of 1 (one reviewer) is provided for the transition between <span class="Strong">Ready</span> and <span class="Strong">In Process</span>.</li>
+        </ul>
+        <ul>
+            <li>A barrier weight of 2 is provided between <span class="Strong">I</span><span class="Strong">n Process</span> and <span class="Strong">Open Issue</span>. </li>
+        </ul>
+        <ul>
+            <li>If one person has reviewed between <span class="Strong">Ready</span> and <span class="Strong">In Process</span>, then only one more reviewer (different user) is needed to move from <span class="Strong">In Process</span> to <span class="Strong">Open-Issue</span>. Meaning the total number of reviewers for both step transitions is two.<p><img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_1.png" style="visibility: visible;mso-wrap-style: square;width: 334px;height: 283px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></p></li>
+        </ul>
+        <p><span class="Strong">Example 2</span>
+        </p>
+        <ul>
+            <li>There is no barrier between the transition of <span class="Strong">Ready</span> and <span class="Strong">Investigating</span> (Barrier weight equals 0).</li>
+        </ul>
+        <ul>
+            <li>A user decides to move from <span class="Strong">Ready</span> to <span class="Strong">Investigating</span>, (Barrier weight equals 0).</li>
+        </ul>
+        <ul>
+            <li>The same user (or a different one) wants to move from <span class="Strong">Investigating</span> and then to <span class="Strong">In Process</span> (Barrier weight equals 0).</li>
+        </ul>
+        <ul>
+            <li>The same user (or different user) would not be able to move from <span class="Strong">In </span><span class="Strong">P</span><span class="Strong">rocess</span> to <span class="Strong">Open-Issue</span> no matter how many users review the transition between <span class="Strong">In Process</span> and <span class="Strong">Open</span><span class="Strong">-</span><span class="Strong">Issue</span>. This is due to the fact that the barrier is cumulative and no review was performed and counted previously. (0 is not counted as a review). In order to proceed, the implementer has to have set up at least one of the previous transitions in the workflow with barrier weight of 1.</li>
+        </ul>
+        <div class="Important">
+            <p class="Body">You should carefully plan the barriers between transitions in order not to have situations in the workflow where a transition cannot be made since the cumulative barrier weight cannot equal the barrier weight in a specific transition. </p>
+            <p class="Body">Although the barrier workflow review logic is cumulative, when RCM calculates the number of reviewers, it refers to the last barriers needed for this calculation and not all the previous barriers that may have been defined.</p>
+        </div>
+        <p class="SubHeading">Barrier Weight Scenarios</p>
+        <p class="Body">The following depicts possible workflow scenarios where different barrier weights are given in specific situations.</p>
+        <p class="Body"><span class="Strong">Scenario 1:</span> Permitted</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_2.png" style="width: 558px;height: 124px;" />
+        </p>
+        <p class="Body">Total barrier weight equals 2 and the two users have reviewed and changed the step.</p>
+        <p class="Body"><span class="Strong">Scenario 2:</span> Not permitted </p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_3.png" style="width: 558px;height: 124px;" />
+        </p>
+        <p class="Body">Total barrier weight equals 2 and there is only one user available</p>
+        <p class="Body"><span class="Strong">Scenario 3:</span> Permitted</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_4.png" style="width: 558px;height: 124px;" />
+        </p>
+        <p class="Body">Total barrier weight equals 1 so only User A is required for the workflow.</p>
+        <p class="Body"><span class="Strong">Scenario 4:</span> Not permitted</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_5.png" style="width: 567px;height: 124px;" />
+        </p>
+        <p class="Body">Total barrier weight is 3 and there are not enough reviewers or step changes to allow this amount.</p>
+        <p class="Body"><span class="Strong">Scenario 5:</span> Not permitted</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_6.png" style="width: 576px;height: 124px;" />
+        </p>
+        <p class="Body">Total barrier weight is 2 and there are two users, but the first transition requires no review so the barrier weight cannot be reached.</p>
+        <p class="Body"><span class="Strong">Scenario 6:</span> Permitted</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_7.png" style="width: 576px;height: 115px;" />
+        </p>
+        <p class="Body">Total barrier weight is 3 and there are three users for the relevant step changes. (All previously reviewed steps are counted.)</p>
+        <p class="Body"><span class="Strong">Scenario 7:</span> Permitted</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_8.png" style="width: 576px;height: 105px;" />Total barrier weight is 7 and there are seven users to review and change steps accordingly.</p>
+        <p class="SubHeading">RCM Workflow</p>
+        <p class="Body">In the RCM web application, a step that still did not resolve its barrier requirements is greyed out and includes a tooltip that indicates that the step has review rules.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Workflow Barriers_9.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="Body">If the user attempts to make a transition to a step that did not resolve its barrier requirements via the quick change step action then the following message is displayed:</p>
+        <p class="Body"><span class="Strong">You cannot change to this step because of review rules.</span>
+        </p>
+        <div class="Note">
+            <p class="Body">Barriers do not modify the functionality of the workflow when the user recalls or resets a step.</p>
+        </div>
+    </body>
+</html>

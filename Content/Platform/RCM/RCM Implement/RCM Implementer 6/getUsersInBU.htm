@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234598"></a>getUsersInBU</h1>
+        <p class="Code">ACMResult getUsersInBU(in String buisnessUnitIdentifier,in String hierarchyIdentifier, in int startFrom, in int maxRecords,out&#160; User[] users);</p>
+        <p class="Body"><span class="Emphasis">Description</span><span class="Emphasis">:</span> This method returns a list of users that are members of a business unit and returns a section of them, starting from a user located in the startFrom location and counting till the max records. If a hierarchy identifier is passed the method will include users that are members in any of the business unit children. The users are ordered by their full name. </p>
+        <p class="Body">IN</p>
+        <ul>
+            <li><span class="Strong">buisnessUnitIdentifier</span> – A business unit identifier.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">hierarchyIdentifier</span> – Hierarchy identifier. If passed, the query will include all users that are members of any of the business unit children within the context of the hierarchy.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">startFrom</span> – Start from number. If passed as null start from 1. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">maxRecords</span> – The number of users to retrieve. If passed as -1 returns all the users that match the search.</li>
+        </ul>
+    </body>
+</html>

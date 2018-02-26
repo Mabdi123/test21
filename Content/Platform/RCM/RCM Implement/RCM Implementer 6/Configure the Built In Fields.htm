@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref351559081"></a><a name="_Ref351559085"></a><a name="_Toc500234089"></a>Configure the Built In Fields</h1>
+        <p class="Body">Go to the subtab of the Alerts Type Fields tab. All fields in this list are in an update mode that provides the user with the option to update the value of the field. The aggregation function defines the TWI's aggregation in the CWI. The following aggregations are available:</p>
+        <ul>
+            <li><span class="Strong">First/Last</span> – Populates this field with the value of either the first or last item to be consolidated. Note that this does not necessarily mean the earliest or latest work item, merely the first or last to be consolidated. Note that null values are ignored and the value of the first consolidated TWI in the CWI remains, even if the first consolidated TWI is no longer part of the CWI.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Sum/Min/Max/Count</span> – Mathematical functions.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Concatenate</span> – When values are mapped to this field, they are concatenated. Applicable only to String fields.</li>
+        </ul>
+        <p class="Body">The following built-in fields appear:</p>
+        <ul>
+            <li><span class="Strong">Business Unit Identifier</span> – A mandatory field for consolidation. Note that the available aggregation functions for this field are First and Last.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Score</span> – An optional field for consolidation. All aggregation functions other than Concatenate may be used for this field.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Item Type version field</span> – An optional field for consolidation. The aggregation functions Sum, Min and Max may not be used for this field.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Item Date</span> – An optional field for consolidation. It is added when an alert type is defined as a consolidation target. The field is also added to any existing consolidation alert type when it is imported via an APF file to RCM version 5.1.1 or later.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Configure the Built In Fields.png" style="visibility: visible;mso-wrap-style: square;width: 541px;height: 178px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+    </body>
+</html>

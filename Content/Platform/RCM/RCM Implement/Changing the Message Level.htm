@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234434"></a>Changing the Message Level for RCM Designer</h1>
+        <p class="Body">RCM Designer log messages provide detailed information about any connection problems between the RCM Designer and the RCM Database and Web Services. The logs are maintained, according to the application version number, under the following location:</p>
+        <p class="Body">C:\Documents and Settings\All Users\Application Data\Actimize\RCM Designer\&lt;version number&gt;</p>
+        <p class="Body">Authorized users can change the information level of database messages and web service messages, in the log, as follows:</p>
+        <p class="Procedure">To change the level of messages within the Designer log:</p>
+        <ol start="1">
+            <li>Open the Actimize.Applications.CaseManagerDesigner.exe.config file, which resides under the same directory as the application itself.</li>
+        </ol>
+        <ol start="2">
+            <li>Locate the following &lt;switches&gt; section:</li>
+        </ol>
+        <p class="Body">&lt;switches&gt;</p>
+        <p class="Body">&lt;add name="DatabaseMessagesSwitch" value="0" /&gt;</p>
+        <p class="Body">&lt;add name="WebServicesMessagesSwitch" value="0" /&gt;</p>
+        <p class="Body">&lt;/switches&gt;</p>
+        <ol start="3">
+            <li>To suppress the detailed messages within the log and provide only high-level information, enter the value of 0 for either of the switches.</li>
+        </ol>
+        <p class="Body">For full detailed messages about connections, enter the value - 1 for either switch.</p>
+        <p class="Body">Since the detailed log might include confidential information ensure it is secured and therefore not accessible to unauthorized users.</p>
+        <p class="Body">&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

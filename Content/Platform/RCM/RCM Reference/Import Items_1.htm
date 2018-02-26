@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="3167" MadCap:lastWidth="1033">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref388861851"></a><a name="_Ref391454640"></a><a name="_Ref391454649"></a><a name="_Toc489949756"></a>Import Items</h1>
+        <p class="Body">You can import selected items into the Platform list that you are currently viewing.</p>
+        <p class="Procedure">To import items:</p>
+        <ol start="1">
+            <li>Click the arrow next to the <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Export Mail Print.png" style="visibility: visible;mso-wrap-style: square;width: 18px;height: 17px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /> drop-down menu, and click <span class="Strong">Import</span> action link. The <span class="Strong">Import Items</span> window opens. </li>
+        </ol>
+        <ol start="2">
+            <li>Click the <span class="Strong">Browse</span> icon and select the APF or CSV file that you want to import. If you would like to indicate all new and modified items as unapproved then select the checkbox <span class="Strong">Mark a</span><span class="Strong">ll modified items as </span><span class="Strong">“</span><span class="Strong">unapproved</span><span class="Strong">”</span>. This checkbox appears only in lists that require four eye review and to users which have Approve permissions.</li>
+            <p class="Body">See also <MadCap:xref href="#_Ref402087278" class="ParaTextOnly">Import Items Effect on Existing Items</MadCap:xref>.</p>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Import Items.png" style="visibility: visible;mso-wrap-style: square;width: 344px;height: 190px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+            <p class="Body">Note that the imported APF or CSV file must include items that are relevant to the Platform List you are viewing.</p>
+        </ol>
+        <ol start="3">
+            <li>The mapping window appears. This mapping window enables you to use the provided mapping sample to map each column from the imported file. Note that the mapping sample displays a maximum of 10 lines from the imported file.</li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Import Items_1.png" style="visibility: visible;mso-wrap-style: square;width: 556px;height: 284px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+            <p class="Body">Select the initial line for import. The import window automatically maps recognizable fields to the appropriate columns. To map a field, click the arrow next to the Not Mapped setting and select the relevant field from the drop-down menu that opens. Unmapped fields are not imported to the Platform List.</p>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Import Items_2.png" style="visibility: visible;mso-wrap-style: square;width: 174px;height: 277px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+        </ol>
+        <ol start="4">
+            <li>Click <span class="Strong">Import</span> in order to finish the import procedure.</li>
+        </ol>
+        <div class="Note">
+            <ul>
+                <li>You cannot map the same field to more than one column.</li>
+            </ul>
+            <ul>
+                <li>Mandatory fields must be mapped. </li>
+            </ul>
+            <ul>
+                <li>If a column exists in the CSV file without a value, this column is included in the import process. After the import process finishes, the value for this field remains empty.<br />If a column does not exist in the file, this column will not be included in the import process. After the import process finishes, the value for this field remains the same as before.</li>
+            </ul>
+        </div>
+        <h4 class="NoNumber"><a name="_Ref402087278"></a>Import Items Effect on Existing Items</h4>
+        <p class="Body">The following table illustrates the effect that occurs to items after importing a list of items.</p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <col class="TableStyle-Default-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">&#160;</tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyD-Column1-Body1" colspan="7">
+                        <p class="Body">Mark All Modified Items as "Unapproved" is Selected</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Original View</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Import File</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">New View</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">No change</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Data changed</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>c</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>cc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>cc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>d</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>e</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ee</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ee</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>f</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ff</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ff</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Approved changed</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Approved column missing</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>i</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ii</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ii</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>j</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>jj</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>jj</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td colspan="7" rowspan="2" class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">Mark All Modified Items as "Unapproved" is Not Selected</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">&#160;</tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Original View</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Import File</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">New View</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">No change</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Data changed</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>c</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>cc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>cc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>d</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>e</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ee</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ee</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>f</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ff</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ff</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Approved changed</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Approved column missing</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>i</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ii</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ii</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>j</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>jj</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>jj</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td colspan="7" rowspan="2" class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">User Without Permissions to Approve Items Imports a File</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">&#160;</tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Original View</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Import File</span>
+                    </td>
+                    <td colspan="2" class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">New View</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">key</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1"><span class="Strong">Is Approved</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">No change</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>a</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>b</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Data changed</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>c</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>cc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>cc</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>d</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>dd</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>e</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ee</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ee</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>f</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ff</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ff</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Approved changed</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>g</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>h</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Default-BodyE-Column1-Body1"><span class="Strong">Approved column missing</span>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>i</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ii</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>ii</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>j</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>jj</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>jj</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p>k</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p>true</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p>l</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p>false</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">&#160;</p>
+        <div class="Note">
+            <ul>
+                <li>You can import a file that contains up to 500,000 items.</li>
+            </ul>
+            <ul>
+                <li>Deleting of a row must be done using the right-click menu and not the <span class="Strong">Delete</span> button. </li>
+            </ul>
+            <ul>
+                <li>Certain date formats are not allowed in the import process (as set in your specific configurations). When a certain date format exists in the csv file (for example 24/12/2015 10:53 AM), and you open the file from Excel, the date may change according to the Excel default format and therefore cannot be imported to <MadCap:variable name="RCM Actimize.ProductCode" />. In such cases, it is recommended to open the file as a text file. This way, the date format will not be changed by the Excel.</li>
+            </ul>
+            <ul>
+                <li>Saving the csv or xls must only be done using the <span class="Strong">Save</span> button or <span class="Strong">Ctrl S</span>. Then when you close the document do not save the document when prompted.</li>
+            </ul>
+        </div>
+    </body>
+</html>

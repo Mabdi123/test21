@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1399" MadCap:lastWidth="724">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref437171718"></a><a name="_Toc500234073"></a>Overview of the RFI Feature</h1>
+        <p class="Body">It provides the RCM user with the ability to select a work item or a case and send an email for more information on the item. The email can be sent to recipients that are not RCM users. Once the email is answered it is attached to the correct item. In order to support the process of incoming email messages to the RCM you need to define a dedicated email account on organization’s mail server.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Overview of the RFI Feature.png" style="visibility: visible;mso-wrap-style: square;width: 499px;height: 227px;" />
+        </p>
+        <p class="Body">The RCM scheduler sends/receives new email messages (using SMTP and POP3/IMAP respectively) from the dedicated email account into the RCM database. RFI currently supports work items and cases (without regulatory forms). </p>
+        <p class="Body">The steps for setting up the RFI are the following: </p>
+        <ol start="1">
+            <li>Set an email account in the organization’s mail server that will be dedicated to the RCM email feature. The mail server should support POP3 or IMAP and SMTP.</li>
+        </ol>
+        <ol start="2">
+            <li>Enable the Scheduler parameter. Go to the <span class="Strong">Config Parameters </span>tab of admin.jsp and set the <span class="Strong">actimize.scheduler.enable</span> parameter to 1 (Yes). Note that you must restart the server after modifying the value of this parameter.</li>
+        </ol>
+        <ol start="3">
+            <li>The parameter actimize.scheduler.user defines the authorized user for the scheduler. The default user is ‘admin’. If necessary, modify this property with the name of the authorized user.</li>
+        </ol>
+        <ol start="4">
+            <li>Define the values for the mail server. Go to the Configuration Sets tab of admin.jsp and select the <span class="Strong">Email Collaboration</span> action link. For more information, see <MadCap:xref href="Configure the Mail Server.htm#_Ref436826334" class="ParaTextOnly">Configure the Mail Server Parameters</MadCap:xref>.</li>
+        </ol>
+        <ol start="5">
+            <li>Set the relevant permissions for the designated users and groups. The related permissions are <span class="Strong">Create N</span><span class="Strong">ew RFI</span> and <span class="Strong">View RFI</span>.</li>
+        </ol>
+        <ol start="6">
+            <li>Optionally, add RFI related actions to the relevant case and Alerts Workflow steps and define them as mandatory.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Overview of the RFI Feature_1.png" style="visibility: visible;mso-wrap-style: square;width: 425px;height: 117px;" />
+        </p>
+        <ol start="7">
+            <li>Enable the RFI GUI items for cases and work items to visible.</li>
+        </ol>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Overview of the RFI Feature.jpg" style="visibility: visible;mso-wrap-style: square;width: 581px;height: 157px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ol start="8">
+            <li>Add the <span class="Strong">RFI State</span> field as visible in the relevant Alert and Case Views via the RCM Designer.</li>
+        </ol>
+        <ol start="9">
+            <li>Restart the application server of the RCM.</li>
+        </ol>
+    </body>
+</html>

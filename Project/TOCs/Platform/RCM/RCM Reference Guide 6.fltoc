@@ -1,0 +1,2120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Front.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    AutoEndOnLeftPage="disabled"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Legal.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="Default.PrintOnly"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Front.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/TOC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    PageNumberReset="reset"
+    PageNumberFormat="lower-roman"
+    PageNumber="1"
+    ChapterNumber="0"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/RevisionHistory.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/TOC.flpgl"
+    conditions="Default.PrintOnly" />
+  <TocEntry
+    Title="Introduction to the Risk Case Manager"
+    Link="/Content/Platform/RCM/RCM Reference/Introduction to the Risk Case.htm#_Toc489949314"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl"
+    PageNumberFormat="decimal"
+    PageNumber="1">
+    <TocEntry
+      Title="Overview of the Risk Case Manager Application"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of the Risk Case.htm#_Toc489949315"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Main Tabs"
+      Link="/Content/Platform/RCM/RCM Reference/Main Tabs.htm#_Toc489949316" />
+    <TocEntry
+      Title="Application Links and Options"
+      Link="/Content/Platform/RCM/RCM Reference/Application Links and Options.htm#_Toc489949317">
+      <TocEntry
+        Title="Substitute for Another User"
+        Link="/Content/Platform/RCM/RCM Reference/Substitute for Another User.htm#_Toc489949318" />
+      <TocEntry
+        Title="Delegate to Another User"
+        Link="/Content/Platform/RCM/RCM Reference/Delegate to Another User.htm#_Toc489949319" />
+      <TocEntry
+        Title="Act as Another User"
+        Link="/Content/Platform/RCM/RCM Reference/Act as another User.htm#_Toc489949320" />
+    </TocEntry>
+    <TocEntry
+      Title="View Bar"
+      Link="/Content/Platform/RCM/RCM Reference/View Bar.htm#_Toc489949321">
+      <TocEntry
+        Title="Refresh Icons"
+        Link="/Content/Platform/RCM/RCM Reference/Refresh Icons.htm#_Toc489949322" />
+      <TocEntry
+        Title="Step Related Messages"
+        Link="/Content/Platform/RCM/RCM Reference/Step Related Messages.htm#_Toc489949323" />
+    </TocEntry>
+    <TocEntry
+      Title="Filter Options"
+      Link="/Content/Platform/RCM/RCM Reference/Filter Options.htm#_Toc489949324" />
+    <TocEntry
+      Title="Global Search Options"
+      Link="/Content/Platform/RCM/RCM Reference/Global Search Options.htm#_Toc489949325">
+      <TocEntry
+        Title="Searching"
+        Link="/Content/Platform/RCM/RCM Reference/Searching.htm#_Toc489949326" />
+      <TocEntry
+        Title="Recent Searches"
+        Link="/Content/Platform/RCM/RCM Reference/Recent Searches.htm#_Toc489949327" />
+      <TocEntry
+        Title="Search Syntax Options"
+        Link="/Content/Platform/RCM/RCM Reference/Search Syntax Options.htm#_Toc489949328" />
+    </TocEntry>
+    <TocEntry
+      Title="Toolbars"
+      Link="/Content/Platform/RCM/RCM Reference/Toolbars.htm#_Toc489949329">
+      <TocEntry
+        Title="Drop-Down Menus"
+        Link="/Content/Platform/RCM/RCM Reference/Drop Down Menus.htm#_Toc489949330" />
+    </TocEntry>
+    <TocEntry
+      Title="Activity Bars"
+      Link="/Content/Platform/RCM/RCM Reference/Activity Bars.htm#_Toc489949331" />
+    <TocEntry
+      Title="Browsing Information Bar"
+      Link="/Content/Platform/RCM/RCM Reference/Browsing Information Bar.htm#_Toc489949332" />
+    <TocEntry
+      Title="Items List Area"
+      Link="/Content/Platform/RCM/RCM Reference/Items List Area.htm#_Toc489949333">
+      <TocEntry
+        Title="Maximize the List Area View"
+        Link="/Content/Platform/RCM/RCM Reference/Maximize the List Area View.htm#_Toc489949334" />
+      <TocEntry
+        Title="Select an Item in the List"
+        Link="/Content/Platform/RCM/RCM Reference/Select an Item in the List.htm#_Toc489949335" />
+      <TocEntry
+        Title="Sort Lists"
+        Link="/Content/Platform/RCM/RCM Reference/Sort lists.htm#_Toc489949336" />
+      <TocEntry
+        Title="Customization for List of Items"
+        Link="/Content/Platform/RCM/RCM Reference/Customization for List of.htm#_Toc489949337" />
+    </TocEntry>
+    <TocEntry
+      Title="Personalization Feature"
+      Link="/Content/Platform/RCM/RCM Reference/Personalization Feature.htm#_Toc489949338">
+      <TocEntry
+        Title="Layout Options"
+        Link="/Content/Platform/RCM/RCM Reference/Layout Options.htm#_Toc489949339" />
+    </TocEntry>
+    <TocEntry
+      Title="Activity Center"
+      Link="/Content/Platform/RCM/RCM Reference/Activity Center.htm#_Toc489949340" />
+    <TocEntry
+      Title="Rich Text Feature"
+      Link="/Content/Platform/RCM/RCM Reference/Rich Text Feature.htm#_Toc489949341" />
+    <TocEntry
+      Title="Context Sensitive Buttons"
+      Link="/Content/Platform/RCM/RCM Reference/Context Sensitive Buttons.htm#_Toc489949342" />
+    <TocEntry
+      Title="Spell Checker"
+      Link="/Content/Platform/RCM/RCM Reference/Spell Checker.htm#_Toc489949343"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Work Items"
+    Link="/Content/Platform/RCM/RCM Reference/Work_ Items_2.htm#_Toc489949346"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Work Items"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Work Items.htm#_Toc489949347"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Work Items List"
+      Link="/Content/Platform/RCM/RCM Reference/Work_Items_List.htm#_Toc489949348">
+      <TocEntry
+        Title="Work Item Indication"
+        Link="/Content/Platform/RCM/RCM Reference/Work Item Indication.htm#_Toc489949349" />
+      <TocEntry
+        Title="Sensitive Data Fields"
+        Link="/Content/Platform/RCM/RCM Reference/Sensitive Data Fields.htm#_Toc489949350" />
+    </TocEntry>
+    <TocEntry
+      Title="Work Items Browsing Options"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Browsing Options.htm#_Toc489949351" />
+    <TocEntry
+      Title="Work Items Search Options"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Search Options.htm#_Toc489949352">
+      <TocEntry
+        Title="Filter Options"
+        Link="/Content/Platform/RCM/RCM Reference/Filter Options_1.htm#_Toc489949353" />
+      <TocEntry
+        Title="Advanced Filter"
+        Link="/Content/Platform/RCM/RCM Reference/Advanced Filter.htm#_Toc489949354" />
+      <TocEntry
+        Title="The More Options Tab"
+        Link="/Content/Platform/RCM/RCM Reference/The More Options Tab.htm#_Toc489949355" />
+      <TocEntry
+        Title="The Related Items Tab"
+        Link="/Content/Platform/RCM/RCM Reference/The Related Items Tab.htm#_Toc489949356" />
+    </TocEntry>
+    <TocEntry
+      Title="Advanced Sort"
+      Link="/Content/Platform/RCM/RCM Reference/Advanced Sort.htm#_Toc489949357" />
+    <TocEntry
+      Title="Work Items Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Toolbar.htm#_Toc489949358">
+      <TocEntry
+        Title="Change Step"
+        Link="/Content/Platform/RCM/RCM Reference/Change Step.htm#_Toc489949359" />
+      <TocEntry
+        Title="Assign"
+        Link="/Content/Platform/RCM/RCM Reference/Assign.htm#_Toc489949360" />
+      <TocEntry
+        Title="Add Note"
+        Link="/Content/Platform/RCM/RCM Reference/Add Note.htm#_Toc489949361" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes.htm#_Toc489949362" />
+      <TocEntry
+        Title="Open Workspace"
+        Link="/Content/Platform/RCM/RCM Reference/Open Workspace.htm#_Toc489949363" />
+      <TocEntry
+        Title="View Attachments"
+        Link="/Content/Platform/RCM/RCM Reference/View Attachments.htm#_Toc489949364" />
+      <TocEntry
+        Title="Manage Attachments"
+        Link="/Content/Platform/RCM/RCM Reference/Manage Attachments.htm#_Toc489949365" />
+      <TocEntry
+        Title="New Item"
+        Link="/Content/Platform/RCM/RCM Reference/New Item.htm#_Toc489949366" />
+      <TocEntry
+        Title="Create RFI"
+        Link="/Content/Platform/RCM/RCM Reference/Create RFI.htm#_Toc489949367" />
+      <TocEntry
+        Title="Enable Actions for RFI Reply"
+        Link="/Content/Platform/RCM/RCM Reference/Enable Actions for RFI Reply.htm#_Toc489949368" />
+      <TocEntry
+        Title="View RFI"
+        Link="/Content/Platform/RCM/RCM Reference/View RFI.htm#_Toc489949369" />
+      <TocEntry
+        Title="Add To Case Item"
+        Link="/Content/Platform/RCM/RCM Reference/Add To Case Item.htm#_Toc489949370" />
+      <TocEntry
+        Title="New Case"
+        Link="/Content/Platform/RCM/RCM Reference/New Case.htm#_Toc489949371" />
+      <TocEntry
+        Title="Add To Existing Case"
+        Link="/Content/Platform/RCM/RCM Reference/Add To Existing Case.htm#_Toc489949372" />
+      <TocEntry
+        Title="Edit Item"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Item.htm#_Toc489949373" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History.htm#_Toc489949374" />
+      <TocEntry
+        Title="Delete"
+        Link="/Content/Platform/RCM/RCM Reference/Delete.htm#_Toc489949375" />
+      <TocEntry
+        Title="Change Score"
+        Link="/Content/Platform/RCM/RCM Reference/Change Score.htm#_Toc489949376" />
+      <TocEntry
+        Title="Get Next"
+        Link="/Content/Platform/RCM/RCM Reference/Get Next.htm#_Toc489949377" />
+    </TocEntry>
+    <TocEntry
+      Title="Work Items Views"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Views.htm#_Toc489949378" />
+    <TocEntry
+      Title="Export/Mail/Print"
+      Link="/Content/Platform/RCM/RCM Reference/Export Mail Print.htm#_Toc489949379">
+      <TocEntry
+        Title="Print List"
+        Link="/Content/Platform/RCM/RCM Reference/Print List.htm#_Toc489949380" />
+      <TocEntry
+        Title="Print Details"
+        Link="/Content/Platform/RCM/RCM Reference/Print Details.htm#_Toc489949381" />
+      <TocEntry
+        Title="Export"
+        Link="/Content/Platform/RCM/RCM Reference/Export.htm#_Toc489949382" />
+      <TocEntry
+        Title="Send Mail"
+        Link="/Content/Platform/RCM/RCM Reference/Send Mail.htm#_Toc489949383" />
+      <TocEntry
+        Title="Show as PDF"
+        Link="/Content/Platform/RCM/RCM Reference/Show as PDF.htm#_Toc489949384" />
+    </TocEntry>
+    <TocEntry
+      Title="Starred Items"
+      Link="/Content/Platform/RCM/RCM Reference/Starring Items.htm#_Toc489949385" />
+  </TocEntry>
+  <TocEntry
+    Title="Work Items Details"
+    Link="/Content/Platform/RCM/RCM Reference/Work_Items_Details.htm#_Toc489949386"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Work Items Details"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Work Items Details.htm#_Toc489949387"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Work Items Details Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Details Toolbar.htm#_Toc489949388" />
+    <TocEntry
+      Title="Print/PDF/Email Options"
+      Link="/Content/Platform/RCM/RCM Reference/Print PDF Email Options.htm#_Toc489949389" />
+    <TocEntry
+      Title="Browse and Step Options"
+      Link="/Content/Platform/RCM/RCM Reference/Browse and Step Options.htm#_Toc489949390" />
+    <TocEntry
+      Title="Work Item Details Information"
+      Link="/Content/Platform/RCM/RCM Reference/Work Item Details Information.htm#_Toc489949391" />
+    <TocEntry
+      Title="Work Items Workflow"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Workflow.htm#_Toc489949392">
+      <TocEntry
+        Title="Access the Work Item’s Workflow Screen"
+        Link="/Content/Platform/RCM/RCM Reference/Access the Work Item s Workflow.htm#_Toc489949393" />
+      <TocEntry
+        Title="The Work Items Workflow Tasks Table"
+        Link="/Content/Platform/RCM/RCM Reference/The Work Items Workflow Tasks.htm#_Toc489949394" />
+      <TocEntry
+        Title="Global Deadline"
+        Link="/Content/Platform/RCM/RCM Reference/Global Deadline.htm#_Toc489949395" />
+      <TocEntry
+        Title="Move to the Next Work Item"
+        Link="/Content/Platform/RCM/RCM Reference/Move to the Next Work Item.htm#_Toc489949396" />
+      <TocEntry
+        Title="Recall a Step"
+        Link="/Content/Platform/RCM/RCM Reference/Recall a Step.htm#_Toc489949397" />
+      <TocEntry
+        Title="Reset a Step"
+        Link="/Content/Platform/RCM/RCM Reference/Reset a Step.htm#_Toc489949398" />
+      <TocEntry
+        Title="View Previous Steps"
+        Link="/Content/Platform/RCM/RCM Reference/View Previous Steps.htm#_Toc489949399" />
+    </TocEntry>
+    <TocEntry
+      Title="Reasons for Work Item Findings"
+      Link="/Content/Platform/RCM/RCM Reference/Reasons for Work Item Findings.htm#_Toc489949400">
+      <TocEntry
+        Title="Single Work Item Selection"
+        Link="/Content/Platform/RCM/RCM Reference/Single Work Item Selection.htm#_Toc489949401" />
+      <TocEntry
+        Title="Multiple Selection of Work Items (Bulk Items)"
+        Link="/Content/Platform/RCM/RCM Reference/Multiple Selection of Work.htm#_Toc489949402" />
+    </TocEntry>
+    <TocEntry
+      Title="Records Widget"
+      Link="/Content/Platform/RCM/RCM Reference/Records Widget.htm#_Toc489949403">
+      <TocEntry
+        Title="Create a Query"
+        Link="/Content/Platform/RCM/RCM Reference/Create a Query.htm#_Toc489949404" />
+      <TocEntry
+        Title="Run a Query"
+        Link="/Content/Platform/RCM/RCM Reference/Run a Query.htm#_Toc489949405" />
+      <TocEntry
+        Title="The Records Widget Bar"
+        Link="/Content/Platform/RCM/RCM Reference/The Records Widget Bar.htm#_Toc489949406" />
+    </TocEntry>
+    <TocEntry
+      Title="The Work Items Widget"
+      Link="/Content/Platform/RCM/RCM Reference/The Work Items Widget.htm#_Toc489949407">
+      <TocEntry
+        Title="The Work Items Widget Bar"
+        Link="/Content/Platform/RCM/RCM Reference/The Work Items Widget Bar.htm#_Toc489949408" />
+    </TocEntry>
+    <TocEntry
+      Title="Consolidated Work Item"
+      Link="/Content/Platform/RCM/RCM Reference/Consolidated Work Item.htm#_Toc489949409">
+      <TocEntry
+        Title="Transient Work Items"
+        Link="/Content/Platform/RCM/RCM Reference/Transient Work Items.htm#_Toc489949410" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Entity Matching"
+    Link="/Content/Platform/RCM/RCM Reference/Entity Matching.htm#_Toc489949411"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Entity Matching"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Entity Matching.htm#_Toc489949412"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Manual Work Item Entity Matching"
+      Link="/Content/Platform/RCM/RCM Reference/Manual Work Item Entity Matching.htm#_Toc489949413" />
+    <TocEntry
+      Title="Match Engine"
+      Link="/Content/Platform/RCM/RCM Reference/Match Engine.htm#_Toc489949414">
+      <TocEntry
+        Title="Policy Manager Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Policy Manager Rules.htm#_Toc489949415" />
+      <TocEntry
+        Title="Entity Matching List Thresholds"
+        Link="/Content/Platform/RCM/RCM Reference/Entity Matching List Thresholds.htm#_Toc489949416" />
+    </TocEntry>
+    <TocEntry
+      Title="View Doubt"
+      Link="/Content/Platform/RCM/RCM Reference/View Doubt.htm#_Toc489949417" />
+    <TocEntry
+      Title="Doubt Resolution"
+      Link="/Content/Platform/RCM/RCM Reference/Doubt Resolution.htm#_Toc489949418">
+      <TocEntry
+        Title="Doubt Resolution in the Work Items List"
+        Link="/Content/Platform/RCM/RCM Reference/Doubt Resolution in the Work.htm#_Toc489949419" />
+      <TocEntry
+        Title="Doubt Resolution in Item Details"
+        Link="/Content/Platform/RCM/RCM Reference/Doubt Resolution in Item Details.htm#_Toc489949420" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Outgoing Forms"
+    Link="/Content/Platform/RCM/RCM Reference/Outgoing_Forms.htm#_Toc489949421"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Outgoing Forms"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Outgoing Forms.htm#_Toc489949422"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Forms Views"
+      Link="/Content/Platform/RCM/RCM Reference/Forms Views.htm#_Toc489949423" />
+    <TocEntry
+      Title="Outgoing Forms List"
+      Link="/Content/Platform/RCM/RCM Reference/Outgoing Forms List.htm#_Toc489949424" />
+    <TocEntry
+      Title="Outgoing Forms Browsing Options"
+      Link="/Content/Platform/RCM/RCM Reference/Outgoing Forms Browsing Options.htm#_Toc489949425" />
+    <TocEntry
+      Title="Advanced Sort"
+      Link="/Content/Platform/RCM/RCM Reference/Advanced Sort_1.htm#_Toc489949426" />
+    <TocEntry
+      Title="Advanced Filter"
+      Link="/Content/Platform/RCM/RCM Reference/Advanced Filter_1.htm#_Toc489949427">
+      <TocEntry
+        Title="General Tab"
+        Link="/Content/Platform/RCM/RCM Reference/General Tab.htm#_Toc489949428" />
+      <TocEntry
+        Title="Form Sets"
+        Link="/Content/Platform/RCM/RCM Reference/Form Sets.htm#_Toc489949429" />
+    </TocEntry>
+    <TocEntry
+      Title="Form Actions"
+      Link="/Content/Platform/RCM/RCM Reference/Form Actions.htm#_Toc489949430">
+      <TocEntry
+        Title="Print List"
+        Link="/Content/Platform/RCM/RCM Reference/Print List_1.htm#_Toc489949431" />
+      <TocEntry
+        Title="Show as PDF"
+        Link="/Content/Platform/RCM/RCM Reference/Show as PDF_1.htm#_Toc489949432" />
+      <TocEntry
+        Title="Export Form"
+        Link="/Content/Platform/RCM/RCM Reference/Export Form.htm#_Toc489949433" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Blotters"
+    Link="/Content/Platform/RCM/RCM Reference/Blotters.htm#_Toc489949434"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Blotters"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Blotters.htm#_Toc489949435"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Trade Blotter Views"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Blotter Views.htm#_Toc489949436" />
+    <TocEntry
+      Title="Trade Blotters List"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Blotters List.htm#_Toc489949437" />
+    <TocEntry
+      Title="Trade Blotter Filter Options"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Blotter Filter Options.htm#_Toc489949438" />
+    <TocEntry
+      Title="Blotters Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Blotters Toolbar.htm#_Toc489949439" />
+    <TocEntry
+      Title="Trade Blotter Actions"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Blotter Actions.htm#_Toc489949440">
+      <TocEntry
+        Title="Assign"
+        Link="/Content/Platform/RCM/RCM Reference/Assign_1.htm#_Toc489949441" />
+      <TocEntry
+        Title="Add Note"
+        Link="/Content/Platform/RCM/RCM Reference/Add Note_1.htm#_Toc489949442" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes_1.htm#_Toc489949443" />
+      <TocEntry
+        Title="Sign-Off"
+        Link="/Content/Platform/RCM/RCM Reference/Sign Off.htm#_Toc489949444" />
+      <TocEntry
+        Title="Print"
+        Link="/Content/Platform/RCM/RCM Reference/Print.htm#_Toc489949445" />
+      <TocEntry
+        Title="Export"
+        Link="/Content/Platform/RCM/RCM Reference/Export_1.htm#_Toc489949446" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_1.htm#_Toc489949447" />
+    </TocEntry>
+    <TocEntry
+      Title="Blotters Workflow"
+      Link="/Content/Platform/RCM/RCM Reference/Blotters Workflow.htm#_Toc489949448">
+      <TocEntry
+        Title="Updates in the Display of the Blotters"
+        Link="/Content/Platform/RCM/RCM Reference/Updates in the Display of.htm#_Toc489949449" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Trades of Trade Blotter"
+    Link="/Content/Platform/RCM/RCM Reference/Trades_of_Trade_Blotter.htm#_Toc489949450"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Blotter Trades"
+      Link="/Content/Platform/RCM/RCM Reference/Blotter Trades.htm#_Toc489949451"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Trade Information"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Information.htm#_Toc489949452">
+      <TocEntry
+        Title="Additional Information on Trades"
+        Link="/Content/Platform/RCM/RCM Reference/Additional Information on.htm#_Toc489949453" />
+    </TocEntry>
+    <TocEntry
+      Title="Filtering Options"
+      Link="/Content/Platform/RCM/RCM Reference/Filtering Options.htm#_Toc489949454">
+      <TocEntry
+        Title="Trades Personalization"
+        Link="/Content/Platform/RCM/RCM Reference/Trades Personalization.htm#_Toc489949455" />
+      <TocEntry
+        Title="Save a Filter"
+        Link="/Content/Platform/RCM/RCM Reference/Save a Filter.htm#_Toc489949456" />
+      <TocEntry
+        Title="Manage Filters"
+        Link="/Content/Platform/RCM/RCM Reference/Manage Filters.htm#_Toc489949457" />
+    </TocEntry>
+    <TocEntry
+      Title="Trade Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Toolbar.htm#_Toc489949458" />
+    <TocEntry
+      Title="Sort Options"
+      Link="/Content/Platform/RCM/RCM Reference/Sort Options.htm#_Toc489949459" />
+    <TocEntry
+      Title="Trade Actions"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Actions.htm#_Toc489949460">
+      <TocEntry
+        Title="Review"
+        Link="/Content/Platform/RCM/RCM Reference/Review.htm#_Toc489949461" />
+      <TocEntry
+        Title="Un-Review"
+        Link="/Content/Platform/RCM/RCM Reference/Un Review.htm#_Toc489949462" />
+      <TocEntry
+        Title="Add Note"
+        Link="/Content/Platform/RCM/RCM Reference/Add Note_2.htm#_Toc489949463" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes_2.htm#_Toc489949464" />
+      <TocEntry
+        Title="Print Menu"
+        Link="/Content/Platform/RCM/RCM Reference/Print Menu.htm#_Toc489949465" />
+      <TocEntry
+        Title="Create a New Work Item"
+        Link="/Content/Platform/RCM/RCM Reference/Create a New Work Item.htm#_Toc489949466" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_2.htm#_Toc489949467" />
+      <TocEntry
+        Title="Sign-Off"
+        Link="/Content/Platform/RCM/RCM Reference/Sign Off_1.htm#_Toc489949468" />
+    </TocEntry>
+    <TocEntry
+      Title="Risk Based Trades"
+      Link="/Content/Platform/RCM/RCM Reference/Risk Based Trades.htm#_Toc489949469">
+      <TocEntry
+        Title="List of Hierarchy Fields"
+        Link="/Content/Platform/RCM/RCM Reference/List of Hierarchy Fields.htm#_Toc489949470" />
+      <TocEntry
+        Title="The Trade Views"
+        Link="/Content/Platform/RCM/RCM Reference/The Trade Views.htm#_Toc489949471" />
+      <TocEntry
+        Title="Drill Down to a Specific Hierarchy"
+        Link="/Content/Platform/RCM/RCM Reference/Drill Down to a Specific Hierarchy.htm#_Toc489949472" />
+    </TocEntry>
+    <TocEntry
+      Title="Filter Options for Risk Based Trades"
+      Link="/Content/Platform/RCM/RCM Reference/Filter Options for Risk Based.htm#_Toc489949473" />
+    <TocEntry
+      Title="Trade Toolbar for Risk Based Trades"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Toolbar for Risk Based.htm#_Toc489949474" />
+    <TocEntry
+      Title="Trade Actions for Risk Based Trades"
+      Link="/Content/Platform/RCM/RCM Reference/Trade Actions for Risk Based.htm#_Toc489949475" />
+  </TocEntry>
+  <TocEntry
+    Title="Ad-hoc Blotters"
+    Link="/Content/Platform/RCM/RCM Reference/Ad-hoc_Blotters.htm#_Toc489949476"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Ad-hoc Blotters"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Ad hoc Blotters.htm#_Toc489949477"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Filtering Options"
+      Link="/Content/Platform/RCM/RCM Reference/Filtering Options_1.htm#_Toc489949478">
+      <TocEntry
+        Title="Ad-hoc Blotters Personalization"
+        Link="/Content/Platform/RCM/RCM Reference/Ad hoc Blotters Personalization.htm#_Toc489949479" />
+      <TocEntry
+        Title="Save a Filter"
+        Link="/Content/Platform/RCM/RCM Reference/Save a Filter_1.htm#_Toc489949480" />
+      <TocEntry
+        Title="Manage Filters"
+        Link="/Content/Platform/RCM/RCM Reference/Manage Filters_1.htm#_Toc489949481" />
+    </TocEntry>
+    <TocEntry
+      Title="Ad-hoc Blotters Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Ad hoc Blotters Toolbar.htm#_Toc489949482" />
+    <TocEntry
+      Title="Ad-hoc Blotter Actions"
+      Link="/Content/Platform/RCM/RCM Reference/Ad hoc Blotter Actions.htm#_Toc489949483">
+      <TocEntry
+        Title="Sort Options"
+        Link="/Content/Platform/RCM/RCM Reference/Sort Options_1.htm#_Toc489949484" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes_3.htm#_Toc489949485" />
+      <TocEntry
+        Title="Create a New Work Item"
+        Link="/Content/Platform/RCM/RCM Reference/Create a New Work Item_1.htm#_Toc489949486" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_3.htm#_Toc489949487" />
+      <TocEntry
+        Title="Print Menu"
+        Link="/Content/Platform/RCM/RCM Reference/Print Menu_1.htm#_Toc489949488" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Reports"
+    Link="/Content/Platform/RCM/RCM Reference/Reports.htm#_Toc489949489"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Reports"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Reports.htm#_Toc489949490"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Report List"
+      Link="/Content/Platform/RCM/RCM Reference/Report List.htm#_Toc489949491" />
+    <TocEntry
+      Title="Browsing Options"
+      Link="/Content/Platform/RCM/RCM Reference/Browsing Options.htm#_Toc489949492" />
+    <TocEntry
+      Title="Report Search Options"
+      Link="/Content/Platform/RCM/RCM Reference/Report Search Options.htm#_Toc489949493">
+      <TocEntry
+        Title="Standard Search Options"
+        Link="/Content/Platform/RCM/RCM Reference/Standard Search Options.htm#_Toc489949494" />
+      <TocEntry
+        Title="Advanced Search"
+        Link="/Content/Platform/RCM/RCM Reference/Advanced Search.htm#_Toc489949495" />
+    </TocEntry>
+    <TocEntry
+      Title="Report Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Report Toolbar.htm#_Toc489949496">
+      <TocEntry
+        Title="Open Report"
+        Link="/Content/Platform/RCM/RCM Reference/Open Report.htm#_Toc489949497" />
+      <TocEntry
+        Title="About the Management Reports"
+        Link="/Content/Platform/RCM/RCM Reference/About the Management Reports.htm#_Toc489949498" />
+      <TocEntry
+        Title="Add Note"
+        Link="/Content/Platform/RCM/RCM Reference/Add Note_3.htm#_Toc489949499" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes_4.htm#_Toc489949500" />
+      <TocEntry
+        Title="Sign-Off"
+        Link="/Content/Platform/RCM/RCM Reference/Sign Off_2.htm#_Toc489949501" />
+      <TocEntry
+        Title="Assign to User"
+        Link="/Content/Platform/RCM/RCM Reference/Assign to User.htm#_Toc489949502" />
+      <TocEntry
+        Title="Assign to User/Business Unit"
+        Link="/Content/Platform/RCM/RCM Reference/Assign to User Business Unit.htm#_Toc489949503" />
+      <TocEntry
+        Title="Properties (Report Information)"
+        Link="/Content/Platform/RCM/RCM Reference/Properties Report Information.htm#_Toc489949504" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_4.htm#_Toc489949505" />
+    </TocEntry>
+    <TocEntry
+      Title="Report Views"
+      Link="/Content/Platform/RCM/RCM Reference/Report Views.htm#_Toc489949506" />
+  </TocEntry>
+  <TocEntry
+    Title="JReport Options"
+    Link="/Content/Platform/RCM/RCM Reference/JReport Options.htm#_Toc489949507"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="JReport DHTML Window Screen Elements"
+      Link="/Content/Platform/RCM/RCM Reference/JReport DHTML Window Screen.htm#_Toc489949508"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="General Operations"
+      Link="/Content/Platform/RCM/RCM Reference/General Operations.htm#_Toc489949509" />
+  </TocEntry>
+  <TocEntry
+    Title="Case Items"
+    Link="/Content/Platform/RCM/RCM Reference/Case Items.htm#_Toc489949510"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl"
+    conditions="RCM Custom.RCM">
+    <TocEntry
+      Title="Overview of Case Items"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Case Items.htm#_Toc489949511"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Case Items List"
+      Link="/Content/Platform/RCM/RCM Reference/Case Items List.htm#_Toc489949512" />
+    <TocEntry
+      Title="Case Items Browsing"
+      Link="/Content/Platform/RCM/RCM Reference/Case Items Browsing.htm#_Toc489949513" />
+    <TocEntry
+      Title="Case Items Search"
+      Link="/Content/Platform/RCM/RCM Reference/Case Items Search.htm#_Toc489949514">
+      <TocEntry
+        Title="Filtering Options"
+        Link="/Content/Platform/RCM/RCM Reference/Filtering Options_2.htm#_Toc489949515" />
+      <TocEntry
+        Title="Advanced Filter"
+        Link="/Content/Platform/RCM/RCM Reference/Advanced Filter_2.htm#_Toc489949516" />
+      <TocEntry
+        Title="The More Options Tab"
+        Link="/Content/Platform/RCM/RCM Reference/The More Options Tab_1.htm#_Toc489949517" />
+      <TocEntry
+        Title="The Related Items Tab"
+        Link="/Content/Platform/RCM/RCM Reference/The Related Items Tab_1.htm#_Toc489949518" />
+    </TocEntry>
+    <TocEntry
+      Title="Case Item Views"
+      Link="/Content/Platform/RCM/RCM Reference/Case Item Views.htm#_Toc489949519" />
+    <TocEntry
+      Title="Advanced Sort"
+      Link="/Content/Platform/RCM/RCM Reference/Advanced Sort_2.htm#_Toc489949520" />
+    <TocEntry
+      Title="Case Items Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Case Items Toolbar.htm#_Toc489949521">
+      <TocEntry
+        Title="Change Step"
+        Link="/Content/Platform/RCM/RCM Reference/Change Step_1.htm#_Toc489949522" />
+      <TocEntry
+        Title="Assign"
+        Link="/Content/Platform/RCM/RCM Reference/Assign_2.htm#_Toc489949523" />
+      <TocEntry
+        Title="Add Note"
+        Link="/Content/Platform/RCM/RCM Reference/Add Note_4.htm#_Toc489949524" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes_5.htm#_Toc489949525" />
+      <TocEntry
+        Title="Open Workspace"
+        Link="/Content/Platform/RCM/RCM Reference/Open Workspace_1.htm#_Toc489949526" />
+      <TocEntry
+        Title="View Attachments"
+        Link="/Content/Platform/RCM/RCM Reference/View Attachments_1.htm#_Toc489949527" />
+      <TocEntry
+        Title="Manage Attachments"
+        Link="/Content/Platform/RCM/RCM Reference/Manage Attachments_1.htm#_Toc489949528" />
+      <TocEntry
+        Title="New Item"
+        Link="/Content/Platform/RCM/RCM Reference/New Item_1.htm#_Toc489949529" />
+      <TocEntry
+        Title="Add a Form"
+        Link="/Content/Platform/RCM/RCM Reference/Add a Form.htm#_Toc489949530" />
+      <TocEntry
+        Title="View a Form"
+        Link="/Content/Platform/RCM/RCM Reference/View a Form.htm#_Toc489949531" />
+      <TocEntry
+        Title="Create RFI"
+        Link="/Content/Platform/RCM/RCM Reference/Create RFI_1.htm#_Toc489949532" />
+      <TocEntry
+        Title="Enable Actions for RFI Reply"
+        Link="/Content/Platform/RCM/RCM Reference/Enable Actions for RFI Reply_1.htm#_Toc489949533" />
+      <TocEntry
+        Title="View RFI"
+        Link="/Content/Platform/RCM/RCM Reference/View RFI_1.htm#_Toc489949534" />
+      <TocEntry
+        Title="Edit Item"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Item_1.htm#_Toc489949535" />
+      <TocEntry
+        Title="Change Priority"
+        Link="/Content/Platform/RCM/RCM Reference/Change Priority.htm#_Toc489949536" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_5.htm#_Toc489949537" />
+      <TocEntry
+        Title="Delete"
+        Link="/Content/Platform/RCM/RCM Reference/Delete_1.htm#_Toc489949538" />
+      <TocEntry
+        Title="Get Next"
+        Link="/Content/Platform/RCM/RCM Reference/Get Next_1.htm#_Toc489949539" />
+    </TocEntry>
+    <TocEntry
+      Title="Export/Mail/Print"
+      Link="/Content/Platform/RCM/RCM Reference/Export Mail Print_1.htm#_Toc489949540">
+      <TocEntry
+        Title="Print List"
+        Link="/Content/Platform/RCM/RCM Reference/Print List_2.htm#_Toc489949541" />
+      <TocEntry
+        Title="Print Details"
+        Link="/Content/Platform/RCM/RCM Reference/Print Details_1.htm#_Toc489949542" />
+      <TocEntry
+        Title="Export"
+        Link="/Content/Platform/RCM/RCM Reference/Export_2.htm#_Toc489949543" />
+      <TocEntry
+        Title="Send Mail"
+        Link="/Content/Platform/RCM/RCM Reference/Send Mail_1.htm#_Toc489949544" />
+      <TocEntry
+        Title="Show as PDF"
+        Link="/Content/Platform/RCM/RCM Reference/Show as PDF_2.htm#_Toc489949545" />
+    </TocEntry>
+    <TocEntry
+      Title="Starred Items"
+      Link="/Content/Platform/RCM/RCM Reference/Starring Items_1.htm#_Toc489949546" />
+  </TocEntry>
+  <TocEntry
+    Title="Case Item Details"
+    Link="/Content/Platform/RCM/RCM Reference/Case Item Details.htm#_Toc489949547"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Case Items Details"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Case Items Details.htm#_Toc489949548"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Case Items Details Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Case Items Details Toolbar.htm#_Toc489949549" />
+    <TocEntry
+      Title="Print/PDF/Email Options"
+      Link="/Content/Platform/RCM/RCM Reference/Print PDF Email Options_1.htm#_Toc489949550" />
+    <TocEntry
+      Title="Browse and Step Options"
+      Link="/Content/Platform/RCM/RCM Reference/Browse and Step Options_1.htm#_Toc489949551" />
+    <TocEntry
+      Title="Case Item Details Information"
+      Link="/Content/Platform/RCM/RCM Reference/Case Item Details Information.htm#_Toc489949552">
+      <TocEntry
+        Title="Content Tab"
+        Link="/Content/Platform/RCM/RCM Reference/Content Tab.htm#_Toc489949553" />
+      <TocEntry
+        Title="Case Work Items Tab"
+        Link="/Content/Platform/RCM/RCM Reference/Case Work Items Tab.htm#_Toc489949554" />
+    </TocEntry>
+    <TocEntry
+      Title="Case Items Workflow"
+      Link="/Content/Platform/RCM/RCM Reference/Case Items Workflow.htm#_Toc489949555">
+      <TocEntry
+        Title="Access the Case Item’s Workflow Screen"
+        Link="/Content/Platform/RCM/RCM Reference/Access the Case Item s Workflow.htm#_Toc489949556" />
+      <TocEntry
+        Title="The Case Items Workflow Tasks Table"
+        Link="/Content/Platform/RCM/RCM Reference/The Case Items Workflow Tasks.htm#_Toc489949557" />
+      <TocEntry
+        Title="Global Deadline"
+        Link="/Content/Platform/RCM/RCM Reference/Global Deadline_1.htm#_Toc489949558" />
+      <TocEntry
+        Title="Move to the Next Case Item"
+        Link="/Content/Platform/RCM/RCM Reference/Move to the Next Case Item.htm#_Toc489949559" />
+      <TocEntry
+        Title="Recall a Step"
+        Link="/Content/Platform/RCM/RCM Reference/Recall a Step_1.htm#_Toc489949560" />
+      <TocEntry
+        Title="Reset a Step"
+        Link="/Content/Platform/RCM/RCM Reference/Reset a Step_1.htm#_Toc489949561" />
+      <TocEntry
+        Title="View Previous Steps"
+        Link="/Content/Platform/RCM/RCM Reference/View Previous Steps_1.htm#_Toc489949562" />
+    </TocEntry>
+    <TocEntry
+      Title="Reasons for Work Item Findings"
+      Link="/Content/Platform/RCM/RCM Reference/Reasons for Work Item Findings_1.htm#_Toc489949563">
+      <TocEntry
+        Title="Single Case Item Selection"
+        Link="/Content/Platform/RCM/RCM Reference/Single Case Item Selection.htm#_Toc489949564" />
+      <TocEntry
+        Title="Multiple Selection of Case Items (Bulk Items)"
+        Link="/Content/Platform/RCM/RCM Reference/Multiple Selection of Case.htm#_Toc489949565" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Cases"
+    Link="/Content/Platform/RCM/RCM Reference/Cases.htm#_Toc489949566"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Cases"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Cases.htm#_Toc489949567"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Cases List"
+      Link="/Content/Platform/RCM/RCM Reference/Cases List.htm#_Toc489949568" />
+    <TocEntry
+      Title="Case Browsing Options"
+      Link="/Content/Platform/RCM/RCM Reference/Case Browsing Options.htm#_Toc489949569" />
+    <TocEntry
+      Title="Case Search Options"
+      Link="/Content/Platform/RCM/RCM Reference/Case Search Options.htm#_Toc489949570"></TocEntry>
+    <TocEntry
+      Title="Advanced Sort"
+      Link="/Content/Platform/RCM/RCM Reference/Advanced Sort_3.htm#_Toc489949573" />
+    <TocEntry
+      Title="Cases Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Cases Toolbar.htm#_Toc489949574">
+      <TocEntry
+        Title="New Case"
+        Link="/Content/Platform/RCM/RCM Reference/New Case_1.htm#_Toc489949575" />
+      <TocEntry
+        Title="Assign"
+        Link="/Content/Platform/RCM/RCM Reference/Assign_3.htm#_Toc489949576" />
+      <TocEntry
+        Title="Change Step"
+        Link="/Content/Platform/RCM/RCM Reference/Change Step_2.htm#_Toc489949577" />
+      <TocEntry
+        Title="Change Priority"
+        Link="/Content/Platform/RCM/RCM Reference/Change Priority_1.htm#_Toc489949578" />
+      <TocEntry
+        Title="Edit Case"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Case.htm#_Toc489949579" />
+      <TocEntry
+        Title="Add Note"
+        Link="/Content/Platform/RCM/RCM Reference/Add Note_5.htm#_Toc489949580" />
+      <TocEntry
+        Title="View Notes"
+        Link="/Content/Platform/RCM/RCM Reference/View Notes_6.htm#_Toc489949581" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_6.htm#_Toc489949582" />
+      <TocEntry
+        Title="Delete"
+        Link="/Content/Platform/RCM/RCM Reference/Delete_2.htm#_Toc489949583" />
+      <TocEntry
+        Title="Create RFI"
+        Link="/Content/Platform/RCM/RCM Reference/Create RFI_2.htm#_Toc489949584" />
+      <TocEntry
+        Title="View RFI"
+        Link="/Content/Platform/RCM/RCM Reference/View RFI_2.htm#_Toc489949585" />
+    </TocEntry>
+    <TocEntry
+      Title="Create a Form"
+      Link="/Content/Platform/RCM/RCM Reference/Create a Form.htm#_Toc489949586" />
+    <TocEntry
+      Title="Validate Forms"
+      Link="/Content/Platform/RCM/RCM Reference/Validate Forms.htm#_Toc489949587" />
+    <TocEntry
+      Title="Amend Forms"
+      Link="/Content/Platform/RCM/RCM Reference/Amend Forms.htm#_Toc489949588" />
+    <TocEntry
+      Title="Reclaim Forms"
+      Link="/Content/Platform/RCM/RCM Reference/Reclaim Forms.htm#_Toc489949589" />
+    <TocEntry
+      Title="Case Views"
+      Link="/Content/Platform/RCM/RCM Reference/Case Views.htm#_Toc489949590" />
+    <TocEntry
+      Title="Export/Mail/Print"
+      Link="/Content/Platform/RCM/RCM Reference/Export Mail Print_2.htm#_Toc489949591"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Case Details"
+    Link="/Content/Platform/RCM/RCM Reference/Case_Details.htm#_Toc489949596"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Case Details Display"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of the Case Details.htm#_Toc489949597"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Browse and Step Options"
+      Link="/Content/Platform/RCM/RCM Reference/Browse and Step Options_2.htm#_Toc489949598" />
+    <TocEntry
+      Title="Case Details General Information Subtab"
+      Link="/Content/Platform/RCM/RCM Reference/Case Details General Information.htm#_Toc489949599" />
+    <TocEntry
+      Title="Case Contents Subtab"
+      Link="/Content/Platform/RCM/RCM Reference/Case Contents Subtab.htm#_Toc489949600">
+      <TocEntry
+        Title="The Default View – Group by Document Type"
+        Link="/Content/Platform/RCM/RCM Reference/The Default View Group by.htm#_Toc489949601" />
+      <TocEntry
+        Title="Attachments"
+        Link="/Content/Platform/RCM/RCM Reference/Attachments.htm#_Toc489949602" />
+      <TocEntry
+        Title="Chronologically Ordered View"
+        Link="/Content/Platform/RCM/RCM Reference/Chronologically Ordered View.htm#_Toc489949603" />
+    </TocEntry>
+    <TocEntry
+      Title="Cases Workflow Subtab"
+      Link="/Content/Platform/RCM/RCM Reference/Cases Workflow Subtab.htm#_Toc489949604">
+      <TocEntry
+        Title="Accessing the Case’s Workflow Screen"
+        Link="/Content/Platform/RCM/RCM Reference/Accessing the Case s Workflow.htm#_Toc489949605" />
+      <TocEntry
+        Title="The Case Workflow Tasks Table"
+        Link="/Content/Platform/RCM/RCM Reference/The Case Workflow Tasks Table.htm#_Toc489949606" />
+      <TocEntry
+        Title="Global Deadline"
+        Link="/Content/Platform/RCM/RCM Reference/Global Deadline_2.htm#_Toc489949607" />
+      <TocEntry
+        Title="Recall a Step"
+        Link="/Content/Platform/RCM/RCM Reference/Recall a Step_2.htm#_Toc489949608" />
+      <TocEntry
+        Title="Reset a Step"
+        Link="/Content/Platform/RCM/RCM Reference/Reset a Step_2.htm#_Toc489949609" />
+      <TocEntry
+        Title="View Previous Steps"
+        Link="/Content/Platform/RCM/RCM Reference/View Previous Steps_2.htm#_Toc489949610" />
+    </TocEntry>
+    <TocEntry
+      Title="Forms Subtab"
+      Link="/Content/Platform/RCM/RCM Reference/Forms Subtab.htm#_Toc489949611">
+      <TocEntry
+        Title="Forms Actions"
+        Link="/Content/Platform/RCM/RCM Reference/Forms Actions.htm#_Toc489949612" />
+    </TocEntry>
+    <TocEntry
+      Title="History Subtab"
+      Link="/Content/Platform/RCM/RCM Reference/History Subtab.htm#_Toc489949613" />
+  </TocEntry>
+  <TocEntry
+    Title="DART - Detection and Research Tool"
+    Link="/Content/Platform/RCM/RCM Reference/DART_Detection_and_Research_Tool.htm#_Toc489949614"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of DART"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of DART.htm#_Toc489949615"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="DART Query Types"
+        Link="/Content/Platform/RCM/RCM Reference/DART Query Types.htm#_Toc489949616" />
+      <TocEntry
+        Title="Access DART"
+        Link="/Content/Platform/RCM/RCM Reference/Access DART.htm#_Toc489949617" />
+    </TocEntry>
+    <TocEntry
+      Title="Create a New Query"
+      Link="/Content/Platform/RCM/RCM Reference/Create a New Query.htm#_Toc489949618">
+      <TocEntry
+        Title="Select and View a Data Source"
+        Link="/Content/Platform/RCM/RCM Reference/Select and View a Data Source.htm#_Toc489949619" />
+      <TocEntry
+        Title="Set the Time Period"
+        Link="/Content/Platform/RCM/RCM Reference/Set the Time Period.htm#_Toc489949620" />
+      <TocEntry
+        Title="Select Columns for the Query Results"
+        Link="/Content/Platform/RCM/RCM Reference/Select Columns for the Query.htm#_Toc489949621" />
+      <TocEntry
+        Title="Add Conditions"
+        Link="/Content/Platform/RCM/RCM Reference/Add Conditions.htm#_Toc489949622" />
+      <TocEntry
+        Title="Auto Filter Options"
+        Link="/Content/Platform/RCM/RCM Reference/Auto Filter Options.htm#_Toc489949623" />
+      <TocEntry
+        Title="Add a Multi-field Condition"
+        Link="/Content/Platform/RCM/RCM Reference/Add a Multi field Condition.htm#_Toc489949624" />
+      <TocEntry
+        Title="Add Multiple Conditions to a Query"
+        Link="/Content/Platform/RCM/RCM Reference/Add Multiple Conditions to.htm#_Toc489949625" />
+    </TocEntry>
+    <TocEntry
+      Title="Run a Query"
+      Link="/Content/Platform/RCM/RCM Reference/Run a Query_1.htm#_Toc489949626"></TocEntry>
+    <TocEntry
+      Title="Save a Query"
+      Link="/Content/Platform/RCM/RCM Reference/Save a Query.htm#_Toc489949629">
+      <TocEntry
+        Title="Manage Saved Queries"
+        Link="/Content/Platform/RCM/RCM Reference/Manage Saved Queries.htm#_Toc489949630" />
+    </TocEntry>
+    <TocEntry
+      Title="Create a Sub Query"
+      Link="/Content/Platform/RCM/RCM Reference/Create a Sub Query.htm#_Toc489949631">
+      <TocEntry
+        Title="Create an Internal Sub Query"
+        Link="/Content/Platform/RCM/RCM Reference/Create an Internal Sub Query.htm#_Toc489949632" />
+    </TocEntry>
+    <TocEntry
+      Title="Export Query Results"
+      Link="/Content/Platform/RCM/RCM Reference/Export Query Results.htm#_Toc489949633" />
+    <TocEntry
+      Title="Jump to another Data Source"
+      Link="/Content/Platform/RCM/RCM Reference/Jump to another Data Source.htm#_Toc489949634" />
+    <TocEntry
+      Title="Create Conditions on Virtual Columns"
+      Link="/Content/Platform/RCM/RCM Reference/Create Conditions on Virtual.htm#_Toc489949635" />
+    <TocEntry
+      Title="Create Sequence Based Queries"
+      Link="/Content/Platform/RCM/RCM Reference/Create Sequence Based Queries.htm#_Toc489949636">
+      <TocEntry
+        Title="Create an Event"
+        Link="/Content/Platform/RCM/RCM Reference/Create an Event.htm#_Toc489949637" />
+      <TocEntry
+        Title="Define Constraints Between Events"
+        Link="/Content/Platform/RCM/RCM Reference/Define Constraints Between.htm#_Toc489949638" />
+      <TocEntry
+        Title="Sequence Timeframe Definition"
+        Link="/Content/Platform/RCM/RCM Reference/Sequence Timeframe Definition.htm#_Toc489949639" />
+      <TocEntry
+        Title="Global and Cross Event Constraints"
+        Link="/Content/Platform/RCM/RCM Reference/Global and Cross Event Constraints.htm#_Toc489949640" />
+      <TocEntry
+        Title="Remove a Constraint or a Condition"
+        Link="/Content/Platform/RCM/RCM Reference/Remove a Constraint or a Condition.htm#_Toc489949641" />
+      <TocEntry
+        Title="Cross out a Constraint or a Condition"
+        Link="/Content/Platform/RCM/RCM Reference/Cross out a Constraint or.htm#_Toc489949642" />
+    </TocEntry>
+    <TocEntry
+      Title="Create a DART Work Item"
+      Link="/Content/Platform/RCM/RCM Reference/Create a DART Work Item.htm#_Toc489949643" />
+    <TocEntry
+      Title="Create Scheduled Queries"
+      Link="/Content/Platform/RCM/RCM Reference/Create Scheduled Queries.htm#_Toc489949644" />
+  </TocEntry>
+  <TocEntry
+    Title="DART Scheduled Queries"
+    Link="/Content/Platform/RCM/RCM Reference/DART_Scheduled_Queries.htm#_Toc489949645"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of DART Scheduled Queries"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of DART Scheduled.htm#_Toc489949646"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Find a Scheduled Query"
+      Link="/Content/Platform/RCM/RCM Reference/Find a Scheduled Query.htm#_Toc489949647" />
+    <TocEntry
+      Title="View the Original Query"
+      Link="/Content/Platform/RCM/RCM Reference/View the Original Query.htm#_Toc489949648" />
+    <TocEntry
+      Title="Delete a Scheduled Query"
+      Link="/Content/Platform/RCM/RCM Reference/Delete a Scheduled Query.htm#_Toc489949649" />
+  </TocEntry>
+  <TocEntry
+    Title="Visual Link Analysis"
+    Link="/Content/Platform/RCM/RCM Reference/VLA.htm#_Toc489949650"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Visual Link Analysis"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Visual Link Analysis.htm#_Toc489949651"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="The Drawing Canvas"
+      Link="/Content/Platform/RCM/RCM Reference/The Drawing Canvas.htm#_Toc489949652">
+      <TocEntry
+        Title="Expand/Collapse Graphs"
+        Link="/Content/Platform/RCM/RCM Reference/Expand Collapse Graphs.htm#_Toc489949653" />
+    </TocEntry>
+    <TocEntry
+      Title="The Drawing Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/The Drawing Toolbar.htm#_Toc489949654" />
+    <TocEntry
+      Title="Filters"
+      Link="/Content/Platform/RCM/RCM Reference/Filters.htm#_Toc489949655">
+      <TocEntry
+        Title="The Entity Types Filter"
+        Link="/Content/Platform/RCM/RCM Reference/The Entity Types Filter.htm#_Toc489949656" />
+      <TocEntry
+        Title="The Network Types Filter"
+        Link="/Content/Platform/RCM/RCM Reference/The Network Types Filter.htm#_Toc489949657" />
+      <TocEntry
+        Title="The Network Highlighting Filter"
+        Link="/Content/Platform/RCM/RCM Reference/The Network Highlighting Filter.htm#_Toc489949658" />
+    </TocEntry>
+    <TocEntry
+      Title="Overview Window"
+      Link="/Content/Platform/RCM/RCM Reference/Overview Window.htm#_Toc489949659" />
+    <TocEntry
+      Title="The Properties Window"
+      Link="/Content/Platform/RCM/RCM Reference/The Properties Window.htm#_Toc489949660" />
+  </TocEntry>
+  <TocEntry
+    Title="On-Demand Reports"
+    Link="/Content/Platform/RCM/RCM Reference/On_Demand_Reports.htm#_Toc489949661"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of On-Demand Reports"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of On Demand Reports.htm#_Toc489949662"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="About the Management Reports"
+      Link="/Content/Platform/RCM/RCM Reference/About the Management Reports_1.htm#_Toc489949663" />
+    <TocEntry
+      Title="Generate a DHTML Report"
+      Link="/Content/Platform/RCM/RCM Reference/Generate a DHTML Report.htm#_Toc489949664" />
+    <TocEntry
+      Title="Save On-Demand Reports to the RCM Repository"
+      Link="/Content/Platform/RCM/RCM Reference/Save On Demand Reports to.htm#_Toc489949665" />
+  </TocEntry>
+  <TocEntry
+    Title="Policy Manager"
+    Link="/Content/Platform/RCM/RCM Reference/Policy_Manager.htm#_Toc489949666"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Policy Manager"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Policy Manager.htm#_Toc489949667"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl"></TocEntry>
+    <TocEntry
+      Title="The Draft Policy Tab"
+      Link="/Content/Platform/RCM/RCM Reference/The Draft Policy Tab.htm#_Toc489949669">
+      <TocEntry
+        Title="The Draft Policy Toolbar"
+        Link="/Content/Platform/RCM/RCM Reference/The Draft Policy Toolbar.htm#_Toc489949670" />
+      <TocEntry
+        Title="More Actions"
+        Link="/Content/Platform/RCM/RCM Reference/More Actions.htm#_Toc489949671" />
+      <TocEntry
+        Title="The Draft Policy Table"
+        Link="/Content/Platform/RCM/RCM Reference/The Draft Policy Table.htm#_Toc489949672" />
+      <TocEntry
+        Title="Create a New Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Create a New Rule.htm#_Toc489949673" />
+      <TocEntry
+        Title="Activate/Deactivate a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Activate Deactivate a Rule.htm#_Toc489949674" />
+      <TocEntry
+        Title="Export Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Export Rules.htm#_Toc489949675" />
+      <TocEntry
+        Title="Duplicate a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Duplicate a Rule.htm#_Toc489949676" />
+      <TocEntry
+        Title="Edit a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Edit a Rule.htm#_Toc489949677" />
+      <TocEntry
+        Title="View The Rule’s History"
+        Link="/Content/Platform/RCM/RCM Reference/View The Rule s History.htm#_Toc489949678" />
+      <TocEntry
+        Title="Filter a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Filter a Rule.htm#_Toc489949679" />
+      <TocEntry
+        Title="Import Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Import Rules.htm#_Toc489949680" />
+      <TocEntry
+        Title="Delete a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Delete a Rule.htm#_Toc489949681" />
+      <TocEntry
+        Title="View the History of a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/View the History of a Rule.htm#_Toc489949682" />
+      <TocEntry
+        Title="Set/Remove the Rule Priority"
+        Link="/Content/Platform/RCM/RCM Reference/Set Remove the Rule Priority.htm#_Toc489949683" />
+      <TocEntry
+        Title="Adjust the Order of Prioritized Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Adjust the Order of Prioritized.htm#_Toc489949684" />
+    </TocEntry>
+    <TocEntry
+      Title="Activate a Draft Policy - The Policy Activation Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Activate a Draft Policy The.htm#_Toc489949685" />
+    <TocEntry
+      Title="The Active Policy Tab"
+      Link="/Content/Platform/RCM/RCM Reference/The Active Policy Tab.htm#_Toc489949686">
+      <TocEntry
+        Title="The Active Policy Toolbar"
+        Link="/Content/Platform/RCM/RCM Reference/The Active Policy Toolbar.htm#_Toc489949687" />
+      <TocEntry
+        Title="The Active Policy Table"
+        Link="/Content/Platform/RCM/RCM Reference/The Active Policy Table.htm#_Toc489949688" />
+    </TocEntry>
+    <TocEntry
+      Title="Historical Policies Tab - History of Activated Policies"
+      Link="/Content/Platform/RCM/RCM Reference/Historical Policies Tab History.htm#_Toc489949689">
+      <TocEntry
+        Title="The Historical Policies Toolbar"
+        Link="/Content/Platform/RCM/RCM Reference/The Historical Policies Toolbar.htm#_Toc489949690" />
+      <TocEntry
+        Title="The Historical Policies Table"
+        Link="/Content/Platform/RCM/RCM Reference/The Historical Policies Table.htm#_Toc489949691" />
+    </TocEntry>
+    <TocEntry
+      Title="Policy Manager in Multi-Tenant Mode"
+      Link="/Content/Platform/RCM/RCM Reference/Policy Manager in Multi Tenant.htm#_Toc489949692">
+      <TocEntry
+        Title="Actions for the Host"
+        Link="/Content/Platform/RCM/RCM Reference/Actions for the Host.htm#_Toc489949693" />
+      <TocEntry
+        Title="Actions for the Tenant"
+        Link="/Content/Platform/RCM/RCM Reference/Actions for the Tenant.htm#_Toc489949694" />
+    </TocEntry>
+    <TocEntry
+      Title="Query Rules Policy Types"
+      Link="/Content/Platform/RCM/RCM Reference/Query Rules Policy Types.htm#_Toc489949695">
+      <TocEntry
+        Title="Create a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Create a Rule.htm#_Toc489949696" />
+      <TocEntry
+        Title="Validate a Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Validate a Rule.htm#_Toc489949697" />
+      <TocEntry
+        Title="Conduct a Trial Run"
+        Link="/Content/Platform/RCM/RCM Reference/Conduct a Trial Run.htm#_Toc489949698" />
+      <TocEntry
+        Title="Modify a Saved Rule"
+        Link="/Content/Platform/RCM/RCM Reference/Modify a Saved Rule.htm#_Toc489949699" />
+    </TocEntry>
+    <TocEntry
+      Title="Import and Export Query Rules"
+      Link="/Content/Platform/RCM/RCM Reference/Import and Export Query Rules.htm#_Toc489949700">
+      <TocEntry
+        Title="Export Query Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Export Query Rules.htm#_Toc489949701" />
+      <TocEntry
+        Title="Import Query Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Import Query Rules.htm#_Toc489949702" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Settings Navigator"
+    Link="/Content/Platform/RCM/RCM Reference/Settings_Navigator.htm#_Toc489949703"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Settings Tree"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of the Settings Tree.htm#_Toc489949704"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl">
+      <TocEntry
+        Title="The Settings Filter"
+        Link="/Content/Platform/RCM/RCM Reference/The Settings Filter.htm#_Toc489949705" />
+      <TocEntry
+        Title="Navigate in the Settings Tree"
+        Link="/Content/Platform/RCM/RCM Reference/Navigate in the Settings Tree.htm#_Toc489949706" />
+    </TocEntry>
+    <TocEntry
+      Title="Settings Options"
+      Link="/Content/Platform/RCM/RCM Reference/Settings Options.htm#_Toc489949707">
+      <TocEntry
+        Title="Add a Row to the Setting"
+        Link="/Content/Platform/RCM/RCM Reference/Add a Row to the Setting.htm#_Toc489949708" />
+      <TocEntry
+        Title="Edit Setting Entries"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Setting Entries.htm#_Toc489949709" />
+      <TocEntry
+        Title="Delete Setting Item"
+        Link="/Content/Platform/RCM/RCM Reference/Delete Setting Item.htm#_Toc489949710" />
+      <TocEntry
+        Title="Export Setting"
+        Link="/Content/Platform/RCM/RCM Reference/Export Setting.htm#_Toc489949711" />
+      <TocEntry
+        Title="Setting History"
+        Link="/Content/Platform/RCM/RCM Reference/Setting History.htm#_Toc489949712" />
+      <TocEntry
+        Title="Print Setting"
+        Link="/Content/Platform/RCM/RCM Reference/Print Setting.htm#_Toc489949713" />
+    </TocEntry>
+    <TocEntry
+      Title="Platform List Options"
+      Link="/Content/Platform/RCM/RCM Reference/Platform List Options.htm#_Toc489949714">
+      <TocEntry
+        Title="Add an Item to the Setting"
+        Link="/Content/Platform/RCM/RCM Reference/Add an Item to the Setting.htm#_Toc489949715" />
+      <TocEntry
+        Title="Edit Setting Entries"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Setting Entries_1.htm#_Toc489949716" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Thresholds"
+    Link="/Content/Platform/RCM/RCM Reference/Thresholds.htm#_Toc489949717"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Thresholds"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Thresholds.htm#_Toc489949718"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Threshold Examples"
+      Link="/Content/Platform/RCM/RCM Reference/Threshold Examples.htm#_Toc489949719">
+      <TocEntry
+        Title="Example 1-Detection Rule Thresholds"
+        Link="/Content/Platform/RCM/RCM Reference/Example 1 Detection Rule Thresholds.htm#_Toc489949720" />
+      <TocEntry
+        Title="Example 2-User-Defined Values for Thresholds"
+        Link="/Content/Platform/RCM/RCM Reference/Example 2 User Defined Values.htm#_Toc489949721" />
+    </TocEntry>
+    <TocEntry
+      Title="Standard Threshold Options"
+      Link="/Content/Platform/RCM/RCM Reference/Standard Threshold Options.htm#_Toc489949722">
+      <TocEntry
+        Title="Add a Row to the Threshold List"
+        Link="/Content/Platform/RCM/RCM Reference/Add a Row to the Threshold.htm#_Toc489949723" />
+      <TocEntry
+        Title="Edit Threshold Information"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Threshold Information.htm#_Toc489949724" />
+      <TocEntry
+        Title="Delete Threshold"
+        Link="/Content/Platform/RCM/RCM Reference/Delete Threshold.htm#_Toc489949725" />
+      <TocEntry
+        Title="Restore Defaults"
+        Link="/Content/Platform/RCM/RCM Reference/Restore Defaults.htm#_Toc489949726" />
+      <TocEntry
+        Title="Import Excel/CSV"
+        Link="/Content/Platform/RCM/RCM Reference/Import Excel CSV.htm#_Toc489949727" />
+      <TocEntry
+        Title="Export Setting"
+        Link="/Content/Platform/RCM/RCM Reference/Export Setting_1.htm#_Toc489949728" />
+      <TocEntry
+        Title="Threshold History"
+        Link="/Content/Platform/RCM/RCM Reference/Threshold History.htm#_Toc489949729" />
+      <TocEntry
+        Title="Print Threshold List"
+        Link="/Content/Platform/RCM/RCM Reference/Print Threshold List.htm#_Toc489949730" />
+      <TocEntry
+        Title="Export Items"
+        Link="/Content/Platform/RCM/RCM Reference/Export Items.htm#_Toc489949731" />
+      <TocEntry
+        Title="Import Items"
+        Link="/Content/Platform/RCM/RCM Reference/Import Items.htm#_Toc489949732" />
+      <TocEntry
+        Title="Import Items from an APF File"
+        Link="/Content/Platform/RCM/RCM Reference/Import Items from an APF File.htm#_Toc489949733" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Lists"
+    Link="/Content/Platform/RCM/RCM Reference/Lists.htm#_Toc489949734"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Lists"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Lists.htm#_Toc489949735"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="List Options"
+      Link="/Content/Platform/RCM/RCM Reference/List Options.htm#_Toc489949736">
+      <TocEntry
+        Title="Add Item"
+        Link="/Content/Platform/RCM/RCM Reference/Add Item.htm#_Toc489949737" />
+      <TocEntry
+        Title="Edit List Information"
+        Link="/Content/Platform/RCM/RCM Reference/Edit List Information.htm#_Toc489949738" />
+      <TocEntry
+        Title="Delete List Entity"
+        Link="/Content/Platform/RCM/RCM Reference/Delete List Entity.htm#_Toc489949739" />
+      <TocEntry
+        Title="List History"
+        Link="/Content/Platform/RCM/RCM Reference/List History.htm#_Toc489949740" />
+      <TocEntry
+        Title="Print List"
+        Link="/Content/Platform/RCM/RCM Reference/Print List_4.htm#_Toc489949741" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Platform Lists"
+    Link="/Content/Platform/RCM/RCM Reference/Platform_Lists.htm#_Toc489949742"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Platform Lists"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Platform Lists.htm#_Toc489949743"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Platform Lists Toolbar"
+      Link="/Content/Platform/RCM/RCM Reference/Platform Lists Toolbar.htm#_Toc489949744" />
+    <TocEntry
+      Title="Platform List Actions"
+      Link="/Content/Platform/RCM/RCM Reference/Platform List Actions.htm#_Toc489949745">
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_7.htm#_Toc489949746" />
+      <TocEntry
+        Title="Approve/Disapprove an Item"
+        Link="/Content/Platform/RCM/RCM Reference/Approve Disapprove an Item.htm#_Toc489949747" />
+      <TocEntry
+        Title="Add a New Item"
+        Link="/Content/Platform/RCM/RCM Reference/Add a New Item.htm#_Toc489949748" />
+      <TocEntry
+        Title="Duplicate an Item"
+        Link="/Content/Platform/RCM/RCM Reference/Duplicate an Item.htm#_Toc489949749" />
+      <TocEntry
+        Title="Edit an Item"
+        Link="/Content/Platform/RCM/RCM Reference/Edit an Item.htm#_Toc489949750" />
+      <TocEntry
+        Title="Edit Multiple Items"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Multiple Items.htm#_Toc489949751" />
+      <TocEntry
+        Title="Filter Items"
+        Link="/Content/Platform/RCM/RCM Reference/Filter Items.htm#_Toc489949752" />
+      <TocEntry
+        Title="Edit Filtered Items"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Filtered Items.htm#_Toc489949753" />
+      <TocEntry
+        Title="Remove Items"
+        Link="/Content/Platform/RCM/RCM Reference/Remove Items.htm#_Toc489949754" />
+      <TocEntry
+        Title="Export Items"
+        Link="/Content/Platform/RCM/RCM Reference/Export Items_1.htm#_Toc489949755" />
+      <TocEntry
+        Title="Import Items"
+        Link="/Content/Platform/RCM/RCM Reference/Import Items_1.htm#_Toc489949756" />
+      <TocEntry
+        Title="Effect on Policy Manager Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Effect on Policy Manager Rules.htm#_Toc489949757" />
+    </TocEntry>
+    <TocEntry
+      Title="Business Calendar Lists"
+      Link="/Content/Platform/RCM/RCM Reference/Business Calendar Lists.htm#_Toc489949758" />
+    <TocEntry
+      Title="Platform Lists In a Multi-Tenant Environment"
+      Link="/Content/Platform/RCM/RCM Reference/Platform Lists In a Multi.htm#_Toc489949759">
+      <TocEntry
+        Title="Lists that Include the Approve/Disapprove Options"
+        Link="/Content/Platform/RCM/RCM Reference/Lists that Include the Approve.htm#_Toc489949760" />
+      <TocEntry
+        Title="Include Host Items in the List"
+        Link="/Content/Platform/RCM/RCM Reference/Include Host Items in the.htm#_Toc489949761" />
+      <TocEntry
+        Title="Use Only Tenant Values Action Link"
+        Link="/Content/Platform/RCM/RCM Reference/Use Only Tenant Values Action.htm#_Toc489949762" />
+      <TocEntry
+        Title="Effect on Policy Manager Rules"
+        Link="/Content/Platform/RCM/RCM Reference/Effect on Policy Manager Rules_1.htm#_Toc489949763" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Tuning"
+    Link="/Content/Platform/RCM/RCM Reference/Tuning.htm#_Toc489949764"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Tuning"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Tuning.htm#_Toc489949765"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Select a Tuning Context"
+      Link="/Content/Platform/RCM/RCM Reference/Select a Tuning Context.htm#_Toc489949766" />
+    <TocEntry
+      Title="Tuning Tree"
+      Link="/Content/Platform/RCM/RCM Reference/Tuning Tree.htm#_Toc489949768" />
+    <TocEntry
+      Title="The Items List Pane"
+      Link="/Content/Platform/RCM/RCM Reference/The Items List Pane.htm#_Toc489949769" />
+    <TocEntry
+      Title="Enter and Modify Test Values"
+      Link="/Content/Platform/RCM/RCM Reference/Enter and Modify Test Values.htm#_Toc489949770" />
+    <TocEntry
+      Title="Run a Test"
+      Link="/Content/Platform/RCM/RCM Reference/Run a Test.htm#_Toc489949771" />
+    <TocEntry
+      Title="View the Test Results"
+      Link="/Content/Platform/RCM/RCM Reference/View the Test Results.htm#_Toc489949772" />
+    <TocEntry
+      Title="Apply Values for Production"
+      Link="/Content/Platform/RCM/RCM Reference/Apply Values for Production.htm#_Toc489949773">
+      <TocEntry
+        Title="Applying All Test Items of All the Lists"
+        Link="/Content/Platform/RCM/RCM Reference/Applying All Test Items of.htm#_Toc489949774" />
+      <TocEntry
+        Title="Apply Test Items of the Selected List"
+        Link="/Content/Platform/RCM/RCM Reference/Apply Test Items of the Selected.htm#_Toc489949775" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Admin"
+    Link="/Content/Platform/RCM/RCM Reference/Admin.htm#_Toc489949776"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of User Administration"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of User Administration.htm#_Toc489949777"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="About RCM Permissions"
+      Link="/Content/Platform/RCM/RCM Reference/About RCM Permissions.htm#_Toc489949778">
+      <TocEntry
+        Title="Define Permissions"
+        Link="/Content/Platform/RCM/RCM Reference/Define Permissions.htm#_Toc489949779" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Users"
+      Link="/Content/Platform/RCM/RCM Reference/Manage Users.htm#_Toc489949780">
+      <TocEntry
+        Title="Add New User"
+        Link="/Content/Platform/RCM/RCM Reference/Add New User.htm#_Toc489949781" />
+      <TocEntry
+        Title="Assign a New RCM User to Groups"
+        Link="/Content/Platform/RCM/RCM Reference/Assign a New RCM User to Groups.htm#_Toc489949782" />
+      <TocEntry
+        Title="Add External User"
+        Link="/Content/Platform/RCM/RCM Reference/Add External User.htm#_Toc489949783" />
+      <TocEntry
+        Title="Edit User"
+        Link="/Content/Platform/RCM/RCM Reference/Edit User.htm#_Toc489949784" />
+      <TocEntry
+        Title="Duplicate User"
+        Link="/Content/Platform/RCM/RCM Reference/Duplicate User.htm#_Toc489949785" />
+      <TocEntry
+        Title="Change Group"
+        Link="/Content/Platform/RCM/RCM Reference/Change Group.htm#_Toc489949786" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_8.htm#_Toc489949787" />
+      <TocEntry
+        Title="Delete User"
+        Link="/Content/Platform/RCM/RCM Reference/Delete User.htm#_Toc489949788" />
+      <TocEntry
+        Title="Unlock Users"
+        Link="/Content/Platform/RCM/RCM Reference/Unlock Users.htm#_Toc489949789" />
+      <TocEntry
+        Title="Reset Password"
+        Link="/Content/Platform/RCM/RCM Reference/Reset Password.htm#_Toc489949790" />
+      <TocEntry
+        Title="Assign Roles per Business Units"
+        Link="/Content/Platform/RCM/RCM Reference/Assign Roles per Business.htm#_Toc489949791" />
+      <TocEntry
+        Title="Manage Actimize Visual Analytics Users and Roles"
+        Link="/Content/Platform/RCM/RCM Reference/Manage Actimize Visual Analytics.htm#_Toc489949792" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Groups"
+      Link="/Content/Platform/RCM/RCM Reference/Manage Groups.htm#_Toc489949793">
+      <TocEntry
+        Title="Add Group"
+        Link="/Content/Platform/RCM/RCM Reference/Add Group.htm#_Toc489949794" />
+      <TocEntry
+        Title="Add External Group"
+        Link="/Content/Platform/RCM/RCM Reference/Add External Group.htm#_Toc489949795" />
+      <TocEntry
+        Title="Update Group"
+        Link="/Content/Platform/RCM/RCM Reference/Update Group.htm#_Toc489949796" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_9.htm#_Toc489949797" />
+      <TocEntry
+        Title="Assign Users to Group"
+        Link="/Content/Platform/RCM/RCM Reference/Assign Users to Group.htm#_Toc489949798" />
+      <TocEntry
+        Title="Assign Groups to Group"
+        Link="/Content/Platform/RCM/RCM Reference/Assign Groups to Group.htm#_Toc489949799" />
+      <TocEntry
+        Title="Assign to Other Groups"
+        Link="/Content/Platform/RCM/RCM Reference/Assign to Other Groups.htm#_Toc489949800" />
+      <TocEntry
+        Title="Assign Roles"
+        Link="/Content/Platform/RCM/RCM Reference/Assign Roles.htm#_Toc489949801" />
+      <TocEntry
+        Title="Delete Group"
+        Link="/Content/Platform/RCM/RCM Reference/Delete Group.htm#_Toc489949802" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Roles"
+      Link="/Content/Platform/RCM/RCM Reference/Manage Roles.htm#_Toc489949803">
+      <TocEntry
+        Title="Add Role"
+        Link="/Content/Platform/RCM/RCM Reference/Add Role.htm#_Toc489949804" />
+      <TocEntry
+        Title="Update Role"
+        Link="/Content/Platform/RCM/RCM Reference/Update Role.htm#_Toc489949805" />
+      <TocEntry
+        Title="Duplicate Role"
+        Link="/Content/Platform/RCM/RCM Reference/Duplicate Role.htm#_Toc489949806" />
+      <TocEntry
+        Title="Delete Role"
+        Link="/Content/Platform/RCM/RCM Reference/Delete Role.htm#_Toc489949807" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_10.htm#_Toc489949808" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage LDAP"
+      Link="/Content/Platform/RCM/RCM Reference/Manage LDAP.htm#_Toc489949809">
+      <TocEntry
+        Title="Configure the LDAP Connection"
+        Link="/Content/Platform/RCM/RCM Reference/Configure the LDAP Connection.htm#_Toc489949810" />
+      <TocEntry
+        Title="Synchronize List of Users with LDAP Users List"
+        Link="/Content/Platform/RCM/RCM Reference/Synchronize List of Users.htm#_Toc489949811" />
+      <TocEntry
+        Title="Update Role"
+        Link="/Content/Platform/RCM/RCM Reference/Update Role_1.htm#_Toc489949812" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Passwords"
+      Link="/Content/Platform/RCM/RCM Reference/Manage Passwords.htm#_Toc489949813">
+      <TocEntry
+        Title="Reset all Passwords"
+        Link="/Content/Platform/RCM/RCM Reference/Reset all Passwords.htm#_Toc489949814" />
+      <TocEntry
+        Title="Update Password Policies"
+        Link="/Content/Platform/RCM/RCM Reference/Update Password Policies.htm#_Toc489949815" />
+      <TocEntry
+        Title="Edit Dictionary"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Dictionary.htm#_Toc489949816" />
+    </TocEntry>
+    <TocEntry
+      Title="Modify the Encryption Key"
+      Link="/Content/Platform/RCM/RCM Reference/Modify the Encryption Key.htm#_Toc489949817" />
+    <TocEntry
+      Title="Workflow Restrictions"
+      Link="/Content/Platform/RCM/RCM Reference/Workflow Restrictions.htm#_Toc489949818">
+      <TocEntry
+        Title="Create a Restrictions Template"
+        Link="/Content/Platform/RCM/RCM Reference/Create a Restrictions Template.htm#_Toc489949819" />
+      <TocEntry
+        Title="Edit a Restrictions Template"
+        Link="/Content/Platform/RCM/RCM Reference/Edit a Restrictions Template.htm#_Toc489949820" />
+      <TocEntry
+        Title="Delete a Restrictions Template"
+        Link="/Content/Platform/RCM/RCM Reference/Delete a Restrictions Template.htm#_Toc489949821" />
+    </TocEntry>
+    <TocEntry
+      Title="Add and Manage Tenants"
+      Link="/Content/Platform/RCM/RCM Reference/Add and Manage Tenants.htm#_Toc489949822">
+      <TocEntry
+        Title="Add a Tenant"
+        Link="/Content/Platform/RCM/RCM Reference/Add a Tenant.htm#_Toc489949823" />
+      <TocEntry
+        Title="Edit Tenant information"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Tenant information.htm#_Toc489949824" />
+      <TocEntry
+        Title="Remove a Tenant"
+        Link="/Content/Platform/RCM/RCM Reference/Remove a Tenant.htm#_Toc489949825" />
+      <TocEntry
+        Title="View History"
+        Link="/Content/Platform/RCM/RCM Reference/View History_11.htm#_Toc489949826" />
+    </TocEntry>
+    <TocEntry
+      Title="Define Local Admin Users"
+      Link="/Content/Platform/RCM/RCM Reference/Define Local Admin Users.htm#_Toc489949827">
+      <TocEntry
+        Title="Create and Define a Local Admin"
+        Link="/Content/Platform/RCM/RCM Reference/Create and Define a Local.htm#_Toc489949828" />
+      <TocEntry
+        Title="Guidelines for Local Admin Users"
+        Link="/Content/Platform/RCM/RCM Reference/Guidelines for Local Admin.htm#_Toc489949829" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Delegations"
+      Link="/Content/Platform/RCM/RCM Reference/Manage Delegations.htm#_Toc489949830">
+      <TocEntry
+        Title="New Delegation"
+        Link="/Content/Platform/RCM/RCM Reference/New Delegation.htm#_Toc489949831" />
+      <TocEntry
+        Title="Edit Delegation"
+        Link="/Content/Platform/RCM/RCM Reference/Edit Delegation.htm#_Toc489949832" />
+      <TocEntry
+        Title="Delete Delegation"
+        Link="/Content/Platform/RCM/RCM Reference/Delete Delegation.htm#_Toc489949833" />
+      <TocEntry
+        Title="History of Delegation"
+        Link="/Content/Platform/RCM/RCM Reference/History of Delegation.htm#_Toc489949834" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Drill Down Queries"
+      Link="/Content/Platform/RCM/RCM Reference/Manage Drill Down Queries.htm#_Toc489949835" />
+    <TocEntry
+      Title="Manage RFI Templates"
+      Link="/Content/Platform/RCM/RCM Reference/Manage RFI Templates.htm#_Toc489949836">
+      <TocEntry
+        Title="Create RFI Templates"
+        Link="/Content/Platform/RCM/RCM Reference/Create RFI Templates.htm#_Toc489949837" />
+      <TocEntry
+        Title="Enable Actions for RFI Reply"
+        Link="/Content/Platform/RCM/RCM Reference/Enable Actions for RFI Reply_2.htm#_Toc489949838" />
+      <TocEntry
+        Title="Edit RFI Templates"
+        Link="/Content/Platform/RCM/RCM Reference/Edit RFI Templates.htm#_Toc489949839" />
+      <TocEntry
+        Title="Delete RFI Templates"
+        Link="/Content/Platform/RCM/RCM Reference/Delete RFI Templates.htm#_Toc489949840" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Role Permissions"
+    Link="/Content/Platform/RCM/RCM Reference/Role Permissions.htm#_Toc489949841"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of Role Permissions"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of Role Permissions.htm#_Toc489949842"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Modules Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Modules Tab.htm#_Toc489949843" />
+    <TocEntry
+      Title="Work Items Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Work Items Tab.htm#_Toc489949844" />
+    <TocEntry
+      Title="Reports Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Reports Tab.htm#_Toc489949845" />
+    <TocEntry
+      Title="Blotters Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Blotters Tab.htm#_Toc489949846">
+      <TocEntry
+        Title="Ad-Hoc Blotters"
+        Link="/Content/Platform/RCM/RCM Reference/Ad Hoc Blotters_1.htm#_Toc489949847" />
+    </TocEntry>
+    <TocEntry
+      Title="Cases Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Cases Tab.htm#_Toc489949848" />
+    <TocEntry
+      Title="Workflow Restrictions Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Workflow Restrictions Tab.htm#_Toc489949849" />
+    <TocEntry
+      Title="Settings Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Settings Tab.htm#_Toc489949850">
+      <TocEntry
+        Title="General"
+        Link="/Content/Platform/RCM/RCM Reference/General.htm#_Toc489949851" />
+      <TocEntry
+        Title="Conditional Settings"
+        Link="/Content/Platform/RCM/RCM Reference/Conditional Settings.htm#_Toc489949852" />
+      <TocEntry
+        Title="Navigation Tree"
+        Link="/Content/Platform/RCM/RCM Reference/Navigation Tree.htm#_Toc489949853" />
+    </TocEntry>
+    <TocEntry
+      Title="Forms Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Forms Tab.htm#_Toc489949854" />
+    <TocEntry
+      Title="DART Tab"
+      Link="/Content/Platform/RCM/RCM Reference/DART Tab.htm#_Toc489949855" />
+    <TocEntry
+      Title="Dashboards Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Dashboards Tab.htm#_Toc489949856" />
+    <TocEntry
+      Title="Visual Link Analysis (VLA) Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Visual Link Analysis VLA Tab.htm#_Toc489949857" />
+    <TocEntry
+      Title="Policy Manager Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Policy Manager Tab.htm#_Toc489949858" />
+    <TocEntry
+      Title="Platform Lists Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Platform Lists Tab.htm#_Toc489949859" />
+    <TocEntry
+      Title="Tuning Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Tuning Tab.htm#_Toc489949860" />
+    <TocEntry
+      Title="Admin Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Admin Tab.htm#_Toc489949861" />
+    <TocEntry
+      Title="Sensitive Data Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Sensitive Data Tab.htm#_Toc489949862" />
+    <TocEntry
+      Title="Confidential Data Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Confidential Data Tab.htm#_Toc489949863" />
+    <TocEntry
+      Title="Other GUI Items Tab"
+      Link="/Content/Platform/RCM/RCM Reference/Other GUI Items Tab.htm#_Toc489949864">
+      <TocEntry
+        Title="Blotters"
+        Link="/Content/Platform/RCM/RCM Reference/Blotters_1.htm#_Toc489949865" />
+      <TocEntry
+        Title="Work Items"
+        Link="/Content/Platform/RCM/RCM Reference/Work Items_1.htm#_Toc489949866" />
+      <TocEntry
+        Title="Reports"
+        Link="/Content/Platform/RCM/RCM Reference/Reports_1.htm#_Toc489949867" />
+      <TocEntry
+        Title="Admin"
+        Link="/Content/Platform/RCM/RCM Reference/Admin_1.htm#_Toc489949868" />
+    </TocEntry>
+    <TocEntry
+      Title="Admin Site"
+      Link="/Content/Platform/RCM/RCM Reference/Admin Site.htm#_Toc489949869">
+      <TocEntry
+        Title="Modules"
+        Link="/Content/Platform/RCM/RCM Reference/Modules.htm#_Toc489949870" />
+      <TocEntry
+        Title="Actions"
+        Link="/Content/Platform/RCM/RCM Reference/Actions.htm#_Toc489949871" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="The Operations Dashboard"
+    Link="/Content/Platform/RCM/RCM Reference/The Operations Dashboard.htm#_Toc489949872"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapter.flpgl">
+    <TocEntry
+      Title="Overview of the Operations Dashboard"
+      Link="/Content/Platform/RCM/RCM Reference/Overview of the Operations.htm#_Toc489949873"
+      BreakType="pageLayout"
+      PageType="continue"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Content.flpgl" />
+    <TocEntry
+      Title="Use the Filtering Bar"
+      Link="/Content/Platform/RCM/RCM Reference/Use the Filtering Bar.htm#_Toc489949874">
+      <TocEntry
+        Title="Select the Timeframe"
+        Link="/Content/Platform/RCM/RCM Reference/Select the Timeframe.htm#_Toc489949875" />
+      <TocEntry
+        Title="Select the Relevant Business Unit(s) for All Dashboard Reports"
+        Link="/Content/Platform/RCM/RCM Reference/Select the Relevant Business.htm#_Toc489949876" />
+      <TocEntry
+        Title="Generate the Definitions Filtering Bar"
+        Link="/Content/Platform/RCM/RCM Reference/Generate the Definitions Filtering.htm#_Toc489949877" />
+    </TocEntry>
+    <TocEntry
+      Title="The Work Items Tab"
+      Link="/Content/Platform/RCM/RCM Reference/The Work Items Tab.htm#_Toc489949878">
+      <TocEntry
+        Title="View and Select Individual Report Data"
+        Link="/Content/Platform/RCM/RCM Reference/View and Select Individual.htm#_Toc489949879" />
+      <TocEntry
+        Title="Totals for Open Work Items"
+        Link="/Content/Platform/RCM/RCM Reference/Totals for Open Work Items.htm#_Toc489949880" />
+      <TocEntry
+        Title="Open Work Items"
+        Link="/Content/Platform/RCM/RCM Reference/Open Work Items.htm#_Toc489949881" />
+      <TocEntry
+        Title="The Drill Down Option"
+        Link="/Content/Platform/RCM/RCM Reference/The Drill Down Option.htm#_Toc489949882" />
+      <TocEntry
+        Title="Open Work Items Aging"
+        Link="/Content/Platform/RCM/RCM Reference/Open Work Items Aging.htm#_Toc489949883" />
+      <TocEntry
+        Title="Open Work Items by Step and Item Type"
+        Link="/Content/Platform/RCM/RCM Reference/Open Work Items by Step and.htm#_Toc489949884" />
+      <TocEntry
+        Title="Open Work Items by Score Ranges"
+        Link="/Content/Platform/RCM/RCM Reference/Open Work Items by Score Ranges.htm#_Toc489949885" />
+      <TocEntry
+        Title="Average Days for Resolution"
+        Link="/Content/Platform/RCM/RCM Reference/Average Days for Resolution.htm#_Toc489949886" />
+      <TocEntry
+        Title="Open Work Items Over Time"
+        Link="/Content/Platform/RCM/RCM Reference/Open Work Items Over Time.htm#_Toc489949887" />
+    </TocEntry>
+    <TocEntry
+      Title="The Cases Tab"
+      Link="/Content/Platform/RCM/RCM Reference/The Cases Tab.htm#_Toc489949888">
+      <TocEntry
+        Title="View and Select Individual Report Data"
+        Link="/Content/Platform/RCM/RCM Reference/Viewing and selecting Individual.htm#_Toc489949889" />
+      <TocEntry
+        Title="Totals for Open Cases"
+        Link="/Content/Platform/RCM/RCM Reference/Totals for Open Cases.htm#_Toc489949890" />
+      <TocEntry
+        Title="Open Cases"
+        Link="/Content/Platform/RCM/RCM Reference/Open Cases.htm#_Toc489949891" />
+      <TocEntry
+        Title="Open Cases Aging"
+        Link="/Content/Platform/RCM/RCM Reference/Open Cases Aging.htm#_Toc489949892" />
+      <TocEntry
+        Title="Open Cases by Step and Case Type"
+        Link="/Content/Platform/RCM/RCM Reference/Open Cases by Step and Case.htm#_Toc489949893" />
+      <TocEntry
+        Title="Open Cases by Priority"
+        Link="/Content/Platform/RCM/RCM Reference/Open Cases by Priority.htm#_Toc489949894" />
+      <TocEntry
+        Title="Average Days for Resolution"
+        Link="/Content/Platform/RCM/RCM Reference/Average Days for Resolution_1.htm#_Toc489949895" />
+      <TocEntry
+        Title="Open Cases Over Time"
+        Link="/Content/Platform/RCM/RCM Reference/Open Cases Over Time.htm#_Toc489949896" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/FrontMatter/Back.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="pageLayout"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Back.flpgl"
+    conditions="Default.PrintOnly" />
+</CatapultToc>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 18.693543 17.165632"
+   version="1.1"
+   sodipodi:docname="example.svg"
+   inkscape:version="0.92.1 r15371"
+   width="18.693542"
+   height="17.165632">
+  <metadata
+     id="metadata65">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icons</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     id="namedview63"
+     showgrid="false"
+     inkscape:zoom="2.78"
+     inkscape:cx="-157.57694"
+     inkscape:cy="58.476738"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs12">
+    <style
+       id="style10">.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{fill:none;stroke:#414142;}.cls-1,.cls-4{stroke-miterlimit:8;}.cls-1,.cls-2{stroke-width:0.73px;}.cls-2,.cls-3,.cls-5,.cls-6{stroke-linecap:round;stroke-linejoin:round;}.cls-3{stroke-width:0.68px;}.cls-4,.cls-5{stroke-width:0.65px;}.cls-6{stroke-width:0.71px;}.cls-7{fill:#4d4d4e;}</style>
+  </defs>
+  <title
+     id="title14">icons</title>
+  <g
+     id="g4499">
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#656a6c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path46"
+       d="M 14.548408,7.2245558 18.14645,4.2381811 a 0.61526515,0.61526515 0 0 0 0,-0.8887164 L 14.548408,0.36309004"
+       class="cls-6" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#656a6c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path48"
+       d="m 14.548408,16.802543 3.598042,-2.986375 a 0.54330431,0.54330431 0 0 0 0,-0.827549 l -3.598042,-2.986375"
+       class="cls-6" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#656a6c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path50"
+       d="M 0.36492711,13.420384 2.9627133,13.355619 A 1.0794125,1.0794125 0 0 0 3.8514298,12.974227 L 11.328161,4.2417791 A 1.2125401,1.2125401 0 0 1 12.216877,3.79922 h 2.597786"
+       class="cls-6" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#656a6c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path52"
+       d="m 8.6548156,9.8799106 2.6661494,3.0979144 a 1.2125401,1.2125401 0 0 0 0.888716,0.442559 h 2.601384"
+       class="cls-6" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#656a6c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path54"
+       d="M 0.36492711,3.7920239 2.9591152,3.8567886 A 1.0794125,1.0794125 0 0 1 3.8442337,4.234583 l 2.6589529,3.097914"
+       class="cls-6" />
+  </g>
+</svg>

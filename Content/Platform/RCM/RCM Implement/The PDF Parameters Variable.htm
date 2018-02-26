@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="909" MadCap:lastWidth="973">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234263"></a>The PDF Parameters Variable</h1>
+        <p class="Body">All PDF-related parameters must be supplied via the $pdfParams argument of the XSL API call as follows:</p>
+        <p class="Code">&lt;xsl:value-of select="actimize:exportRecordsWidgetToPdf( 'dataSourceIdentier',&#160; $pdfParams, $optionalParams)" disable-output-escaping="yes" /&gt;</p>
+        <p class="Body">The supported PDF parameters are:</p>
+        <ul>
+            <li><span class="Strong">maxRows</span> – When exporting record widgets to the PDF, this parameter determines the maximum number of rows to export to the PDF. The actimize.widget.maximumRecordsForPrint parameter in admin.jsp will be used if this parameter is not defined. If the value is supplied, the lower of the two determines the result.</li>
+        </ul>
+        <ul>
+            <li>
+                <p><span class="Strong">inPageSequence</span> – Determines whether the widget is enclosed by the &lt;fo:page-sequence&gt; tag. The default is False.</p>
+                <ul>
+                    <li>If inPageSequence is True, the widget output assumes that the page sequence is currently open. In this case, the widget will not start with a page break, and the output of the widget will not close the page-sequence tag.</li>
+                    <ul>
+                        <li>When the table size row count per page is 100 (default setting) and the widget is wrapped with a &lt;fo:page-sequence&gt; tag, no page breaking is required. The widget is printed without adding the page sequence tag.</li>
+                        <ul>
+                            <li>If the table size row count per page is greater than 100, the first &lt;fo:page-sequence&gt; opening tag and the last &lt;/fo:page-sequence&gt; closing tag are omitted.</li>
+                            <ul>
+                                <li>If inPageSequence is False, the widget will start and end with a page break. The widget will be printed in new page and page breaks will occur every 100 rows.</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">rowCountPerPageSequence</span> – Determines the number of rows displayed (not including secondary layout rows) before an intentional page break occurs. Intentional page breaks are required to release memory accumulated while building the page. The default value is 100, which is also the maximum value. It must be a positive integer greater than or equal to 1. If the value is not valid, the default value will be used and a warning message is entered in the log.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">masterReference</span> – Determines page size reference as declared in alert2fo.vm. You have the option to add page structures in alert2fo.vm and later reference them using this parameter. Its default value is A4.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Title</span> – Adds a title to the widget. This may be useful when ‘inPageSequence’ is set to false.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">page-header</span> – Adds a string value for each page header. </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">page-footer</span> – Adds a string value for each page footer. </li>
+        </ul>
+        <p class="Body">If the results contain more rows than are allowed by the settings, this is indicated in the PDF immediately after the grid that is generated.</p>
+    </body>
+</html>

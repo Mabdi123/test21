@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234203"></a>Business Calendar Scenarios</h1>
+        <p class="Body">The Business Calendar platform lists enable you to configure deadlines, email notifications and reminders according to business days in addition to regular days logic. The following timeline relates to various scenarios that describe the logic for using the Business Days calendars.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Scenarios.png" style="visibility: visible;mso-wrap-style: square;width: 478px;height: 219px;" />
+        </p><span class="Strong">Scenario 1</span><span class="Strong"><img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Scenarios_1.png" style="visibility: visible;mso-wrap-style: square;width: 590px;height: 145px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></span>
+        <p class="Body">A work item is created on November 28 and all deadlines are configured in <span class="Strong">Days</span>, therefore business days and non-business days are counted equally.</p>
+        <p class="Body">If the deadline (global or workflow step) is for 2 days then that is set for November 30.</p>
+        <p class="Body">If the email notification is set for 2 days, it is sent on November 28.</p>
+        <p class="Body">If the reminder is set for 1 day, it is sent on November 29.</p><span class="Strong">Scenario 2</span><span class="Strong"><img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Scenarios_2.png" style="visibility: visible;mso-wrap-style: square;width: 573px;height: 156px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /></span>
+        <p class="Body">A work item is created on November 28 and global deadline and reminder deadlines are configured in <span class="Strong">Business</span> <span class="Strong">Days</span>, therefore only business days are counted in the configuration. Email notification is configured according to days so all days are counted.</p>
+        <p class="Body">If the deadline (global or workflow step) is for 2 business days then it is set for December 2 (November 29 and 30 are non-business days).</p>
+        <p class="Body">If the email notification is set for 2 days, it is sent on November 30 (even though it is a non-business day, this was configured according to days).</p>
+        <p class="Body">If the reminder is set for 1 business day, it is sent on December 1 which is 1 business day before the deadline.</p><span class="Strong">Scenario 3</span>
+        <p class="Body">A work item is created on November 28 and global deadline and reminder deadlines are configured in <span class="Strong">Business</span> <span class="Strong">Days</span>, therefore only business days are counted in the configuration.</p>
+        <p class="Body">If the deadline (global or workflow step) is for 2 business days then it is set for December 2.</p>
+        <p class="Body">If the reminder is set for 2 business days before the deadline, it is configured for November 28, meaning the same day (today). 3 days before would mean the reminder is November 27 (yesterday) because November 29 and November 30 are non-business days. Setting reminders or email notifications to the same day or a day in the past causes the system to issue warnings and is not recommended.</p><span class="Strong">Scenario 4</span>
+        <p class="Body">If November 29 was designated a non-business day by the host in a multi tenant environment and Business Calendar - Days platform list supports host values for the tenant, then this day is be counted in the business days logic.</p>
+    </body>
+</html>

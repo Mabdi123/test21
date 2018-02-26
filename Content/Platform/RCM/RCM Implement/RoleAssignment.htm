@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234577"></a>RoleAssignment</h1>
+        <div>
+            <p class="Code">RoleAssignment{</p>
+            <p class="Code">String roleIdentifier;</p>
+            <p class="Code">String subjectIdentifier; </p>
+            <p class="Code">String businessUnitIdentifier;</p>
+            <p class="Code">AdvancedAssignemntEnum advancedAssigmentEnum;</p>
+            <p class="Code">}</p>
+        </div>
+        <p class="Body"><span class="Emphasis">Description: This object contains informati</span><span class="Emphasis">on regarding a role assignment.</span>
+        </p><span class="Emphasis">Fields:</span>
+        <ul>
+            <li><span class="Strong">Role Identifier</span> – An identifier of a role that is defined in RCM. (Required.) </li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Subject Identifier</span> – Can be a User Identifier or a Group Identifier. (Required.)</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Business Unit Identifier</span> – A Business Unit Identifier that overrides a user’s business unit. This field is required only if AdvancedAssignemntEnum is null. In any other case it is ignored.</li>
+        </ul>
+        <ul>
+            <li>Advanced assignment Enum</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">&lt;all&gt;</span> – Applies to all business units</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">&lt;user&gt;</span> – Use the user business unit identifier</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">&lt;none&gt;</span> – Do not use any business unit</li>
+        </ul>
+    </body>
+</html>

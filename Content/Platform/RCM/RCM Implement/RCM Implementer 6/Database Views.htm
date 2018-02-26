@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Appendix"><a name="_Toc500234435"></a>Database Views</h1>
+        <p class="Body">The RCM database Views expose internal RCM data for management and trade blotter reports. These views enable implementers to access RCM data, without the concern for possible changes within the data base structure.</p>
+        <p class="Body">These views will be materialized in your RCM database as a result of running the dbupgrade script during installation of RCM.</p>
+        <p class="Body">RCM contains two sets of views:</p>
+        <ul>
+            <li><span class="Strong">Identifier based views</span> – Low performance views that exist due to backward compatibility</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Internal join id based views</span> – provide improved performance</li>
+        </ul>
+        <p class="Body">The internal join id based views were introduced to make it easier for users to change names of objects and allow for duplicate object names.&#160; Whenever a view of type (a) has a related, improved, type (b) view then they share the same name with the addition of the numeral 2.&#160;&#160; When both types of views exist for an entity, such as v_acm_alert_audit and the improved v_acm_alert_audit2, .the internal join based view should be used.&#160; </p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">Join Ids are internal to a specific RCM repository instance. If you use the value of a specific Join Id in an SQL query and then move the query to a different RCM instance, you will get different results. Therefore, join Id fields should not be used in WHERE clauses to select rows from the repository. In other words:</p>
+        <p class="Body">Join ids are to be used ONLY for join, and MUST NOT be used against external databases or saved in any way.</p>
+        <p class="Body">They are not the same for two different RCM installations even when referring to the same logical object.</p>
+    </body>
+</html>

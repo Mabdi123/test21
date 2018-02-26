@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234261"></a>The function call syntax</h1>
+        <p class="Body">The XSL function syntax is as follows:</p>
+        <div>
+            <p class="Code">&lt;xsl:value-of</p>
+            <p class="Code">&#160;&#160;&#160; select="actimize:createWidget(‘widgetId’, ‘htmlContainerId’, ‘dataSourceIdentifier’, $optionalParams)” disable-output-escaping="yes" /&gt;</p>
+        </div>
+        <p class="Body"><span class="Strong">widgetId</span> – A string, defined by the implementer, that represents the ID of the Widget on the client side. The id is used for referencing the client-side Widget object when trying to access its selection or other properties.</p>
+        <p class="Body"><span class="Strong">htmlContainerId</span> – The ID of the container element that stores the Widget HTML (e.g. id of a DIV, SPAN etc.).</p>
+        <p class="Body"><span class="Strong">dataSourceIdentifier</span> – The identifier of the DART data source that the Widget is based on (taken from RCM Designer).</p>
+        <p class="Body"><span class="Strong">$optionalParams</span> (optional) – An XSL variable that stores all the optional Widget parameters, including a baseQuery identifier, additional filtering criteria, etc. If you do not want to use any of the optional parameters, you can either leave the variable content empty or remove it completely from the function call as displayed in the following example:</p>
+        <div>
+            <p class="Code">&lt;xsl:value-of</p>
+            <p class="Code">&#160;&#160;&#160; select="actimize:createWidget(‘widgetId’, ‘htmlContainerId’, ‘dataSourceIdentifier’)” disable-output-escaping="yes" /&gt;</p>
+        </div>
+    </body>
+</html>

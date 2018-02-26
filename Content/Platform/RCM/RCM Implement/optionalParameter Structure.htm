@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>optionalParameter Structure</h1>
+        <p class="Body">The optionalParameter object is a standard JavaScript object defined as a set of name-value attributes (the order of the attributes is ignored).</p>
+        <p class="Body">For example, the following code defines a JavaScript object with two properties – <span class="Strong">a</span> and <span class="Strong">b</span> – where <span class="Strong">a</span> is the integer value 1 and <span class="Strong">b</span> is the string value “hello”:</p>
+        <p class="Code">var obj = {a: 1, b: “hello”}</p>
+        <p class="Body">Similarly, the following code is an example of a valid optionalParam object for the Work Items API(the parameter “showResetButton” was omitted, so the widget drawn with these settings would have used the default value of “showResetButton=true”):</p>
+        <div>
+            <p class="Code">var optionalParam = {</p>
+            <p class="Code">viewIdentifier: “allAlerts”,</p>
+            <p class="Code">ddqIdentifier: “alertsByIdRange”, </p>
+            <p class="Code">ddqParams: [4, 7], </p>
+            <p class="Code">actionsGroupIdentifier: “alertWidgetActions”,</p>
+            <p class="Code">pagingSize: 6,</p>
+            <p class="Code">selectionMode: “single”,</p>
+            <p class="Code">showRefreshButton: false</p>
+            <p class="Code">}</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="3698" MadCap:lastWidth="986">
+    <head>
+        <link href="../../../Resources/TableStyles/Default.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref59790447"></a><a name="_Toc500234209"></a>Setting Actions</h1>
+        <p class="Body">The Settings Activity Bar includes the following actions:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Setting Actions.png" style="visibility: visible;mso-wrap-style: square;width: 198px;height: 111px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <table class="TableStyle-Default" style="mc-table-style: url('../../../Resources/TableStyles/Default.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-Default-Head-Header1">
+                    <th class="TableStyle-Default-HeadE-Column1-Header1">
+                        <p class="Body">Action</p>
+                    </th>
+                    <th class="TableStyle-Default-HeadD-Column1-Header1">
+                        <p class="Body">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">New Setting</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Opens the New Settings wizard. </p>
+                        <p class="Body">Select <span class="Strong">Setting</span> to enable IT professionals to configure the application for connection and use of thresholds, lists and reference information. </p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Setting Actions_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+                        </p>
+                        <p class="Body">The New Settings wizard includes the following options (according to the type of setting selected): </p>
+                        <ul>
+                            <li>Select the type of setting – Threshold, List, or References</li>
+                        </ul>
+                        <ul>
+                            <li>Select the alert type associated with the setting</li>
+                        </ul>
+                        <ul>
+                            <li>Provide a name for the new setting and a title for the page associated with that setting</li>
+                        </ul>
+                        <ul>
+                            <li>Define the connection to the appropriate database </li>
+                        </ul>
+                        <ul>
+                            <li>Once the connection is selected, you can select the required table from this database&#160; </li>
+                        </ul>
+                        <ul>
+                            <li>Define or edit the SQL query required to retrieve information </li>
+                        </ul>
+                        <div class="Note">
+                            <p class="Body">When you enter a Select statement with a Join, you must select Manual SQL for the Select table. This will automatically change the display options that are available for the users, to Read only.</p>
+                        </div>
+                        <p class="Body">Use advanced options that enable you to:</p>
+                        <ul>
+                            <li>Define a subtitle for the activity bar</li>
+                        </ul>
+                        <ul>
+                            <li>Enter an SQL script that can be run from a Restore Default button from the RCM Threshold/Lists/References module</li>
+                        </ul>
+                        <ul>
+                            <li>Enable the Import xsl/csv option that can be run from the RCM Threshold/Lists/References module</li>
+                        </ul>
+                        <p class="Body">For more information about the advanced features, see <MadCap:xref href="Advanced Settings.htm#_Ref101255741" class="ParaTextOnly">Advanced Settings</MadCap:xref>)</p>
+                        <p class="Body">Select <span class="Strong">Conditional Settings Template</span> in order to create a template for a Conditional Setting.</p>
+                        <p class="Body">
+                            <img src="../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Setting Actions_2.png" style="visibility: visible;mso-wrap-style: square;" />
+                        </p>
+                        <ul>
+                            <li>Provide a name for the new setting, identifier and a title for the page associated with that setting</li>
+                        </ul>
+                        <ul>
+                            <li>Define the connection to the appropriate database </li>
+                        </ul>
+                        <ul>
+                            <li>Once the connection is selected, you can select the required table from this database&#160; </li>
+                        </ul>
+                        <ul>
+                            <li>Define or edit the SQL query required to retrieve information. The conditional setting that is at the end of the SQL query has the following structure: <br />{$&lt;parameter name&gt;:&lt;default value of parameter&gt;. <br />In this example the default value of the parameter parameter_name is 10:<br />{$parameter_name:10}<br />Single quotes should be entered at the beginning and the end of the setting when the parameter is not numeric (e.g., ‘{$name:John}’)</li>
+                        </ul>
+                        <div class="Important">
+                            <p class="Body">When you enter a Select statement with a Join, you must select <span class="Strong">Manual SQL</span> for the Select table. This will automatically change the display options that are available for the users, to <span class="Strong">Read only</span>.</p>
+                        </div>
+                        <p class="Body">Use advanced options that enable you to:</p>
+                        <ul>
+                            <li>Define a subtitle for the activity bar.</li>
+                        </ul>
+                        <ul>
+                            <li>Enter an sql script that can be run from a Restore Default button from the RCM Threshold/Lists/References module.</li>
+                        </ul>
+                        <ul>
+                            <li>Enable the Import xsl/csv option that can be run from the RCM Threshold/Lists/References module.</li>
+                        </ul>
+                        <p class="Body">For more information about the advanced features, see <MadCap:xref href="Advanced Settings.htm#_Ref101255741" class="ParaTextOnly">Advanced Settings</MadCap:xref>)</p>
+                        <p class="Body">Set Full Access, Read only, Update Existing Entries display features which determine the option buttons that appear in the upper right corner of the RCM end user application as follows:</p>
+                        <p class="Body"><span class="Strong">Full Access</span> – Displays Add, Delete and Edit option buttons, thereby enabling RCM end users to add or delete rows (as well as edit values) for a threshold, list or reference table. <br />(For example, when users are requested to define the upper and lower limits for transactions according to different score values. In this case, the user can add a new row in order to specify threshold values for a score that does not appear within the table. Users can also select any row and edit the values, or delete any row.)</p>
+                        <p class="Body"><span class="Strong">Read Only</span> – Displays only option buttons that can be performed in a read only mode, such as Print table information or display History.</p>
+                        <p class="Body"><span class="Strong">Update Existing Entries</span> – Displays Edit option button but does not display Add or Delete buttons, thereby enabling RCM end users only to edit values within a threshold, list or reference table. <br />(For example, if the users are requested to define the upper and lower limit of a specific AIS variable, there is no meaning to adding a row to the threshold table. In this case the user can only edit the value of the thresholds).</p>
+                        <p class="Body">Set up validation rules that enable the application to check all inserted data for:</p>
+                        <ul>
+                            <li>Data Type </li>
+                        </ul>
+                        <ul>
+                            <li>Field Length </li>
+                        </ul>
+                        <ul>
+                            <li>Sign (for numeric)</li>
+                        </ul>
+                        <ul>
+                            <li>Date</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyE-Column1-Body1">
+                        <p class="Body">Edit Setting</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyD-Column1-Body1">
+                        <p class="Body">Enables authorized personnel to edit selected setting definitions. </p>
+                        <p class="Body">The settings definitions must be synchronized with the AIS server in order for the AIS to retrieve the appropriate threshold values that are defined within the Risk Case Manager application. Changing these settings can affect the ability of the application to receive alerts and, therefore, should only be done in consultation with authorized Actimize IT professionals.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Default-Body-Body1">
+                    <td class="TableStyle-Default-BodyB-Column1-Body1">
+                        <p class="Body">Delete Setting</p>
+                    </td>
+                    <td class="TableStyle-Default-BodyA-Column1-Body1">
+                        <p class="Body">Deletes a selected Setting definition. This action should only be done in consultation with authorized Actimize IT professionals.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

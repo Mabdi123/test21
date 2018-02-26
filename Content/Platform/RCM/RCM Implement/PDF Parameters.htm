@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>PDF Parameters</h1>
+        <p class="Body">All PDF-related parameters defined on a nested widget via the DART widget renderer reside under the <span class="Strong">pdfParams</span> XML node and are relevant only to that specific widget. These parameters are:</p>
+        <p class="Body"><span class="Strong">maxRows</span> – For each widget, when exporting record widgets to the PDF, this parameter determines the maximum number of rows to export to the PDF. This parameter is set via the renderer info XML, allowing separate configuration per DART widget renderer. The actimize.widget.maximumRecordsForPrint parameter in admin.jsp will be used if this parameter is not defined. If the value is supplied, the lower of the two determines the result.</p>
+        <p class="Body">If the results contain more rows than are allowed by the settings, this is indicated in the PDF immediately after the grid that is truncated.</p>
+        <ul>
+            <li><span class="Strong">includeInPdf</span> – For each nested widget, this parameter enables or disables PDF printing of the widget.</li>
+        </ul>
+        <ul>
+            <li>When set to True (or omitted), the widget is included in the PDF.</li>
+        </ul>
+        <ul>
+            <li>When set to False, the widget is not included in the PDF.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="53.66666" MadCap:lastWidth="1312">
+    <head>
+    </head>
+    <body>
+        <table style="width: 100%;border-bottom-style: solid;border-bottom-width: 0.5pt;border-bottom-color: #009edb;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p class="HeaderRight">
+                            <MadCap:variable name="Heading.Level2" MadCap:conditions="Custom.Heading2" />
+                            <MadCap:conditionalText MadCap:conditions="Custom.Contents">Contents</MadCap:conditionalText>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

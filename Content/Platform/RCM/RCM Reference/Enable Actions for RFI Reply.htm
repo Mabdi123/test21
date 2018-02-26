@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1324" MadCap:lastWidth="930">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc489949368"></a>Enable Actions for RFI Reply</h1>
+        <p class="Body">You can send an RFI using an RFI template created with placeholders that request a reply which automatically changes a step in a workflow. </p>
+        <p class="Body">The Create RFI window appears as follows:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Enable Actions for RFI Reply.png" style="visibility: visible;mso-wrap-style: square;width: 533px;height: 397px;" />
+        </p>
+        <p class="Body">The received email will have a link instead of the placeholder. For example:</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Enable Actions for RFI Reply_1.png" style="visibility: visible;mso-wrap-style: square;width: 440px;height: 218px;" />
+        </p>
+        <p class="Body">The text of the link appears as defined in the display link text parameter. You can move, duplicate, delete but not edit the placeholder text in the Create RFI window. You can also add the placeholder in the same format as it is defined in the RFI template, directly to the body of the email.</p>
+        <p class="Body">The RFI recipient clicks one of the relevant links and a reply mail is created in a new window (without any previous correspondence included) and sent to the <MadCap:variable name="RCM Actimize.ProductCode" /> system. The workflow step is changed according to the specific reply.</p>
+        <p class="Body">For details on creating a template with relevant links, see <MadCap:xref href="Create RFI Templates.htm#_Ref421100524" class="ParaTextOnly">Create RFI Templates</MadCap:xref>.</p>
+        <div class="Note">If the workflow step has already been changed from the original step where you configured the change, or the original step was changed, the RFI reply is received but does not change the step. <br />For information refer to the <span class="Emphasis"><MadCap:variable name="RCM Actimize.ProductCode" /> Implementer Guide</span>. If the recipient does not have rich text enabled, the <MadCap:variable name="RCM Actimize.ProductCode" /> link options are displayed in html. <br />If the mail is sent to more than one address, then the system acts on the reply that is received first.</div>
+        <p class="Body">&#160;</p>
+    </body>
+</html>

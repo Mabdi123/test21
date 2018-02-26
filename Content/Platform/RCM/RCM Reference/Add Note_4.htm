@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="2664" MadCap:lastWidth="1232">
+    <head><title></title>
+    </head>
+    <body>
+        <h1><a name="_Ref454696403"></a><a name="_Ref454696420"></a><a name="_Ref454696429"></a><a name="_Ref454696490"></a><a name="_Ref454696502"></a><a name="_Ref454699821"></a><a name="_Ref454699881"></a><a name="_Ref454699889"></a><a name="_Ref454700513"></a><a name="_Ref454700522"></a><a name="_Ref454700530"></a><a name="_Toc489949524"></a>Add Note</h1>
+        <p class="Body">Select one or more case items and click the <span class="Strong">Add Note</span> <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Work Items Toolbar_2.png" style="visibility: visible;mso-wrap-style: square;width: 18px;height: 17px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" /> button in the Case Items toolbar to open the Add Note window. You can select a note that is available within a list of predefined notes, or to type in a note that is relevant for describing the progress of the items.</p>
+        <p class="Body">The type of note that you can add depends on the items that you selected. Different item types support different note options (for example, some case item types do not support adding free text, or do not support all of the predefined note options). </p>
+        <p class="Body">When you add a note to more than one work item at the same time, you only see those options that are supported by all selected work item types. If you require an option that is not supported by one of the selected work items, try selecting the work items one at a time. </p>
+        <p class="Procedure">To select a predefined note:</p>
+        <ul>
+            <li>Click the arrow at the end of the available field to view the complete list of predefined notes that are configured for your RCM.</li>
+        </ul>
+        <ul>
+            <li>Select any existing note and then add or edit text according to your needs, or you can directly type into the available field.</li>
+        </ul>
+        <div class="Note">
+            <p class="Body">The table of case items may include a note column that has the following icon: <img src="../../../Resources/Images/Platform/RCM/RCM Reference/The More Options Tab_1.png" style="visibility: visible;mso-wrap-style: square;width: 18px;height: 17px;" /> All items that include this icon are with note(s). Clicking on a note icon of a specific case item displays its related note(s).</p>
+        </div>
+        <h4 class="NoNumber">Rich Text Format</h4>
+        <p class="Body">This feature provides you with advanced styling and editing capabilities for the entered text. For details, see <MadCap:xref href="Rich Text Feature.htm#_Ref338766093" class="ParaTextOnly">Rich Text Feature</MadCap:xref>.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note.png" style="visibility: visible;mso-wrap-style: square;width: 522px;height: 356px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">The Add Note window contains the following buttons:</p>
+        <ul>
+            <li><span class="Strong">Get Workspace: </span>Enables you to get workspace information and add it to the note. This button is enabled when the case item’s workspace contains content. For details, see <MadCap:xref href="Open Workspace.htm#_Ref433178209" class="ParaTextOnly">Open Workspace</MadCap:xref>.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Add to Workspace: </span>Enables you to take note content and append it to the case item’s workspace. This button is enabled when there is data in the note section. </li>
+        </ul>
+        <div class="Note">
+            <p class="Body">The Rich text format feature may not be enabled by your organization.</p>
+        </div>
+        <h4 class="NoNumber">Adding a Confidential Note</h4>
+        <p class="Body">Users that have the confidential level feature can create a confidential note that cannot be viewed by users that do not have this feature enabled. </p>
+        <p class="Body">To add a confidential note, select the <span class="Strong">Confidential Note</span> checkbox from the <span class="Strong">Add Note</span> window.</p>
+        <div class="Note">
+            <ul>
+                <li>This checkbox may not be available for all users.</li>
+            </ul>
+            <ul>
+                <li>When a note is marked as confidential, it cannot be added to a workspace.</li>
+            </ul>
+        </div>
+        <h4 class="NoNumber">Note with Tags</h4>
+        <p class="Body">Some of the work items and Blotter transactions may include notes with tags.</p>
+        <p class="Body">
+            <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_1.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Tags are fields within the note window that enable you to enter specific information on the note. For example, a tag may be an Account field that enables you to enter the related accounts for the note. Tag values are verified by the RCM. For example an <span class="Strong">account</span> tag can include validation for a minimum length of 9 characters and a maximum length of 14 characters and it must begin with the letters aac (e.g., aac12345678). If the value is not entered correctly then the account is underlined in red and the note cannot be saved. A tooltip provides information on the reason why the value is not valid.</p>
+        <p class="Body">Values that are underlined in yellow indicate that the value was entered in the correct format but one of the following scenarios occurred:</p>
+        <ul>
+            <li>A drill down query (DDQ) on the entered value did not return any results. The value is underlined in yellow and a tooltip provides the reason for the invalid value. For example, Jane Smith is entered as a value for a Broker tag and the system could not find a Broker named Jane Smith when it ran a drill down query on this value.</li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_2.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+            <p class="Body">You have the option to confirm this value even when it is not validated by the DDQ.</p>
+        </ul>
+        <ul>
+            <li>A drill down query returned more than 1 result for the value. The value is underlined in yellow and a tooltip provides the reason for the invalid value. For example, John Smith is entered as a value for a Broker tag and the system found more than one Broker named John Smith when it ran a drill down query on this value.</li>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_3.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+            <p class="Body">You have the option to confirm this value even when it is not validated by the DDQ.</p>
+            <p class="Body">A valid value is underlined in black and a tooltip indicates that the value is valid.</p>
+            <p class="Body">
+                <img src="../../../Resources/Images/Platform/RCM/RCM Reference/Add Note_4.png" style="visibility: visible;mso-wrap-style: square;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+            </p>
+        </ul>
+        <div class="Note">
+            <p class="Body">The <span class="Strong">Broker</span> and <span class="Strong">Account</span> tags are examples for possible tags within notes. Your organization may define different tags than these examples.</p>
+        </div>
+    </body>
+</html>

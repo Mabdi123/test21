@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234100"></a>Manual Consolidation in RCM</h1>
+        <p class="Body">RCM exposes the following WS for WI distribution:</p>
+        <div>
+            <p class="Code">ACMResult addAlerts(/* in */Alert[] alerts,</p>
+            <p class="Code">/* in */String consolidationProperties,</p>
+            <p class="Code">/* out */ AlertResultListHolder alertResults)</p>
+        </div>
+        <p class="Body">The consolidationProperties input parameter is an XML string with the following structure:</p>
+        <p class="Code">&lt;consolidationProperties&gt;<br />&lt;cwi_type&gt; [CWI Type identifier] &lt;/cwi_type&gt;<br />&lt;cwi_id&gt; [CWI ID] &lt;/cwi_id&gt; //validation on CWI that it supports<br />consolidation<br />&lt;/ consolidationPrperties&gt;</p>
+        <p class="Body">The following nodes are supported:</p>
+        <ul>
+            <li><span class="Strong">&lt;cwi_type&gt;</span> – Indicates to RCM that it must create a new CWI with the given type identifier and consolidate all the WIs in the 'alerts' input parameter into it. It supports the "Create a new Alert" use case.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">&lt;cwi_id&gt;</span> – Indicates to RCM that it must consolidate the WI in the ‘alerts’ input parameter into a CWI with the given ID. If the consolidationProperties string is empty, or does not contain any supported nodes, then automatic RCM consolidation definitions run with the new TWI.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

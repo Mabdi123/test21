@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Ref466978481"></a><a name="_Toc500234202"></a>Business Calendar Lists</h1>
+        <p class="Body">The Business Calendar platform lists enable you to configure global deadlines, email notifications and reminders for work item workflow steps according to calendars that have business days logic included. This means you can designate dates for certain calendars that are not business days and are not included in the deadline count. </p>
+        <p class="Body">The following platform lists are automatically installed.</p>
+        <ul>
+            <li><span class="Strong">Business Calendar – Days</span>: Allows you to designate non-business days for a specific calendar. Includes the following fields.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Lists.png" style="visibility: visible;mso-wrap-style: square;width: 601px;height: 117px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li><span class="Strong">calendar_name</span> – The name of the calendar you are assigning the date to.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">date</span> – The date you want to designate as a non-business day.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">description</span> – A description of the calendar.</li>
+        </ul>
+        <ul>
+            <li><span class="Strong">Business Calendar – BU Associations</span>: Allows you to assign a calendar to a business unit, so that items in that BU are connected to a specific calendar. Includes the following fields.</li>
+        </ul>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Lists_1.png" style="visibility: visible;mso-wrap-style: square;width: 610px;height: 100px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li><span class="Strong">bu_identifier</span> – The BU you are associating to a calendar. Using the BU picker, you select from your list of BUs.</li>
+        </ul>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">The Business Unit field displays the BU identifier in the RCM UI platform list grid. </p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Lists_2.png" style="visibility: visible;mso-wrap-style: square;width: 521px;height: 131px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <ul>
+            <li><span class="Strong">calendar_name</span> – The name of the calendar you are assigning the date to.</li>
+        </ul>
+        <p class="Body">The following is an example of the Business Calendar – Days General tab.</p>
+        <p class="Body">
+            <img src="../../../../Resources/Images/Platform/RCM/RCM Implementer Guide 6/Business Calendar Lists_3.png" style="visibility: visible;mso-wrap-style: square;width: 550px;height: 285px;border-top-width: 1pt;border-bottom-width: 1pt;border-left-width: 1pt;border-right-width: 1pt;" />
+        </p>
+        <p class="Body">Selecting one of the checkboxes enables you to:</p>
+        <p class="Body"><span class="Strong">Four Eye Review</span> – Enforce an approval for every new item that is added to the relevant business calendar list by the RCM user. Only the approved items are counted in the Business Days calculation.</p>
+        <p class="Body"><span class="Strong">Support multi-tenant mode</span> – Support multi-tenant mode for every new item that is added to the relevant business calendar list by the RCM user. This checkbox is selected by default for both calendar lists.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">In a multi tenant environment, if one of the calendar lists (or both) support host values, then the calculation takes the host configuration into account in the list that supports the host values.</p>
+        <p class="Body"><span class="Strong">Support test values</span> – Support tuning values for every new record that is added to the relevant business calendar list by the RCM user. Items in test status are not counted in the Business Days calculation.</p>
+    </body>
+</html>

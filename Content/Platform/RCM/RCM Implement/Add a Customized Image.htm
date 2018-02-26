@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Actimize_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="_Toc500234401"></a>Add a Customized Image</h1>
+        <p class="Body">In order to be able to use an image, upload the image to the Virtual File System using RCM Designer. Images should be stored in the following path:</p>
+        <p class="Code">&lt;VFS&gt;\app_gui_items\rcm\&lt;theme&gt;\actions\icons_picker</p>
+        <p class="Body">Alternatively, insert the image file in the following path (inside the application .war file):</p>
+        <p class="Code">&lt;Web root&gt;\app_gui_items\rcm\&lt;theme&gt;\actions\icons_picker</p>
+        <p class="Body">The &lt;theme&gt; folder is RCM’s current theme identifier (currently only ‘new_york_blue’). It includes each image in each state with an additional CSS file. </p>
+        <p class="Body">You also have the option to create a sprite image that contains all images. This is the recommended method for improved performance. See also <MadCap:xref href="Use Sprite Images.htm#_Ref436897487" class="ParaTextOnly">Use Sprite Images</MadCap:xref>, page <MadCap:xref href="Use Sprite Images.htm#_Ref436897487" class="PageNumberOnly">1</MadCap:xref>.</p>
+        <p class="ConvertNote">NOTE:</p>
+        <p class="Body">If two files with the same name are added to the system from two different sources (the VFS and the Web root folder), then the file from the VFS is the only file loaded into RCM and the one in the Web root is ignored.</p>
+        <p class="Body">The VFS should be enabled in RCM. This can be done by enabling the configuration parameter: ‘actimize.general.virtualFileSystemState’. </p>
+    </body>
+</html>
